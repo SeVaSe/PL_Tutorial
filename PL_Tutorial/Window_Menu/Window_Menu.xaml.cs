@@ -23,5 +23,42 @@ namespace PL_Tutorial.Window_Menu
         {
             InitializeComponent();
         }
+
+        //назад
+        private void Btn_Back_Out_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new MainWindow();
+            wind.Show();
+            this.Close();
+        }
+
+        //свернуть
+        private void Svernut_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        //выйти
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        //перетаскивание окна
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
     }
 }
