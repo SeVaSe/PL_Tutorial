@@ -46,6 +46,13 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
+        //перезапуск
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Window_Python();
+            this.Close();
+            wind.Show();
+        }
 
         //перетаскивание окна
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -146,6 +153,8 @@ namespace PL_Tutorial.Window_Menu
         }
 
         
+
+
 
 
 
