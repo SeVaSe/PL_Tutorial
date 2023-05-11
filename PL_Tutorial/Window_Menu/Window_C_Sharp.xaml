@@ -1,0 +1,101 @@
+﻿<Window x:Class="PL_Tutorial.Window_Menu.Window_C_Sharp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL_Tutorial.Window_Menu"
+        mc:Ignorable="d"
+        Style="{StaticResource ModernWindowStyle}"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove"        
+        Title="Window_C_Sharp" Height="500" Width="800">
+    <Border Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="66"/>
+                <RowDefinition Height="24*"/>
+            </Grid.RowDefinitions>
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="С#-tutor"
+                          Style="{StaticResource ModernTextBlock}"
+                          FontSize="20"
+                          Grid.Column="1"
+                          FontWeight="Bold"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Center"/>
+
+                    <Button Content="✖"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="20" 
+                        Cursor="Hand"
+                        Grid.Column="4"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                            Style="{StaticResource ButtonClearTheme}"
+                        BorderThickness="0" Click="Exit_Click"
+                        HorizontalAlignment="Left"
+                        FontWeight="Bold"
+                        VerticalAlignment="Top" Margin="122,13,0,0" RenderTransformOrigin="0.494,0.547">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-45"/>
+                                <TranslateTransform X="0.736" Y="-0.193"/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+
+                    <Button Content="━"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="40" 
+                        Grid.Column="4"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                            Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Svernut_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="80,0,0,0" Width="31"/>
+
+                    <Button Content="←"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="80" 
+                        Grid.Column="0"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                            Style="{StaticResource ButtonClearTheme}"
+                        BorderThickness="0" Click="Btn_Back_Out_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
+
+
+                </Grid>
+            </Border>
+
+            <TextBlock  
+                FontSize="40" 
+                FontWeight="Bold"
+                HorizontalAlignment="Left" 
+                Margin="160,0,0,0" 
+                TextWrapping="Wrap" 
+                VerticalAlignment="Center" Height="327" Width="521" Grid.Row="1"
+                Style="{StaticResource ModernTextBlock}"><Run Text="Ты снова зашел сюда? Ты не понял с первого раза? ИДИ ОТ СЮДА, ТЕБЕ ЗДЕСЬ НЕ РАДЫ"/><LineBreak/><Run/><LineBreak/><Run Text="2"/><Run Text=":1"/><Run Language="ru-ru" Text="       :)"/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run/></TextBlock>
+
+
+        </Grid>
+    </Border>
+
+</Window>
