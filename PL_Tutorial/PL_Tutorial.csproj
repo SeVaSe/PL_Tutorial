@@ -77,6 +77,9 @@
     <Compile Include="Window_Menu\Window_Python.xaml.cs">
       <DependentUpon>Window_Python.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_Menu\Window_Spravka.xaml.cs">
+      <DependentUpon>Window_Spravka.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -170,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_Menu\Window_Python.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_Menu\Window_Spravka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -78,7 +78,9 @@ namespace PL_Tutorial
         //справка
         private void MenuItem_Spravka_Click(object sender, RoutedEventArgs e)
         {
-
+            Window wind = new Window_Menu.Window_Spravka();
+            wind.Show();
+            this.Close();
         }
 
         //о приложении
