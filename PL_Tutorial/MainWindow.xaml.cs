@@ -84,7 +84,9 @@ namespace PL_Tutorial
         //о приложении
         private void MenuItem_AboutApp_Click(object sender, RoutedEventArgs e)
         {
-
+            Window wind = new Window_Menu.Window_Menu();
+            wind.Show();
+            this.Close();
         }
 
         //тех поддержка
