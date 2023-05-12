@@ -44,7 +44,22 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
-        
+        //передвижение экрана
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                this.DragMove();
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                this.DragMove();
+
+        }
+
+
+
 
     }
 }

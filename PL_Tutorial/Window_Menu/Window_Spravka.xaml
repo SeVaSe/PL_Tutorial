@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:PL_Tutorial.Window_Menu"
         mc:Ignorable="d"
         Style="{StaticResource ModernWindowStyle}"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove"    
         Title="Window_Spravka" Height="500" Width="800">
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
