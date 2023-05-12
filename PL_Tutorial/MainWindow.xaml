@@ -54,39 +54,7 @@
                             VerticalAlignment="Center"
                             Style="{StaticResource ButtonClearTheme}"/>
 
-                    <Button Width="100" Height="40" Grid.Column="2" Margin="10,187,50,-184" >
-                        <Button.Style>
-                            <Style TargetType="Button" >
-                                <Setter Property="Background" Value="Red" />
-                                
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Trigger.EnterActions>
-                                            <BeginStoryboard>
-                                                <Storyboard>
-                                                    <ColorAnimation
-                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                    To="Blue" Duration="0:0:0.3" />
-                                                </Storyboard>
-                                            </BeginStoryboard>
-                                        </Trigger.EnterActions>
-                                        <Trigger.ExitActions>
-                                            <BeginStoryboard>
-                                                <Storyboard>
-                                                    <ColorAnimation
-                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                    To="Red" Duration="0:0:0.3" />
-                                                </Storyboard>
-                                            </BeginStoryboard>
-                                        </Trigger.ExitActions>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-                        <Button.Content>
-                            <TextBlock Text="Плавно изменяющаяся кнопка" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                        </Button.Content>
-                    </Button>
+
 
 
                     <Button Content="⟲"
