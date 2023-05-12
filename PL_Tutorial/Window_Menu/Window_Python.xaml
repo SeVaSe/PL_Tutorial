@@ -126,8 +126,9 @@
             <Border Margin="10,10,10,11" CornerRadius="20" Grid.Row="1" Grid.Column="1" Grid.RowSpan="4">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                        <GradientStop Color="#82C9FF" Offset="0"/>
+                        <GradientStop Color="#328CFF" Offset="0.5"/>
+                        <GradientStop Color="#0058FF" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid Margin="12,-4,10,10">
@@ -212,8 +213,9 @@
             <Border Margin="10,5,13,9" CornerRadius="20" Grid.Column="2" Grid.Row="2" >
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffb73a" Offset="0.0"/>
-                        <GradientStop Color="#f79f05" Offset="1"/>
+                        <GradientStop Color="#FFD489" Offset="0"/>
+                        <GradientStop Color="#FF7C03" Offset="0.5"/>
+                        <GradientStop Color="#FF3E00" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Grid Margin="12,-4,10,10">
@@ -284,8 +286,9 @@
                     Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush  StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#58f547" Offset="0"/>
-                        <GradientStop Color="#27f011" Offset="1"/>
+                        <GradientStop Color="#00FFA3" Offset="0"/>
+                        <GradientStop Color="#00E1FF" Offset="0.5"/>
+                        <GradientStop Color="#0075FF" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -306,8 +309,9 @@
                     Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush  StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#e817d3" Offset="0"/>
-                        <GradientStop Color="#d600c1" Offset="1"/>
+                        <GradientStop Color="#FFC4D6" Offset="0"/>
+                        <GradientStop Color="#ff5e98" Offset="0.5"/>
+                        <GradientStop Color="#FF4080" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -328,8 +332,9 @@
                     Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush  StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#fccac0" Offset="0"/>
-                        <GradientStop Color="#e3b0a6" Offset="1"/>
+                        <GradientStop Color="#FEDAC7" Offset="0"/>
+                        <GradientStop Color="#FF9775" Offset="0.5"/>
+                        <GradientStop Color="#FF7F57" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -350,8 +355,9 @@
                     Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush  StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#8e2dfc" Offset="0"/>
-                        <GradientStop Color="#7703fc" Offset="1"/>
+                        <GradientStop Color="#d489ff" Offset="-0.2"/>
+                        <GradientStop Color="#7703fc" Offset="0.5"/>
+                        <GradientStop Color="#6ad8fd" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
 

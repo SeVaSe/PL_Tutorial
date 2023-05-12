@@ -31,12 +31,12 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#2288dd"/>
-                <Setter Property="BorderBrush" Value="#2288dd"/>
+                <Setter Property="Background" Value="#82C9FF"/>
+                <Setter Property="BorderBrush" Value="#82C9FF"/>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#0e5aa7"/>
-                <Setter Property="BorderBrush" Value="#0e5aa7"/>
+                <Setter Property="Background" Value="#328CFF"/>
+                <Setter Property="BorderBrush" Value="#328CFF"/>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -72,12 +72,12 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#de8e02"/>
-                <Setter Property="BorderBrush" Value="#de8e02"/>
+                <Setter Property="Background" Value="#FFC18A"/>
+                <Setter Property="BorderBrush" Value="#FFC18A"/>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#ba7702"/>
-                <Setter Property="BorderBrush" Value="#ba7702"/>
+                <Setter Property="Background" Value="#FFA763"/>
+                <Setter Property="BorderBrush" Value="#FFA763"/>
             </Trigger>
         </Style.Triggers>
     </Style>
