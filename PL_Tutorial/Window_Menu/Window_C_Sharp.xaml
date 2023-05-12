@@ -8,7 +8,7 @@
         Style="{StaticResource ModernWindowStyle}"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove"        
-        Title="Window_C_Sharp" Height="500" Width="800">
+        Title="Window_C_Sharp">
     <Border Background="#272537" CornerRadius="20">
         <Grid>
             <Grid.RowDefinitions>

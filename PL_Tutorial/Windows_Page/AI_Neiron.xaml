@@ -8,7 +8,7 @@
         Style="{StaticResource ModernWindowStyle}"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove"
-        Title="AI_Neiron" Height="500" Width="800">
+        Title="AI_Neiron">
 
     <Border Background="#272537" CornerRadius="20">
         <Grid>

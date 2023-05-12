@@ -8,7 +8,7 @@
         Style="{StaticResource ModernWindowStyle}"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove"
-        Title="Python-учебник" Height="500" Width="800">
+        Title="Python-учебник">
 
     <Border Background="#272537" CornerRadius="20">
         <Grid >
