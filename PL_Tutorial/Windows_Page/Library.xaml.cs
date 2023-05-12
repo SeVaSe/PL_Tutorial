@@ -62,5 +62,12 @@ namespace PL_Tutorial.Windows_Page
         {
             this.WindowState = WindowState.Minimized;
         }
+
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Library();
+            this.Close();
+            wind.Show();
+        }
     }
 }

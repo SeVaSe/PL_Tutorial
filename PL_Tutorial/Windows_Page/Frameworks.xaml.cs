@@ -60,5 +60,13 @@ namespace PL_Tutorial.Windows_Page
         {
             this.Close();
         }
+
+        //перезагр
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Frameworks();
+            this.Close();
+            wind.Show();
+        }
     }
 }

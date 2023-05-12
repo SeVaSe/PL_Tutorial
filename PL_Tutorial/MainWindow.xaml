@@ -54,6 +54,19 @@
                             VerticalAlignment="Center"
                             Style="{StaticResource ButtonClearTheme}"/>
 
+                    <Button Content="⟲"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30" 
+                        Grid.Column="4"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Perezapusk_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="33,0,0,0" Width="31"/>
+
                     <Button Content="━"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="40" 

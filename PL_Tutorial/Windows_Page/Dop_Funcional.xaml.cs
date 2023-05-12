@@ -60,5 +60,13 @@ namespace PL_Tutorial.Windows_Page
         {
             this.Close();
         }
+
+        //перезагрузка
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Dop_Funcional();
+            this.Close();
+            wind.Show();
+        }
     }
 }

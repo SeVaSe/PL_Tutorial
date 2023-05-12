@@ -60,5 +60,12 @@ namespace PL_Tutorial.Windows_Page
         {
             this.Close();
         }
+
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new AI_Neiron();
+            this.Close();
+            wind.Show();
+        }
     }
 }

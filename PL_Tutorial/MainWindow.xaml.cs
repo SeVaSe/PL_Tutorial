@@ -98,5 +98,13 @@ namespace PL_Tutorial
             string subject = "Запрос от пользователя";
             Process.Start($"mailto:{email}?subject={subject}");
         }
+
+        //презагрузка
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new MainWindow();
+            this.Close();
+            wind.Show();
+        }
     }
 }

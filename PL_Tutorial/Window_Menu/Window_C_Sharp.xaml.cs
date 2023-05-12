@@ -61,5 +61,13 @@ namespace PL_Tutorial.Window_Menu
         {
             this.WindowState = WindowState.Minimized;
         }
+
+        //перезагрузка
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Window_C_Sharp();
+            this.Close();
+            wind.Show();
+        }
     }
 }

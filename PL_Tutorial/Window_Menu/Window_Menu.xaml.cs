@@ -60,5 +60,13 @@ namespace PL_Tutorial.Window_Menu
                 this.DragMove();
             }
         }
+
+        //перезагрузка
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Window_Menu();
+            this.Close();
+            wind.Show();
+        }
     }
 }
