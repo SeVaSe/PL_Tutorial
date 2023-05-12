@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Style="{StaticResource ModernWindowStyle}"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove"        
+        MouseMove="Window_MouseMove"    
+        WindowStartupLocation="CenterScreen"
         Title="Учебник">
     <Border Background="#272537" CornerRadius="20">
         <Grid>

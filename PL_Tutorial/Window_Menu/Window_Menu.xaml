@@ -8,6 +8,7 @@
         Style="{StaticResource ModernWindowStyle}"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove"    
+        WindowStartupLocation="CenterScreen"
         Title="Window_Menu">
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
