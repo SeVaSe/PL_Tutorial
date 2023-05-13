@@ -92,42 +92,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\Arifm_Operation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Cikli.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Console_Input_Out.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Func_Page.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\If_Construcia.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\List_page.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\osn_print.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Peremen_type.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Uslovn_Viraz.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Theme\ButtonNameTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -183,33 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Osn_Button_Class.cs" />
-    <Compile Include="Pages\Arifm_Operation.xaml.cs">
-      <DependentUpon>Arifm_Operation.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Cikli.xaml.cs">
-      <DependentUpon>Cikli.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Console_Input_Out.xaml.cs">
-      <DependentUpon>Console_Input_Out.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Func_Page.xaml.cs">
-      <DependentUpon>Func_Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\If_Construcia.xaml.cs">
-      <DependentUpon>If_Construcia.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\List_page.xaml.cs">
-      <DependentUpon>List_page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\osn_print.xaml.cs">
-      <DependentUpon>osn_print.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Peremen_type.xaml.cs">
-      <DependentUpon>Peremen_type.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Uslovn_Viraz.xaml.cs">
-      <DependentUpon>Uslovn_Viraz.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -238,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Music\" />
+    <Folder Include="Pages\" />
     <Folder Include="Source_Photo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
