@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 using System.Windows.Controls;
 using System.Windows.Input;
-using PL_Tutorial.Pages;
+//using PL_Tutorial.Pages;
 using PL_Tutorial.Window_Menu;
 using System.Diagnostics;
 

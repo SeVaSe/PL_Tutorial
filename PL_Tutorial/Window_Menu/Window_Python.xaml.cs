@@ -107,51 +107,7 @@ namespace PL_Tutorial.Window_Menu
 
 
         //----------------НАЖАТИЕ ОБРАБОТКИ КНОПОК В ListBox Основы языка----------------
-        private void Btn_Osn_Print_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnOsnPrintClick();
-        }
-
-        private void Btn_Peremen_Type_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnPeremenTypeClick();
-        }
-
-        private void Btn_Console_In_Out_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnConsoleInOutClick();
-        }
-
-        private void Btn_Arifm_Operation_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnArifmOperation();
-        }
-
-        private void Btn_Uslovn_Viraz_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnUslovnViraz();
-        }
-
-        private void Btn_If_Constr_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnIFConsruction();
-        }
-
-        private void Btn_Cikli_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnCikli();
-        }
-
-        private void Btn_List_Page_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnListPage();
-        }
-
-        private void Btn_Func_Page_Click(object sender, RoutedEventArgs e)
-        {
-            Osn_Button_Class.BtnFuncPage();
-        }
-
+        
         
 
 

@@ -167,44 +167,9 @@
                             </Style>
                         </ListBox.ItemContainerStyle>
                         <ListBoxItem>
-                            <Button x:Name="Btn_Osn_Print" Style="{StaticResource ButtonModernBlue}" Content="Основы написания программы" Click="Btn_Osn_Print_Click"/>
+                            <Button x:Name="Btn_Osn_Print" Style="{StaticResource ButtonModernBlue}" Content="Основы написания программы"/>
                         </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Peremen_Type" Style="{StaticResource ButtonModernBlue}" Content="Переменные и типы данных" Click="Btn_Peremen_Type_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Console_In_Out" Style="{StaticResource ButtonModernBlue}" Content="Консольный ввод и вывод" Click="Btn_Console_In_Out_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Arifm_Operation" Style="{StaticResource ButtonModernBlue}" Content="Арифм операции с числами" Click="Btn_Arifm_Operation_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Uslovn_Viraz" Style="{StaticResource ButtonModernBlue}" Content="Условные выражения" Click="Btn_Uslovn_Viraz_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_If_Constr" Style="{StaticResource ButtonModernBlue}" Content="Конструкция IF" Click="Btn_If_Constr_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Cikli" Style="{StaticResource ButtonModernBlue}" Content="Циклы" Click="Btn_Cikli_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_List_Page" Style="{StaticResource ButtonModernBlue}" Content="Списки" Click="Btn_List_Page_Click"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Func_Page" Style="{StaticResource ButtonModernBlue}" Content="Функции"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Param_Page" Style="{StaticResource ButtonModernBlue}" Content="Параметры функции"/>
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Return_Page" Style="{StaticResource ButtonModernBlue}" Content="return и возращение функции" />
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Lamda_Page" Style="{StaticResource ButtonModernBlue}" Content="Лямбда-выражения" />
-                        </ListBoxItem>
-                        <ListBoxItem>
-                            <Button x:Name="Btn_Transform_Type_Page" Style="{StaticResource ButtonModernBlue}" Content="Преобразование типов" />
-                        </ListBoxItem>
+                        
                     </ListBox>
                 </Grid>
             </Border>
