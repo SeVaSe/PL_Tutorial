@@ -173,7 +173,7 @@
                             <Button x:Name="Btn_Peremen" Style="{StaticResource ButtonModernBlue}" Content="Переменные" Click="Btn_Peremen_Click"/>
                         </ListBoxItem>
                         <ListBoxItem>
-                            <Button x:Name="Btn_TypeDate" Style="{StaticResource ButtonModernBlue}" Content="Переменные" Click="Btn_TypeDate_Click"/>
+                            <Button x:Name="Btn_TypeDate" Style="{StaticResource ButtonModernBlue}" Content="Типы данных" Click="Btn_TypeDate_Click"/>
                         </ListBoxItem>
                         <ListBoxItem>
                             <Button x:Name="Btn_ConsolePrIn" Style="{StaticResource ButtonModernBlue}" Content="Консольный ввод и вывод" Click="Btn_ConsolePrIn_Click"/>
@@ -181,7 +181,15 @@
                         <ListBoxItem>
                             <Button x:Name="Btn_Arifm" Style="{StaticResource ButtonModernBlue}" Content="Арифмитические операции" Click="Btn_Arifm_Click"/>
                         </ListBoxItem>
-                        
+                        <ListBoxItem>
+                            <Button x:Name="Btn_ConvertType" Style="{StaticResource ButtonModernBlue}" Content="Преобразование типов" Click="Btn_ConvertType_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_UslovnViraz" Style="{StaticResource ButtonModernBlue}" Content="Условные выражения" Click="Btn_UslovnViraz_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_IfConstruction" Style="{StaticResource ButtonModernBlue}" Content="IF-конструкция" Click="Btn_IfConstr_Click"/>
+                        </ListBoxItem>
                     </ListBox>
                 </Grid>
             </Border>

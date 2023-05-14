@@ -65,11 +65,60 @@ namespace PL_Tutorial
             wind.Show();
         }
 
-        //
+        //преобразование типов
+        public static void ConvertTypeClick()
+        {
+            Window wind = new ConvertType_Osn_Page();
+            wind.Show();
+        }
 
-        //
+        //условные операции
+        public static void UslovnVirazClick()
+        {
+            Window wind = new UslovnViraz();
+            wind.Show();
+        }
 
-        //
+        //IF-конструкция
+        public static void IfConstrClick()
+        {
+            Window wind = new IfConstruction_Osn_Page();
+            wind.Show();
+        }
+
+        //цикл for
+
+        //цикл while
+
+
+        //списки
+
+        //диапозоны
+
+        //кортежи
+
+        //словари
+
+        //множества
+
+        //генератор списка
+
+        //упаковка и распаковка
+
+
+        //функции
+
+        //параметры функции
+
+        //return возращение результата функции
+
+        //функция как тип
+
+        //функция как параметр
+
+        //функция как результат другой функции
+
+        //лямбда
 
         //
 

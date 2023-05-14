@@ -141,6 +141,24 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
+        private void Btn_ConvertType_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ConvertTypeClick();
+            this.Close();
+        }
+
+        private void Btn_UslovnViraz_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.UslovnVirazClick();
+            this.Close();
+        }
+
+        private void Btn_IfConstr_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.IfConstrClick();
+            this.Close();
+        }
+
 
 
 
