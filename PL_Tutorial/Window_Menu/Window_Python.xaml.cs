@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PL_Tutorial.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 
 namespace PL_Tutorial.Window_Menu
 {
@@ -102,13 +104,44 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
-        
+
+
+
 
 
 
         //----------------НАЖАТИЕ ОБРАБОТКИ КНОПОК В ListBox Основы языка----------------
-        
-        
+        private void Btn_Sintax_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.SyntaxOsnClick();
+            this.Close();
+        }
+
+        private void Btn_Peremen_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.PeremenOsnClick();
+            this.Close();
+        }
+
+        private void Btn_TypeDate_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.TypeDateClick();
+            this.Close();
+        }
+
+        private void Btn_ConsolePrIn_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ConsolePrintInputClick();
+            this.Close();
+        }
+
+        private void Btn_Arifm_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ArifmOperationClick();
+            this.Close();
+        }
+
+
 
 
 

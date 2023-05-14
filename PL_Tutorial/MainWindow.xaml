@@ -16,7 +16,6 @@
                 <RowDefinition Height="43*"/>
                 <RowDefinition Height="457*"/>
             </Grid.RowDefinitions>
-            
 
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0">
                 <Grid>
@@ -139,7 +138,6 @@
 
                 </Grid>
             </Border>
-            <WebBrowser Name="webBrowser" Grid.Row="1"/>
 
         </Grid>
 

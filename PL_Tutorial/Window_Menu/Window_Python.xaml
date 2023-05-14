@@ -167,7 +167,19 @@
                             </Style>
                         </ListBox.ItemContainerStyle>
                         <ListBoxItem>
-                            <Button x:Name="Btn_Osn_Print" Style="{StaticResource ButtonModernBlue}" Content="Основы написания программы"/>
+                            <Button x:Name="Btn_Sintax" Style="{StaticResource ButtonModernBlue}" Content="Синтакс языка Python" Click="Btn_Sintax_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Peremen" Style="{StaticResource ButtonModernBlue}" Content="Переменные" Click="Btn_Peremen_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_TypeDate" Style="{StaticResource ButtonModernBlue}" Content="Переменные" Click="Btn_TypeDate_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_ConsolePrIn" Style="{StaticResource ButtonModernBlue}" Content="Консольный ввод и вывод" Click="Btn_ConsolePrIn_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Arifm" Style="{StaticResource ButtonModernBlue}" Content="Арифмитические операции" Click="Btn_Arifm_Click"/>
                         </ListBoxItem>
                         
                     </ListBox>

@@ -55,6 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\Arifm_Osn_Page.xaml.cs">
+      <DependentUpon>Arifm_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConsolePrintInput_Osn_Page.xaml.cs">
+      <DependentUpon>ConsolePrintInput_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Peremen_Osn_Page.xaml.cs">
+      <DependentUpon>Peremen_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Sintax_Osn_Page.xaml.cs">
+      <DependentUpon>Sintax_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TypeDate_Osn_Page.xaml.cs">
+      <DependentUpon>TypeDate_Osn_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scroll_Class.cs" />
     <Compile Include="Windows_Page\AI_Neiron.xaml.cs">
       <DependentUpon>AI_Neiron.xaml</DependentUpon>
@@ -92,6 +107,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Arifm_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ConsolePrintInput_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Peremen_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Sintax_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TypeDate_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme\ButtonNameTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Theme\ModernWindowStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\ModernWinsowStylePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,7 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Music\" />
-    <Folder Include="Pages\" />
     <Folder Include="Source_Photo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

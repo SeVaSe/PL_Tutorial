@@ -11,7 +11,7 @@
                 <ResourceDictionary Source="Theme/ButtonNameTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextBlock.xaml"/>
                 <ResourceDictionary Source="Theme/ModernWindowStyle.xaml"/>
-
+                <ResourceDictionary Source="Theme/ModernWinsowStylePage.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
