@@ -87,40 +87,137 @@ namespace PL_Tutorial
         }
 
         //цикл for
+        public static void CycleForClick()
+        {
+            Window wind = new CycleFor_Osn_Page();
+            wind.Show();
+        }
 
         //цикл while
-
+        public static void CycleWhileClick()
+        {
+            Window wind = new CycleWhile_Osn_Page();
+            wind.Show();
+        }
 
         //списки
+        public static void ListClick()
+        {
+            Window wind = new List_Osn_Page();
+            wind.Show();
+        }
 
         //диапозоны
+        public static void DiapozonClick()
+        {
+            Window wind = new Diapozon_Osn_Page();
+            wind.Show();
+        }
 
         //кортежи
+        public static void TuplrClick()
+        {
+            Window wind = new Tuple_Osn_Page();
+            wind.Show();
+        }
 
         //словари
+        public static void DictClick()
+        {
+            Window wind = new Dict_Osn_Page();
+            wind.Show();
+        }
 
         //множества
+        public static void IfConstrClick()
+        {
+            Window wind = new IfConstruction_Osn_Page();
+            wind.Show();
+        }
 
         //генератор списка
+        public static void GeneratorListClick()
+        {
+            Window wind = new GeneratotList_Osn_Page();
+            wind.Show();
+        }
 
         //упаковка и распаковка
-
+        public static void UpakovkaRapokovkaClick()
+        {
+            Window wind = new UpakovkaRaspakovka_Osn_Page();
+            wind.Show();
+        }
 
         //функции
+        public static void FuncClick()
+        {
+            Window wind = new Function_Osn_Page();
+            wind.Show();
+        }
 
         //параметры функции
+        public static void ParamFuncClick()
+        {
+            Window wind = new ParametrFunc_Osn_Page();
+            wind.Show();
+        }
 
         //return возращение результата функции
+        public static void ReturnFuncClick()
+        {
+            Window wind = new ReturnFunc_Osn_Page();
+            wind.Show();
+        }
 
         //функция как тип
+        public static void FuncAsTypleClick()
+        {
+            Window wind = new FuncAsType_Osn_Page();
+            wind.Show();
+        }
 
         //функция как параметр
+        public static void FuncAsParamClick()
+        {
+            Window wind = new FuncAsParam_Osn_Page();
+            wind.Show();
+        }
 
         //функция как результат другой функции
+        public static void FuncAsResultClick()
+        {
+            Window wind = new FuncAsResult_Osn_Page();
+            wind.Show();
+        }
 
         //лямбда
+        public static void LamdaClick()
+        {
+            Window wind = new Lambda_Osn_Page();
+            wind.Show();
+        }
 
-        //
+        //область видимости
+        public static void OblatVidim()
+        {
+            Window wind = new OblastVidim_Osn_Page();
+            wind.Show();
+        }
+
+        //замыкание
+        public static void ZamikClick()
+        {
+            Window wind = new Zamik_Osn_Page();
+            wind.Show();
+        }
+
+        //декораторы
+        public static void DecoratorsClick()
+        {
+            Window wind = new Decorator_Osn_Page();
+            wind.Show();
+        }
 
 
 
