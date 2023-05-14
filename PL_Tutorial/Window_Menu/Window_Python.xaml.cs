@@ -166,6 +166,121 @@ namespace PL_Tutorial.Window_Menu
 
 
 
+        private void Btn_For_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.CycleForClick();
+            this.Close();
+        }
+
+        private void Btn_While_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.CycleWhileClick();
+            this.Close();
+        }
+
+        private void Btn_List_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ListClick();
+            this.Close();
+        }
+
+        private void Btn_Diapos_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.DiapozonClick();
+            this.Close();
+        }
+
+        private void Btn_Tuple_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.TuplrClick();
+            this.Close();
+        }
+
+        private void Btn_Dict_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.DictClick();
+            this.Close();
+        }
+
+        private void Btn_Set_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.SetClick();
+            this.Close();
+        }
+
+        private void Btn_Generator_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.GeneratorListClick();
+            this.Close();
+        }
+
+        private void Btn_Upakovka_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.UpakovkaRapokovkaClick();
+            this.Close();
+        }
+
+        private void Btn_Func_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.FuncClick();
+            this.Close();
+        }
+
+        private void Btn_ParamFunc_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ParamFuncClick();
+            this.Close();
+        }
+
+        private void Btn_ReturnFunc_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ReturnFuncClick();
+            this.Close();
+        }
+
+        private void Btn_FuncAsType_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.FuncAsTypleClick();
+            this.Close();
+        }
+
+        private void Btn_FuncAsParam_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.FuncAsParamClick();
+            this.Close();
+        }
+
+        private void Btn_ResultReturn_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ReturnFuncClick();
+            this.Close();
+        }
+
+        private void Btn_Lymda_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.LamdaClick();
+            this.Close();
+        }
+
+        private void Btn_OblastVid_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.OblatVidim();
+            this.Close();
+        }
+
+        private void Btn_Zamik_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.ZamikClick();
+            this.Close();
+        }
+
+        private void Btn_Decorator_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.DecoratorsClick();
+            this.Close();
+        }
+
+
 
         //------------------------------------------------------------------
 

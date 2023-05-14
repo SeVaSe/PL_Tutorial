@@ -129,9 +129,9 @@ namespace PL_Tutorial
         }
 
         //множества
-        public static void IfConstrClick()
+        public static void SetClick()
         {
-            Window wind = new IfConstruction_Osn_Page();
+            Window wind = new Set_Osn_Page();
             wind.Show();
         }
 

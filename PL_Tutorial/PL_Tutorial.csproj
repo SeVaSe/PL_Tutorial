@@ -70,6 +70,15 @@
     <Compile Include="Pages\CycleWhile_Osn_Page.xaml.cs">
       <DependentUpon>CycleWhile_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Decorator_Osn_Page.xaml.cs">
+      <DependentUpon>Decorator_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Diapozon_Osn_Page.xaml.cs">
+      <DependentUpon>Diapozon_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dict_Osn_Page.xaml.cs">
+      <DependentUpon>Dict_Osn_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FuncAsParam_Osn_Page.xaml.cs">
       <DependentUpon>FuncAsParam_Osn_Page.xaml</DependentUpon>
     </Compile>
@@ -82,11 +91,20 @@
     <Compile Include="Pages\Function_Osn_Page.xaml.cs">
       <DependentUpon>Function_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\GeneratotList_Osn_Page.xaml.cs">
+      <DependentUpon>GeneratotList_Osn_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\IfConstruction_Osn_Page.xaml.cs">
       <DependentUpon>IfConstruction_Osn_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Lambda_Osn_Page.xaml.cs">
       <DependentUpon>Lambda_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\List_Osn_Page.xaml.cs">
+      <DependentUpon>List_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OblastVidim_Osn_Page.xaml.cs">
+      <DependentUpon>OblastVidim_Osn_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ParametrFunc_Osn_Page.xaml.cs">
       <DependentUpon>ParametrFunc_Osn_Page.xaml</DependentUpon>
@@ -97,14 +115,26 @@
     <Compile Include="Pages\ReturnFunc_Osn_Page.xaml.cs">
       <DependentUpon>ReturnFunc_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Set_Osn_Page.xaml.cs">
+      <DependentUpon>Set_Osn_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Sintax_Osn_Page.xaml.cs">
       <DependentUpon>Sintax_Osn_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tuple_Osn_Page.xaml.cs">
+      <DependentUpon>Tuple_Osn_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\TypeDate_Osn_Page.xaml.cs">
       <DependentUpon>TypeDate_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\UpakovkaRaspakovka_Osn_Page.xaml.cs">
+      <DependentUpon>UpakovkaRaspakovka_Osn_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\UslovnViraz.xaml.cs">
       <DependentUpon>UslovnViraz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Zamik_Osn_Page.xaml.cs">
+      <DependentUpon>Zamik_Osn_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Scroll_Class.cs" />
     <Compile Include="Windows_Page\AI_Neiron.xaml.cs">
@@ -163,6 +193,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Decorator_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Diapozon_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Dict_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\FuncAsParam_Osn_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -179,11 +221,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\GeneratotList_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\IfConstruction_Osn_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Lambda_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\List_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OblastVidim_Osn_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,7 +253,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Set_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Sintax_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Tuple_Osn_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,7 +269,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\UpakovkaRaspakovka_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\UslovnViraz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Zamik_Osn_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

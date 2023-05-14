@@ -5,8 +5,102 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL_Tutorial.Pages"
         mc:Ignorable="d"
-        Title="Decorator_Osn_Page" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Style="{StaticResource ModernPageStyle}"
+        WindowStartupLocation="CenterScreen"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove">
+    <Border Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="66"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*"/>
+                        <ColumnDefinition Width="149*"/>
+                        <ColumnDefinition Width="51*"/>
+                        <ColumnDefinition Width="100*"/>
+                        <ColumnDefinition Width="100*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Python-tutor | Декораторы"  
+                          FontSize="20"
+                          Grid.Column="1"
+                          FontWeight="Bold"
+                          Style="{StaticResource ModernTextBlock}"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center" Height="24" Width="282"/>
+
+                    <Button Content="✖"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="20" 
+                        Cursor="Hand"
+                        Grid.Column="4"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                            Style="{StaticResource ButtonClearTheme}"
+                        BorderThickness="0" Click="Exit_Click"
+                        HorizontalAlignment="Left"
+                        FontWeight="Bold"
+                        VerticalAlignment="Top" Margin="154,13,0,0" RenderTransformOrigin="0.5,0.5" Height="24" Width="28">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-45"/>
+                                <TranslateTransform X="-0.111" Y="0.019"/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+
+                    <Button Content="━"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="40" 
+                        Grid.Column="4"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                            Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Svernut_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="112,0,0,0" Width="31" Height="47"/>
+
+                    <Button Content="←"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="80" 
+                        Grid.Column="0"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                            Style="{StaticResource ButtonClearTheme}"
+                        BorderThickness="0" Click="Btn_Back_Out_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
+
+                    <Button Content="⟲"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30" 
+                        Grid.Column="4"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Perezapusk_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="73,0,0,0" Width="31" Height="36"/>
+
+
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+
 </Window>

@@ -190,6 +190,66 @@
                         <ListBoxItem>
                             <Button x:Name="Btn_IfConstruction" Style="{StaticResource ButtonModernBlue}" Content="IF-конструкция" Click="Btn_IfConstr_Click"/>
                         </ListBoxItem>
+
+
+
+                        <ListBoxItem>
+                            <Button x:Name="Btn_For" Style="{StaticResource ButtonModernBlue}" Content="Цикл FOR" Click="Btn_For_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_while" Style="{StaticResource ButtonModernBlue}" Content="Цикл WHILE" Click="Btn_While_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_List" Style="{StaticResource ButtonModernBlue}" Content="Списки" Click="Btn_List_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Diapozon" Style="{StaticResource ButtonModernBlue}" Content="Диапозоны" Click="Btn_Diapos_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Tuple" Style="{StaticResource ButtonModernBlue}" Content="Кортежи" Click="Btn_Tuple_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Dict" Style="{StaticResource ButtonModernBlue}" Content="Словари" Click="Btn_Dict_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Set" Style="{StaticResource ButtonModernBlue}" Content="Множества" Click="Btn_Set_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Generator" Style="{StaticResource ButtonModernBlue}" Content="Генератор списка" Click="Btn_Generator_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Upakovka" Style="{StaticResource ButtonModernBlue}" Content="Упаковка и распоковка" Click="Btn_Upakovka_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Func" Style="{StaticResource ButtonModernBlue}" Content="Функции" Click="Btn_Func_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Param_Func" Style="{StaticResource ButtonModernBlue}" Content="Параметры функции" Click="Btn_ParamFunc_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_ReturnFunc" Style="{StaticResource ButtonModernBlue}" Content="Return возращение результата функции" Click="Btn_ReturnFunc_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_FuncAsType" Style="{StaticResource ButtonModernBlue}" Content="Функция как тип" Click="Btn_FuncAsType_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_FuncAsParam" Style="{StaticResource ButtonModernBlue}" Content="Функция как параметр" Click="Btn_FuncAsParam_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_ResultReturn" Style="{StaticResource ButtonModernBlue}" Content="Функция как результат другой функции" Click="Btn_ResultReturn_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Lymda" Style="{StaticResource ButtonModernBlue}" Content="Лямбда" Click="Btn_Lymda_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_OblastVid" Style="{StaticResource ButtonModernBlue}" Content="Область видимости" Click="Btn_OblastVid_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Zamik" Style="{StaticResource ButtonModernBlue}" Content="Замыкание" Click="Btn_Zamik_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_Decorator" Style="{StaticResource ButtonModernBlue}" Content="Декораторы" Click="Btn_Decorator_Click"/>
+                        </ListBoxItem>
                     </ListBox>
                 </Grid>
             </Border>
