@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL_Tutorial"
         mc:Ignorable="d"
-        Style="{StaticResource ModernWindowStyle}"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove"    
+        Style="{StaticResource ModernWindowStyle}" 
         WindowStartupLocation="CenterScreen"
         Title="Учебник">
     <Border Background="#272537" CornerRadius="20">
@@ -17,7 +15,9 @@
                 <RowDefinition Height="457*"/>
             </Grid.RowDefinitions>
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0">
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0"
+                     MouseLeftButtonDown="Window_MouseLeftButtonDown"
+                     MouseMove="Window_MouseMove">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>

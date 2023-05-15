@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:PL_Tutorial.Windows_Page"
         mc:Ignorable="d"
         Style="{StaticResource ModernWindowStyle}"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove" 
+        
         WindowStartupLocation="CenterScreen"
         Title="Library">
 
@@ -18,7 +17,9 @@
                 <RowDefinition Height="449*"/>
             </Grid.RowDefinitions>
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1">
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1"
+                     MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove" >
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
