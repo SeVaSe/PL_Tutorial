@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="Theme/TextBlock.xaml"/>
                 <ResourceDictionary Source="Theme/ModernWindowStyle.xaml"/>
                 <ResourceDictionary Source="Theme/ModernWinsowStylePage.xaml"/>
+                <ResourceDictionary Source="TextGnerate/Text_Osn_Python.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
