@@ -66,5 +66,7 @@ namespace PL_Tutorial.Pages
                 this.DragMove();
 
         }
+
+        
     }
 }

@@ -21,11 +21,11 @@
         MouseMove="Window_MouseMove" >
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="197*"/>
+                        <ColumnDefinition Width="123*"/>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="PY-Фреймворки"
@@ -34,7 +34,12 @@
                           Grid.Column="1"
                           FontWeight="Bold"
                           HorizontalAlignment="Left"
-                          VerticalAlignment="Center"/>
+                          VerticalAlignment="Center" Height="24" Width="170" Margin="4,0,0,0">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#00c8ff" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
                     <Button Content="✖"
                         FontFamily="Fonts/#Dosis" 
@@ -47,7 +52,7 @@
                         BorderThickness="0" Click="Exit_Click"
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
-                        VerticalAlignment="Top" Margin="122,13,0,0" RenderTransformOrigin="0.494,0.547">
+                        VerticalAlignment="Top" Margin="122,13,0,0" RenderTransformOrigin="0.494,0.547" Height="24" Width="28">
                         <Button.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -69,7 +74,7 @@
                         Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Perezapusk_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Margin="38,6,0,0" Width="31"/>
+                        VerticalAlignment="Top" Margin="38,6,0,0" Width="31" Height="36"/>
 
                     <Button Content="━"
                         FontFamily="Fonts/#Dosis" 
@@ -82,7 +87,7 @@
                             Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Svernut_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Center" Margin="80,0,0,0" Width="31"/>
+                        VerticalAlignment="Center" Margin="80,0,0,0" Width="31" Height="45"/>
 
                     <Button Content="←"
                         FontFamily="Fonts/#Dosis" 

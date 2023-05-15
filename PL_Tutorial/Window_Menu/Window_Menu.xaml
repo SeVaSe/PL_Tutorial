@@ -32,7 +32,12 @@
                           Grid.Column="1"
                           FontWeight="Bold"
                           HorizontalAlignment="Left"
-                          VerticalAlignment="Center" Margin="10,0,0,0"/>
+                          VerticalAlignment="Center" Margin="10,0,0,0">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
                     <Button Content="✖"
                         FontFamily="Fonts/#Dosis" 

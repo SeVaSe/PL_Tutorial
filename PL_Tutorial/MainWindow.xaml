@@ -132,7 +132,12 @@
                           Grid.Column="0"
                           FontWeight="Bold"
                           HorizontalAlignment="Center"
-                          VerticalAlignment="Center"/>
+                          VerticalAlignment="Center">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
 
 

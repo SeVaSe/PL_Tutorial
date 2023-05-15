@@ -46,7 +46,12 @@
                           FontWeight="Bold"
                           Style="{StaticResource ModernTextBlock}"
                           HorizontalAlignment="Left"
-                          VerticalAlignment="Center"/>
+                          VerticalAlignment="Center">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#00c8ff" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
                     <Button Content="✖"
                         FontFamily="Fonts/#Dosis" 
