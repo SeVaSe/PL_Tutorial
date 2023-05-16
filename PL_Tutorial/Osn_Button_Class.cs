@@ -54,14 +54,14 @@ namespace PL_Tutorial
         //консольный ввод и вывод
         public static void ConsolePrintInputClick()
         {
-            Window wind = new TypeDate_Osn_Page();
+            Window wind = new ConsolePrintInput_Osn_Page();
             wind.Show();
         }
 
         //арифм операции
         public static void ArifmOperationClick()
         {
-            Window wind = new TypeDate_Osn_Page();
+            Window wind = new Arifm_Osn_Page();
             wind.Show();
         }
 

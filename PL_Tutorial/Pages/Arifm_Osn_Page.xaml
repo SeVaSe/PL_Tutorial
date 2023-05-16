@@ -20,20 +20,20 @@
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100*"/>
-                        <ColumnDefinition Width="149*"/>
-                        <ColumnDefinition Width="51*"/>
-                        <ColumnDefinition Width="100*"/>
-                        <ColumnDefinition Width="100*"/>
+                        <ColumnDefinition Width="200*"/>
+                        <ColumnDefinition Width="451*"/>
+                        <ColumnDefinition Width="9*"/>
+                        <ColumnDefinition Width="140*"/>
+                        <ColumnDefinition Width="200*"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Python-tutor | Переменные"  
+                    <TextBlock Text="Python-tutor | Арифметические операции"  
                           FontSize="20"
                           Grid.Column="1"
                           FontWeight="Bold"
                           Style="{StaticResource ModernTextBlock}"
                           HorizontalAlignment="Center"
-                          VerticalAlignment="Center" Height="24" Width="282"/>
+                          VerticalAlignment="Center" Height="24" Width="432"/>
 
                     <Button Content="✖"
                         FontFamily="Fonts/#Dosis" 

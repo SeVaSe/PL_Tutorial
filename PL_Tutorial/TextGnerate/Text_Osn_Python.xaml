@@ -865,14 +865,229 @@
                             <!--написание Работа с текстом-->
                             <Section>
                                 <Paragraph>
-                                    
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        Работа с текстом
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если вы хотите вывести большой кусок текста, или занести его в перменную, не мучаясь с переносами.
+                                    То лучше использовать конструкцию тройных кавычек - ''' '''.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] print('''aaaaaaaa
+                                            <LineBreak/>
+                                            [2] bbbbbbb
+                                            <LineBreak/>
+                                            [3] ccccccccc''')
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            # ВЫВОД ПОЛУЧИТСЯ СЛЕДУЮЩИЙ:
+                                            <LineBreak/>
+                                            aaaaaaaa
+                                            <LineBreak/>
+                                            bbbbbbb
+                                            <LineBreak/>
+                                            ccccccccc
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Так же такие текста можно заносить в переменную.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] looongStr = '''aaaaaaaa
+                                            <LineBreak/>
+                                            [2] bbbbbbb
+                                            <LineBreak/>
+                                            [3] ccccccccc'''
+                                            <LineBreak/>
+                                            [4] print(looongStr)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            # ВЫВОД ПОЛУЧИТСЯ СЛЕДУЮЩИЙ:
+                                            <LineBreak/>
+                                            aaaaaaaa
+                                            <LineBreak/>
+                                            bbbbbbb
+                                            <LineBreak/>
+                                            ccccccccc
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание Управле послед-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        Работа с текстом
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Строка может содержать ряд специальных символов - управляющих последовательностей. Приведу основные.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Спец-символы - управляющей последовательности:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            \n - символ новой строки. Используется для перехода на новую строку.
+                                            <LineBreak/>
+                                            \t - символ горизонтальной табуляции. Используется для создания отступа или добавления табуляции.
+                                            <LineBreak/>
+                                            \" - двойная кавычка. Используется для включения символа двойной кавычки внутри строки,<LineBreak/> ограниченной двойными кавычками.
+                                            <LineBreak/>
+                                            \' - одинарная кавычка. Используется для включения символа одинарной кавычки внутри строки, <LineBreak/>ограниченной одинарными кавычками.
+                                            <LineBreak/>
+                                            \\ - обратная косая черта. Используется для включения символа обратной косой черты в строку.
+                                            <LineBreak/>
+                                            \r - символ возврата каретки. Используется для возврата каретки в начало строки.
+                                            <LineBreak/>
+                                            \b - символ возврата на одну позицию назад (backspace). Используется для удаления последнего символа.
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] text = "Message:\n\"Hello World\""
+                                            <LineBreak/>
+                                            [2] print(text)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            # ВЫВОД БУДЕТ СЛЕДУЮЩИЙ
+                                            <LineBreak/>
+                                            Message:
+                                            <LineBreak/>
+                                            "Hello World"
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            
+                            <!--написание F-строка-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________________
+                                        </Span>
+                                        F-строка
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Python позволяет встравивать в строку значения других переменных. 
+                                    Для этого внутри строки переменные размещаются в фигурных скобках {}, 
+                                    а перед всей строкой ставится символ f.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] userName = "Tom"
+                                            [2] userAge = 37
+                                            [3] user = f"name: {userName}  age: {userAge}"
+                                            [4] print(user)   # name: Tom  age: 37
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    F-строка, очень полезна и удобна, когда вам надо работать много с текстом
                                 </Paragraph>
                             </Section>
-                            
 
 
+                            <!--написание Ввод-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        Консольный ввод
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Наряду с выводом на консоль мы можем получать ввод пользователя с консоли, получать вводимые данные. 
+                                    Для этого в Python определена функция input(). В эту функцию передается приглашение к вводу. 
+                                    А результат ввода мы можем сохранить в переменную. Например, определим код для ввода пользователем имени.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="900" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] name = input("Введите свое имя: ")
+                                            <LineBreak/>
+                                            [2] print(f"Ваше имя: {name}")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            # ВЫВОД БУДЕТ СЛЕДУЮЩИЙ
+                                            <LineBreak/>
+                                            Введите свое имя: Alex <Span Foreground="#272537">_____</Span> # тут питон запрашивает у человека, чтобы он ввел на консоль свое имя
+                                            <LineBreak/>
+                                            Ваше имя: Alex <Span Foreground="#272537">_____</Span> # тут наш вывод текста, с нашим именем
 
 
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
 
 
 
