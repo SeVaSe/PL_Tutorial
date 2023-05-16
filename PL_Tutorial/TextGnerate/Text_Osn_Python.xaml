@@ -743,6 +743,140 @@
                                     </Border>
                                 </BlockUIContainer>
                             </Section>
+                            </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--ТЕКСТ ТИПЫ ДАННЫХ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ConsoleInOutRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Ввод-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________________
+                                        </Span>
+                                        Вывод на консоль
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для вывода информации на консоль предназначена встроенная функция print(). 
+                                    При вызове этой функции ей в скобках передается выводимое значение.
+                                    А так же стоит учитовать, что по умолчанию эта функция выводит текст с новой строки.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] print('Hey Python') # выведет - Hey Python
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Для этого нам надо настроить поведение функции с помощью параметра end. 
+                                    Этот параметр задает символы, которые добавляются в конце к выводимой строке или просто пустоту.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Конструкция "end":</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] print('значения', end="конечный_символ")
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Сделаем так, чтобы функция print, не выводила на текст с новой строки, а печатала все на одной.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] print('Hey', end=" ")
+                                            <LineBreak/>
+                                            [2] print('Python', end=" ")
+                                            [3] print('!')
+                                            <LineBreak/>
+                                            [4] # вывод получится - Hey Python!
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Или это может быть набор символов.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] print('Hey', end=" [S] ")
+                                            <LineBreak/>
+                                            [2] print('Python', end=" [S] ")
+                                            [3] print('!')
+                                            <LineBreak/>
+                                            [4] # вывод получится - Hey [S] Python [S] !
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание Работа с текстом-->
+                            <Section>
+                                <Paragraph>
+                                    
+                                </Paragraph>
+                            </Section>
+                            
+
+
+
+
+
+
+
+
 
 
 
