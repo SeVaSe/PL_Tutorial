@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     
-    <!--Текст Синтаксиса-->
+    <!--ТЕКСТ СИНТАКСИСА-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="SintaxRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -125,6 +125,27 @@
                                         </TextBlock>
                                     </Border>
                                 </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Посмотри на данный пример, первые буквы имени перменной, находятся в разных регистрах, следует
+                                    - это разные переменные
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] nameColor = "Color"
+                                            <LineBreak/>
+                                            [2] NameColor = "Color"
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
                             </Section>
                             
                             <!--Комментарии-->
@@ -141,7 +162,10 @@
                                 <Paragraph>
                                     Для отметки, что делает тот или иной участок кода, применяются комментарии. При трансляции и 
                                     выполнении программы интерпретатор игнорирует комментарии, поэтому они не оказывают никакого влияния на работу программы. 
-                                    Комментарии в Python бывают блочные и строчные. Строчные коментарии предваряются знаком решетки - #. 
+                                    Комментарии в Python бывают блочные и строчные.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Строчные коментарии предваряются знаком решетки - #. 
                                     Они могут располагаться на отдельной строке или на одной
                                     <LineBreak/>
                                     <LineBreak/>
@@ -161,6 +185,7 @@
                                 </BlockUIContainer>
 
                                 <Paragraph>
+                                    <LineBreak/>
                                     В блочных коментариях до и после текста комментария ставятся три одинарные кавычки: 
                                     '''текст комментария'''.
                                     <LineBreak/>
@@ -183,8 +208,180 @@
                                         </TextBlock>
                                     </Border>
                                 </BlockUIContainer>
-
                             </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    
+    
+
+    <!--ТЕКСТ ПЕРЕМЕННЫЕ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="PeremenRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание о переменных-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        О переменных
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Переменные предназначены для хранения данных. Название переменной в Python должно начинаться с алфавитного символа или со знака 
+                                    подчеркивания и может содержать алфавитно-цифровые символы и знак подчеркивания. И кроме того, название переменной не должно 
+                                    совпадать с названием ключевых слов языка Python.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Ключевые слова:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="320" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] False   |   await   |   else   |   import   |   pass
+                                            <LineBreak/>
+                                            [2] None    |   break   |   except   |   in    |    raise
+                                            <LineBreak/>
+                                            [3] True    |   class    |    finally   |   is    |    return
+                                            <LineBreak/>
+                                            [4] and    |    continue  |  for    |    lambda   |   try
+                                            <LineBreak/>
+                                            [5] as     |    def    |     from    |    nonlocal   |   while
+                                            <LineBreak/>
+                                            [6] assert    |    del    |    global    |    not    |    with
+                                            <LineBreak/>
+                                            [7] async   |   elif   |    if    |     or     |    yield  
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Создадим переменную "<Bold>name</Bold>", которая будет хранить в себе значение "<Bold>Python</Bold>":
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] name = "Python"
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+                            
+                            <!--Типы наименований переменных-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        Типы наименования переменных
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    В пайтоне применяется два типа наименования переменных: <Bold>CamelCase</Bold> и <Bold>UnderscoreNotation</Bold>.
+                                    <LineBreak/>
+                                    <Bold>CamelCase</Bold> подразумевает, что каждое новое подслово в наименовании переменной начинается 
+                                    с большой буквы.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] nameLang = "Python"
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Bold>UnderscoreNotation</Bold> подразумевает, что подслова в наименовании переменной разделяются знаком подчеркивания.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] name_lang = "Scala"
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    После инициализации перменной, мы с ней можем работать по разному. Проводить мат-операции, выводить, изменять
+                                    переприсваивать и многое другое.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] # ВЫВЕДЕТ НА КОНСОЛЬ: Scala - мультипарадигмальный язык программирования
+                                            [2] name_lang = "Scala"
+                                            [3] print(f"{name_lang} - мультипарадигмальный язык программирования")
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Так же мы можем менять значения переменных.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] nameLang = "Scala" 
+                                            [2] print(nameLang) # ВЫВЕДЕТ: Scala
+                                            [3] nameLang = 'Python'
+                                            [4] print(name_lang) # ВЫВЕДЕТ: Python
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+                            
+                            
                             
                             
                             
@@ -196,5 +393,12 @@
             </Setter.Value>
         </Setter>
     </Style>
+
     
+    
+    
+    
+    
+    
+
 </ResourceDictionary>

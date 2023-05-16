@@ -38,8 +38,7 @@
                             BorderThickness="0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
-                            Style="{StaticResource ButtonClearTheme}"
-                            />
+                            Style="{StaticResource ButtonClearTheme}"/>
 
                     <Button Content="C#-учебник"
                             FontFamily="Fonts/#Dosis" 
