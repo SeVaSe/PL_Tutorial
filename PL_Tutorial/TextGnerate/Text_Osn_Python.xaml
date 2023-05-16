@@ -409,11 +409,340 @@
                                  BorderThickness="0"
                                  IsReadOnly="True">
                         <FlowDocument>
-                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+                                    В Python есть несколько встроенных типов данных, которые используются для хранения и манипулирования значениями.
+                                    Основные из них будут показаны снизу.
+                                </Paragraph>
+                            </Section>
+
+
+                            <!--написание Числа-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____________________________
+                                        </Span>
+                                        Числа
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    <Bold>● Целые числа (int):</Bold> Представляют целые числа, например, 1, 100, -10 и т. д. В Python нет ограничений на размер целых чисел.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="480" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] num = 32 # целое число - не отрицательное
+                                            <LineBreak/>
+                                            [2] num2 = -12 # целое число - отрицательное
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                                
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Bold>● Вещественные числа (float):</Bold> Представляют числа с плавающей точкой, такие как 3.14, 2.71828 и т. д. Они могут содержать десятичные значения и научную нотацию (например, 6.02e23).
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] numFloat = 3.42 # вещественное число
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Bold>● Комплексные числа (complex):</Bold> Представляются в виде a + bj, где a и b - вещественные числа, а j - мнимая единица.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] numComplex = 3 + 2j # коплексное число
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+                            
+                            <!--написание Cтрок-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____________________________
+                                        </Span>
+                                        Строки
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Строки представляют последовательность символов и используются для хранения текстовой информации. 
+                                    Строки в Python могут быть заключены в одинарные (' ') или двойные кавычки (" ").
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] str = "Hello World" # строка
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание Boolean-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____________________________
+                                        </Span>
+                                        Boolean
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Булев тип представляет два возможных значения: <Bold>True (истина)</Bold> и <Bold>False (ложь)</Bold>. 
+                                    Он используется для выполнения логических операций и проверок условий.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] elTr = True # True
+                                            <LineBreak/>
+                                            [2] elFl = False # False
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание List-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________________
+                                        </Span>
+                                        Список (list)
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Списки представляют упорядоченные коллекции элементов, которые могут быть разных типов. 
+                                    Они могут содержать любое количество элементов и изменяться (мутабельны).
+                                    И заключаются в квадратные скобки.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] l = [1, 3, 9, 43, 6] # список int
+                                            <LineBreak/>
+                                            [2] l1 = ['a', 'b', 'c'] # список string
+                                            <LineBreak/>
+                                            [3] l2 = [1, 4, 5, [99, 0, 20], 3] # список-списка
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
                             
 
+                            <!--написание Tuple-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        Кортеж (tuple)
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Кортежи похожи на списки, но неизменяемы (immutable), то есть их элементы не могут быть изменены после создания.
+                                    И заключаются в круглые скобки.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] tup = (1, 3, 9, 43, 6) # кортеж int
+                                            <LineBreak/>
+                                            [2] tup1 = ('a', 3, 5, 'c') # кортеж со смешенными значениями
+                                            <LineBreak/>
+                                            # обрати внимание на запятую, если ее не поставить, то кортеж из одного элемента не создастся
+                                            <LineBreak/>
+                                            [3] tup2 = (3,) # кортеж из одного лемента
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
 
 
+                            <!--написание Set-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        Множества (set)
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Множества представляют уникальные и неупорядоченные коллекции элементов. 
+                                    Они поддерживают операции над множествами, такие как объединение, пересечение и разность.
+                                    И заключаются в фигурные скобки.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] set1 = {1, 2, 3, 4, 5} # множество int
+                                            <LineBreak/>
+                                            [2] set_of_strings = {"apple", "banana", "orange"} # множество string
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание Dict-->
+
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        Словарь (dict)
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Словари представляют отображения ключей на значения. 
+                                    Они используются для хранения данных в виде пар "ключ-значение".
+                                    Ключи должны быть уникальными в пределах словаря.
+                                    И заключаются в фигурные скобки. Но отличаются от множеств тем, что у словаря есть "КЛЮЧ" и "ЗНАЧЕНИЕ".
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] student = {"name": "John", "age": 20, "grade": "A"} # словарь
+                                            <LineBreak/>
+                                            [2] print(student)  # Вывод: {'name': 'John', 'age': 20, 'grade': 'A'}
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+                            
+                            
+                            <!--написани Type-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        Функция - type
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    С помощью встроенной функции type() динамически можно узнать текущий тип переменной:
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                        <TextBlock>
+                                            [1] userId = "abc" # тип str
+                                            <LineBreak/>
+                                            [2] print(type(userId)) #  выведет - class'str'
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            [3] userId = 43 # тип int
+                                            <LineBreak/>
+                                            [4] print(type(userId)) #  выведет - class'int'
+
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
 
 
 

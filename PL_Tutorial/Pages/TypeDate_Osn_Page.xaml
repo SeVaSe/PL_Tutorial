@@ -13,11 +13,16 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="66"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="302*"/>
+                <RowDefinition Height="26*"/>
             </Grid.RowDefinitions>
 
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="5">
+
+            <!--нижняя строка-->
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="2" Grid.RowSpan="2"/>
+            <!--верхняя строка-->
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100*"/>
@@ -33,7 +38,12 @@
                           FontWeight="Bold"
                           Style="{StaticResource ModernTextBlock}"
                           HorizontalAlignment="Center"
-                          VerticalAlignment="Center" Height="24" Width="282"/>
+                          VerticalAlignment="Center" Height="24" Width="282">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#00c8ff" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
                     <Button Content="✖"
                         FontFamily="Fonts/#Dosis" 
@@ -95,10 +105,12 @@
                         BorderThickness="0" Click="Perezapusk_Click" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Margin="73,0,0,0" Width="31" Height="36"/>
-
-
                 </Grid>
             </Border>
+
+            <Grid Margin="0,10,0,6" Grid.Row="1">
+                <RichTextBox Style="{StaticResource TypeDateRichTextBox}" Margin="10,0,10,0" />
+            </Grid>
 
         </Grid>
     </Border>
