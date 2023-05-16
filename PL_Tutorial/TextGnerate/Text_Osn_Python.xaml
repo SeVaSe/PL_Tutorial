@@ -204,6 +204,7 @@
                                             [3] он удобен для больших записей
                                             <LineBreak/>
                                             [4] '''
+                                            <LineBreak/>
                                             [5] print('Hey')
                                         </TextBlock>
                                     </Border>
@@ -301,7 +302,9 @@
                                 </Paragraph>
 
                                 <Paragraph>
-                                    В пайтоне применяется два типа наименования переменных: <Bold>CamelCase</Bold> и <Bold>UnderscoreNotation</Bold>.
+                                    В пайтоне применяется два типа наименования переменных:
+                                    <Bold>CamelCase</Bold> и
+                                    <Bold>UnderscoreNotation</Bold> .
                                     <LineBreak/>
                                     <Bold>CamelCase</Bold> подразумевает, что каждое новое подслово в наименовании переменной начинается 
                                     с большой буквы.
@@ -313,7 +316,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left">
                                         <TextBlock>
                                             [1] nameLang = "Python"
                                         </TextBlock>
@@ -331,7 +334,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left">
                                         <TextBlock>
                                             [1] name_lang = "Scala"
                                         </TextBlock>
@@ -350,10 +353,12 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="780" HorizontalAlignment="Left">
                                         <TextBlock>
                                             [1] # ВЫВЕДЕТ НА КОНСОЛЬ: Scala - мультипарадигмальный язык программирования
+                                            <LineBreak/>
                                             [2] name_lang = "Scala"
+                                            <LineBreak/>
                                             [3] print(f"{name_lang} - мультипарадигмальный язык программирования")
                                         </TextBlock>
                                     </Border>
@@ -370,23 +375,19 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="380" HorizontalAlignment="Left">
                                         <TextBlock>
                                             [1] nameLang = "Scala" 
+                                            <LineBreak/>
                                             [2] print(nameLang) # ВЫВЕДЕТ: Scala
+                                            <LineBreak/>
                                             [3] nameLang = 'Python'
+                                            <LineBreak/>
                                             [4] print(name_lang) # ВЫВЕДЕТ: Python
                                         </TextBlock>
                                     </Border>
                                 </BlockUIContainer>
                             </Section>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
@@ -395,10 +396,38 @@
     </Style>
 
     
-    
-    
-    
-    
-    
+
+    <!--ТЕКСТ ТИПЫ ДАННЫХ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="TypeDateRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            
+
+
+
+
+
+
+
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
 
 </ResourceDictionary>
