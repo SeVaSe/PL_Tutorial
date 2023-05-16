@@ -83,9 +83,9 @@
 
 
 
-                    <Button Content="✖"
+                    <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
-                        FontSize="20" 
+                        FontSize="17" 
                         Grid.Column="4"
                         Background="Transparent"
                         Foreground="AliceBlue"
@@ -94,20 +94,13 @@
                         Style="{StaticResource ButtonClearTheme}"
                         BorderThickness="0" Click="Exit_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Center" Margin="120,0,0,0" RenderTransformOrigin="0.5,0.5">
-                        <Button.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="45"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Button.RenderTransform>
+                        VerticalAlignment="Center" Margin="117,0,0,0" RenderTransformOrigin="0.492,0.65" Height="29" Width="29">
+
                     </Button>
 
 
                     <Menu FontFamily="Fonts/#Dosis"
-                          FontSize="20"
+                          FontSize="18"
                           Grid.Column="1"
                           Background="Transparent"
                           Foreground="AliceBlue"

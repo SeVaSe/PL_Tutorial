@@ -39,9 +39,9 @@
                         </TextBlock.Effect>
                     </TextBlock>
 
-                    <Button Content="✖"
+                    <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
-                        FontSize="20" 
+                        FontSize="17" 
                         Cursor="Hand"
                         Grid.Column="2"
                         Background="Transparent"
@@ -50,15 +50,8 @@
                         BorderThickness="0" Click="Exit_Click"
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
-                        VerticalAlignment="Top" Margin="227,13,0,0" RenderTransformOrigin="0.494,0.547">
-                        <Button.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-45"/>
-                                <TranslateTransform X="0.736" Y="-0.193"/>
-                            </TransformGroup>
-                        </Button.RenderTransform>
+                        VerticalAlignment="Top" Margin="228,16,0,0" RenderTransformOrigin="0.494,0.547">
+                        
                     </Button>
 
                     <Button Content="━"
