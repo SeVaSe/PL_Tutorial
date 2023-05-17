@@ -40,7 +40,7 @@ namespace PL_Tutorial.Pages
         //перезапуск
         private void Perezapusk_Click(object sender, RoutedEventArgs e)
         {
-            Window wind = new Sintax_Osn_Page();
+            Window wind = new IfConstruction_Osn_Page();
             this.Close();
             wind.Show();
         }
