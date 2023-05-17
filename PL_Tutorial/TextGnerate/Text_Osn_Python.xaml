@@ -35,7 +35,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print(2 + 3)
                                             <LineBreak/>
@@ -56,7 +56,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print(2 + 3) 
                                             <LineBreak/>
@@ -76,7 +76,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] if 1 &gt; 2:
                                             <LineBreak/>
@@ -119,7 +119,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] PRINT("Hello")
                                         </TextBlock>
@@ -138,7 +138,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] nameColor = "Color"
                                             <LineBreak/>
@@ -175,7 +175,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] # это комментарий на отдельной строке
                                             <LineBreak/>
@@ -195,7 +195,7 @@
                                     </Span>
                                 </Paragraph>
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] '''
                                             <LineBreak/>
@@ -256,7 +256,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="320" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="320" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] False   |   await   |   else   |   import   |   pass
                                             <LineBreak/>
@@ -281,7 +281,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="220" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] name = "Python"
                                         </TextBlock>
@@ -316,7 +316,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] nameLang = "Python"
                                         </TextBlock>
@@ -334,7 +334,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="240" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] name_lang = "Scala"
                                         </TextBlock>
@@ -353,7 +353,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="780" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="780" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] # ВЫВЕДЕТ НА КОНСОЛЬ: Scala - мультипарадигмальный язык программирования
                                             <LineBreak/>
@@ -375,7 +375,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="380" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="380" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] nameLang = "Scala" 
                                             <LineBreak/>
@@ -438,7 +438,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="480" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="480" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] num = 32 # целое число - не отрицательное
                                             <LineBreak/>
@@ -458,7 +458,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] numFloat = 3.42 # вещественное число
                                         </TextBlock>
@@ -476,7 +476,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] numComplex = 3 + 2j # коплексное число
                                         </TextBlock>
@@ -509,7 +509,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] str = "Hello World" # строка
                                         </TextBlock>
@@ -543,7 +543,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] elTr = True # True
                                             <LineBreak/>
@@ -580,7 +580,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] l = [1, 3, 9, 43, 6] # список int
                                             <LineBreak/>
@@ -618,7 +618,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] tup = (1, 3, 9, 43, 6) # кортеж int
                                             <LineBreak/>
@@ -658,7 +658,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] set1 = {1, 2, 3, 4, 5} # множество int
                                             <LineBreak/>
@@ -695,7 +695,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] student = {"name": "John", "age": 20, "grade": "A"} # словарь
                                             <LineBreak/>
@@ -728,7 +728,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] userId = "abc" # тип str
                                             <LineBreak/>
@@ -788,7 +788,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print('Hey Python') # выведет - Hey Python
                                         </TextBlock>
@@ -807,7 +807,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print('значения', end="конечный_символ")
                                         </TextBlock>
@@ -825,7 +825,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print('Hey', end=" ")
                                             <LineBreak/>
@@ -848,7 +848,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print('Hey', end=" [S] ")
                                             <LineBreak/>
@@ -885,7 +885,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] print('''aaaaaaaa
                                             <LineBreak/>
@@ -916,7 +916,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] looongStr = '''aaaaaaaa
                                             <LineBreak/>
@@ -961,7 +961,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             \n - символ новой строки. Используется для перехода на новую строку.
                                             <LineBreak/>
@@ -989,7 +989,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] text = "Message:\n\"Hello World\""
                                             <LineBreak/>
@@ -1031,11 +1031,14 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] userName = "Tom"
+                                            <LineBreak/>
                                             [2] userAge = 37
+                                            <LineBreak/>
                                             [3] user = f"name: {userName}  age: {userAge}"
+                                            <LineBreak/>
                                             [4] print(user)   # name: Tom  age: 37
                                         </TextBlock>
                                     </Border>
@@ -1070,7 +1073,7 @@
                                 </Paragraph>
 
                                 <BlockUIContainer>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="900" HorizontalAlignment="Left">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="900" HorizontalAlignment="Left" CornerRadius="10">
                                         <TextBlock>
                                             [1] name = input("Введите свое имя: ")
                                             <LineBreak/>
@@ -1104,8 +1107,221 @@
     </Style>
 
 
+    
+
+
+    <!--АРИФМЕТИЧЕСКИЕ ОПЕРАЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ArifmRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Ввод-->
+                            <Section>
+                                <Paragraph>
+                                    Python поддерживаются все арифметические операции. Рассмотрим все операции.
+                                </Paragraph>
+                            </Section>
+
+                            <!--написание Арифм операции-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        Арифметические операции
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph FontSize="20">
+                                    ● <Bold>Сложение</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(1 + 1) <Span Foreground="#272537">___</Span> # 2
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Вычитание</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(5 - 1) <Span Foreground="#272537">___</Span> # 4
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Умножение</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(5 * 3) <Span Foreground="#272537">___</Span> # 15
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Деление</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(6 / 2) <Span Foreground="#272537">___</Span> # 3.0
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Целочисленное деление</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(6 // 2) <Span Foreground="#272537">___</Span> # 3
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Возведение в степень</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(6 ** 2) <Span Foreground="#272537">___</Span> # 36
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    ● <Bold>Получение остатка от деления</Bold>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] print(7 % 2) <Span Foreground="#272537">___</Span> # остаток от деления 7 на 2 = 1
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+
+
+                            <!--написание Арифметические операции с присвоением-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________
+                                        </Span>
+                                        Арифметические операции с присвоением
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Ряд специальных операций позволяют использовать присвоить результат операции первому операнду.
+                                </Paragraph>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры операций:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            ● <Bold>+= Присвоение результата сложения</Bold>
+                                            <LineBreak/>
+                                            ● <Bold>-= Присвоение результата вычитания</Bold>
+                                            <LineBreak/>
+                                            ● <Bold>/= Присвоение результата от деления</Bold>
+                                            <LineBreak/>
+                                            ● <Bold>//= Присвоение результата целочисленного деления</Bold>
+                                            <LineBreak/>
+                                            ● <Bold>**= Присвоение степени числа</Bold>
+                                            <LineBreak/>
+                                            ● <Bold>%= Присвоение остатка от деления</Bold>
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                                <Paragraph FontSize="20">
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] number = 10
+                                            <LineBreak/>
+                                            [2] number += 5
+                                            <LineBreak/>
+                                            [3] print(number) <Span Foreground="#272537">___</Span> # 15
+                                            <LineBreak/>
+                                            [4]
+                                            <LineBreak/>
+                                            [5] number -= 3
+                                            <LineBreak/>
+                                            [6] print(number) <Span Foreground="#272537">___</Span> # 12
+                                            <LineBreak/>
+                                            [7]
+                                            <LineBreak/>
+                                            [8] number *= 4
+                                            <LineBreak/>
+                                            [9] print(number) <Span Foreground="#272537">___</Span> # 48
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
+
+
+    
+    
+    
+    
+    
 
 </ResourceDictionary>
