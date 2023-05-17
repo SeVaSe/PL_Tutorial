@@ -121,9 +121,6 @@
     <Compile Include="Pages\Sintax_Osn_Page.xaml.cs">
       <DependentUpon>Sintax_Osn_Page.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TEST.xaml.cs">
-      <DependentUpon>TEST.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Tuple_Osn_Page.xaml.cs">
       <DependentUpon>Tuple_Osn_Page.xaml</DependentUpon>
     </Compile>
@@ -261,10 +258,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Sintax_Osn_Page.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\TEST.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
