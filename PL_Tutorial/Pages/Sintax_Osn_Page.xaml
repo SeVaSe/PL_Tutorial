@@ -47,7 +47,7 @@
 
                     <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
-                        FontSize="17" 
+                        FontSize="18" 
                         Cursor="Hand"
                         Grid.Column="4"
                         Background="Transparent"

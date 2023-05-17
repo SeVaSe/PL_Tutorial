@@ -37,9 +37,9 @@
                           HorizontalAlignment="Center"
                           VerticalAlignment="Center" Height="24" Width="397"/>
 
-                    <Button Content="✖"
+                    <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
-                        FontSize="20" 
+                        FontSize="18" 
                         Cursor="Hand"
                         Grid.Column="4"
                         Background="Transparent"
@@ -49,14 +49,7 @@
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
                         VerticalAlignment="Top" Margin="154,13,0,0" RenderTransformOrigin="0.5,0.5" Height="24" Width="28">
-                        <Button.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-45"/>
-                                <TranslateTransform X="-0.111" Y="0.019"/>
-                            </TransformGroup>
-                        </Button.RenderTransform>
+                        
                     </Button>
 
                     <Button Content="━"
