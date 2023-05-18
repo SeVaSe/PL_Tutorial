@@ -1358,10 +1358,206 @@
 
 
 
-    
-    
-    
-    
-    
+
+    <!--ПРЕОБРАЗОВАНИЕ ТИПОВ ОПЕРАЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ConvertTypeRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Целое число-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        Преобразование в целое число
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Используйте функцию int() для преобразования числа с плавающей точкой или строки в целое число.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x = int(3.14) <Span Foreground="#272537">___</Span> # преобразуется в просто целую цифру: 3
+                                            <LineBreak/>
+                                            [2] y = int("42") <Span Foreground="#272537">___</Span> # строка преобразуется в просто целое число: 42
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                            </Section>
+
+
+                            <!--написание Дробное число-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______
+                                        </Span>
+                                        Преобразование в число с плавающей точкой
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Используйте функцию float() для преобразования целого числа или строки в число с плавающей точкой.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x = float(42) <Span Foreground="#272537">___</Span> # преобразуется в число с плавающей точкой: 42.0
+                                            <LineBreak/>
+                                            [2] y = float("3.14") <Span Foreground="#272537">___</Span> # строка преобразуется в число с плавающей точкой: 3.14
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                            </Section>
+
+
+
+                            <!--написание Преобразование в строку-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        Преобразование в строку
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Используйте функцию str() для преобразования числа или другого объекта в строку.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x = str(42) <Span Foreground="#272537">___</Span> # число преобразуется в строку: "42"
+                                            <LineBreak/>
+                                            [2] y = str(3.14) <Span Foreground="#272537">___</Span> # число преобразуется в строку: 3.14
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                            </Section>
+
+
+
+
+                            <!--написание Логическое значение-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________
+                                        </Span>
+                                        Преобразование в логическое значение
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Используйте функцию bool() для преобразования значения в логическое (булево) значение. 
+                                    Пустые значения, ноль и пустая строка преобразуются в False, а любые другие значения преобразуются в True.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x = bool(42) <Span Foreground="#272537">___</Span> # булевое значение будет равно: True
+                                            <LineBreak/>
+                                            [2] y = bool("") <Span Foreground="#272537">___</Span> # булевое значение будет равно: False
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                            </Section>
+
+
+
+
+
+                            <!--написание Cписок, кортеж или множество-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                           ___
+                                        </Span>
+                                        Преобразование в список, кортеж или множество
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ● Используйте функции list(), tuple() или set() соответственно для 
+                                    преобразования итерируемого объекта в список, кортеж или множество.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Примеры:</Bold>
+                                    </Span>
+                                </Paragraph>
+
+                                <BlockUIContainer>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x = list("hey") <Span Foreground="#272537">___</Span> # преобразует строку в посимвольный список: ['h', 'e', 'y']
+                                            <LineBreak/>
+                                            [2] y = tuple([1, 2, 3]) <Span Foreground="#272537">___</Span> # преобразует список в кортеж: (1, 2, 3)
+                                            <LineBreak/>
+                                            [3] z = set([1, 2, 3]) <Span Foreground="#272537">___</Span> # преобразует список в множество: {1, 2, 3}
+                                        </TextBlock>
+                                    </Border>
+                                </BlockUIContainer>
+
+                            </Section>
+
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
 
 </ResourceDictionary>
