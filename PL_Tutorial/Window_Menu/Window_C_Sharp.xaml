@@ -101,11 +101,11 @@
             <TextBlock  
                 FontSize="40" 
                 FontWeight="Bold"
-                HorizontalAlignment="Left" 
-                Margin="160,0,0,0" 
+                HorizontalAlignment="Center" 
                 TextWrapping="Wrap" 
-                VerticalAlignment="Center" Height="327" Width="521" Grid.Row="1"
-                Style="{StaticResource ModernTextBlock}"><Run Text="Ты снова зашел сюда? Ты не понял с первого раза? ИДИ ОТ СЮДА, ТЕБЕ ЗДЕСЬ НЕ РАДЫ"/><LineBreak/><Run/><LineBreak/><Run Text="2"/><Run Text=":1"/><Run Language="ru-ru" Text="       :)"/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run/></TextBlock>
+                Text="C#-учебник в разработке..."
+                VerticalAlignment="Center" Height="326" Width="602" Grid.Row="1"
+                Style="{StaticResource ModernTextBlock}"/>
 
 
         </Grid>
