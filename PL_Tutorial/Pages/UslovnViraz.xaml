@@ -33,7 +33,12 @@
                           FontWeight="Bold"
                           Style="{StaticResource ModernTextBlock}"
                           HorizontalAlignment="Center"
-                          VerticalAlignment="Center" Height="24" Width="358"/>
+                          VerticalAlignment="Center" Height="24" Width="358">
+
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#00c8ff" ShadowDepth="0" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
 
                     <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
@@ -92,6 +97,10 @@
 
                 </Grid>
             </Border>
+
+            <Grid Margin="0,10,0,6" Grid.Row="1">
+                <RichTextBox Style="{StaticResource UslovnVirazRichTextBox}" Margin="10,0,10,0" />
+            </Grid>
 
         </Grid>
     </Border>
