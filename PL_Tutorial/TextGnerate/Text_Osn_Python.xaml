@@ -1879,7 +1879,7 @@
                                             <LineBreak/>
                                             [4] gold = "gold"
                                             <LineBreak/>
-                                            [5] print(gold in message) <Span Foreground="#272537">___</Span> # False - подстроки "gold" нет в строке "hello world!" 
+                                            [5] print(gold in message) <Span Foreground="#272537">___</Span> # False - подстроки "gold" нет в строке "hello world!"
                                         </TextBlock>
                                     </Border>
                                     <LineBreak/>
@@ -1887,53 +1887,7 @@
                                     Если нам надо наоборот проверить, нет ли в наборе значений какого-либо значения, то мы може использовать модификацию оператора - not in. 
                                     Она возвращает True, если в наборе значений НЕТ определенного значения!
                                 </Paragraph>
-                                
-                                
-                                
-                                
-                                
-                                
-
-                                
-                                
                             </Section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
