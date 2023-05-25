@@ -16,8 +16,8 @@
     4. пример кода пишется иммитируя строки, как в IDE, а каждая новая строка помечается знаком равняющимся его индексом - [1...+n]
     5. примечания, примеры, части для привлечения внимания - помечать жирным выделением
     6. стиль для текста и для TextRichBox уже написан, использовать их!
-    7. &lt; = знак меньше
-    8. &gt; = знак больше
+    7. &lt; = знак меньше <
+    8. &gt; = знак больше >
 
     
     ОФОРМЛЕНИЕ КОДА:
@@ -1679,7 +1679,6 @@
                                     Для создания составных условных выражений применяются логические операции.
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <LineBreak/>
                                 </Paragraph>
                             </Section>
 
@@ -1764,6 +1763,140 @@
 
 
                             <!--написание Логические операции OR-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="30" FontWeight="Bold">● Оператор "or"</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="150" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] x or y
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Сначала оператор or оценивает выражение x, и если оно равно True, то возвращается его значение. 
+                                    Если оно равно False, то оценивается второй операнд - y и возвращается значение y.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] age = 22
+                                            <LineBreak/>
+                                            [2] weight = 58
+                                            <LineBreak/>
+                                            [3] result = age &lt; 21 or weight == 58
+                                            <LineBreak/>
+                                            [4] print(result) <Span Foreground="#272537">___</Span> # True, так как выражение weight == 58 равно True
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Логические операции NOT-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="30" FontWeight="Bold">● Оператор "not"</Span>
+                                    <LineBreak/>
+                                    not - логическое отрицание
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] age = 22
+                                            <LineBreak/>
+                                            [2] weight = 58
+                                            <LineBreak/>
+                                            [3] print(not age > 21) <Span Foreground="#272537">___</Span> # False
+                                            <LineBreak/>
+                                            [4] print(not weight == 58) <Span Foreground="#272537">___</Span> # False
+                                            <LineBreak/>
+                                            [5] print(not weight == 57) <Span Foreground="#272537">___</Span> # True
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Оператор "in"-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        Оператор "in"
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Оператор in возвращает True если в некотором наборе значений есть определенное значение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] значение in набор_значений
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Например, строка представляет набор символов. И с помощью оператора in мы можем проверить, есть ли в ней какая-нибудь подстрока.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10">
+                                        <TextBlock>
+                                            [1] message = "hello world!"
+                                            <LineBreak/>
+                                            [2] hello = "hello"
+                                            <LineBreak/>
+                                            [3] print(hello in message) <Span Foreground="#272537">___</Span> # True - подстрока hello есть в строке "hello world!"
+                                            <LineBreak/>
+                                            [4] gold = "gold"
+                                            <LineBreak/>
+                                            [5] print(gold in message) <Span Foreground="#272537">___</Span> # False - подстроки "gold" нет в строке "hello world!" 
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если нам надо наоборот проверить, нет ли в наборе значений какого-либо значения, то мы може использовать модификацию оператора - not in. 
+                                    Она возвращает True, если в наборе значений НЕТ определенного значения!
+                                </Paragraph>
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                
+                            </Section>
 
 
 
