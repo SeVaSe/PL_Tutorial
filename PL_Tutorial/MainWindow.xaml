@@ -10,14 +10,24 @@
         Title="Учебник">
     <Border Background="#272537" CornerRadius="20">
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="477*"/>
+                <ColumnDefinition Width="307*"/>
+                <ColumnDefinition Width="12*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="43*"/>
-                <RowDefinition Height="457*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="418*"/>
+                <RowDefinition Height="26*"/>
             </Grid.RowDefinitions>
+
+
 
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
-                     MouseMove="Window_MouseMove">
+                     MouseMove="Window_MouseMove" Grid.ColumnSpan="4">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -135,6 +145,13 @@
 
                 </Grid>
             </Border>
+            <TextBlock Grid.Column="1" Grid.Row="2" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center" 
+                       TextWrapping="Wrap" 
+                       Name="TxtBl_HeySoo" 
+                       FontSize="17" FontWeight="Bold"
+                       Height="394" Width="452" Style="{StaticResource ModernTextBlock}"/>
+
 
         </Grid>
 

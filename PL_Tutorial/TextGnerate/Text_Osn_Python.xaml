@@ -1577,6 +1577,7 @@
                                  Background="Transparent"
                                  FontSize="18"
                                  BorderThickness="0"
+                                 
                                  IsReadOnly="True">
                         <FlowDocument>
                             <Section>

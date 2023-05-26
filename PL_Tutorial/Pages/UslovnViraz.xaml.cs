@@ -23,7 +23,10 @@ namespace PL_Tutorial.Pages
         public UslovnViraz()
         {
             InitializeComponent();
+            
         }
+
+        
 
         //закрыть
         private void Exit_Click(object sender, RoutedEventArgs e)

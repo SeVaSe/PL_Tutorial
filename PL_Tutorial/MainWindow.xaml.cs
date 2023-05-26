@@ -26,10 +26,42 @@ namespace PL_Tutorial
     /// </summary>
     public partial class MainWindow : Window
     {
+        private const int TimeWaintPrint = 40; //задержка между печатаемыми символами (в миллисекундах)
+        private const string TextType = "\t        Добро пожаловать в PL-Tutorial!\n\n" +
+
+            "Информативное приложение-справочник PL-Tutorial поможет вам найти все необходимые ресурсы, примеры кода и " +
+            "объяснения для изучения различных языков программирования и технологий.\n\n" +
+
+            "PL-Tutorial создан с целью помочь вам освоить новые навыки и развиться в области программирования. " +
+            "PL-Tutorial предлагает четкие и понятные объяснения, сопровожденные примерами, чтобы вы могли легко усваивать новый материал.\n\n" +
+
+            "Независимо от вашего уровня подготовки, в справочнике вы найдете материалы, от начального до продвинутого уровня, материаллы по отдельным технологиям языков и многое другое" +
+            ", которое поможет вам расширить свои знания и " +
+            "улучшить навыки программирования.\n\n"
+
+            ;
+
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
         }
+
+        //печать текста приветствия
+        private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            await PrintTextAsy(TextType, TxtBl_HeySoo);
+        }
+
+        private async Task PrintTextAsy(string text, TextBlock txtBlock)
+        {
+            foreach (char item in text)
+            {
+                txtBlock.Text += item;
+                await Task.Delay(TimeWaintPrint);
+            }
+        }
+
 
 
         //перетаскивание окна
