@@ -131,6 +131,11 @@
                         <GradientStop Color="#0058FF" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#acdafc" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
+                
                 <Grid Margin="12,-4,10,10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0*"/>
@@ -263,6 +268,11 @@
                         <GradientStop Color="#FF3E00" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#fadeac" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
+                
                 <Grid Margin="12,-4,10,10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0*"/>
@@ -337,6 +347,10 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
+                <Border.Effect>
+                    <DropShadowEffect Color="#abf7dc" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
+
 
                 <TextBlock Text="PY-Библиотеки"
                           FontSize="25"
@@ -360,13 +374,17 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
+                <Border.Effect>
+                    <DropShadowEffect Color="#ffc7d8" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
+
 
                 <TextBlock Text="PY-Фреймворки"
                           Style="{StaticResource ModernTextBlock}"
                           FontSize="25"
                           Grid.Column="1"
                           FontWeight="Bold"
-                          Margin="5,51,5,54"/>
+                          Margin="5,51,5,43"/>
             </Border>
 
 
@@ -383,13 +401,17 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
+                <Border.Effect>
+                    <DropShadowEffect Color="#fcdfcf" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
+
 
                 <TextBlock Text="ИИ и Нейронки"
                           Style="{StaticResource ModernTextBlock}"
                           FontSize="25"
                           Grid.Column="1"
                           FontWeight="Bold"
-                          Margin="10,30,10,30"/>
+                          Margin="10,30,10,28"/>
             </Border>
 
 
@@ -405,6 +427,10 @@
                         <GradientStop Color="#6ad8fd" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#d5b0ff" ShadowDepth="0" BlurRadius="5"/>
+                </Border.Effect>
 
 
                 <TextBlock Text="Доп-Функции"

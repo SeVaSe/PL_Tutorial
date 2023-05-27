@@ -18,6 +18,7 @@ using System.Windows.Input;
 using PL_Tutorial.Pages;
 using PL_Tutorial.Window_Menu;
 using System.Diagnostics;
+using System.Windows.Media.Animation;
 
 namespace PL_Tutorial
 {
@@ -34,14 +35,46 @@ namespace PL_Tutorial
             "\r\n\r\nНезависимо от вашего уровня подготовки, в справочнике вы найдете материалы от начального до продвинутого уровня, а также информацию по отдельным технологиям языков и многое другое, " +
             "что поможет вам расширить свои знания и улучшить навыки программирования.";
 
-
-            
-
         public MainWindow()
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
         }
+
+
+
+        private void Button_Cl(object sender, RoutedEventArgs e)
+        {
+            if (mainBorder.Opacity == 0)
+            {
+                DoubleAnimation animation = new DoubleAnimation
+                {
+                    From = -mainBorder.ActualWidth,
+                    To = 0,
+                    Duration = new Duration(TimeSpan.FromSeconds(0.5))
+                };
+                mainBorder.BeginAnimation(MarginProperty, new ThicknessAnimation(new Thickness(-mainBorder.ActualWidth, 17, 0, 0), TimeSpan.FromSeconds(0.5)));
+                mainBorder.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.5)));
+            }
+            else
+            {
+                DoubleAnimation animation = new DoubleAnimation
+                {
+                    From = -mainBorder.ActualWidth,
+                    To = 1,
+                    Duration = new Duration(TimeSpan.FromSeconds(0.5))
+                };
+                mainBorder.BeginAnimation(MarginProperty, new ThicknessAnimation(new Thickness(-mainBorder.ActualWidth, 17, 0, 0), TimeSpan.FromSeconds(0.5)));
+                mainBorder.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.5)));
+            }
+
+
+        }
+
+
+
+
+
 
         //печать текста приветствия
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)

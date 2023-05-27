@@ -152,7 +152,7 @@
                 <Border.Effect>
                     <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
                 </Border.Effect>
-                
+
                 <TextBlock Grid.Column="1" Grid.Row="2" 
                        HorizontalAlignment="Center" VerticalAlignment="Center" 
                        TextWrapping="Wrap" 
@@ -160,6 +160,23 @@
                        FontSize="15.9" FontWeight="Bold"
                        Height="379" Width="432" Style="{StaticResource ModernTextBlock}"/>
             </Border>
+
+
+
+
+            <Button Content="Show Border" Click="Button_Cl" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="467,87,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <Border x:Name="mainBorder" BorderBrush="Black" BorderThickness="1" 
+                    Width="200" Height="394" Background="LightGray" 
+                    Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3" Margin="92,13,0,0" Grid.Row="1" Grid.RowSpan="2"
+                    CornerRadius="20">
+                <Grid>
+                    <TextBlock Text="Some Text" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+
+
+
 
 
 
