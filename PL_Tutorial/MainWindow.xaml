@@ -24,7 +24,9 @@
             </Grid.RowDefinitions>
 
 
-
+            <!--нижняя строка-->
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Margin="0,414,0,0" Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+            <!--верхняя строка-->
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
                      MouseMove="Window_MouseMove" Grid.ColumnSpan="4">
@@ -145,12 +147,20 @@
 
                 </Grid>
             </Border>
-            <TextBlock Grid.Column="1" Grid.Row="2" 
+
+            <Border Background="#2a273d" Grid.Column="1" Margin="10,7,10,24" Grid.Row="2" CornerRadius="20">
+                <Border.Effect>
+                    <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
+                </Border.Effect>
+                
+                <TextBlock Grid.Column="1" Grid.Row="2" 
                        HorizontalAlignment="Center" VerticalAlignment="Center" 
                        TextWrapping="Wrap" 
                        Name="TxtBl_HeySoo" 
-                       FontSize="17" FontWeight="Bold"
-                       Height="394" Width="452" Style="{StaticResource ModernTextBlock}"/>
+                       FontSize="15.9" FontWeight="Bold"
+                       Height="379" Width="432" Style="{StaticResource ModernTextBlock}"/>
+            </Border>
+
 
 
         </Grid>
