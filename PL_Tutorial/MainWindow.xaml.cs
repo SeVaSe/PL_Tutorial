@@ -27,7 +27,7 @@ namespace PL_Tutorial
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const int TimeWaintPrint = 20; //задержка между печатаемыми символами (в миллисекундах)
+        private const int TimeWaintPrint = 1; //задержка между печатаемыми символами (в миллисекундах)
         private const string TextType = "\t      Добро пожаловать в PL-Tutorial!\n\n" +
 
             "PL-Tutorial - информативное приложение-справочник, помогающее вам найти все необходимые ресурсы, примеры кода и объяснения для изучения различных языков программирования и технологий." +
