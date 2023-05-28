@@ -163,14 +163,15 @@
 
 
             <!--Border с GPT-->
-            <Border Grid.Column="2" Margin="290, 36, -26, 54" Grid.Row="2"
+            <Border Grid.Column="2" Margin="264,36,-26,54" Grid.Row="2"
                 Background="#211f33"
                 CornerRadius="20"
                 Name="Border_GPT"
-                MouseLeftButtonDown="Border_MouseLeftButtonDown"
                 Grid.ColumnSpan="2"
                 BorderThickness="0.1" BorderBrush="#4df6cc"
-                Cursor="Hand">
+                Cursor="Hand"
+                MouseEnter="Border_MouseEnter"
+            MouseLeave="Border_MouseLeave">
                 <Border.Effect>
                     <DropShadowEffect Color="#4df6cc" ShadowDepth="0" BlurRadius="20"/>
                 </Border.Effect>

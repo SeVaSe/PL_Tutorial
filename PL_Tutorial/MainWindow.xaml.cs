@@ -34,6 +34,8 @@ namespace PL_Tutorial
             "\r\n\r\nPL-Tutorial создан с целью помочь вам освоить новые навыки и развиться в области программирования. Здесь вы найдете четкие объяснения, сопровожденные примерами, чтобы легко усваивать новый материал." +
             "\r\n\r\nНезависимо от вашего уровня подготовки, в справочнике вы найдете материалы от начального до продвинутого уровня, а также информацию по отдельным технологиям языков и многое другое, " +
             "что поможет вам расширить свои знания и улучшить навыки программирования.";
+        Thickness originalMargin = new Thickness(264, 36, -26, 54); //290, 36, -26, 54
+        Thickness expandedMargin = new Thickness(30, 36, 18, 54); //30, 36, 18, 54 Новое значение Margin для полного вывода Border_GPT
 
         public MainWindow()
         {
@@ -41,12 +43,12 @@ namespace PL_Tutorial
             Loaded += MainWindow_Loaded;
         }
 
-        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        /*private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Thickness originalMargin = new Thickness(290, 36, -26, 54);
             Thickness expandedMargin = new Thickness(30, 36, 18, 54); // Новое значение Margin для полного вывода Border_GPT
 
-            if (IsBorderExpanded(Border_GPT))
+            if (Mouse.OverrideCursor == Cursors.Hand)
             {
                 // Создаем анимацию для изменения Margin от текущего значения к исходному значению
                 ThicknessAnimation animation = new ThicknessAnimation(Border_GPT.Margin, originalMargin, TimeSpan.FromSeconds(0.5));
@@ -63,8 +65,37 @@ namespace PL_Tutorial
         private bool IsBorderExpanded(Border border)
         {
             return border.Margin.Equals(new Thickness(30, 36, 18, 54));
+        }*/
+
+
+
+        private void Border_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Thickness expandedMargin = new Thickness(30, 36, 18, 54); // Новое значение Margin для полного вывода Border_GPT
+
+            Border_GPT.BeginAnimation(FrameworkElement.MarginProperty, new ThicknessAnimationUsingKeyFrames()
+            {
+                KeyFrames = new ThicknessKeyFrameCollection()
+        {
+            new EasingThicknessKeyFrame(new Thickness(Border_GPT.Margin.Left, Border_GPT.Margin.Top, Border_GPT.Margin.Right, Border_GPT.Margin.Bottom), TimeSpan.Zero),
+            new EasingThicknessKeyFrame(expandedMargin, TimeSpan.FromSeconds(0.5), new ElasticEase() { EasingMode = EasingMode.EaseOut, Oscillations = 2, Springiness = 10 })
+        }
+            });
         }
 
+        private void Border_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Thickness originalMargin = new Thickness(264, 36, -26, 54);
+
+            Border_GPT.BeginAnimation(FrameworkElement.MarginProperty, new ThicknessAnimationUsingKeyFrames()
+            {
+                KeyFrames = new ThicknessKeyFrameCollection()
+        {
+            new EasingThicknessKeyFrame(new Thickness(Border_GPT.Margin.Left, Border_GPT.Margin.Top, Border_GPT.Margin.Right, Border_GPT.Margin.Bottom), TimeSpan.Zero),
+            new EasingThicknessKeyFrame(originalMargin, TimeSpan.FromSeconds(0.5), new ElasticEase() { EasingMode = EasingMode.EaseOut, Oscillations = 2, Springiness = 10 })
+        }
+            });
+        }
 
 
 
