@@ -11,10 +11,10 @@
     <Border Background="#272537" CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="12*"/>
-                <ColumnDefinition Width="477*"/>
-                <ColumnDefinition Width="307*"/>
-                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="118*"/>
+                <ColumnDefinition Width="78*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="43*"/>
@@ -29,7 +29,7 @@
             <!--верхняя строка-->
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
-                     MouseMove="Window_MouseMove" Grid.ColumnSpan="4">
+                     MouseMove="Window_MouseMove" Grid.ColumnSpan="4" Margin="0,0,0,17" Grid.RowSpan="2">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -162,8 +162,8 @@
 
 
 
-            <!--Border с GPT-->
-            <Border Grid.Column="2" Margin="264,36,-26,54" Grid.Row="2"
+            <!--Border с GPT  264,36,-26,54  30, 36, 12, 54-->
+            <Border Grid.Column="2" Margin="264,36,-26,54" Grid.Row="2" 
                 Background="#211f33"
                 CornerRadius="20"
                 Name="Border_GPT"
@@ -173,35 +173,83 @@
                 MouseEnter="Border_MouseEnter"
             MouseLeave="Border_MouseLeave">
                 <Border.Effect>
-                    <DropShadowEffect Color="#4df6cc" ShadowDepth="0" BlurRadius="20"/>
+                    <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="20"/>
                 </Border.Effect>
-                
-                <TextBlock TextWrapping="Wrap"
-               Margin="28,19,19,53"
+
+                <Grid>
+                    <TextBlock TextWrapping="Wrap"
+               Margin="54,19,8,53"
                Style="{StaticResource ModernTextBlock}"
                FontSize="14"
-               Foreground="#4df6cc">
-                    <Run FontSize="17" FontWeight="Bold">Перед использованием GPT, ознакомьтесь с рекомендацией:</Run> 
+               Foreground="#defff7">
+                    <Run FontSize="20" FontWeight="Bold" Foreground="#c5fcef">Рекомендации по использованию GPT:</Run> 
                     
-                    <LineBreak/>-<LineBreak/>
-                           <Run FontWeight="Bold">1.</Run> Пишите запрос развернуто
+                    <LineBreak/><LineBreak/>
+                           <Run FontWeight="Bold">●</Run> Пишите запрос развернуто
                     <LineBreak/>
-                           <Run FontWeight="Bold">2.</Run> Будьте конкретны и ясны
+                           <Run FontWeight="Bold">●</Run> Будьте конкретны и ясны
                     <LineBreak/>
-                           <Run FontWeight="Bold">3.</Run> Задавайте по одному вопросу за раз
+                           <Run FontWeight="Bold">●</Run> Задавайте по одному вопросу за раз
                     <LineBreak/>
-                           <Run FontWeight="Bold">4.</Run> Будьте терпеливы
+                           <Run FontWeight="Bold">●</Run> Будьте терпеливы
                     <LineBreak/>
                     <LineBreak/>
-                    <Run FontSize="17" FontWeight="Bold">Пример запроса:</Run> 
-                    <LineBreak/>-<LineBreak/>
-                           <Run FontWeight="Bold">1.</Run> Расскажи мне о языке Python
+                    <Run FontSize="20" FontWeight="Bold" Foreground="#c5fcef">Пример запросов:</Run> 
+                    <LineBreak/><LineBreak/>
+                           <Run FontWeight="Bold">●</Run> Расскажи мне о языке Python
                     <LineBreak/>
-                           <Run FontWeight="Bold">2.</Run> Пришли мне рецепт блинов
-                    
-                </TextBlock>
-                
+                           <Run FontWeight="Bold">●</Run> Пришли мне рецепт блинов
+
+                    </TextBlock>
+
+                    <TextBlock Margin="10,255,-121,35" 
+                               FontSize="25"
+                               FontWeight="Bold"
+                               Foreground="#b4fae9">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="15"/>
+                        </TextBlock.Effect>
+                        
+                        GPT-ФУНКЦИЯ
+                    </TextBlock>
+
+                    <Button Content="Моя кнопка" Margin="54,276,54,6" Click="Button_GPT">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                                                <!-- Здесь задается радиус закругления -->
+                                                <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+
+                </Grid>
+
+
             </Border>
+
+
+
 
 
 
