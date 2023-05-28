@@ -43,7 +43,7 @@ namespace PL_Tutorial
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Thickness originalMargin = new Thickness(284, 35, -134, 55);
+            Thickness originalMargin = new Thickness(290, 36, -26, 54);
             Thickness expandedMargin = new Thickness(30, 36, 18, 54); // Новое значение Margin для полного вывода Border_GPT
 
             if (IsBorderExpanded(Border_GPT))

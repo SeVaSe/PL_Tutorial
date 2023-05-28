@@ -145,7 +145,7 @@
                 </Grid>
             </Border>
 
-            
+
             <!--Border с приветственным текстом-->
             <Border Background="#2a273d" Grid.Column="1" Margin="10,17,10,17" Grid.Row="1" CornerRadius="20" Grid.RowSpan="2">
                 <Border.Effect>
@@ -160,25 +160,47 @@
                        Height="379" Width="432" Style="{StaticResource ModernTextBlock}"/>
             </Border>
 
-            
-            
+
+
             <!--Border с GPT-->
-            <Border Grid.Column="2" Margin="284,36,-20,54" Grid.Row="2"
-        Background="#1b192b"
-        CornerRadius="20"
-        Name="Border_GPT"
-        MouseLeftButtonDown="Border_MouseLeftButtonDown"
-        Grid.ColumnSpan="2">
+            <Border Grid.Column="2" Margin="290, 36, -26, 54" Grid.Row="2"
+                Background="#211f33"
+                CornerRadius="20"
+                Name="Border_GPT"
+                MouseLeftButtonDown="Border_MouseLeftButtonDown"
+                Grid.ColumnSpan="2"
+                BorderThickness="0.1" BorderBrush="#4df6cc"
+                Cursor="Hand">
                 <Border.Effect>
                     <DropShadowEffect Color="#4df6cc" ShadowDepth="0" BlurRadius="20"/>
                 </Border.Effect>
-                <TextBlock TextWrapping="Wrap" Text="Вывести функцию GPT"
-               Margin="71,109,52,108"
+                
+                <TextBlock TextWrapping="Wrap"
+               Margin="28,19,19,53"
                Style="{StaticResource ModernTextBlock}"
-               FontSize="30"
-               Foreground="#4df6cc"/>
+               FontSize="14"
+               Foreground="#4df6cc">
+                    <Run FontSize="17" FontWeight="Bold">Перед использованием GPT, ознакомьтесь с рекомендацией:</Run> 
+                    
+                    <LineBreak/>-<LineBreak/>
+                           <Run FontWeight="Bold">1.</Run> Пишите запрос развернуто
+                    <LineBreak/>
+                           <Run FontWeight="Bold">2.</Run> Будьте конкретны и ясны
+                    <LineBreak/>
+                           <Run FontWeight="Bold">3.</Run> Задавайте по одному вопросу за раз
+                    <LineBreak/>
+                           <Run FontWeight="Bold">4.</Run> Будьте терпеливы
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run FontSize="17" FontWeight="Bold">Пример запроса:</Run> 
+                    <LineBreak/>-<LineBreak/>
+                           <Run FontWeight="Bold">1.</Run> Расскажи мне о языке Python
+                    <LineBreak/>
+                           <Run FontWeight="Bold">2.</Run> Пришли мне рецепт блинов
+                    
+                </TextBlock>
+                
             </Border>
-
 
 
 
