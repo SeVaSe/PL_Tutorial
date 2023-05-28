@@ -122,8 +122,8 @@
                           VerticalAlignment="Center"
                           >
                         <MenuItem Header="Menu">
-                            <MenuItem Header="Справка" Click="MenuItem_Spravka_Click" Foreground="#1b192b"/>
                             <MenuItem Header="О приложении" Click="MenuItem_AboutApp_Click" Foreground="#1b192b"/>
+                            <MenuItem Header="Справка" Click="MenuItem_Spravka_Click" Foreground="#1b192b"/>
                             <MenuItem Header="Тех-поддержка" Click="MenuItem_TehSupport_Click" Foreground="#1b192b"/>
                             <Separator Foreground="#1b192b"/>
                             <MenuItem Header="Выход" Click="Exit_Click" Foreground="#1b192b"/>
@@ -142,12 +142,11 @@
                             <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
                         </TextBlock.Effect>
                     </TextBlock>
-
-
-
                 </Grid>
             </Border>
 
+            
+            <!--Border с приветственным текстом-->
             <Border Background="#2a273d" Grid.Column="1" Margin="10,17,10,17" Grid.Row="1" CornerRadius="20" Grid.RowSpan="2">
                 <Border.Effect>
                     <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
@@ -161,18 +160,42 @@
                        Height="379" Width="432" Style="{StaticResource ModernTextBlock}"/>
             </Border>
 
-
-
-
-            <Button Content="ПОКАЖИСЬ СУКА" Click="Button_Cl" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="467,87,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
-            <Border x:Name="mainBorder" BorderBrush="Black" BorderThickness="1" 
-                    Width="200" Height="394" Background="LightGray" 
-                    Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3" Margin="92,13,0,0" Grid.Row="1" Grid.RowSpan="2"
-                    CornerRadius="20">
-                <Grid>
-                    <TextBlock Text="TestGPT" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Grid>
+            
+            
+            <!--Border с GPT-->
+            <Border Grid.Column="2" Margin="284,36,-20,54" Grid.Row="2"
+        Background="#1b192b"
+        CornerRadius="20"
+        Name="Border_GPT"
+        MouseLeftButtonDown="Border_MouseLeftButtonDown"
+        Grid.ColumnSpan="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="#4df6cc" ShadowDepth="0" BlurRadius="20"/>
+                </Border.Effect>
+                <TextBlock TextWrapping="Wrap" Text="Вывести функцию GPT"
+               Margin="71,109,52,108"
+               Style="{StaticResource ModernTextBlock}"
+               FontSize="30"
+               Foreground="#4df6cc"/>
             </Border>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

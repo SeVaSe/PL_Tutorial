@@ -27,7 +27,7 @@ namespace PL_Tutorial
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const int TimeWaintPrint = 1; //задержка между печатаемыми символами (в миллисекундах)
+        private const int TimeWaintPrint = 10; //задержка между печатаемыми символами (в миллисекундах)
         private const string TextType = "\t      Добро пожаловать в PL-Tutorial!\n\n" +
 
             "PL-Tutorial - информативное приложение-справочник, помогающее вам найти все необходимые ресурсы, примеры кода и объяснения для изучения различных языков программирования и технологий." +
@@ -41,35 +41,33 @@ namespace PL_Tutorial
             Loaded += MainWindow_Loaded;
         }
 
-
-
-        private void Button_Cl(object sender, RoutedEventArgs e)
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if (mainBorder.Opacity == 0)
+            Thickness originalMargin = new Thickness(284, 35, -134, 55);
+            Thickness expandedMargin = new Thickness(30, 36, 18, 54); // Новое значение Margin для полного вывода Border_GPT
+
+            if (IsBorderExpanded(Border_GPT))
             {
-                DoubleAnimation animation = new DoubleAnimation
-                {
-                    From = -mainBorder.ActualWidth,
-                    To = 0,
-                    Duration = new Duration(TimeSpan.FromSeconds(0.5))
-                };
-                mainBorder.BeginAnimation(MarginProperty, new ThicknessAnimation(new Thickness(-mainBorder.ActualWidth, 17, 0, 0), TimeSpan.FromSeconds(0.5)));
-                mainBorder.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.5)));
+                // Создаем анимацию для изменения Margin от текущего значения к исходному значению
+                ThicknessAnimation animation = new ThicknessAnimation(Border_GPT.Margin, originalMargin, TimeSpan.FromSeconds(0.5));
+                Border_GPT.BeginAnimation(Border.MarginProperty, animation);
             }
             else
             {
-                DoubleAnimation animation = new DoubleAnimation
-                {
-                    From = -mainBorder.ActualWidth,
-                    To = 1,
-                    Duration = new Duration(TimeSpan.FromSeconds(0.5))
-                };
-                mainBorder.BeginAnimation(MarginProperty, new ThicknessAnimation(new Thickness(-mainBorder.ActualWidth, 17, 0, 0), TimeSpan.FromSeconds(0.5)));
-                mainBorder.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.5)));
+                // Создаем анимацию для изменения Margin от текущего значения к значению для полного вывода
+                ThicknessAnimation animation = new ThicknessAnimation(Border_GPT.Margin, expandedMargin, TimeSpan.FromSeconds(0.5));
+                Border_GPT.BeginAnimation(Border.MarginProperty, animation);
             }
-
-
         }
+
+        private bool IsBorderExpanded(Border border)
+        {
+            return border.Margin.Equals(new Thickness(30, 36, 18, 54));
+        }
+
+
+
+
 
 
 
