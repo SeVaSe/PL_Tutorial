@@ -7,58 +7,79 @@
         mc:Ignorable="d"
         Style="{StaticResource ModernWindowStyle}"
         Title="GPT_Wind" Height="550" Width="350"
-        Left="1180" Top="130"
-        >
-    <Border Background="AliceBlue" CornerRadius="20">
+        Left="1180" Top="130">
+    <Border Background="#444654" CornerRadius="20" BorderThickness="0">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="36*"/>
-                <RowDefinition Height="527*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="99*"/>
+                <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
 
+            <!--Верхняя панель-->
+            <Border Background="#343541"
+                    CornerRadius="0,0,20,20"
+                    Grid.Row="2">
+
+            </Border>
+
+            <!--Верхняя панель-->
             <Border  MouseLeftButtonDown="Window_MouseLeftButtonDown"
-                     MouseMove="Window_MouseMove" Grid.ColumnSpan="2"
-                     Background="Black"
+                     MouseMove="Window_MouseMove"
+                     Background="#2e2f38"
                      CornerRadius="20,20,0,0">
 
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="191*"/>
+                        <ColumnDefinition Width="159*"/>
                     </Grid.ColumnDefinitions>
+
+                    <TextBlock Margin="39,6,16,5" 
+                               Style="{StaticResource ModernTextBlock}"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Foreground="#b4fae9"
+                               Grid.Column="0"
+                               Text="GPT-Функция">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="15"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+
                     <Button Content="⟲"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="30" 
-                        Grid.Column="4"
+                        Grid.Column="1"
                         Cursor="Hand"
                         Background="Transparent"
-                        Foreground="AliceBlue"
+                        Foreground="#e6fcf7"
                         FontWeight="Bold"
                         Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Perezapusk_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Margin="33,0,0,0" Width="31"/>
+                        VerticalAlignment="Center" Margin="33,0,0,0" Width="31" Height="35"/>
 
                     <Button Content="━"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="40" 
-                        Grid.Column="4"
+                        Grid.Column="1"
                         Background="Transparent"
-                        Foreground="AliceBlue"
+                        Foreground="#e6fcf7"
                         FontWeight="Bold"
                         Cursor="Hand"
                         BorderThickness="0" Click="Svernut_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Margin="80,-8,0,0" Style="{StaticResource ButtonClearTheme}"/>
+                        VerticalAlignment="Top" Margin="80,-8,0,0" Style="{StaticResource ButtonClearTheme}" Height="43" Width="21"/>
 
 
 
                     <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="17" 
-                        Grid.Column="4"
+                        Grid.Column="1"
                         Background="Transparent"
-                        Foreground="AliceBlue"
+                        Foreground="#e6fcf7"
                         FontWeight="Bold"
                             Cursor="Hand"
                         Style="{StaticResource ButtonClearTheme}"
@@ -66,8 +87,10 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Margin="117,0,0,0" RenderTransformOrigin="0.492,0.65" Height="29" Width="29">
                     </Button>
+
+
                 </Grid>
-                
+
             </Border>
 
         </Grid>

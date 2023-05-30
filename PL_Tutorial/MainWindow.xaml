@@ -221,7 +221,7 @@
                         GPT-ФУНКЦИЯ
                     </TextBlock>
 
-                    <Button Content="Моя кнопка" Margin="54,276,54,6" Click="Button_GPT">
+                    <Button Content="Моя кнопка" Margin="60,276,54,6" Click="Button_GPT">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Template">
