@@ -43,6 +43,24 @@ namespace PL_Tutorial.Window_Menu
         }
 
 
-        //
+        //закрытие окна 
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        //свернуть
+        private void Svernut_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+        
+        //перезапустить
+        private void Perezapusk_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new GPT_Wind();
+            this.Close();
+            wind.Show();
+        }
     }
 }

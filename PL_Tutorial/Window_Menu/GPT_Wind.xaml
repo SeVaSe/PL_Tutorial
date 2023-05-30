@@ -20,6 +20,53 @@
                      MouseMove="Window_MouseMove" Grid.ColumnSpan="2"
                      Background="Black"
                      CornerRadius="20,20,0,0">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="⟲"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30" 
+                        Grid.Column="4"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Perezapusk_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="33,0,0,0" Width="31"/>
+
+                    <Button Content="━"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="40" 
+                        Grid.Column="4"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        BorderThickness="0" Click="Svernut_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="80,-8,0,0" Style="{StaticResource ButtonClearTheme}"/>
+
+
+
+                    <Button Content="❌"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="17" 
+                        Grid.Column="4"
+                        Background="Transparent"
+                        Foreground="AliceBlue"
+                        FontWeight="Bold"
+                            Cursor="Hand"
+                        Style="{StaticResource ButtonClearTheme}"
+                        BorderThickness="0" Click="Exit_Click" 
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="117,0,0,0" RenderTransformOrigin="0.492,0.65" Height="29" Width="29">
+                    </Button>
+                </Grid>
                 
             </Border>
 
