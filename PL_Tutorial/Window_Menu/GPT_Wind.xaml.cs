@@ -23,5 +23,26 @@ namespace PL_Tutorial.Window_Menu
         {
             InitializeComponent();
         }
+
+
+        // перетаскивание окна
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+
+        //
     }
 }

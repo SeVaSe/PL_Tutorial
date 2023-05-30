@@ -84,11 +84,6 @@ namespace PL_Tutorial
 
 
 
-
-
-
-
-
         //печать текста приветствия
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
