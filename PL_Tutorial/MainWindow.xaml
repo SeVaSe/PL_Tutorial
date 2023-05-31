@@ -162,7 +162,7 @@
 
 
 
-            <!--Border с GPT  264,36,-26,54  30, 36, 12, 54-->
+            <!--Border с GPT 264,36,-26,54    30,36,12,54-->
             <Border Grid.Column="2" Margin="264,36,-26,54" Grid.Row="2" 
                 Background="#211f33"
                 CornerRadius="20"
@@ -217,29 +217,16 @@
                         <TextBlock.Effect>
                             <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="15"/>
                         </TextBlock.Effect>
-                        
                         GPT-ФУНКЦИЯ
                     </TextBlock>
 
-                    <Button Content="Моя кнопка" Margin="60,276,54,6" Click="Button_GPT">
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="10">
-                                                <!-- Здесь задается радиус закругления -->
-                                                <ContentPresenter HorizontalAlignment="Center"
-                                              VerticalAlignment="Center" />
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </Button.Style>
+
+
+                    <Button Content="Открыть GPT" Margin="65,271,0,12" Click="Button_GPT" Style="{StaticResource ButtonOpenGptModern}" HorizontalAlignment="Left">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="10"/>
+                        </Button.Effect>
+
                     </Button>
 
 
