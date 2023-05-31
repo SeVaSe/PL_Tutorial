@@ -11,8 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using OpenAI;
 using OpenAI_API;
+using OpenAI_API.Completions;
+using OpenAI_API.Models;
+
 
 namespace PL_Tutorial.Window_Menu
 {
@@ -69,13 +71,30 @@ namespace PL_Tutorial.Window_Menu
 
 
 
+        private async void Btn_GPT_Click(object sender, RoutedEventArgs e)
+        {
+            if (TxtBl_Vivod_Zapr == null)
+            {
+                GptModel_Class.Gpt_Work(TxtBox_Gpt_Zapr, TxtBl_Vivod_Zapr);
+            }
+            else
+            {
+                TxtBl_Vivod_Zapr.Text = string.Empty;
+                GptModel_Class.Gpt_Work(TxtBox_Gpt_Zapr, TxtBl_Vivod_Zapr);
+            }
+            
+        }
+        private async void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Btn_GPT_Click(sender, new RoutedEventArgs());
+            }
 
+        }
 
-
-
+    }
 
 
         
-
-    }
 }

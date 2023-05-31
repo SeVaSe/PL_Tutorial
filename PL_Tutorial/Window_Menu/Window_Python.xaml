@@ -116,7 +116,10 @@
 
             <!--Поисковая строка-->
             <Grid Margin="24,62,15,0" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" >
-                <TextBox Name="Txt_Box_Search" ToolTip="Нажми 2 раза Enter для поиска" Style="{StaticResource ModernTextBox}" Width="420" Height="90" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" KeyUp="TextBox_KeyUp"/>
+                <TextBox Name="Txt_Box_Search" ToolTip="Нажми 2 раза Enter для поиска"
+                         Style="{StaticResource ModernTextBox}" 
+                         Width="420" Height="90" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" 
+                         KeyUp="TextBox_KeyUp"/>
                 <!--   <Button Content="Найти"  HorizontalAlignment="Left" Margin="670,0,0,0" VerticalAlignment="Center" Height="41" Width="118" Click="Button_Click"/> -->
             </Grid>
 

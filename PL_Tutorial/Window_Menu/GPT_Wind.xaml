@@ -103,15 +103,22 @@
                      Grid.Row="3" TextWrapping="Wrap"
                      VerticalAlignment="Center" 
                      Name="TxtBox_Gpt_Zapr"
+                     KeyDown="TextBox_KeyDown"
                      Style="{StaticResource ModernTextBoxZapr}" Grid.Column="1"/>
 
             <TextBlock HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" 
                        TextWrapping="Wrap" 
                        Name="TxtBl_Vivod_Zapr"
-                       Text="авыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы" 
+                       Text="" 
                        VerticalAlignment="Center" Height="413" Width="328"
                        Style="{StaticResource ModernTextBlock}"
                        FontSize="15"/>
+            
+            <Button Grid.Column="1" Content="Button" 
+                    HorizontalAlignment="Left" Margin="314,7,0,0" 
+                    Grid.Row="3" VerticalAlignment="Top" Width="17" Height="47" 
+                    Grid.ColumnSpan="2" 
+                    Click="Btn_GPT_Click"/>
 
         </Grid>
     </Border>
