@@ -10,16 +10,23 @@
         Left="1180" Top="130">
     <Border Background="#444654" CornerRadius="20" BorderThickness="0">
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="327*"/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="7*"/>
-                <RowDefinition Height="99*"/>
-                <RowDefinition Height="4*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="414*"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="20*"/>
             </Grid.RowDefinitions>
 
             <!--Верхняя панель-->
             <Border Background="#343541"
                     CornerRadius="0,0,20,20"
-                    Grid.Row="2">
+                    Grid.Row="3" Grid.ColumnSpan="3" Margin="0,70,0,0" Grid.RowSpan="2">
 
             </Border>
 
@@ -27,7 +34,7 @@
             <Border  MouseLeftButtonDown="Window_MouseLeftButtonDown"
                      MouseMove="Window_MouseMove"
                      Background="#2e2f38"
-                     CornerRadius="20,20,0,0">
+                     CornerRadius="20,20,0,0" Grid.ColumnSpan="3" Margin="0,0,0,11" Grid.RowSpan="2">
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -92,10 +99,19 @@
                 </Grid>
 
             </Border>
-            <TextBox HorizontalAlignment="Center" Margin="0,435,0,0" 
-                     Grid.Row="1" TextWrapping="Wrap"
-                     VerticalAlignment="Top" 
-                     Style="{StaticResource ModernTextBoxZapr}"/>
+            <TextBox HorizontalAlignment="Center" 
+                     Grid.Row="3" TextWrapping="Wrap"
+                     VerticalAlignment="Center" 
+                     Name="TxtBox_Gpt_Zapr"
+                     Style="{StaticResource ModernTextBoxZapr}" Grid.Column="1"/>
+
+            <TextBlock HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" 
+                       TextWrapping="Wrap" 
+                       Name="TxtBl_Vivod_Zapr"
+                       Text="авыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы" 
+                       VerticalAlignment="Center" Height="413" Width="328"
+                       Style="{StaticResource ModernTextBlock}"
+                       FontSize="15"/>
 
         </Grid>
     </Border>

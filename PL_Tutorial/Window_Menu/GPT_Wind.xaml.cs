@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using OpenAI;
+using OpenAI_API;
 
 namespace PL_Tutorial.Window_Menu
 {
@@ -62,5 +64,18 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
             wind.Show();
         }
+
+
+
+
+
+
+
+
+
+
+
+        
+
     }
 }

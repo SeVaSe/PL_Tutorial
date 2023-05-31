@@ -162,7 +162,7 @@
 
 
 
-            <!--Border с GPT 264,36,-26,54    30,36,12,54-->
+            <!--Border с GPT    264,36,-26,54    30,36,12,54-->
             <Border Grid.Column="2" Margin="264,36,-26,54" Grid.Row="2" 
                 Background="#211f33"
                 CornerRadius="20"
@@ -202,6 +202,8 @@
 
                     </TextBlock>
 
+
+                    <!--Надпись на окне-->
                     <TextBlock Margin="10,255,-121,35" 
                                FontSize="25"
                                FontWeight="Bold"
@@ -221,18 +223,13 @@
                     </TextBlock>
 
 
-
+                    <!--Кнопка открытия GPT-->
                     <Button Content="Открыть GPT" Margin="65,271,0,12" Click="Button_GPT" Style="{StaticResource ButtonOpenGptModern}" HorizontalAlignment="Left">
                         <Button.Effect>
                             <DropShadowEffect Color="#b4fae9" ShadowDepth="0" BlurRadius="10"/>
                         </Button.Effect>
-
                     </Button>
-
-
                 </Grid>
-
-
             </Border>
 
 
