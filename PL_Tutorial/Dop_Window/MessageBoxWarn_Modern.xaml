@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL_Tutorial.Dop_Window"
         mc:Ignorable="d"
-        Title="MessageBox_Modern" Height="241" Width="550"
+        Title="MessageBox_Modern" Height="301" Width="616"
         Style="{StaticResource ModernWindowStyle}"
         WindowStartupLocation="CenterScreen">
-    <Border Background="#323759" CornerRadius="20">
+    <Border Background="#323759" CornerRadius="20" Height="241" Width="550" BorderThickness="2">
+        <Border.Effect>
+            <DropShadowEffect Color="#ff0033" ShadowDepth="0" BlurRadius="50"/>
+        </Border.Effect>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="6*"/>
@@ -24,9 +27,9 @@
             <Border  Background="#252a47" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="3" Grid.RowSpan="1">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="243*"/>
-                        <ColumnDefinition Width="23*"/>
-                        <ColumnDefinition Width="134*"/>
+                        <ColumnDefinition Width="429*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="62*"/>
                     </Grid.ColumnDefinitions>
 
                     <!--Закрыть-->
@@ -40,7 +43,7 @@
                         Style="{StaticResource ButtonClearTheme}"
                         BorderThickness="0" Click="Exit_Click" 
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Center" Margin="133,0,0,0" RenderTransformOrigin="0.517,0.479" Height="33" Width="34"
+                        VerticalAlignment="Center" Margin="18,0,0,0" RenderTransformOrigin="0.517,0.479" Height="33" Width="34"
                         Grid.Column="2"/>
 
 
@@ -52,14 +55,14 @@
                                FontWeight="Bold"
                                Name="TxtBl_Title"
                                FontSize="19"
-                               Style="{StaticResource ModernTextBlock}" Height="23" Width="309" Margin="17,0,0,0"/>
+                               Style="{StaticResource ModernTextBlock}" Height="23" Width="410" Margin="19,0,0,0"/>
                 </Grid>
             </Border>
 
             <!--Иконка-->
-            <Image Source="\Source\Icon\row_close.png" Margin="28,105,381,-8" Grid.Row="1" Grid.Column="1">
+            <Image Source="\Source\Icon\bag_ic.png" Margin="28,105,393,10" Grid.Row="1" Grid.Column="1">
                 <Image.Effect>
-                    <DropShadowEffect Color="#ff5e7e" ShadowDepth="0" BlurRadius="30"/>
+                    <DropShadowEffect Color="#ff5e7e" ShadowDepth="0" BlurRadius="20"/>
                 </Image.Effect>
             </Image>
             <!--Текст ошибки-->

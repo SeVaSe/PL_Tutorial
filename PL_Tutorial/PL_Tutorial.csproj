@@ -481,5 +481,8 @@
   <ItemGroup>
     <Resource Include="Source\Icon\row_close.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\bag_ic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
