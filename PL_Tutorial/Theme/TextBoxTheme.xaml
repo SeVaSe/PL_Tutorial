@@ -60,7 +60,7 @@
                             Width="290" Height="50">
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
-                            <TextBox Margin="1"
+                            <TextBox Margin="1,0,30,0"
                                      Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}"
                                      BorderThickness="0"
                                      Background="Transparent"

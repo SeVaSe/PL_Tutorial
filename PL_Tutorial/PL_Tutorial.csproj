@@ -445,7 +445,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Music\" />
-    <Folder Include="Source_Photo\" />
+    <Folder Include="Source\Music\" />
+    <Folder Include="Source\Photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\send_icon_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="send_icon_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

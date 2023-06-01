@@ -11,37 +11,34 @@ using OpenAI_API.Completions;
 using OpenAI_API.Models;
 using PL_Tutorial.Window_Menu;
 
+
 namespace PL_Tutorial
 {
+    /*ПРОЕКТ GPT-ФУНКЦИЯ ПРИКРЫТ НА НЕОПРЕДЕЛЕННОЕ ВРЕМЯ, С СВЯЗИ С ТЕМ, ЧТО API КЛЮЧ, УТРАТИЛ ВРЕМЕННЫЙ ПЕРИОД И БОЛЬШЕ ПРИШЕЛ В НЕГОДНОСТЬ
+НО ФУНКЦИЯ ОСТАНЕТСЯ В ДАННОМ ОКНЕ И ПРОДОЛЖИТ ВИСЕТЬ, ДО СКОРЫХ ВОЗМОЖНЫХ ИЗМЕНЕНИЙ В openAI*/
+
     public class GptModel_Class
     {
         public async static void Gpt_Work(TextBox TxtBox_Gpt_Zapr, TextBlock TxtBl_Vivod_Zapr)
         {
-            OpenAIAPI api = new OpenAIAPI(new APIAuthentication("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"));
-            var chat = api.Chat.CreateConversation();
-
-            chat.AppendUserInput(TxtBox_Gpt_Zapr.Text);
-
-
-            string response = await chat.GetResponseFromChatbotAsync();
-            TxtBl_Vivod_Zapr.Text = response;
+            OpenAIAPI api = new OpenAIAPI(new APIAuthentication("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"));
+            string zapr = TxtBox_Gpt_Zapr.Text;
+                
+            var result = await api.Completions.CreateCompletionAsync(new CompletionRequest()
+            {
+                Model = Model.DavinciText,
+                Temperature = 0.1,
+                MaxTokens = 2000,
+                Prompt = zapr,
+            });
+            var reply = result;
+            TxtBl_Vivod_Zapr.Text = Convert.ToString(reply);
+                
+                
         }
 
 
-        /*public async static void Gpt_Work(TextBox TxtBox_Gpt_Zapr, TextBlock TxtBl_Vivod_Zapr)
-        {
-
-            async Task StreamCompletionAsync(CompletionRequest request, Action<CompletionResult> resultHandler)
-            {
-                OpenAIAPI api = new OpenAIAPI(new APIAuthentication("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", ""));
-                await api.Completions.StreamCompletionAsync(
-                new CompletionRequest("My name is Roger and I am a principal software engineer at Salesforce.  This is my resume:", Model.DavinciText, 200, 0.5, presencePenalty: 0.1, frequencyPenalty: 0.1),
-                res => TxtBl_Vivod_Zapr.Text += res.ToString());
-            }
-
-            // for example
-            
-        }*/
+        
 
 
 

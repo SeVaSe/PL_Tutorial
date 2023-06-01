@@ -113,13 +113,22 @@
                        VerticalAlignment="Center" Height="413" Width="328"
                        Style="{StaticResource ModernTextBlock}"
                        FontSize="15"/>
-            
-            <Button Grid.Column="1" Content="Button" 
-                    HorizontalAlignment="Left" Margin="314,7,0,0" 
-                    Grid.Row="3" VerticalAlignment="Top" Width="17" Height="47" 
-                    Grid.ColumnSpan="2" 
-                    Click="Btn_GPT_Click"/>
 
+            <Button Grid.Column="1"
+                    HorizontalAlignment="Left" Margin="277,0,0,0" 
+                    Grid.Row="3" VerticalAlignment="Center" Width="28" Height="29" 
+                    Click="Btn_GPT_Click"
+                    Background="Transparent"
+                    BorderThickness="0" RenderTransformOrigin="0.5,0.5"
+                    Style="{StaticResource ButtonClearTheme}"
+                    Cursor="Hand">
+
+                <Button.Content>
+                    <Image Source="\Source\Icon\send_icon_3.png"/>
+                </Button.Content>
+            </Button>
+            
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Border>
 </Window>
