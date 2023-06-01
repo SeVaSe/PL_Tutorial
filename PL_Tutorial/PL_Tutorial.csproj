@@ -478,5 +478,8 @@
     <Resource Include="Source\Icon\warn_green.png" />
     <Resource Include="Source\Icon\work_run.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\row_close.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

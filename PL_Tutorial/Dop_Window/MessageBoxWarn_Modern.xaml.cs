@@ -19,9 +19,13 @@ namespace PL_Tutorial.Dop_Window
     /// </summary>
     public partial class MessageBoxWarn_Modern : Window
     {
-        public MessageBoxWarn_Modern()
+        public MessageBoxWarn_Modern(string title, string message)
         {
             InitializeComponent();
+
+            //title и текст окна ошибки
+            TxtBl_Title.Text = title;
+            TxtBl_TextWarn.Text = message;
         }
 
         //закрытие
@@ -36,7 +40,7 @@ namespace PL_Tutorial.Dop_Window
         }
 
 
-
-
+        
+        
     }
 }
