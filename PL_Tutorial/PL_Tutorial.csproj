@@ -119,6 +119,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dop_Window\MessageBoxWarn_Modern.xaml.cs">
+      <DependentUpon>MessageBoxWarn_Modern.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dop_Window\MessageBox_Modern.xaml.cs">
+      <DependentUpon>MessageBox_Modern.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GptModel_Class.cs" />
     <Compile Include="Pages\Arifm_Osn_Page.xaml.cs">
       <DependentUpon>Arifm_Osn_Page.xaml</DependentUpon>
@@ -229,6 +235,14 @@
     <Compile Include="Window_Menu\Window_Spravka.xaml.cs">
       <DependentUpon>Window_Spravka.xaml</DependentUpon>
     </Compile>
+    <Page Include="Dop_Window\MessageBoxWarn_Modern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dop_Window\MessageBox_Modern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -453,6 +467,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="send_icon_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\warn_404.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\warn_404_yel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Icon\warn_green.png" />
+    <Resource Include="Source\Icon\work_run.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
