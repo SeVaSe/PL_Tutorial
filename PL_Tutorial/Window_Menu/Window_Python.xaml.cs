@@ -178,6 +178,12 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
+        private void Btn_Vlozh_Break_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.VlozhAndBreakCycle();
+            this.Close();
+        }
+
         private void Btn_List_Click(object sender, RoutedEventArgs e)
         {
             Osn_Button_Class.ListClick();

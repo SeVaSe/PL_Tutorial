@@ -2188,7 +2188,7 @@
 
 
 
-    <!--IF УСЛОВИЕ-->
+    <!--ЦИКЛ FOR-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
         <Setter Property="Template">
             <Setter.Value>

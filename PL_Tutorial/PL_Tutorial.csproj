@@ -129,6 +129,9 @@
     <Compile Include="Pages\Arifm_Osn_Page.xaml.cs">
       <DependentUpon>Arifm_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Break_Vlozh_Cycle.xaml.cs">
+      <DependentUpon>Break_Vlozh_Cycle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ConsolePrintInput_Osn_Page.xaml.cs">
       <DependentUpon>ConsolePrintInput_Osn_Page.xaml</DependentUpon>
     </Compile>
@@ -256,6 +259,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\Arifm_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Break_Vlozh_Cycle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

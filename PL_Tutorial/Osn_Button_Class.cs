@@ -100,6 +100,13 @@ namespace PL_Tutorial
             wind.Show();
         }
 
+        //вложенность и выход из цикла
+        public static void VlozhAndBreakCycle()
+        {
+            Window wind = new Break_Vlozh_Cycle();
+            wind.Show();
+        }
+
         //списки
         public static void ListClick()
         {
