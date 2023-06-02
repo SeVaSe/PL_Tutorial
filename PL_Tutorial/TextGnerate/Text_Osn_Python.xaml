@@ -1899,7 +1899,7 @@
 
 
 
-    <!--IF условие-->
+    <!--IF УСЛОВИЕ-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="IfConstruction">
         <Setter Property="Template">
             <Setter.Value>
@@ -2185,11 +2185,31 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    
-    
-    
-    
+
+
+
+    <!--IF УСЛОВИЕ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 </ResourceDictionary>
