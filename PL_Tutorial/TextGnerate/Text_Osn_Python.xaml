@@ -1567,7 +1567,7 @@
 
 
 
-    <!--ПРЕОБРАЗОВАНИЕ УСЛОВНЫЕ ВЫРАЖЕНИЕ-->
+    <!--УСЛОВНЫЕ ВЫРАЖЕНИЕ-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="UslovnVirazRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -1897,6 +1897,300 @@
     </Style>
 
 
+
+
+    <!--IF условие-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="IfConstruction">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--IF блок-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________________
+                                        </Span>
+                                        IF БЛОК
+                                    </Span>
+                                </Paragraph>
+                                
+                                <Paragraph>
+                                    Условные конструкции в программировании используют условные выражения, чтобы определить, какой путь выполнения программы 
+                                    следует выбрать. Одним из примеров такой конструкции является if-условие.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример постороения констркукции:</Bold>
+                                    </Span>
+                                    
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] if логическое_выражение:
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>инструкции
+                                            <LineBreak/>
+                                            [3] [elif логическое выражение:
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>инструкции]
+                                            <LineBreak/>
+                                            [5] [else:
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span>инструкции]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В самом простом виде после ключевого слова if идет логическое выражение. И если это логическое выражение возвращает True, то выполняется последующий блок 
+                                    инструкций, каждая из которых должна начинаться с новой строки и должна иметь отступы от начала выражения if.
+                                </Paragraph>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] num_str = "1"
+                                            <LineBreak/>
+                                            [2] if num_str == "1":
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>print("Один")
+                                            <LineBreak/>
+                                            [4] print("Пока")   
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ### КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Один
+                                            <LineBreak/>
+                                            Пока
+                                        </TextBlock>
+                                    </Border>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Обратите внимание в коде на последнюю строку, которая выводит сообщение "Пока". Она не имеет отступов от начала строки, поэтому она не принадлежит к блоку 
+                                    if и будет выполняться в любом случае, даже если выражение в конструкции if возвратит False.
+                                </Paragraph>
+                            </Section>
+
+                            
+
+                            <!--ELSE блок-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________________
+                                        </Span>
+                                        ELSE БЛОК
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если вдруг нам надо определить альтернативное решение на тот случай, если выражение в if возвратит False, то мы можем использовать блок else.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] num_str = "2"
+                                            <LineBreak/>
+                                            [2] if num_str == "1":
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>print("Один")
+                                            <LineBreak/>
+                                            [4] else:
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span>print("Два")
+                                            <LineBreak/>
+                                            [6] print("Пока")   
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ### КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Два
+                                            <LineBreak/>
+                                            Пока
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Если выражение num_str == "1" возвращает True, то выполняется блок if, иначе выполняется блок else. 
+                                    И поскольку в данном случае условие  num_str == "1" возвращает False, то будут выполняться инструкция из блока else.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Причем инструкции блока else также должны иметь отступы от начала строки. Например, в примере выше
+                                    <LineBreak/> print("Пока") не имеет отступа,
+                                    поэтому она не входит в блок else и будет выполнятьься вне зависимости, чему равно условие num_str == "1". Из этого получается такой вывод.
+                                </Paragraph>
+                            </Section>
+                            
+                            
+                            
+                            <!--ELIF блок-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________________
+                                        </Span>
+                                        ELIF БЛОК
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если необходимо ввести несколько альтернативных условий, то можно использовать дополнительные блоки elif, после которого идет блок инструкций.
+                                </Paragraph>
+
+                                <Paragraph>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] language = "spanish"
+                                            <LineBreak/>
+                                            [2] if language == "english":
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>print("Hello")
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>print("World")
+                                            <LineBreak/>
+                                            [5] elif language == "german":
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span>print("Hallo")
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span>print("Welt")
+                                            <LineBreak/>
+                                            [8] elif language == "spanish":
+                                            <LineBreak/>
+                                            [9] <Span Foreground="#272537">____</Span>print("Hola")
+                                            <LineBreak/>
+                                            [10] <Span Foreground="#272537">____</Span>print("Mundo")
+                                            <LineBreak/>
+                                            [11] else:
+                                            <LineBreak/>
+                                            [12] <Span Foreground="#272537">____</Span>print("Привет")
+                                            <LineBreak/>
+                                            [13] <Span Foreground="#272537">____</Span>print("мир")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ### КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Hola
+                                            <LineBreak/>
+                                            Mundo
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Сначала Python проверяет выражение if. Если оно равно True, то выполняются инструкции из блока if. Если это условие возвращает False, 
+                                    то Python проверяет выражение из elif.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если выражение после elif равно True, то выполняются инструкции из блока elif1. Но если оно равно False то выполняются другая инструкции из блока elif2.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если все выражения равны False, то выполнится инструкции из блока else.
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--Вложенные конструкции IF-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        ВЛОЖЕННЫЕ КОНСТРУКЦИИ IF
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Конструкция if в свою очередь сама может иметь вложенные конструкции if.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] language = "english"
+                                            <LineBreak/>
+                                            [2] daytime == "morning"
+                                            <LineBreak/>
+                                            [3] if language == "english":
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>print("English")
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span>if daytime == "morning":
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span>print("Good morning")
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span>else:
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">________</Span>print("Good evening")
+                                            <LineBreak/>
+                                            [9] else:
+                                            <LineBreak/>
+                                            [10]<Span Foreground="#272537">____</Span>print("Пока")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ### КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            English
+                                            <LineBreak/>
+                                            Good morning
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Здесь если первая конструкция if равна True, то мы заходим внутрь и поподаем во вложенную конструкцию if. Но если первая if, равна False, то сработает сразу
+                                    else и нам выведет - Пока.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    
+    
+    
 
 
 </ResourceDictionary>
