@@ -821,7 +821,7 @@
                             <!--написание Ввод-->
                             <Section>
                                 <Paragraph>
-                                    <LineBreak/>
+                                    
                                     <Span FontSize="35" FontWeight="Bold">
                                         <Span Foreground="#272537">
                                             ______________________
@@ -1380,7 +1380,7 @@
                             <!--написание Целое число-->
                             <Section>
                                 <Paragraph>
-                                    <LineBreak/>
+                                    
                                     <Span FontSize="35" FontWeight="Bold">
                                         <Span Foreground="#272537">
                                             ______________
@@ -1914,7 +1914,6 @@
                             <!--IF блок-->
                             <Section>
                                 <Paragraph>
-                                    <LineBreak/>
                                     <Span FontSize="35" FontWeight="Bold">
                                         <Span Foreground="#272537">
                                             ___________________________
