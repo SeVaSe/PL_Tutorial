@@ -2189,7 +2189,7 @@
 
 
     <!--ЦИКЛ WHILE-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
+    <Style TargetType="{x:Type RichTextBox}" x:Key="CycleWhileRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">
@@ -2342,9 +2342,6 @@
                                     То есть в данном случае сначала проверяется условие и выполняются инструкции while. Затем, когда условие становится равным False, 
                                     выполняются инструкции из блока else. 
                                     Обратите внимание, что инструкции из блока else также имеют отступы от начала конструкции цикла.
-                                    
-                                    
-                                    
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -2354,5 +2351,142 @@
         </Setter>
     </Style>
 
+
+    
+    
+
+    <!--ЦИКЛ FOR-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    Другой тип циклов представляет конструкция <Span FontWeight="Bold">for</Span>. Этот цикл пробегается по набору значений, помещает каждое значение в переменную, и затем в цикле 
+                                    мы можем с этой переменной производить различные действия.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример построения конструкции:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] for переменная in набор_значений:
+                                            <LineBreak/>
+                                            [2]<Span Foreground="#272537">____</Span>инструкции
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    После ключевого слова <Span FontWeight="Bold">for</Span>. идет название переменной, в которую будут помещаться значения. Затем после оператора
+                                    <Span FontWeight="Bold">in</Span>. указывается набор значений и двоеточие.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    А со следующей строки располагается блок инструкций цикла, которые также должны иметь отступы от начала цикла.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    При выполнении цикла Python последовательно получает все значения из набора и передает их переменную. Когда все значения из набора 
+                                    будут перебраны, цикл завершает свою работу.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В качестве набора значений, например, можно рассматривать строку, которая по сути представляет набор символов.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] message = "Hello"
+                                            <LineBreak/>
+                                            [2] for c in message:
+                                            <LineBreak/>
+                                            [3]<Span Foreground="#272537">____</Span>print(c)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            H
+                                            <LineBreak/>
+                                            e
+                                            <LineBreak/>
+                                            l
+                                            <LineBreak/>
+                                            l
+                                            <LineBreak/>
+                                            o
+                                            <LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В цикле определяется переменную `c`, после оператора in в качестве перебираемого набора указана переменная message, которая хранит строку "Hello". 
+                                    В итоге цикл for будет перебираеть последовательно все символы из строки message и помещать их в переменную `c`. Блок самого цикла состоит из одной инструкции,
+                                    которая выводит значение переменной `с` на консоль.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Цикл for также может иметь дополнительный блок else, который выполняется после завершения цикла:
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] message = "Hello"
+                                            <LineBreak/>
+                                            [2] for c in message:
+                                            <LineBreak/>
+                                            [3]<Span Foreground="#272537">____</Span>print(c)
+                                            <LineBreak/>
+                                            [4] else:
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span>print(f"Последний символ: {c}. Цикл завершен")
+                                            <LineBreak/>
+                                            [6] print("Работа программы завершена")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            H
+                                            <LineBreak/>
+                                            e
+                                            <LineBreak/>
+                                            l
+                                            <LineBreak/>
+                                            l
+                                            <LineBreak/>
+                                            o
+                                            <LineBreak/>
+                                            Последний символ: o. Цикл завершен
+                                            <LineBreak/>
+                                            Работа программы завершена
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 </ResourceDictionary>
