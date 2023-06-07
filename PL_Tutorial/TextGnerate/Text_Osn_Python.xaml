@@ -2188,7 +2188,7 @@
 
 
 
-    <!--ЦИКЛ FOR-->
+    <!--ЦИКЛ WHILE-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -2202,7 +2202,150 @@
                                  IsReadOnly="True">
                         <FlowDocument>
                             <Section>
+                                <Paragraph>
+                                    Цикл while проверяет истинность некоторого условия, и если условие истинно, то выполняет инструкции цикла.
 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример построения конструкции:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] while условное_выражение:
+                                            <LineBreak/>
+                                            [2]<Span Foreground="#272537">____</Span>инструкции
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    
+
+                                    После ключевого слова while указывается условное выражение, и пока это выражение возвращает значение True, будет выполняться блок инструкций, который идет далее.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Все инструкции, которые относятся к циклу while, располагаются на последующих строках и должны иметь отступ от начала ключевого слова while.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] number = 1
+                                            <LineBreak/>
+                                            [2] while number &lt; 5:
+                                            <LineBreak/>
+                                            [3]<Span Foreground="#272537">____</Span>print(f"number = {number}")
+                                            <LineBreak/>
+                                            [4]<Span Foreground="#272537">____</Span>number += 1
+                                            <LineBreak/>
+                                            [5] print("Работа программы завершена")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            number = 1
+                                            <LineBreak/>
+                                            number = 2
+                                            <LineBreak/>
+                                            number = 3
+                                            <LineBreak/>
+                                            number = 4
+                                            <LineBreak/>
+                                            Работа программы завершена
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае цикл while будет выполняться, пока переменная number меньше 5. Также обратите внимание, что последняя инструкция 
+                                    print("Работа программы завершена") не имеет отступов от начала строки, поэтому она не входит в цикл while.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                        
+
+                                    <Span FontWeight="Bold">Весь процесс цикла можно представить следующим образом:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    1. Создается переменная `number` и устанавливается значение 1.
+                                    <LineBreak/>
+                                    2. Начинается выполнение цикла `while`. Условие `number &lt; 5` проверяет, является ли значение переменной `number` меньшим чем 5.
+                                    <LineBreak/>
+                                    3. Если условие истинно (то есть значение `number` меньше 5), выполняется блок кода, который следует за циклом. В данном случае, 
+                                        выводится сообщение с помощью функции `print`, в котором отображается текущее значение переменной `number`.
+                                    <LineBreak/>
+                                    4. Затем, значение переменной `number` увеличивается на 1 с помощью оператора `+=`.
+                                    <LineBreak/>
+                                    5. Контроль возвращается к началу цикла `while`, и снова проверяется условие. Если оно по-прежнему истинно, выполняется блок кода
+                                        с выводом сообщения и увеличением значения `number`. Если условие становится ложным, цикл прерывается и 
+                                        управление переходит к следующей инструкции после цикла.
+                                    <LineBreak/>
+                                    6. В данном случае, когда значение `number` станет равным 5, условие `number &lt; 5` станет ложным, и цикл завершится.
+                                    <LineBreak/>
+                                    7. После цикла `while` следует инструкция `print`, которая выводит сообщение "Работа программы завершена".
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Таким образом, этот код будет повторяться, пока значение переменной `number` остается меньше 5. Каждый раз, когда условие истинно, 
+                                    выводится сообщение с текущим значением `number`. По достижении значения 5 цикл завершается, и программа продолжает выполнение со следующей инструкции. 
+                                    В данном случае, после цикла выводится сообщение "Работа программы завершена".  
+                                </Paragraph>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Для цикла while также можно определить дополнительный блок else, инструкции которого выполняются, когда условие равно False:
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] number = 1
+                                            <LineBreak/>
+                                            [2] while number &lt; 5:
+                                            <LineBreak/>
+                                            [3]<Span Foreground="#272537">____</Span>print(f"number = {number}")
+                                            <LineBreak/>
+                                            [4]<Span Foreground="#272537">____</Span>number += 1
+                                            <LineBreak/>
+                                            [5] else:
+                                            <LineBreak/>
+                                            [6]<Span Foreground="#272537">____</Span>print(f"number = {number}. Работа цикла завершена")
+                                            <LineBreak/>
+                                            [7] print("Работа программы завершена")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            number = 1
+                                            <LineBreak/>
+                                            number = 2
+                                            <LineBreak/>
+                                            number = 3
+                                            <LineBreak/>
+                                            number = 4
+                                            <LineBreak/>
+                                            number =5. Работа цикла завершена
+                                            <LineBreak/>
+                                            Работа программы завершена
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    То есть в данном случае сначала проверяется условие и выполняются инструкции while. Затем, когда условие становится равным False, 
+                                    выполняются инструкции из блока else. 
+                                    Обратите внимание, что инструкции из блока else также имеют отступы от начала конструкции цикла.
+                                    
+                                    
+                                    
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>

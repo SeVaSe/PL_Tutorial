@@ -199,12 +199,11 @@
                         </ListBoxItem>
 
 
-
-                        <ListBoxItem>
-                            <Button x:Name="Btn_For" Style="{StaticResource ButtonModernBlue}" Content="Цикл FOR" Click="Btn_For_Click"/>
-                        </ListBoxItem>
                         <ListBoxItem>
                             <Button x:Name="Btn_while" Style="{StaticResource ButtonModernBlue}" Content="Цикл WHILE" Click="Btn_While_Click"/>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <Button x:Name="Btn_For" Style="{StaticResource ButtonModernBlue}" Content="Цикл FOR" Click="Btn_For_Click"/>
                         </ListBoxItem>
                         <ListBoxItem>
                             <Button x:Name="Btn_Vlozh_Break" Style="{StaticResource ButtonModernBlue}" Content="Вложенность и выход из циклов" Click="Btn_Vlozh_Break_Click"/>
