@@ -40,8 +40,33 @@
             <Bold>Пример:</Bold> 
         </Span> 
     
-    4. комментарием помечать, когда начинается новая ТЕМА - данный комментарий идет в ВЕРХНЕМ РЕГИСТРЕ
-    5. комментарием помечать, когда начинается новая подтема - данный комментарий идет в НИЖНЕМ РЕГИСТРЕ
+    4. пример кода для оформления тем:
+        <Style TargetType="{x:Type RichTextBox}" x:Key="CycleForRichTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                            <FlowDocument>
+                                <Section>
+                                    <Paragraph>
+                                   
+                                    </Paragraph>
+                                </Section>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    5. комментарием помечать, когда начинается новая ТЕМА - данный комментарий идет в ВЕРХНЕМ РЕГИСТРЕ
+    
+    6. комментарием помечать, когда начинается новая подтема - данный комментарий идет в НИЖНЕМ РЕГИСТРЕ
     
     
     
@@ -2480,6 +2505,263 @@
                                         </TextBlock>
                                     </Border>
                                     <LineBreak/>
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--ВЛОЖЕННОСТЬ И ПРЕРЫВНОСТЬ ЦИКЛОВ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="BreakVlozhRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание вложенность-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        ВЛОЖЕННОСТЬ
+                                    </Span>
+                                </Paragraph>
+                                
+                                <Paragraph>
+                                    Одни циклы внутри себя могут содержать другие циклы.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] i = 1
+                                            <LineBreak/>
+                                            [2] j = 1
+                                            <LineBreak/>
+                                            [3] while i &lt; 10:
+                                            <LineBreak/>
+                                            [4]<Span Foreground="#272537">____</Span>while j &lt; 10:
+                                            <LineBreak/>
+                                            [5]<Span Foreground="#272537">________</Span>print(i * j, end="\t")
+                                            <LineBreak/>
+                                            [6]<Span Foreground="#272537">________</Span>j += 1
+                                            <LineBreak/>
+                                            [7]<Span Foreground="#272537">____</Span>print("\n")
+                                            <LineBreak/>
+                                            [8]<Span Foreground="#272537">____</Span>j = 1
+                                            <LineBreak/>
+                                            [9]<Span Foreground="#272537">____</Span>i += 1
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    Внешний цикл while i &lt; 10: срабатывает 9 раз пока переменная i не станет равна 10. Внутри этого цикла
+                                срабатывает внутренний цикл while j &lt; 10:. Внутренний цикл также срабатывает 9 
+                                раз пока переменная j не станет равна 10. Причем все 9 итераций внутреннего цикла 
+                                срабатывают в рамках одной итерации внешнего цикла.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В каждой итерации внутреннего 
+                                цикла на консоль будет выводится произведение чисел i и j. Затем значение переменной 
+                                j увеличивается на единицу. Когда внутренний цикл закончил работу, значений 
+                                переменной j сбрасывается в 1, а значение переменной i увеличивается на единицу и 
+                                происходит переход к следующей итерации внешнего цикла. И все повторяется, пока 
+                                переменная i не станет равна 10. Соответственно внутренний цикл сработает всего 81 
+                                раз для всех итераций внешнего цикла. В итоге мы получим таблицу до 81.
+                                <LineBreak/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                Подобным образом можно определять вложенные циклы for:
+
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Span FontSize="20">
+                                    <Bold>Пример:</Bold>
+                                </Span>
+
+                                <LineBreak/>
+                                <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                    <TextBlock>
+                                        [1] for c1 in "ab":
+                                        <LineBreak/>
+                                        [2]<Span Foreground="#272537">____</Span>for c2 in "ba":
+                                        <LineBreak/>
+                                        [3]<Span Foreground="#272537">________</Span>print(f"{c1}{c2}")
+                                        <LineBreak/>
+                                        <LineBreak/>
+                                        ###КОД ВЫВЕДЕТ:
+                                        <LineBreak/>
+                                        ab
+                                        <LineBreak/>
+                                        aa
+                                        <LineBreak/>
+                                        bb
+                                        <LineBreak/>
+                                        ba
+                                    </TextBlock>
+                                </Border>
+                                <LineBreak/>
+                                В данном случае внешний цикл проходит по строке "ab" и каждый символ помещает в 
+                                    переменную c1. Внутренний цикл проходит по строке "ba", помещает каждый символ 
+                                    строки в переменную c2 и выводит сочетание обоих символов на консоль. То есть в
+                                    итоге мы получим все возможные сочетания символов a и b.
+                                </Paragraph>
+                            </Section>
+
+                            
+
+                            <!--написание выход из цикла. break и continue-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________
+                                        </Span>
+                                        ВЫХОД ИЗ ЦИКЛА. BREAK И CONTINUE
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для управления циклом мы можем использовать специальные операторы break и 
+                                    continue. Оператор break осуществляет выход из цикла. А оператор continue 
+                                    выполняет переход к следующей итерации цикла.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    ● break
+                                    <LineBreak/>
+                                    Оператор break может использоваться, если в цикле образуются условия, 
+                                    которые несовместимы с его дальнейшим выполнением.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] number = 0
+                                        <LineBreak/>
+                                        [2] while number &lt; 5:
+                                        <LineBreak/>
+                                        [3]<Span Foreground="#272537">____</Span>number += 1
+                                        <LineBreak/>
+                                        [4]<Span Foreground="#272537">____</Span>if number == 3 : 
+                                        <LineBreak/>
+                                        [5]<Span Foreground="#272537">________</Span>break
+                                        <LineBreak/>
+                                        [6]<Span Foreground="#272537">____</Span>print(f"number = {number}")
+                                        <LineBreak/>
+                                        <LineBreak/>
+                                        ###КОД ВЫВЕДЕТ:
+                                        <LineBreak/>  
+                                        number = 1
+                                        <LineBreak/>
+                                        number = 2
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    Здесь цикл while проверяет условие number &lt; 5. И пока number не равно 5, предполагается, 
+                                    что значение number будет выводиться на консоль. Однако внутри цикла также 
+                                    проверяется другое условие: if number == 3. То есть, если значение number равно
+                                    3, то с помощью оператора break выходим из цикла.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    ● continue
+                                    <LineBreak/>
+                                    В отличие от оператора break оператор continue выполняет переход к следующей итерации цикла 
+                                    без его завершения. Например, в предыдущем примере заменим break на continue.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] number = 0
+                                        <LineBreak/>
+                                        [2] while number &lt; 5:
+                                        <LineBreak/>
+                                        [3]<Span Foreground="#272537">____</Span>number += 1
+                                        <LineBreak/>
+                                        [4]<Span Foreground="#272537">____</Span>if number == 3 : 
+                                        <LineBreak/>
+                                        [5]<Span Foreground="#272537">________</Span>continue
+                                        <LineBreak/>
+                                        [6]<Span Foreground="#272537">____</Span>print(f"number = {number}")
+                                        <LineBreak/>
+                                        <LineBreak/>
+                                        ###КОД ВЫВЕДЕТ:
+                                        <LineBreak/>  
+                                        number = 1
+                                        <LineBreak/>
+                                        number = 2
+                                        <LineBreak/>  
+                                        number = 4
+                                        <LineBreak/>
+                                        number = 5
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    И в этом случае если значение переменной number равно 3, последующие инструкции 
+                                    после оператора continue не будут выполняться и мы получим такой вывод.
+
+
+                                </Paragraph>
+                            </Section>
+                            
+                           
+                            
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--СПИСКИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ListRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
