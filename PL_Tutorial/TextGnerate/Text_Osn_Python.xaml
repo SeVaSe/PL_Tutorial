@@ -2761,9 +2761,438 @@
                         <FlowDocument>
                             <Section>
                                 <Paragraph>
-
+                                    Для работы с наборами данных Python предоставляет такие встроенные типы как 
+                                    списки, кортежи и словари.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Список (list) представляет тип данных, который хранит набор или 
+                                    последовательность элементов. Во многих языках программирования есть 
+                                    аналогичная структура данных, которая называется массив.
                                 </Paragraph>
                             </Section>
+
+                            <!--написание Создание списка-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________________
+                                        </Span>
+                                        СОЗДАНИЕ СПИСКА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для создания списка применяются квадратные скобки <Span FontWeight="Bold">[]</Span>, 
+                                    внутри которых через запятую перечисляются элементы списка. Определим список чисел.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers = [1, 2, 3, 4, 5]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    
+                                    Подобным образом можно определять списки с данными других типов, 
+                                    определим список строк.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Также для создания списка можно использовать функцию-конструктор
+                                    <Span FontWeight="Bold">list()</Span>.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers1 = []
+                                        <LineBreak/>
+                                        [2] numbers2 = list()
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Оба этих определения списка аналогичны - они создают пустой список.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    
+                                    Список необязательно должен содержать только однотипные объекты. 
+                                    Мы можем поместить в один и тот же список одновременно строки, числа, 
+                                    объекты других типов данных.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] objects = [1, 2.6, "Hello", True]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Для проверки элементов списка можно использовать стандартную функцию print, 
+                                    которая выводит содержимое списка в удобочитаемом виде.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers = [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [2] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [3] print(numbers) <Span Foreground="#272537">____</Span> # [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [4] print(people) <Span Foreground="#272537">____</Span> # ["Tom", "Sam", "Bob"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Конструктор list может принимать набор значений, на основе которых создается список.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers1 = [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [2] numbers2 = list(numbers1)
+                                        <LineBreak/>
+                                        [3] print(numbers2) <Span Foreground="#272537">____</Span> # [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [4] print(people) <Span Foreground="#272537">____</Span> # ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [5] 
+                                        <LineBreak/>
+                                        [6] letters = list("Hello")
+                                        <LineBreak/>
+                                        [7] print(letters) <Span Foreground="#272537">____</Span> # ['H', 'e', 'l', 'l', 'o']
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Если необходимо создать список, в котором повторяется одно и то же значение 
+                                    несколько раз, то можно использовать символ звездочки *, то есть фактически 
+                                    применить операцию умножения к уже существующему списку.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers = [5] * 6 <Span Foreground="#272537">____</Span> # 6 раз повторяем 5
+                                        <LineBreak/>
+                                        [2] print(numbers) <Span Foreground="#272537">____</Span> # [5, 5, 5, 5, 5, 5]
+                                        <LineBreak/>
+                                        [3] 
+                                        <LineBreak/>
+                                        [4] students = ["Bob", "Sam"] * 2 <Span Foreground="#272537">____</Span> # 2 раза повторяем "Bob", "Sam"  
+                                        <LineBreak/>
+                                        [5] print(students) <Span Foreground="#272537">____</Span> # ["Bob", "Sam", "Bob", "Sam"]
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+
+
+                            <!--написание Обращение к элементам списка-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________
+                                        </Span>
+                                        ОБРАЩЕНИЕ К ЭЛЕМЕНТАМ СПИСКА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для обращения к элементам списка надо использовать индексы, которые 
+                                    представляют номер элемента в списка. Индексы начинаются с нуля. 
+                                    То есть первый элемент будет иметь индекс 0, второй элемент - индекс 1 и 
+                                    так далее. Для обращения к элементам с конца можно использовать отрицательные 
+                                    индексы, начиная с -1. То есть у последнего элемента будет индекс -1, у 
+                                    предпоследнего - -2 и так далее.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [2] # получение элементов с начала списка
+                                        <LineBreak/>
+                                        [3] print(people[0]) <Span Foreground="#272537">____</Span> # Tom
+                                        <LineBreak/>
+                                        [4] print(people[1]) <Span Foreground="#272537">____</Span> # Sam   
+                                        <LineBreak/>
+                                        [5] print(people[2]) <Span Foreground="#272537">____</Span> # Bob
+                                        <LineBreak/>
+                                        [6] 
+                                        <LineBreak/>
+                                        [7] # получение элементов с конца списка
+                                        <LineBreak/>
+                                        [8] print(people[-2]) <Span Foreground="#272537">____</Span> # Sam
+                                        <LineBreak/>
+                                        [9] print(people[-1]) <Span Foreground="#272537">____</Span> # Bob
+                                        <LineBreak/>
+                                        [10] print(people[-3]) <Span Foreground="#272537">____</Span> # Tom
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Для изменения элемента списка достаточно присвоить ему новое значение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [2] 
+                                        <LineBreak/>
+                                        [3] people[1] = "Mike" <Span Foreground="#272537">____</Span> # изменение второго элемента
+                                        <LineBreak/>
+                                        [4] print(people[1]) <Span Foreground="#272537">____</Span> # Mike
+                                        <LineBreak/>
+                                        [5] print(people) <Span Foreground="#272537">____</Span> # ["Tom", "Mike", "Bob"]
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Разложение списка-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        РАЗЛОЖЕНИЕ СПИСКА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Python позволяет разложить список на отдельные элементы.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [2] 
+                                        <LineBreak/>
+                                        [3] tom, bob, sam = people
+                                        <LineBreak/>
+                                        [4] 
+                                        <LineBreak/>
+                                        [5] print(tom) <Span Foreground="#272537">____</Span> # Tom
+                                        <LineBreak/>
+                                        [6] print(bob) <Span Foreground="#272537">____</Span> # Bob
+                                        <LineBreak/>
+                                        [7] print(sam) <Span Foreground="#272537">____</Span> # Sam
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    
+                                    В данном случае переменным tom, bob и sam последовательно присваиваются элементы из списка people. 
+                                    Однако следует учитывать, что количество переменных должно быть равно числу 
+                                    элементов присваиваемого списка.
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Перебор элементов-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        ПЕРЕБОР ЭЛЕМЕНТОВ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--ДИАПОЗОНЫ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="DiapozonRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
