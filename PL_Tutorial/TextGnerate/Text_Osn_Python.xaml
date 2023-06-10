@@ -3092,9 +3092,195 @@
                                 </Paragraph>
 
                                 <Paragraph>
+                                    Для перебора элементов можно использовать как цикл for, так и цикл while.
                                     
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Перебор с помощью цикла for:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [2] for person in people:
+                                        <LineBreak/>
+                                        [3]<Span Foreground="#272537">____</Span>print(person)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь будет производиться перебор списка people, и каждый его элемент будет 
+                                    помещаться в переменную person.
+
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Перебор с помощью цикла while:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Sam", "Bob"]
+                                        <LineBreak/>
+                                        [2] i = 0
+                                        <LineBreak/>
+                                        [3] while i &lt; len(people):
+                                        <LineBreak/>
+                                        [4]<Span Foreground="#272537">____</Span>print(people[i]) <Span Foreground="#272537">____</Span> # применяем индекс для получения элемента
+                                        <LineBreak/>
+                                        [5]<Span Foreground="#272537">____</Span>i += 1
+                                        <LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    Для перебора с помощью функции len() получаем длину списка. С помощью счетчика
+                                    i выводит по элементу, пока значение счетчика не станет равно длине списка.
                                 </Paragraph>
                             </Section>
+
+
+
+                            <!--написание Сравнение списков-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        СРАВНЕНИЕ СПИСКОВ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Два списка считаются равными, если они содержат один и тот же набор элементов.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers1 = [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [2] numbers2 = list([1, 2, 3, 4, 5])
+                                        <LineBreak/>
+                                        [3] if numbers1 == numbers2:
+                                        <LineBreak/>
+                                        [4]<Span Foreground="#272537">____</Span>print("numbers1 equal to numbers2")
+                                        <LineBreak/>
+                                        [5] else:
+                                        <LineBreak/>
+                                        [6]<Span Foreground="#272537">____</Span>print("numbers1 is not equal to numbers2")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае оба списка будут равны.
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Получение части списка-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________
+                                        </Span>
+                                        ПОЛУЧЕНИЕ ЧАСТИ СПИСКА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если необходимо получить какую-то определенную часть списка, то мы можем 
+                                    применять специальный синтаксис, который может принимать следующие формы:
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span Foreground="#272537">____</Span> ● list[:end]: через параметр end 
+                                    передается индекс элемента, до которого нужно копировать список.
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● list[start:end]: параметр start 
+                                    указывает на индекс элемента, начиная с которого надо скопировать элементы.
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● list[start:end:step]: параметр step 
+                                    указывает на шаг, через который будут копироваться элементы из списка,
+                                    <Span Foreground="#272537">______</Span> по умолчанию этот параметр равен 1.
+                                    <LineBreak/>
+
+                                    
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] numbers1 = [1, 2, 3, 4, 5]
+                                        <LineBreak/>
+                                        [2] numbers2 = list([1, 2, 3, 4, 5])
+                                        <LineBreak/>
+                                        [3] if numbers1 == numbers2:
+                                        <LineBreak/>
+                                        [4]<Span Foreground="#272537">____</Span>print("numbers1 equal to numbers2")
+                                        <LineBreak/>
+                                        [5] else:
+                                        <LineBreak/>
+                                        [6]<Span Foreground="#272537">____</Span>print("numbers1 is not equal to numbers2")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+
+
+
+
+
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
