@@ -2778,7 +2778,7 @@
                                     <LineBreak/>
                                     <Span FontSize="35" FontWeight="Bold">
                                         <Span Foreground="#272537">
-                                            _______________________
+                                            ______________________
                                         </Span>
                                         СОЗДАНИЕ СПИСКА
                                     </Span>
@@ -3178,11 +3178,11 @@
                                         <LineBreak/>
                                         [3] if numbers1 == numbers2:
                                         <LineBreak/>
-                                        [4]<Span Foreground="#272537">____</Span>print("numbers1 equal to numbers2")
+                                        [4]<Span Foreground="#272537">____</Span>print("numbers1 равен numbers2")
                                         <LineBreak/>
                                         [5] else:
                                         <LineBreak/>
-                                        [6]<Span Foreground="#272537">____</Span>print("numbers1 is not equal to numbers2")
+                                        [6]<Span Foreground="#272537">____</Span>print("numbers1 не равен numbers2")
                                         </TextBlock>
                                     </Border>
                                     <LineBreak/>
@@ -3220,7 +3220,6 @@
                                     <Span Foreground="#272537">____</Span> ● list[start:end:step]: параметр step 
                                     указывает на шаг, через который будут копироваться элементы из списка,
                                     <Span Foreground="#272537">______</Span> по умолчанию этот параметр равен 1.
-                                    <LineBreak/>
 
                                     
 
@@ -3233,24 +3232,276 @@
                                     <LineBreak/>
                                     <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
                                         <TextBlock>
-                                        [1] numbers1 = [1, 2, 3, 4, 5]
+                                        [1] people = ["Tom", "Bob", "Alice", "Sam", "Tim", "Bill"]
                                         <LineBreak/>
-                                        [2] numbers2 = list([1, 2, 3, 4, 5])
+                                        [2] 
+                                        <LineBreak/> 
+                                        [3] slice_people1 = people[:3] <Span Foreground="#272537">____</Span> # с 0 по 3
                                         <LineBreak/>
-                                        [3] if numbers1 == numbers2:
+                                        [4] print(slice_people1) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice"]
                                         <LineBreak/>
-                                        [4]<Span Foreground="#272537">____</Span>print("numbers1 equal to numbers2")
+                                        [5]
                                         <LineBreak/>
-                                        [5] else:
+                                        [6] slice_people2 = people[1:3] <Span Foreground="#272537">____</Span> # с 1 по 3
                                         <LineBreak/>
-                                        [6]<Span Foreground="#272537">____</Span>print("numbers1 is not equal to numbers2")
+                                        [7] print(slice_people2) <Span Foreground="#272537">____</Span> # ["Bob", "Alice"]
+                                        <LineBreak/>
+                                        [8] 
+                                        <LineBreak/>
+                                        [9] slice_people3 = people[1:6:2] <Span Foreground="#272537">____</Span> # с 1 по 6 с шагом 2
+                                        <LineBreak/>
+                                        [10] print(slice_people3) <Span Foreground="#272537">____</Span> # ["Bob", "Sam", "Bill"]
                                         </TextBlock>
                                     </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
                                     <LineBreak/>
 
 
 
+                                    Можно использовать отрицательные индексы, тогда отсчет будет идти с конца, например, 
+                                    -1 - предпоследний, -2 - третий сконца и так далее.
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
 
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        [1] people = ["Tom", "Bob", "Alice", "Sam", "Tim", "Bill"]
+                                        <LineBreak/>
+                                        [2] 
+                                        <LineBreak/> 
+                                        [3] slice_people1 = peopleи[:-1] <Span Foreground="#272537">____</Span> # с предпоследнего по нулевой
+                                        <LineBreak/>
+                                        [4] print(slice_people1) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice", "Sam", "Tim", "Bill"]
+                                        <LineBreak/>
+                                        [5]
+                                        <LineBreak/>
+                                        [6] slice_people2 = people[-3:-1] <Span Foreground="#272537">____</Span> # с третьего с конца по предпоследний
+                                        <LineBreak/>
+                                        [7] print(slice_people2) <Span Foreground="#272537">____</Span> # [ "Sam", "Tim"]
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <!--написание Методы и функции по работе со списками-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___
+                                        </Span>
+                                        МЕТОДЫ И ФУНКЦИИ ПО РАБОТЕ СО СПИСКАМИ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для управления элементами списки имеют целый ряд методов.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Некоторые из методов:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                        <Span FontWeight="Bold">● append(item):</Span> добавляет элемент item в конец списка
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● insert(index, item):</Span> добавляет элемент item в список по индексу index
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● extend(items):</Span> добавляет набор элементов items в конец списка
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● remove(item):</Span> удаляет элемент item. Удаляется только первое вхождение элемента. Если элемент не найден, генерирует исключение ValueError
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● clear():</Span> удаление всех элементов из списка
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● index(item):</Span> возвращает индекс элемента item. Если элемент не найден, генерирует исключение ValueError
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● pop([index]):</Span> удаляет и возвращает элемент по индексу index. Если индекс не передан, то просто удаляет последний элемент.
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● count(item):</Span> возвращает количество вхождений элемента item в список
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● sort([key]):</Span> сортирует элементы. По умолчанию сортирует по возрастанию. Но с помощью параметра key мы можем передать функцию сортировки.
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● reverse():</Span> расставляет все элементы в списке в обратном порядке
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● copy():</Span> копирует список
+                                        <Span FontWeight="Bold">● len(list):</Span> возвращает длину списка
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● sorted(list, [key]):</Span> возвращает отсортированный список
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● min(list):</Span> возвращает наименьший элемент списка
+                                        <LineBreak/>
+                                        <Span FontWeight="Bold">● max(list):</Span> возвращает наибольший элемент списка
+                                        </TextBlock>
+                                    </Border>
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример использования этих методов:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            <Span FontWeight="Bold">people = ["Tom", "Bob"]</Span>
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># добавляем в конец списка</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Green">people.append("Alice")<Span Foreground="#272537">____</Span>  # ["Tom", "Bob", "Alice"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># добавляем на вторую позицию</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Green">people.insert(1, "Bill")<Span Foreground="#272537">____</Span>  # ["Tom", "Bill", "Bob", "Alice"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># добавляем набор элементов ["Mike", "Sam"]</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Green">people.extend(["Mike", "Sam"])<Span Foreground="#272537">____</Span>  # ["Tom", "Bill", "Bob", "Alice", "Mike", "Sam"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># получаем индекс элемента</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Blue">index_of_tom = people.index("Tom")</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># удаляем по этому индексу</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Blue">removed_item = people.pop(index_of_tom)<Span Foreground="#272537">____</Span>  # ["Bill", "Bob", "Alice", "Mike", "Sam"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># удаляем последний элемент</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Blue">last_item = people.pop()<Span Foreground="#272537">____</Span>   # ["Bill", "Bob", "Alice", "Mike"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># удаляем элемент "Alice"</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Blue">people.remove("Alice")<Span Foreground="#272537">____</Span>  # ["Bill", "Bob", "Mike"]</Span>
+                                            <LineBreak/>
+                                            <Span FontWeight="Bold"># удаляем все элементы</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Red">people.clear()</Span>
+                                            <LineBreak/>
+                                            <Span Foreground="Red">print(people)<Span Foreground="#272537">____</Span>   # []</Span>
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Проверка наличия элемента-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        ПРОВЕРКА НАЛИЧИЯ ЭЛЕМЕНТА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если определенный элемент не найден, то методы remove и index генерируют 
+                                    исключение. Чтобы избежать подобной ситуации, перед операцией с элементом можно
+                                    проверять его наличие с помощью ключевого слова <Span FontWeight="Bold">in.</Span>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Alice", "Sam"]
+                                            <LineBreak/>
+                                            [2]
+                                            <LineBreak/>
+                                            [3] if "Alice" in people:
+                                            <LineBreak/>
+                                            [4]<Span Foreground="#272537">____</Span>people.remove("Alice")
+                                            <LineBreak/>
+                                            [5] print(people) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Sam"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Выражение if "Alice" in people возвращает True, если элемент "Alice" имеется в списке people. 
+                                    Поэтому конструкция if "Alice" in people может выполнить последующий блок
+                                    инструкций в зависимости от наличия элемента в списке.
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Удаление с помощью del-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________
+                                        </Span>
+                                        УДАЛЕНИЕ С ПОМОЩЬЮ del
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Python также поддерживает еще один способ удаления элементов списка - с помощью
+                                    оператора del. В качестве параметра этому оператору передается удаляемый
+                                    элемент или набор элементов.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Alice", "Sam", "Bill", "Kate", "Mike"]
+                                            <LineBreak/>
+                                            [2]
+                                            <LineBreak/>
+                                            [3] del people[1]   <Span Foreground="#272537">____</Span> # удаляем второй элемент
+                                            <LineBreak/>
+                                            [4] print(people)   <Span Foreground="#272537">____</Span> # ["Tom", "Alice", "Sam", "Bill", "Kate", "Mike"]
+                                            <LineBreak/>
+                                            [5]
+                                            <LineBreak/>
+                                            [6] del people[:3]   <Span Foreground="#272537">____</Span> # удаляем с первого по третий элемент не включая
+                                            <LineBreak/>
+                                            [7] print(people)   <Span Foreground="#272537">____</Span> # ["Bill", "Kate", "Mike"]
+                                            <LineBreak/>
+                                            [8]
+                                            <LineBreak/>
+                                            [9] del people[1:]   <Span Foreground="#272537">____</Span> # удаляем со второго элемента
+                                            <LineBreak/>
+                                            [10] print(people)   <Span Foreground="#272537">____</Span> # ["Bill"]
+                                        </TextBlock>
+
+                                    </Border>
 
 
                                 </Paragraph>
@@ -3259,18 +3510,79 @@
 
 
 
+                            <!--написание Подсчет вхождений-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        ПОДСЧЕТ ВХОЖДЕНИЙ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Если необходимо узнать, сколько раз в списке присутствует тот 
+                                    или иной элемент, то можно применить метод count().
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Alice", "Tom", "Bill", "Tom"]
+                                            <LineBreak/>
+                                            [2]
+                                            <LineBreak/>
+                                            [3] people_count = people.count("Tom")
+                                            <LineBreak/>
+                                            [4] print(people_count)      <Span Foreground="#272537">____</Span> # 3
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
 
 
 
 
+                            <!--написание Сортировка-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        СОРТИРОВКА
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    ------
 
 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
 
-
-
-
-
-
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
 
 
 
