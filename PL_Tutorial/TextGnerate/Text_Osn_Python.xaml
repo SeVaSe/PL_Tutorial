@@ -4020,97 +4020,14 @@
                                             Tom | 29 | Alice | 33 | Bob | 27 |
                                         </TextBlock>
                                     </Border>
-
-
-
                                 </Paragraph>
                             </Section>
-
-
-
-
-
-
-
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4129,6 +4046,154 @@
                                      BorderThickness="0"
                                      IsReadOnly="True">
                         <FlowDocument>
+                            
+                            <!--написание Диапозоны-->
+                            <Section>
+                                <Paragraph>
+                                    Диапазоны или range представляют неизменяемый последовательный набор чисел. 
+                                    Для создания диапазов применяетя range, которая имеет следующие формы:
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span Foreground="#272537">____</Span> <Span FontWeight="Bold">● range(stop):</Span> возвращает все целые числа от 0 до stop
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> <Span FontWeight="Bold">● range(start, stop):</Span> возвращает все целые числа от 0 до stop
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> <Span FontWeight="Bold">● range(start, stop, step):</Span> возвращает целые числа в промежутке от start (включая) до stop (не включая),
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">______</Span> которые увеличиваются на значение step
+                                    
+
+                                    
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] range(5) <Span Foreground="#272537">____</Span> # 0, 1, 2, 3, 4
+                                            <LineBreak/>
+                                            [2] range(1, 5) <Span Foreground="#272537">____</Span> # 1, 2, 3, 4
+                                            <LineBreak/>
+                                            [3] range(2, 10, 2) <Span Foreground="#272537">____</Span> # 2, 4, 6, 8
+                                            <LineBreak/> 
+                                            [4] range(10, 2, -2) <Span Foreground="#272537">____</Span> # 10 8 6 4 
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    
+                                    Диапазоны чаще всего применяются в циклах for. Например, выведем последовательно все 
+                                    числа от 0 до 4.
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] for i in range(5):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>print(i, end=" ")
+                                            <LineBreak/>
+                                            <LineBreak/> 
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            0, 1, 2, 3, 4
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+
+                                    Другой пример выведем таблицу умножения.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] for i in range(1, 10):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>for j in range(1, 10):
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">________</Span>print(i * j, end="\t")
+                                            <LineBreak/> 
+                                            [4] <Span Foreground="#272537">____</Span>print("\n")
+                                            <LineBreak/>
+                                            <LineBreak/> 
+                                            ###КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Всю таблицу умножения
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Если нам необходим последовательный список чисел, то для его создания удобно использовать функцию
+                                    <Span FontWeight="Bold">range()</Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = list(range(10))
+                                            <LineBreak/>
+                                            [2] print(numbers) <Span Foreground="#272537">____</Span> # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/> 
+                                            [4] numbers = list(range(2, 10))
+                                            <LineBreak/> 
+                                            [4] print(numbers) <Span Foreground="#272537">____</Span> # [2, 3, 4, 5, 6, 7, 8, 9]
+                                            <LineBreak/>
+                                            [5]
+                                            <LineBreak/> 
+                                            [6] numbers = list(range(10, 2, -2))
+                                            <LineBreak/> 
+                                            [7] print(numbers) <Span Foreground="#272537">____</Span> # [10, 8, 6, 4]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Преимуществом диапазонов над стандартными списками и кортежами является то, 
+                                    что диапазон всегда будет занимать одно и то же небольшое количество памяти вне зависимости 
+                                    от того, какой набор чисел представляет этот диапазон. В действительности диапазон хранит 
+                                    только начальное, конечное значение и приращение.
+
+
+
+
+
+
+
+                                </Paragraph>
+                            </Section>
+                            
                             
                         </FlowDocument>
                     </RichTextBox>
