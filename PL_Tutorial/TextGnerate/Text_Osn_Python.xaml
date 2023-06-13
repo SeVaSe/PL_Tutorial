@@ -3566,8 +3566,8 @@
                                 </Paragraph>
 
                                 <Paragraph>
-                                    ------
-
+                                    Для сортировки по возрастанию применяется метод
+                                    <Span FontWeight="Bold">sort():</Span>
 
                                     <LineBreak/>
                                     <LineBreak/>
@@ -3576,9 +3576,157 @@
                                     </Span>
 
                                     <LineBreak/>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
                                         <TextBlock>
-                                            
+                                            [1] people = ["Tom", "Bob", "Alice", "Sam", "Bill"]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] people.sort()
+                                            <LineBreak/>
+                                            [4] print(people) <Span Foreground="#272537">____</Span> # ["Alice", "Bill", "Bob", "Sam", "Tom"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+
+
+                                    Если необходимо отсортировать данные в обратном порядке,
+                                    то мы можем после сортировки применить метод
+                                    <Span FontWeight="Bold">reverse():</Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Alice", "Sam", "Bill"]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] people.sort()
+                                            <LineBreak/>
+                                            [4] people.reverse()
+                                            <LineBreak/>
+                                            [5] print(people) <Span Foreground="#272537">____</Span> # ["Tom", "Sam", "Bob", "Bill", "Alice"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    При сортировке фактически сравниваются два объекта, и который из них "меньше",
+                                    ставится перед тем, который "больше". Понятия "больше" и "меньше" довольно 
+                                    условны. И если для чисел все просто - числа расставляются в порядке 
+                                    возрастания, то для строк и других объектов ситуация сложнее. 
+                                    В частности, строки оцениваются по первым символам. Если первые символы 
+                                    равны, оцениваются вторые символы и так далее. При чем цифровой символ 
+                                    считается "меньше", чем алфавитный заглавный символ, а заглавный символ 
+                                    считается меньше, чем строчный.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Таким образом, если в списке сочетаются строки с верхним и нижним регистром, 
+                                    то мы можем получить не совсем корректные результаты, так как для нас строка 
+                                    "bob" должна стоять до строки "Tom". И чтобы изменить стандартное поведение 
+                                    сортировки, мы можем передать в метод sort() в качестве параметра функцию:
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "bob", "alice", "Sam", "Bill"]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] people.sort() <Span Foreground="#272537">____</Span> # стандартная сортировка
+                                            <LineBreak/>
+                                            [4] print(people) <Span Foreground="#272537">____</Span> # ["Bill", "Sam", "Tom", "alice", "bob"]
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] people.sort(key=str.lower)  # сортировка без учета регистра
+                                            <LineBreak/>
+                                            [7] print(people) <Span Foreground="#272537">____</Span> # ["alice", "Bill", "bob", "Sam", "Tom"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Кроме метода sort мы можем использовать встроенную функцию sorted, 
+                                    которая имеет две формы:
+                                    <Span Foreground="#272537">____</Span> ● sorted(list): сортирует список list
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● sorted(list, key): сортирует список list, применяя к элементам функцию key
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "bob", "alice", "Sam", "Bill"]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] sorted_people = sorted(people, key=str.lower)
+                                            <LineBreak/>
+                                            [4] print(sorted_people) <Span Foreground="#272537">____</Span> # ["alice", "Bill", "bob", "Sam", "Tom"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                    При использовании этой функции следует учитывать, что эта функция не изменяет сортируемый список, 
+                                    а все отсортированные элементы она помещает в новый список, который 
+                                    возвращается в качестве результата.
+                                </Paragraph>
+                            </Section>
+
+
+                            <!--написание Минимальное и максимальное значения-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____
+                                        </Span>
+                                        МИНИМАЛЬНОЕ И МАКСИМАЛЬНОЕ ЗНАЧЕНИЯ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Встроенный функции Python min() и max() позволяют найти минимальное и максимальное значения соответственно.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = [9, 21, 12, 1, 3, 15, 18]
+                                            <LineBreak/>
+                                            [2] print(min(numbers)) <Span Foreground="#272537">____</Span> # 1
+                                            <LineBreak/>
+                                            [3] print(max(numbers)) <Span Foreground="#272537">____</Span> # 21
                                         </TextBlock>
                                     </Border>
                                 </Paragraph>
@@ -3586,6 +3734,297 @@
 
 
 
+                            <!--написание Копирование списков-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        КОПИРОВАНИЕ СПИСКОВ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    При копировании списков следует учитывать, что списки представляют изменяемый (mutable) тип,
+                                    поэтому если обе переменных будут указывать на один и тот же список, то изменение 
+                                    одной переменной, затронет и другую переменную.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people1 = ["Tom", "Bob", "Alice"]
+                                            <LineBreak/>
+                                            [2] people2 = people1
+                                            <LineBreak/>
+                                            [3] people2.append("Sam") <Span Foreground="#272537">____</Span> # добавляем элемент во второй список
+                                            <LineBreak/>
+                                            [4]
+                                            <LineBreak/>
+                                            [5] # people1 и people2 указывают на один и тот же список
+                                            <LineBreak/>
+                                            [6] print(people1) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice", "Sam"]
+                                            <LineBreak/>
+                                            [7] print(people2) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice", "Sam"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    
+                                    
+                                    Это так называемое "поверхностное копирование" (shallow copy). И, как правило, такое 
+                                    поведение нежелательное. И чтобы происходило копирование элементов, но при этом переменные
+                                    указывали на разные списки, необходимо выполнить глубокое копирование (deep copy). 
+                                    Для этого можно использовать метод <Span FontWeight="Bold">copy()</Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people1 = ["Tom", "Bob", "Alice"]
+                                            <LineBreak/>
+                                            [2] people2 = people1.copy() <Span Foreground="#272537">____</Span> # копируем элементы из people1 в people2
+                                            <LineBreak/>
+                                            [3] people2.append("Sam") <Span Foreground="#272537">____</Span> # добавляем элемент ТОЛЬКО во второй список
+                                            <LineBreak/>
+                                            [4]
+                                            <LineBreak/>
+                                            [5] # people1 и people2 указывают на разные списки
+                                            <LineBreak/>
+                                            [6] print(people1) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice"]
+                                            <LineBreak/>
+                                            [7] print(people2) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice", "Sam"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Соединение списков-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        СОЕДИНЕНИЕ СПИСКОВ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Для объединения списков применяется операция сложения (+)
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people1 = ["Tom", "Bob", "Alice"]
+                                            <LineBreak/>
+                                            [2] people2 = ["Tom", "Sam", "Tim", "Bill"]
+                                            <LineBreak/>
+                                            [3] people3 = people1 + people2
+                                            <LineBreak/>
+                                            [4] print(people3) <Span Foreground="#272537">____</Span> # ["Tom", "Bob", "Alice", "Tom", "Sam", "Tim", "Bill"]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание Списки списков-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _____________________
+                                        </Span>
+                                        СПИСКИ СПИСКОВ
+                                    </Span>
+                                </Paragraph>
+
+                                <Paragraph>
+                                    Списки кроме стандартных данных типа строк, чисел, также могут содержать другие списки. 
+                                    Подобные списки можно ассоциировать с таблицами, где вложенные списки выполняют роль строк.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = [
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>["Tom", 29],
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>["Alice", 33],
+                                            <LineBreak/> 
+                                            [4] <Span Foreground="#272537">____</Span>["Bob", 27]
+                                            <LineBreak/>
+                                            [5] ]
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] print(people[0]) <Span Foreground="#272537">____</Span> # ["Tom", 29]
+                                            <LineBreak/>
+                                            [8] print(people[0][0]) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [9] print(people[0][1]) <Span Foreground="#272537">____</Span> # 29
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Чтобы обратиться к элементу вложенного списка, необходимо использовать пару индексов:
+                                    <Span FontWeight="Bold">people[0][1]</Span> - обращение ко второму элементу первого вложенного списка.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Добавление, удаление и изменение общего списка, а также вложенных списков аналогично тому,
+                                    как это делается с обычными (одномерными) списками.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = [
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>["Tom", 29],
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>["Alice", 33],
+                                            <LineBreak/> 
+                                            [4] <Span Foreground="#272537">____</Span>["Bob", 27]
+                                            <LineBreak/>
+                                            [5] ]
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] # создание вложенного списка
+                                            <LineBreak/>
+                                            [8] person = list()
+                                            <LineBreak/>
+                                            [9] person.append("Bill")
+                                            <LineBreak/>
+                                            [10] person.append(41)
+                                            <LineBreak/>
+                                            [11] # добавление вложенного списка
+                                            <LineBreak/>
+                                            [12] people.append(person)
+                                            <LineBreak/>
+                                            [13] 
+                                            <LineBreak/>
+                                            [14] print(people[-1]) <Span Foreground="#272537">____</Span> # ["Bill", 41]
+                                            <LineBreak/>
+                                            [15]
+                                            <LineBreak/>
+                                            [16] # добавление во вложенный список
+                                            <LineBreak/>
+                                            [17] people[-1].append("+79876543210")
+                                            <LineBreak/>
+                                            [18] 
+                                            <LineBreak/>
+                                            [19] print(people[-1]) <Span Foreground="#272537">____</Span> # ["Bill", 41, "+79876543210"]
+                                            <LineBreak/>
+                                            [20] 
+                                            <LineBreak/>
+                                            [21] # удаление последнего элемента из вложенного списка
+                                            <LineBreak/>
+                                            [22] people[-1].pop()
+                                            <LineBreak/>
+                                            [23] print(people[-1]) <Span Foreground="#272537">____</Span> # ["Bill", 41]
+                                            <LineBreak/>
+                                            [24] 
+                                            <LineBreak/>
+                                            [25] # удаление всего последнего вложенного списка
+                                            <LineBreak/>
+                                            [26] people.pop(-1)
+                                            <LineBreak/>
+                                            [27]
+                                            <LineBreak/>
+                                            [28] # изменение первого элемента
+                                            <LineBreak/>
+                                            [29] people[0] = ["Sam", 18]
+                                            <LineBreak/>
+                                            [30] print(people) <Span Foreground="#272537">____</Span> # [ ["Sam", 18], ["Alice", 33], ["Bob", 27]]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Перебор вложенных списков:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = [
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>["Tom", 29],
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>["Alice", 33],
+                                            <LineBreak/> 
+                                            [4] <Span Foreground="#272537">____</Span>["Bob", 27]
+                                            <LineBreak/>
+                                            [5] ]
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] for person in people:
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span>for item in person:
+                                            <LineBreak/>
+                                            [9] <Span Foreground="#272537">________</Span>print(item, end=" | ")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            ### КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Tom | 29 | Alice | 33 | Bob | 27 |
+                                        </TextBlock>
+                                    </Border>
+
+
+
+                                </Paragraph>
+                            </Section>
 
 
 
