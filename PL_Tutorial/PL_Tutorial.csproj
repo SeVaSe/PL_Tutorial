@@ -473,9 +473,6 @@
     <Resource Include="Source\Icon\send_icon_3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="send_icon_3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Source\Icon\warn_404.png" />
   </ItemGroup>
   <ItemGroup>

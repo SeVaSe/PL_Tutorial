@@ -4220,16 +4220,322 @@
                             <!--написание Кортежи-->
                             <Section>
                                 <Paragraph>
-                                    <Span FontSize="35" FontWeight="Bold">
-                                        Кортеж (tuple) представляет последовательность элементов, которая во многом 
+                                    Кортеж (tuple) представляет последовательность элементов, которая во многом 
                                         похожа на список за тем исключением, что кортеж является неизменяемым (immutable) типом.
                                         Поэтому мы не можем добавлять или удалять элементы в кортеже, изменять его.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    Для создания кортежа используются круглые скобки, в которые помещаются его значения, разделенные запятыми.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom", 23)
+                                            <LineBreak/>
+                                            [2] print(tom) <Span Foreground="#272537">____</Span> # ("Tom", 23)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+
+                                    Также для определения кортежа мы можем просто перечислить значения через запятую без применения скобок.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = "Tom", 23
+                                            <LineBreak/>
+                                            [2] print(tom) <Span Foreground="#272537">____</Span> # ("Tom", 23)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Если вдруг кортеж состоит из одного элемента, то после единственного элемента кортежа необходимо поставить запятую.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom",)
+                                            <LineBreak/>
+                                            [2] print(tom) <Span Foreground="#272537">____</Span> # ("Tom",)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Для создания кортежа из другого набора элементов, например, из списка, можно передать список в функцию tuple(), 
+                                    которая возвратит кортеж.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] data = ["Tom", 37, "Google"]
+                                            <LineBreak/>
+                                            [2] tom = tuple(data)
+                                            <LineBreak/>
+                                            [3] print(tom) <Span Foreground="#272537">____</Span> # ("Tom", 37, "Google")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+                            
+                            
+                            
+                            <!--написание ОБРАЩЕНИЕ К ЭЛЕМЕНТАМ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________
+                                        </Span>
+                                        ОБРАЩЕНИЕ К ЭЛЕМЕНТАМ КОРТЕЖА
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Обращение к элементам в кортеже происходит также, как и в списке, по индексу. 
+                                    Индексация начинается также с нуля при получении элементов с начала списка и с -1 при получении 
+                                    элементов с конца списка.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom", 37, "Google", "software developer")
+                                            <LineBreak/>
+                                            [2] print(tom[0]) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [3] print(tom[1]) <Span Foreground="#272537">____</Span> # 37
+                                            <LineBreak/>
+                                            [4] print(tom[-1]) <Span Foreground="#272537">____</Span> # software developer
+                                            
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    При необходимости мы можем разложить кортеж на отдельные переменные.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] name, age, company, position = ("Tom", 37, "Google", "software developer")
+                                            <LineBreak/>
+                                            [2] print(name) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [3] print(age) <Span Foreground="#272537">____</Span> # 37
+                                            <LineBreak/>
+                                            [4] print(position) <Span Foreground="#272537">____</Span> # software developer
+                                            <LineBreak/>
+                                            [4] print(company) <Span Foreground="#272537">____</Span> # Google
+
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
                                 </Paragraph>
                             </Section>
 
 
+
+                            <!--написание ПОЛУЧЕНИЕ ПОДКОРТЕЖЕЙ-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        ПОЛУЧЕНИЕ ПОДКОРТЕЖЕЙ
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Как и в списках, можно получить часть кортежа в виде другого кортежа.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom", 37, "Google", "software developer")
+                                            <LineBreak/>
+                                            [2]
+                                            <LineBreak/>
+                                            [3] # получем подкортеж с 1 по 3 элемента (не включая)
+                                            <LineBreak/>
+                                            [4] print(tom[1:3]) <Span Foreground="#272537">____</Span> # (37, "Google")
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] # получем подкортеж с 0 по 3 элемента (не включая)
+                                            <LineBreak/>
+                                            [7] print(tom[:3]) <Span Foreground="#272537">____</Span> # ("Tom", 37, "Google")
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9] # получем подкортеж с 1 по послдений элемент
+                                            <LineBreak/>
+                                            [10] print(tom[1:]) <Span Foreground="#272537">____</Span> # (37, "Google", "software developer")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <!--написание ПЕРЕБОР КОРТЕЖЕЙ-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        ПЕРЕБОР КОРТЕЖЕЙ
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Для перебора кортежа можно использовать стандартные циклы FOR и WHILE. С помощью цикла FOR.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom", 22, "Google")
+                                            <LineBreak/>
+                                            [2] for item in tom:
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print(item)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    С помощью цикла WHILE.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] tom = ("Tom", 22, "Google")
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] i = 0
+                                            <LineBreak/>
+                                            [4] while i &lt; len(tom):
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> print(tom[i])
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> i += 1
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание ПРОВЕРКА НАЛИЧИЯ ЗНАЧЕНИЯ-->
+                            <Section>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _____________
+                                        </Span>
+                                        ПРОВЕРКА НАЛИЧИЯ ЗНАЧЕНИЯ
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Как для списка с помощью выражения элемент in кортеж можно проверить наличие элемента в кортеже.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] user = ("Tom", 22, "Google")
+                                            <LineBreak/>
+                                            [2] name = "Tom"
+                                            <LineBreak/>
+                                            [3] if name in user:
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> print("Пользователя зовут Tom")
+                                            <LineBreak/>
+                                            [5] else:
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> print("Пользователь имеет другое имя")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>
