@@ -4202,4 +4202,39 @@
         </Setter>
     </Style>
 
+
+
+    <!--КОРТЕЖИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="KortezhRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+
+                            <!--написание Кортежи-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        Кортеж (tuple) представляет последовательность элементов, которая во многом 
+                                        похожа на список за тем исключением, что кортеж является неизменяемым (immutable) типом.
+                                        Поэтому мы не можем добавлять или удалять элементы в кортеже, изменять его.
+                                    </Span>
+
+                                </Paragraph>
+                            </Section>
+
+
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>
