@@ -4531,9 +4531,187 @@
                                             [6] <Span Foreground="#272537">____</Span> print("Пользователь имеет другое имя")
                                         </TextBlock>
                                     </Border>
+                                    
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!--СЛОВАРИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="DictsRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+
+                            <!--написание СЛОВАРИ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontWeight="Bold">Словарь</Span> (dictionary) в языке Python хранит коллекцию элементов, где каждый элемент имеет уникальный ключ и
+                                    ассоциированое с ним некоторое значение.
+
                                     <LineBreak/>
                                     <LineBreak/>
                                     <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Определение словаря имеет следующий синтаксис:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] dictionary = { ключ1:значение1, ключ2:значение2, ....}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В фигурных скобках через запятую определяется последовательность элементов, где для каждого элемента сначала указывается ключ и через двоеточие его значение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {1: "Tom", 2: "Bob", 3: "Bill"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В словаре users в качестве ключей используются числа, а в качестве значений - строки. То есть элемент с ключом 1 
+                                    имеет значение "Tom", элемент с ключом 2 - значение "Bob" и т.д.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] emails = {"tom@gmail.com": "Tom", "bob@gmai.com": "Bob", "sam@gmail.com": "Sam"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В словаре emails в качестве ключей используются строки - электронные адреса пользователей и в качестве значений тоже строки - имена пользователей.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+
+                                    Мы можем также вообще определить пустой словарь без элементов.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] objects = {} <Span Foreground="#272537">____</Span> # создание пустого словаря 
+                                            <LineBreak/>
+                                            [2] objects = dict() <Span Foreground="#272537">____</Span> # создание пустого словаря
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+                            <!--написание ПРЕОБРАЗОВАНИЕ СПИСКОВ И КОРТЕЖЕЙ В СЛОВАРЬ-->
+                            <Section>
+                                <Paragraph>
+                                    
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            
+                                        </Span>
+                                        ПРЕОБРАЗОВАНИЕ СПИСКОВ И КОРТЕЖЕЙ В СЛОВАРЬ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Несмотря на то, что словарь и список - непохожие по структуре типы, но тем не менее существует возможности
+                                    для отдельных видов списков преобразования их в словарь с помощью встроенной функции dict(). Для этого список 
+                                    должен хранить набор вложенных списков. Каждый вложенный список должен состоять из двух элементов - при конвертации в
+                                    словарь первый элемент станет ключом, а второй - значением.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users_list = [
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> ["+111123455", "Tom"],
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> ["+384767557", "Bob"],
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> ["+958758767", "Alice"]
+                                            <LineBreak/>
+                                            [5] ]
+                                            <LineBreak/>
+                                            [6] users_dict = dict(users_list)
+                                            <LineBreak/>
+                                            [7] print(users_dict) <Span Foreground="#272537">____</Span> # {"+111123455": "Tom", "+384767557": "Bob", "+958758767": "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    
+                                    Подобным образом можно преобразовать в словарь двухмерные кортежи, которые в свою очередь содержать кортежи из двух элементов.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users_tuple = (
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> ("+111123455", "Tom"),
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> ("+384767557", "Bob"),
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> ("+958758767", "Alice")
+                                            <LineBreak/>
+                                            [5] )
+                                            <LineBreak/>
+                                            [6] users_dict = dict(users_tuple)
+                                            <LineBreak/>
+                                            [7] print(users_dict) <Span Foreground="#272537">____</Span> # {"+111123455": "Tom", "+384767557": "Bob", "+958758767": "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
