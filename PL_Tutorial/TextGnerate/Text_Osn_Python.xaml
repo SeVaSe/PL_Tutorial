@@ -4584,7 +4584,7 @@
 
 
                                     <Span FontSize="20">
-                                        <Bold>Пример</Bold>
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
                                     <LineBreak/>
@@ -4600,7 +4600,7 @@
                                     <LineBreak/>
 
                                     <Span FontSize="20">
-                                        <Bold>Пример</Bold>
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
                                     <LineBreak/>
@@ -4619,7 +4619,7 @@
                                     Мы можем также вообще определить пустой словарь без элементов.
                                     <LineBreak/>
                                     <Span FontSize="20">
-                                        <Bold>Пример</Bold>
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
                                     <LineBreak/>
@@ -4657,7 +4657,7 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Span FontSize="20">
-                                        <Bold>Пример</Bold>
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
                                     <LineBreak/>
@@ -4687,7 +4687,7 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Span FontSize="20">
-                                        <Bold>Пример</Bold>
+                                        <Bold>Пример:</Bold>
                                     </Span>
 
                                     <LineBreak/>
@@ -4711,9 +4711,919 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание ПОЛУЧЕНИЕ И ИЗМЕНЕНИЕ ЭЛЕМЕНТОВ-->
+                            <Section>
+                                <Paragraph>
+
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________
+                                        </Span>
+                                        ПОЛУЧЕНИЕ И ИЗМЕНЕНИЕ ЭЛЕМЕНТОВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Для обращения к элементам словаря после его названия в квадратных скобках указывается ключ элемента.
+                                    <Span FontSize="20">
+                                        <Bold>Пример синтаксиса:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] dictionary[ключ]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>   "+11111111": "Tom",
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>   "+33333333": "Bob",
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>   "+55555555": "Alice"
+                                            <LineBreak/>
+                                            [5] }
+                                            <LineBreak/>
+                                            [6]
+                                            <LineBreak/>
+                                            [7] # получаем элемент с ключом "+11111111"
+                                            <LineBreak/>
+                                            [8] print(users["+11111111"]) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [9]
+                                            <LineBreak/>
+                                            [10] # установка значения элемента с ключом "+33333333"
+                                            <LineBreak/>
+                                            [11] users["+33333333"] = "Bob Smith"
+                                            <LineBreak/>
+                                            [12] print(users["+33333333"]) <Span Foreground="#272537">____</Span> # Bob Smith
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Если при установки значения элемента с таким ключом в словаре не окажется, то произойдет его добавление. Но если 
+                                    если мы попробуем получить значение с ключом, которого нет в словаре, то Python сгенерирует ошибку "KeyError".
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Также для получения элементов можно использовать метод get, который имеет две формы:
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● get(key): возвращает из словаря элемент с ключом key. Если элемента с таким ключом нет, то возвращает
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> значение None
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● get(key, default): возвращает из словаря элемент с ключом key. Если элемента с таким ключом нет, то
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> возвращает значение по умолчанию default
+
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>   "+11111111": "Tom",
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>   "+33333333": "Bob",
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>   "+55555555": "Alice"
+                                            <LineBreak/>
+                                            [5] }
+                                            <LineBreak/>
+                                            [6]
+                                            <LineBreak/>
+                                            [7] user1 = users.get("+55555555")
+                                            <LineBreak/>
+                                            [8] print(user1) <Span Foreground="#272537">____</Span> # Alice
+                                            <LineBreak/>
+                                            [9] user2 = users.get("+33333333", "Unknown user")
+                                            <LineBreak/>
+                                            [10] print(user2) <Span Foreground="#272537">____</Span> # Bob
+                                            <LineBreak/>
+                                            [11] user3 = users.get("+44444444", "Unknown user")
+                                            <LineBreak/>
+                                            [12] print(user3) <Span Foreground="#272537">____</Span> # Unknown user
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание УДАЛЕНИЕ-->
+                            <Section>
+                                <Paragraph>
+
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________________
+                                        </Span>
+                                        УДАЛЕНИЕ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Для удаления элемента по ключу применяется оператор del.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>   "+11111111": "Tom",
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>   "+33333333": "Bob",
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>   "+55555555": "Alice"
+                                            <LineBreak/>
+                                            [5] }
+                                            <LineBreak/>
+                                            [6]
+                                            <LineBreak/>
+                                            [7] del users["+55555555"]
+                                            <LineBreak/>
+                                            [8] print(users) <Span Foreground="#272537">____</Span> # { "+11111111": "Tom", "+33333333": "Bob"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Но стоит учитывать, что если подобного ключа не окажется в словаре, то будет выброшено исключение KeyError. 
+                                    Поэтому опять же перед удалением желательно проверять наличие элемента с данным ключом.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    Другой способ удаления представляет метод pop(). Он имеет две формы:
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● pop(key): удаляет элемент по ключу key и возвращает удаленный элемент. Если элемент с данным ключом
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> отсутствует, то генерируется исключение KeyError
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● pop(key, default): удаляет элемент по ключу key и возвращает удаленный элемент. Если элемент с данным
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ключом отсутствует, то возвращается значение default
+
+
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span>   "+11111111": "Tom",
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span>   "+33333333": "Bob",
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span>   "+55555555": "Alice"
+                                            <LineBreak/>
+                                            [5] }
+                                            <LineBreak/>
+                                            [6] key = "+55555555"
+                                            <LineBreak/>
+                                            [7] user = users.pop(key)
+                                            <LineBreak/>
+                                            [8] print(user) <Span Foreground="#272537">____</Span> # Alice
+                                            <LineBreak/>
+                                            [9]
+                                            <LineBreak/>
+                                            [10] user = users.pop("+4444444", "Unknown user")
+                                            <LineBreak/>
+                                            [11] print(user) <Span Foreground="#272537">____</Span> # Unknown user
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Если необходимо удалить все элементы, то в этом случае можно воспользоваться методом
+                                    <Span FontWeight="Bold">clear()</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <!--написание КОПИРОВАНИЕ И ОБЪЕДИНЕНИЕ СЛОВАРЕЙ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______
+                                        </Span>
+                                        КОПИРОВАНИЕ И ОБЪЕДИНЕНИЕ СЛОВАРЕЙ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Метод
+                                    <Span FontWeight="Bold">copy()</Span> копирует содержимое словаря, возвращая новый словарь.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"+1111111": "Tom", "+3333333": "Bob", "+5555555": "Alice"}
+                                            <LineBreak/>
+                                            [2] students = users.copy()
+                                            <LineBreak/>
+                                            [3] print(students) <Span Foreground="#272537">____</Span> # {"+1111111": "Tom", "+3333333": "Bob", "+5555555": "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    
+                                    
+                                    Метод <Span FontWeight="Bold">update()</Span> объединяет два словаря.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="800" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"+1111111": "Tom", "+3333333": "Bob", "+5555555": "Alice"}
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] users2 = {"+2222222": "Sam", "+6666666": "Kate"}
+                                            <LineBreak/>
+                                            [4] users.update(users2)
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] print(users)    # {"+1111111": "Tom", "+3333333": "Bob", "+2222222": "Sam", "+6666666": "Kate"}
+                                            <LineBreak/>
+                                            [7] print(users2)   # {"+2222222": "Sam", "+6666666": "Kate"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    При этом словарь users2 остается без изменений. Изменяется только словарь users, в который добавляются элементы другого словаря.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <!--написание КОМПЛЕКСНЫЕ СЛОВАРИ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________
+                                        </Span>
+                                        КОМПЛЕКСНЫЕ СЛОВАРИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    
+                                    Кроме простейших объектов типа чисел и строк словари также могут хранить и более сложные 
+                                    объекты - те же списки, кортежи или другие словари.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> "Tom": {
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">________</Span> "phone": "+971478745",
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> "email": "tom12@gmail.com"
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> },
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> "Bob": {
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">________</Span> "phone": "+876390444",
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">________</Span> "email": "bob@gmail.com",
+                                            <LineBreak/>
+                                            [9] <Span Foreground="#272537">________</Span> "skype": "bob123"
+                                            <LineBreak/>
+                                            [10] <Span Foreground="#272537">____</Span> }
+                                            <LineBreak/>
+                                            [11] }
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае значение каждого элемента словаря в свою очередь представляет отдельный словарь.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    Для обращения к элементам вложенного словаря соответственно необходимо использовать два ключа.
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] old_email = users["Tom"]["email"]
+                                            <LineBreak/>
+                                            [2] users["Tom"]["email"] = "supertom@gmail.com"
+                                            <LineBreak/>
+                                            [3] print(users["Tom"]) <Span Foreground="#272537">____</Span> # { phone": "+971478745", "email": "supertom@gmail.com }
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Но если мы попробуем получить значение по ключу, который отсутствует в словаре, Python сгенерирует исключение KeyError.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!--МНОЖЕСТВА-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="SetRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+
+                            
+                            <Section>
+                                <Paragraph>
+                                    Множество (set) представляют еще один вид набора, который хранит только уникальные элементы. 
+                                    Для определения множества используются фигурные скобки, в которых перечисляются элементы.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice", "Tom"}
+                                            <LineBreak/>
+                                            [2] print(users) <Span Foreground="#272537">____</Span> # {"Alice", "Bob", "Tom"}
+                                            </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Обратите внимание, что несмотря на то, что функция print вывела один раз элемент "Tom", хотя в 
+                                    определении множества этот элемент содержится два раза. Все потому что множество содержит только
+                                    <Span FontWeight="Bold">уникальные</Span> значения.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Также для определения множества может применяться функция set(), в которую передается список или кортеж элементов.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice", "Tom"}
+                                            <LineBreak/>
+                                            [2] print(users) <Span Foreground="#272537">____</Span> # {"Alice", "Bob", "Tom"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Обратите внимание, что несмотря на то, что функция print вывела один раз элемент "Tom", хотя в 
+                                    определении множества этот элемент содержится два раза. Все потому что множество содержит только
+                                    <Span FontWeight="Bold">уникальные</Span> значения.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Функцию set удобно применять для создания пустого множества.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = set()
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <!--написание ДОБАВЛЕНИЕ ЭЛЕМЕНТОВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        ДОБАВЛЕНИЕ ЭЛЕМЕНТОВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Для добавления одиночного элемента вызывается метод <Span FontWeight="Bold">add().</Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = set()
+                                            <LineBreak/>
+                                            [2] users.add("Sam")
+                                            <LineBreak/>
+                                            [3] print(users)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание УДАЛЕНИЕ ЭЛЕМЕНТОВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        УДАЛЕНИЕ ЭЛЕМЕНТОВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Для удаления одного элемента вызывается метод <Span FontWeight="Bold">remove()</Span>, в который передается удаляемый элемент. 
+                                    Но следует учитывать, что если такого элемента не окажется в множестве, то 
+                                    будет сгенерирована ошибка. Поэтому перед удалением следует проверять на 
+                                    наличие элемента с помощью оператора <Span FontWeight="Bold">in</Span>.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] user = "Tom"
+                                            <LineBreak/>
+                                            [4] if user in users: 
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> users.remove(user)
+                                            <LineBreak/>
+                                            [6] print(users) <Span Foreground="#272537">____</Span> # {"Bob", "Alice"}
+                                            
+                                        
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Также для удаления можно использовать метод <Span FontWeight="Bold">discard()</Span>, который не будет 
+                                    генерировать исключения при отсутствии элемента.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] users.discard("Tim") <Span Foreground="#272537">____</Span> # элемент "Tim" отсутствует, и метод ничего не делает
+                                            <LineBreak/>
+                                            [4] print(users) <Span Foreground="#272537">____</Span> #  {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] users.discard("Tom") <Span Foreground="#272537">____</Span> # элемент "Tom" есть, и метод удаляет элемент
+                                            <LineBreak/>
+                                            [7] print(users) <Span Foreground="#272537">____</Span> #  {"Bob", "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание КОПИРОВАНИЕ МНОЖЕСТВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        КОПИРОВАНИЕ МНОЖЕСТВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    С помощью метода <Span FontWeight="Bold">copy()</Span> можно скопировать содержимое одного множества в другую переменную.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] students = users.copy()
+                                            <LineBreak/>
+                                            [3] print(students) <Span Foreground="#272537">____</Span> # {"Tom", "Bob", "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <!--написание ОБЪЕДЕНЕНИЕ МНОЖЕСТВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        ОБЪЕДЕНЕНИЕ МНОЖЕСТВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Метод
+                                    <Span FontWeight="Bold">union()</Span> объединяет два множества и возвращает новое множество.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] users2 = {"Sam", "Kate", "Bob"}
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] users3 = users.union(users2)
+                                            <LineBreak/>
+                                            [5] print(users3) <Span Foreground="#272537">____</Span> # {"Bob", "Alice", "Sam", "Kate", "Tom"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание ПЕРЕСЕЧЕНИЕ МНОЖЕСТВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        ПЕРЕСЕЧЕНИЕ МНОЖЕСТВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Пересечение множеств позволяет получить только те элементы, которые есть 
+                                    одновременно в обоих множествах. Метод <Span FontWeight="Bold">intersection()</Span> производит операцию
+                                    пересечения множеств и возвращает новое множество.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] users2 = {"Sam", "Kate", "Bob"}
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] users3 = users.intersection(users2)
+                                            <LineBreak/>
+                                            [5] print(users3) <Span Foreground="#272537">____</Span> # {"Bob"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Модификация метода - <Span FontWeight="Bold">intersection_update()</Span> заменяет пересеченными элементами первое множество.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание РАЗНОСТЬ МНОЖЕСТВ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        РАЗНОСТЬ МНОЖЕСТВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Еще одна операция - разность множеств возвращает те элементы, которые есть в
+                                    первом множестве, но отсутствуют во втором. Для получения разности множеств
+                                    можно использовать метод <Span FontWeight="Bold">difference</Span> или операцию вычитания.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] users2 = {"Sam", "Kate", "Bob"}
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] users3 = users.difference(users2)
+                                            <LineBreak/>
+                                            [5] print(users3) <Span Foreground="#272537">____</Span> # {"Tom", "Alice"}
+                                            <LineBreak/>
+                                            [6] print(users - users2) <Span Foreground="#272537">____</Span> # {"Tom", "Alice"}
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание ОТНОШЕНИЯ МЕЖДУ МНОЖЕСТВАМИ-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________
+                                        </Span>
+                                        ОТНОШЕНИЯ МЕЖДУ МНОЖЕСТВАМИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Метод <Span FontWeight="Bold">issubset</Span>  позволяет выяснить, является ли текущее множество
+                                    подмножеством (то есть частью) другого множества.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] superusers = {"Sam", "Tom", "Bob", "Alice", "Greg"}
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] print(users.issubset(superusers)) <Span Foreground="#272537">____</Span> # True
+                                            <LineBreak/>
+                                            [5] print(superusers.issubset(users)) <Span Foreground="#272537">____</Span> # False
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Метод <Span FontWeight="Bold">issuperset</Span>, наоборот, возвращает True, если текущее множество 
+                                    является надмножеством (то есть содержит) для другого множества.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = {"Tom", "Bob", "Alice"}
+                                            <LineBreak/>
+                                            [2] superusers = {"Sam", "Tom", "Bob", "Alice", "Greg"}
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] print(users.issuperset(superusers)) <Span Foreground="#272537">____</Span> # False
+                                            <LineBreak/>
+                                            [5] print(superusers.issuperset(users)) <Span Foreground="#272537">____</Span> # True
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <!--написание FROZEN SET-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________________
+                                        </Span>
+                                        FROZEN SET
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Тип <Span FontWeight="Bold">frozen set</Span> является видом множеств, которое не может быть изменено. Для 
+                                    его создания используется функция
+                                    <Span FontWeight="Bold">frozenset.</Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="400" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] users = frozenset({"Tom", "Bob", "Alice"})
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В функцию frozenset передается набор элементов - список, кортеж, другое множество.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В такое множество мы не можем добавить новые элементы, как и удалить из него уже имеющиеся.
+                                    Собственно поэтому frozen set поддерживает ограниченный набор операций.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Операции:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            <Span Foreground="#272537">____</Span> ● len(s): возвращает длину множества
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● x in s: возвращает True, если элемент x присутствует в множестве s
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● x not in s: возвращает True, если элемент x отсутствует в множестве s
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.issubset(t): возвращает True, если t содержит множество s
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.issuperset(t): возвращает True, если t содержится в множестве s
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.union(t): возвращает объединение множеств s и t
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.intersection(t): возвращает пересечение множеств s и t
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.difference(t): возвращает разность множеств s и t
+                                            <LineBreak/>
+                                            <Span Foreground="#272537">____</Span> ● s.copy(): возвращает копию множества s
+                                        </TextBlock>
+                                    </Border>
+                                    
+                                    
+
+
+
+
 
                                 </Paragraph>
                             </Section>
+
+
+
                         </FlowDocument>
                     </RichTextBox>
                 </ControlTemplate>

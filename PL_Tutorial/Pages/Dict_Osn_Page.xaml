@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Style="{StaticResource ModernPageStyle}"
         WindowStartupLocation="CenterScreen"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove">
+        >
     <Border Background="#272537" CornerRadius="20">
         <Grid>
             <Grid.RowDefinitions>
@@ -20,7 +19,9 @@
             <!--нижняя строка-->
             <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="2" Grid.RowSpan="2"/>
             <!--верхняя строка-->
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19">
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" 
+                     MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseMove="Window_MouseMove">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100*"/>
@@ -100,7 +101,7 @@
             </Border>
 
             <Grid Margin="0,10,0,6" Grid.Row="1">
-                <RichTextBox Style="{StaticResource DictsRichTextBox}" Margin="10,0,10,-110000"/>
+                <RichTextBox Style="{StaticResource DictsRichTextBox}" Margin="10,0,10,0"/>
             </Grid>
 
         </Grid>

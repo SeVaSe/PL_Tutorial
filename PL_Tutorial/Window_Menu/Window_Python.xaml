@@ -173,6 +173,7 @@
                                 </Setter>
                             </Style>
                         </ListBox.ItemContainerStyle>
+                        
                         <ListBoxItem>
                             <Button x:Name="Btn_Sintax" Style="{StaticResource ButtonModernBlue}" Content="Синтакс языка Python" Click="Btn_Sintax_Click"/>
                         </ListBoxItem>
