@@ -5628,7 +5628,7 @@
 
 
 
-    <!--МНОЖЕСТВА-->
+    <!--ГЕНЕРАТОР-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="GenerateRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
