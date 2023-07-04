@@ -5613,12 +5613,6 @@
                                         </TextBlock>
                                     </Border>
                                     
-                                    
-
-
-
-
-
                                 </Paragraph>
                             </Section>
 
@@ -5630,5 +5624,221 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+
+
+
+    <!--МНОЖЕСТВА-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="GenerateRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ГЕНЕРАТОР СПИСКА-->
+                                <Paragraph>
+
+                                    Функциональность <Span FontWeight="Bold">"list comprehension иначе, как генератор списка"</Span> предоставляет более краткий и 
+                                    лаконичный синтаксис для создания списков на основе других наборов данных. Она имеет следующий синтаксис.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Конструкция:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="500" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] newlist = [EXPR for ITEM in ITER (if COND)]
+                                        </TextBlock>
+                                    </Border>
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Синтаксис list comprehension состоит из следующих компонентов:
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● ITER: перебираемый источник данных, в качестве которого может выступать список, множество,
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> последовательность, либо даже функция, которая возвращает набор данных, например, range()
+                                    <LineBreak/>
+
+                                    <Span Foreground="#272537">____</Span> ● ITEM: извлекаемый из источника данных элемент.
+                                    <LineBreak/>
+
+                                    <Span Foreground="#272537">____</Span> ● EXPR: выражение, которое возвращает некоторое значение. Это значение затем попадает в генерируемый
+                                    <Span Foreground="#272537">____</Span> список.
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● COND: условие, которому должны соответствовать извлекаемые из источника данных элементы.
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> Если элемент НЕ удовлетворяет условию, то он НЕ выбирается. Необязательный параметр.
+
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = [-3, -2, -1, 0, 1, 2, 3]
+                                            <LineBreak/>
+                                            [2] positive_numbers = [n for n in numbers if n > 0]
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] print(positive_numbers) <Span Foreground="#272537">____</Span> # [1, 2, 3]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Выражение [n for n in numbers if n > 0] говорит выбрать из списка numbers каждый элемент в переменную n, если n больше 0 и возврать n в результирующий список.
+
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <Section>
+                                <!--написание ИСТОЧНИК ДАННЫХ ITER-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        ИСТОЧНИК ДАННЫХ ITER
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    В качестве источника данных ITER может использоваться любой перебираемый объект, например, другой список, словарь и т.д. 
+                                    Например, функция range() возвращает все числя нуля до указанного порога не включая.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = [n for n in range(10)]
+                                            <LineBreak/>
+                                            [2] print(numbers) <Span Foreground="#272537">____</Span> # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <Section>
+                                <!--написание ВОЗВРАЩЕНИЕ РЕЗУЛЬТАТА EXPR-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _____________
+                                        </Span>
+                                        ВОЗВРАЩЕНИЕ РЕЗУЛЬТАТА EXPR
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Параметр EXPR представляет выражение, которое возвращает некоторое значение. Это значение затем помещается в генерируемый список. 
+                                    В примерах выше это был текущий элемент, который извлекается из источника данных. Но с этим выражением можно проводить разные операции.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = [-3, -2, -1, 0, 1, 2, 3]
+                                            <LineBreak/>
+                                            [2] new_numbers = [n * 2 for n in numbers]
+                                            <LineBreak/>
+                                            [3] print(new_numbers) <Span Foreground="#272537">____</Span> # [-6, -4, -2, 0, 2, 4, 6]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь EXPR представляет выражение n * 2
+
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <Section>
+                                <!--написание УСЛОВИЕ COND-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________________
+                                        </Span>
+                                        УСЛОВИЕ COND
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Условие - параметр COND определяет фильтр для выбора элементов из источника данных. 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] numbers = [n for n in range(10) if n % 2 == 0]
+                                            <LineBreak/>
+                                            [2] print(numbers) <Span Foreground="#272537">____</Span> # [0, 2, 4, 6, 8]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь с помощью COND отбирем только четные числа.
+
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    
+    
 
 </ResourceDictionary>
