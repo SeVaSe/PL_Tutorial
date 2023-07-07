@@ -6356,5 +6356,291 @@
 
 
 
-    
+    <!--ФУНКЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FuncRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИИ-->
+                                <Paragraph>
+                                    Функции представляют блок кода, который выполняет определенную задачу и который можно повторно использовать в других частях программы.
+                                    В предыдущих статьях уже использовались функции. В частности, функция <Span FontWeight="Bold">print()</Span>, которая выводит некоторое значение на консоль.
+                                    Python имеет множество встроенных функций и позволяет определять свои функции.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис ФУНКЦИЙ:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def имя_функции (параметры):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> инструкции
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Определение функции начинается с выражения def, которое состоит из имени функции, набора скобок с параметрами и двоеточия. 
+                                    Параметры в скобках необязательны. А со следующей строки идет блок инструкций, которые выполняет функция. Все инструкции 
+                                    функции имеют отступы от начала строки.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print("Hello")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Функция называется say_hello. Она не имеет параметров и содержит одну единственную инструкцию, которая выводит на консоль строку "Hello".
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    
+                                    Для вызова функции указывается имя функции, после которого в скобках идет передача значений для всех ее параметров.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис ВЫЗОВА:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello():
+                                        </TextBlock>
+                                    </Border>
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello(): <Span Foreground="#272537">____</Span> # определение функции say_hello
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print("Hello")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] say_hello() <Span Foreground="#272537">____</Span> # вызов функции say_hello
+                                            <LineBreak/>
+                                            [6] say_hello()
+                                            <LineBreak/>
+                                            [7] say_hello()
+                                            <LineBreak/>
+                                            
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Hello
+                                            <LineBreak/>
+                                            Hello
+                                            <LineBreak/>
+                                            Hello
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь три раза подряд вызывается функция say_hello. В итоге мы получаем такой вывод. Обратите внимание, что функция сначала определяется, а потом вызывается.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если функция имеет одну инструкцию, то ее можно разместить на одной строке с остальным определением функции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello(): print("Hello")
+                                            <LineBreak/>
+                                            [2]
+                                            <LineBreak/>
+                                            [3] say_hello()
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+
+
+
+                                <!--написание ЛОКАЛЬНЫЕ ФУНКЦИИ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        ЛОКАЛЬНЫЕ ФУНКЦИИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Одни функции могут определяться внутри других функций - внутренние функции еще называют локальными. Локальные функции можно использовать 
+                                    только внутри той функции, в которой они определены.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="750" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_messages():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> # определение локальных функций
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> def say_hello(): print("Hello")
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> def say_goodbye(): print("Good Bye")
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> # вызов локальных функций
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> say_hello()
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> say_goodbye()
+                                            <LineBreak/>
+                                            [8]
+                                            <LineBreak/>
+                                            [9] # Вызов функции print_messages
+                                            <LineBreak/>
+                                            [10] print_messages()
+                                            <LineBreak/>
+                                            [11]
+                                            <LineBreak/>
+                                            [12] # say_hello() # вне функции print_messages функция say_hello не доступна
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь функции say_hello() и say_goodbye() определены внутри функции print_messages() и поэтому по отношению к ней являются локальными.
+                                    Соответственно они могут использоваться только внутри функции print_messages().
+                                </Paragraph>
+
+
+
+
+                                <!--написание ОРГАНИЗАЦИЯ ПРОГРАММЫ И ФУНКЦИЯ MAIN-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____
+                                        </Span>
+                                        ОРГАНИЗАЦИЯ ПРОГРАММЫ И ФУНКЦИЯ MAIN
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В программе может быть определено множество функций. И чтобы всех их упорядочить, одним из способов их организации 
+                                    является добавление специальной функции (обычно называется main), в которой потом уже вызываются другие функции.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def main():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> say_hello()
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> arifm_set()
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> say_goodbye()
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] def say_hello():
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> print("Hello")
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9] def say_goodbye():
+                                            <LineBreak/>
+                                            [10] <Span Foreground="#272537">____</Span> print("Good Bye")
+                                            <LineBreak/>
+                                            [11] 
+                                            <LineBreak/>
+                                            [12] def arifm_set():
+                                            <LineBreak/>
+                                            [14] <Span Foreground="#272537">____</Span> print(4+4)
+                                            <LineBreak/>
+                                            [15] 
+                                            <LineBreak/>
+                                            [16] # Вызов функции main
+                                            <LineBreak/>
+                                            [17] main()
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Hello
+                                            <LineBreak/>
+                                            8
+                                            <LineBreak/>
+                                            Good Bye
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В функции <Span FontWeight="Bold">main</Span> можно делать любой порядок срабатывания функций, вне зависимости от того, в каком порядке, эти рабочие 
+                                    функции были написаны. На примере видно что функция <Span FontWeight="Bold">arifm_set()</Span> написана последняя, но в <Span FontWeight="Bold">main</Span> 
+                                    она объявляется второй и сработает она так же второй.
+                                </Paragraph>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>
