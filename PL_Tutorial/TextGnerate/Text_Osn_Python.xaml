@@ -6617,25 +6617,44 @@
                                         </TextBlock>
                                     </Border>
                                     <LineBreak/>
-                                    В функции <Span FontWeight="Bold">main</Span> можно делать любой порядок срабатывания функций, вне зависимости от того, в каком порядке, эти рабочие 
-                                    функции были написаны. На примере видно что функция <Span FontWeight="Bold">arifm_set()</Span> написана последняя, но в <Span FontWeight="Bold">main</Span> 
+                                    В функции
+                                    <Span FontWeight="Bold">main</Span> можно делать любой порядок срабатывания функций, вне зависимости от того, в каком порядке, эти рабочие 
+                                    функции были написаны. На примере видно что функция
+                                    <Span FontWeight="Bold">arifm_set()</Span> написана последняя, но в
+                                    <Span FontWeight="Bold">main</Span>
                                     она объявляется второй и сработает она так же второй.
                                 </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+    <!--ПАРАМЕТРЫ ФУНКЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FuncParamRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИИ-->
+                                <Paragraph>
+                                    Функция может принимать параметры. Через параметры в функцию можно передавать данные. Банальный пример - 
+                                    функция print(), которая с помощью параметра принимает значение, выводимое на консоль.
+                                    
+                                    
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>
