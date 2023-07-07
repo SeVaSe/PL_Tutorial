@@ -6479,7 +6479,7 @@
                                     </Span>
 
                                     <LineBreak/>
-                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
                                         <TextBlock>
                                             [1] def say_hello(): print("Hello")
                                             <LineBreak/>
