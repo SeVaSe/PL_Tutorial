@@ -103,8 +103,11 @@
 
                 </Grid>
             </Border>
-
             
+            <Grid Margin="0,10,0,6" Grid.Row="1">
+                <RichTextBox Style="{StaticResource UpacovRichTextBox}" Margin="10,0,10,0"/>
+            </Grid>
+
 
         </Grid>
     </Border>

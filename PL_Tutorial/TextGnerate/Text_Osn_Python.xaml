@@ -5836,9 +5836,523 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    
-    
-    
+
+
+
+
+
+    <!--УПАКОВКА РАСПАКОВКА-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="UpacovRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание РАСПАКОВКА-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________________
+                                        </Span>
+                                        РАСПАКОВКА
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="Bold">Распаковка</Span> (
+                                    <Span FontWeight="Bold">unpacking</Span> , 
+                                    также называемая
+                                    <Span FontWeight="Bold">Деструктуризация</Span> ) представляет 
+                                    разложение коллекции (кортежа, списка и т.д.) на отдельные значения. 
+                                    Python поддерживает концепцию множественного присваивания.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] x, y = 1, 2
+                                            <LineBreak/>
+                                            [2] print(x) <Span Foreground="#272537">____</Span> # 1
+                                            <LineBreak/>
+                                            [3] print(y) <Span Foreground="#272537">____</Span> # 2
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае присваивем значения сразу двум переменным. Присвоение идет по позиции: 
+                                    переменная x получает значение 1, а переменная y - значени 2.
+                                    <LineBreak/>
+                                    Данный пример в действительности уже представляет деструктуризацию или распаковку.
+                                    Значения 1, 2 фактически являются кортежом, поскольку именно запятые между значениями 
+                                    говорят о том, что это кортеж.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    И мы также могли бы написать следующим образом.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] x, y = (1, 2)
+                                            <LineBreak/>
+                                            [2] print(x) <Span Foreground="#272537">____</Span> # 1
+                                            <LineBreak/>
+                                            [3] print(y) <Span Foreground="#272537">____</Span> # 2
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В любом случае мы имеем дело с деструктуризацией, когда первый элемент кортежа передается 
+                                    первой переменной, второй элемент - второй переменной и так далее. То есть разложение 
+                                    идет по позиции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Теперь можно разложить любой кортеж.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] name, age, company = ("Tom", 38, "Google")
+                                            <LineBreak/>
+                                            [2] print(name) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [3] print(age) <Span Foreground="#272537">____</Span> # 38
+                                            <LineBreak/>
+                                            [4] print(company) <Span Foreground="#272537">____</Span> # Google
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Только кортежами мы не ограничены и можем "распаковывать" и другие коллекции, например, списки.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Sam"]
+                                            <LineBreak/>
+                                            [2] first, second, third = people
+                                            <LineBreak/>
+                                            [3] print(first) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [4] print(second) <Span Foreground="#272537">____</Span> # Bob
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    А вот со словарями не много все сложнее - при разложении словаря переменные получают ключи словаря.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] dictionary = {"red": "красный", "blue": "синий", "green": "зеленый"}
+                                            <LineBreak/>
+                                            [2] r, b, g = dictionary
+                                            <LineBreak/>
+                                            [3] print(r) <Span Foreground="#272537">____</Span> # red
+                                            <LineBreak/>
+                                            [4] print(b) <Span Foreground="#272537">____</Span> # blue
+                                            <LineBreak/>
+                                            [5] print(g) <Span Foreground="#272537">____</Span> # green
+                                            <LineBreak/>
+                                            [6] # получаем значение по ключу
+                                            <LineBreak/>
+                                            [7] print(dictionary[g]) <Span Foreground="#272537">____</Span> # зеленый
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <Section>
+                                <!--написание ДЕСТРУКТУРИЗАЦИЯ В ЦИКЛАХ-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ______________
+                                        </Span>
+                                        ДЕСТРУКТУРИЗАЦИЯ В ЦИКЛАХ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Циклы в Python позволяют разложить коллекции на отдельные составляющие.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = [
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> ("Tom", 38, "Google"),
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> ("Bob", 42, "Microsoft"),
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> ("Sam", 29, "JetBrains")
+                                            <LineBreak/>
+                                            [5] ]
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] for name, age, company in people:
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> print(f"Name: {name}, Age: {age}, Company: {company}")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь мы перебираем список кортежей people. Каждый кортеж состоит из трех элементов, соответственно при переборе мы можем их передать в переменные name, age и company.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Другой пример - функция
+                                    <Span FontWeight="Bold">enumerate()</Span> . Она принимает в качестве параметра коллекцию, создает для каждого элемента 
+                                    кортеж и возвращает набор из подобных кортежей. Каждый кортеж содержит индекс, который увеличивается с каждой итерацией.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] people = ["Tom", "Bob", "Sam"]
+                                            <LineBreak/>
+                                            [2] for index, name in enumerate(people):
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print(f"{index}.{name}")
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] # КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            [6] 0.Tom
+                                            <LineBreak/>
+                                            [7] 1.Bob
+                                            <LineBreak/>
+                                            [8] 2.Sam
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+                            <Section>
+                                <!--написание ИГНОРИРОВАНИЕ ЗНАЧЕНИЙ-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _______________
+                                        </Span>
+                                        ИГНОРИРОВАНИЕ ЗНАЧЕНИЙ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Если какой-то элемент коллекции не нужен, то обычно для него определяется переменная с именем _ (прочерк).
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] person =("Tom", 38, "Google")
+                                            <LineBreak/>
+                                            [2] name, _, company = person
+                                            <LineBreak/>
+                                            [3] print(name) <Span Foreground="#272537">____</Span> # Tom
+                                            <LineBreak/>
+                                            [4] print(company) <Span Foreground="#272537">____</Span> # Google
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                </Paragraph>
+                            </Section>
+
+
+
+                            <Section>
+                                <!--написание УПАКОВКА ЗНАЧЕНИЙ И ОПЕРАТОР *-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________
+                                        </Span>
+                                        УПАКОВКА ЗНАЧЕНИЙ И ОПЕРАТОР: *
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Оператор * упаковывает значение в коллекцию.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] num1=1
+                                            <LineBreak/>
+                                            [2] num2=2
+                                            <LineBreak/>
+                                            [3] num3=3
+                                            <LineBreak/>
+                                            [4] *numbers,=num1,num2,num3
+                                            <LineBreak/>
+                                            [5] print(numbers) <Span Foreground="#272537">____</Span> # [1, 2, 3]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь мы упаковываем значения из кортежа (num1,num2,num3) в список numbers. 
+                                    Причем, чтобы получить список, после numbers указывается запятая.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Как правило, упаковка применяется для сбора значений, 
+                                    которые остались после присвоения результатов деструктуризации.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] head, *tail = [1, 2, 3, 4, 5]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] print(head) <Span Foreground="#272537">____</Span> # 1
+                                            <LineBreak/>
+                                            [4] print(tail) <Span Foreground="#272537">____</Span> # [2, 3, 4, 5]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь переменная head в соответствии с позицией получае первый элемент списка. 
+                                    Все остальные элементы передаются в переменную tail. Таким образом, переменная 
+                                    tail будет представлять список из оставшихся элементов.
+                                    <LineBreak/>
+                                    Tаким образом мы можем получать различные комбинации элементов коллекции. 
+                                    Причем не только списков, но и кортежей, словарей и других коллекций.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Другой пример - нам надо получить только первый, третий и последний элемент, 
+                                    а остальные элементы нам не нужны. В общем случае мы должны предоставить 
+                                    переменные для всех элементов коллекции. Однако если коллекция имеет 100 
+                                    элементов, а нам нужно только три, не будем же мы определять все сто переменных.
+                                    И в этом случае опять же можно применить упаковку.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] first, _, third, *_, last = [1, 2, 3, 4, 5, 6, 7, 8]
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] print(first) <Span Foreground="#272537">____</Span> # 1
+                                            <LineBreak/>
+                                            [4] print(third) <Span Foreground="#272537">____</Span> # 3
+                                            <LineBreak/>
+                                            [5] print(last) <Span Foreground="#272537">____</Span> # 8
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+
+                                    Также можно получить ключи словаря
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] red, *other, green = {"red":"красный", "blue":"синий", "yellow":"желтый", "green":"зеленый"}
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] print(red) <Span Foreground="#272537">____</Span> # red
+                                            <LineBreak/>
+                                            [4] print(green) <Span Foreground="#272537">____</Span> # green
+                                            <LineBreak/>
+                                            [5] print(other) <Span Foreground="#272537">____</Span> # ['blue', 'yellow']
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </Section>
+
+
+
+
+
+                            <Section>
+                                <!--написание РАСПАКОВКА И ОПЕРАТОРЫ * И **-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________
+                                        </Span>
+                                        РАСПАКОВКА И ОПЕРАТОРЫ: * И **
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Оператор * вместе с оператором ** также может применяться для распаковки значений. Оператор * используется для распаковки кортежей, списков,
+                                    строк, множеств, а оператор ** - для распаковки словарей. Особенно это может быть полезно, когда на основе одних коллекций создаются другие.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример, распаковка кортежей и списков:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] nums1 = [1, 2, 3]
+                                            <LineBreak/>
+                                            [2] nums2 = (4, 5, 6)
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] # распаковываем список nums1 и кортеж nums2
+                                            <LineBreak/>
+                                            [5] nums3 = [*nums1, *nums2]
+                                            <LineBreak/>
+                                            [6] print(nums3) <Span Foreground="#272537">____</Span> # [1, 2, 3, 4, 5, 6]
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь распаковывем значения из списка nums1 и кортежа nums2 и помещаем их в список nums3.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Подобным образом раскладываются словари, только применяется оператор **.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] dictionary1 = {"red":"красный", "blue":"синий"}
+                                            <LineBreak/>
+                                            [2] dictionary2 = {"green":"зеленый", "yellow":"желтый"}
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] # распаковываем словари
+                                            <LineBreak/>
+                                            [5] dictionary3 = {**dictionary1, **dictionary2}
+                                            <LineBreak/>
+                                            [6] print(dictionary3)  # {'red': 'красный', 'blue': 'синий', 'green': 'зеленый', 'yellow': 'желтый'}
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
 
 </ResourceDictionary>
