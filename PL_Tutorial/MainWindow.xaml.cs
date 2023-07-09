@@ -19,6 +19,7 @@ using PL_Tutorial.Pages;
 using PL_Tutorial.Window_Menu;
 using System.Diagnostics;
 using System.Windows.Media.Animation;
+using System.Reflection;
 
 namespace PL_Tutorial
 {
@@ -40,10 +41,22 @@ namespace PL_Tutorial
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
+            version_blok();
         }
 
+        string vers_curs = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        
+        public void version_blok()
+        {
+            TxtBl_vers.Text = vers_curs;
+        }
         
 
+
+
+
+
+        //ГПТ ФУНКЦИЯ ----------------------------------------------
 
         //вылет окна GPT
         private void Border_MouseEnter(object sender, MouseEventArgs e)
@@ -81,6 +94,7 @@ namespace PL_Tutorial
             windGPT.Show();
         }
 
+        //ГПТ ФУНКЦИЯ ----------------------------------------------
 
 
 
@@ -100,6 +114,10 @@ namespace PL_Tutorial
         }
 
 
+
+
+
+        //РАБОТА С ОКНОМ ----------------------------------------------
 
         //перетаскивание окна
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -184,6 +202,7 @@ namespace PL_Tutorial
             wind.Show();
         }
 
-        
+        //РАБОТА С ОКНОМ ----------------------------------------------
+
     }
 }

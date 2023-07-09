@@ -233,6 +233,7 @@
                     
                 </Grid>
             </Border>
+            <TextBlock Name="TxtBl_vers" Grid.Column="2" HorizontalAlignment="Left" Margin="83,309,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="18" Width="88"/>
 
 
 
