@@ -6804,7 +6804,7 @@
 
 
 
-                                <!--написание ФУНКЦИИ-->
+                                <!--написание ПЕРЕДАЧА ЗНАЧЕНИЙ ПАРАМЕТРАМ ПО ИМЕНИ.-->
                                 <Paragraph>
                                     <LineBreak/>
                                     <LineBreak/>
@@ -6999,86 +6999,333 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+    <!--RETURN-ФУНКЦИЙ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ReturnRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ВОЗВРАЩЕНИЕ РЕЗУЛЬТАТА-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________
+                                        </Span>
+                                        ВОЗВРАЩЕНИЕ РЕЗУЛЬТАТА
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Функция может возвращать результат. Для этого в функции используется оператор <Span FontWeight="Bold">return</Span>, после которого указывается возвращаемое значение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис написания return:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def имя_функции ([параметры]):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> инструкции
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> return возвращаемое_значение
+                                        </TextBlock>
+                                    </Border>
+                                    
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def get_message():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> return "Hello World"
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь после оператора return идет строка "Hello World" - это значение и будет возвращать функция get_message().
+                                    Затем это результат функции можно присвоить переменной или использовать как обычное значение.
+                                   
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def get_message():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> return "Hello World"
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] message = get_message() <Span Foreground="#272537">____</Span> # получаем результат функции get_message в переменную message
+                                            <LineBreak/>
+                                            [5] print(message) <Span Foreground="#272537">____</Span> # Hello World
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] # можно напрямую передать результат функции get_message
+                                            <LineBreak/>
+                                            [8] print(get_message()) <Span Foreground="#272537">____</Span> # Hello World
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    После оператора return может идти и сложное вычислямое выражение, резлуьтат которого будет возвращаться из функции. Определим функцию, которая увеличивает число в два раза.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def double(number):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> return 2 * number
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] result1 = double(4) <Span Foreground="#272537">____</Span> # result1 = 8
+                                            <LineBreak/>
+                                            [5] result2 = double(5) <Span Foreground="#272537">____</Span> # result2 = 10
+                                            <LineBreak/>
+                                            [6] print(f"result1 = {result1}") <Span Foreground="#272537">____</Span> # result1 = 8
+                                            <LineBreak/>
+                                            [7] print(f"result2 = {result2}") <Span Foreground="#272537">____</Span> # result2 = 10
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+
+
+
+
+
+                                <!--написание ВЫХОД ИЗ ФУНКЦИИ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________
+                                        </Span>
+                                        ВЫХОД ИЗ ФУНКЦИИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Оператор return не только возвращает значение, 
+                                    но и производит выход из функции. Поэтому он должен определяться после
+                                    остальных инструкций.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def get_message():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> return "Hello"
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print("КОНЕЦ")
+                                            <LineBreak/>
+                                            [4]
+                                            <LineBreak/>
+                                            [5] print(get_message())
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    С точки зрения синтаксиса данная функция корректна, однако ее инструкция
+                                    print("КОНЕЦ") не имеет смысла - она никогда не выполнится, так как до ее 
+                                    выполнения оператор return возвратит значение и произведет выход из функции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Однако мы можем использовать оператор return и в таких функциях, которые не возвращают никакого значения. 
+                                    В этом случае после оператора return не ставится никакого возвращаемого значения. Типичная ситуация 
+                                    - в зависимости от опеределенных условий произвести выход из функции
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, age):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> if age &gt; 120 or age &lt; 1:
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">________</Span> print("Не корректное число")
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> return
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}")
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] print_person("Tom", 22)
+                                            <LineBreak/>
+                                            [8] print_person("Bob", -102)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Name: Tom  Age: 22
+                                            <LineBreak/>
+                                            Не корректное число
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь функция print_person в качестве параметров принимает имя и возраст пользователя. Однако в функции вначале мы проверяем, 
+                                    соответствует ли возраст некоторому диапазону (меньше 120 и больше 0). Если возраст находится вне этого диапазона,
+                                    то выводим сообщение о недопустимом возрасте и с помощью оператора return выходим из функции. После этого функция заканчивает свою работу.
+                                    <LineBreak/>
+                                    Однако если возраст корректен, то выводим информацию о пользователе на консоль.
+
+
+
+                                </Paragraph>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ResourceDictionary>
