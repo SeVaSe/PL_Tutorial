@@ -226,6 +226,9 @@
     <Compile Include="Window_Menu\GPT_Wind.xaml.cs">
       <DependentUpon>GPT_Wind.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_Menu\News_AboutApp.xaml.cs">
+      <DependentUpon>News_AboutApp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window_Menu\Window_C_Sharp.xaml.cs">
       <DependentUpon>Window_C_Sharp.xaml</DependentUpon>
     </Compile>
@@ -415,6 +418,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_Menu\GPT_Wind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_Menu\News_AboutApp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

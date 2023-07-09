@@ -122,6 +122,7 @@
                           VerticalAlignment="Center"
                           >
                         <MenuItem Header="Menu">
+                            <MenuItem Header="Новости" Click="News_AboutApp_Click" Foreground="#1b192b"/>
                             <MenuItem Header="О приложении" Click="MenuItem_AboutApp_Click" Foreground="#1b192b"/>
                             <MenuItem Header="Справка" Click="MenuItem_Spravka_Click" Foreground="#1b192b"/>
                             <MenuItem Header="Тех-поддержка" Click="MenuItem_TehSupport_Click" Foreground="#1b192b"/>

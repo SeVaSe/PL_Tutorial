@@ -160,6 +160,14 @@ namespace PL_Tutorial
             this.Close();
         }
 
+        //новости о приложении
+        private void News_AboutApp_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Window_Menu.News_AboutApp();
+            wind.Show();
+            this.Close();
+        }
+
         //тех поддержка
         private void MenuItem_TehSupport_Click(object sender, RoutedEventArgs e)
         {
