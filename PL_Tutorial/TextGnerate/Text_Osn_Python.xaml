@@ -7576,7 +7576,7 @@
 
 
 
-    <!--ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+    <!--ФУНКЦИЯ LAMBDA-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="LambdaRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -7589,7 +7589,7 @@
                                      IsReadOnly="True">
                         <FlowDocument>
                             <Section>
-                                <!--написание ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+                                <!--написание LAMBDA-->
                                 <Paragraph>
                                     Лямбда-выражения в языке Python представляют небольшие анонимные функции, которые определяются с помощью оператора lambda.
                                     <LineBreak/>
@@ -7764,9 +7764,6 @@
                                             [17] print(operation(10, 6)) <Span Foreground="#272537">________</Span> # 60
                                         </TextBlock>
                                     </Border>
-
-
-
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -7782,7 +7779,380 @@
 
 
 
+    <!--ОБЛАСТЬ ВИДИМОСТИ ПЕРЕМЕННЫх-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="OblastVisiblRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ГЛОБАЛЬНЫЙ КОНТЕКСТ-->
+                                <Paragraph>
+                                    Область видимости или scope определяет контекст переменной, в рамках которого ее можно использовать. В Python есть два типа контекста: глобальный и локальный.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        ГЛОБАЛЬНЫЙ КОНТЕКСТ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Глобальный контекст подразумевает, что переменная является глобальной, она определена вне любой из функций и доступна любой функции в программе.
 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] name = "Tom"
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] def say_hi():
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> print("Hello", name)
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] def say_bye():
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> print("Good bye", name)
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9] say_hi()
+                                            <LineBreak/>
+                                            [10] say_bye()
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь переменная name является глобальной и имеет глобальную область видимости. И обе определенные здесь функции могут свободно ее использовать.
+                                </Paragraph>
+
+
+                                <!--написание ЛОКАЛЬНЫЙ КОНТЕКСТ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        ЛОКАЛЬНЫЙ КОНТЕКСТ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В отличие от глобальных переменных локальная переменная определяется внутри функции и доступна только из этой функции, то есть имеет локальную область видимости.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hi():
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> name = "Sam"
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> surname = "Johnson"
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> print("Hello", name, surname)
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] def say_bye():
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> name = "Tom"
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> print("Good bye", name)
+                                            <LineBreak/>
+                                            [9] 
+                                            <LineBreak/>
+                                            [10] say_hi()
+                                            <LineBreak/>
+                                            [11] say_bye()
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае в каждой из двух функций определяется локальная переменная name. И хотя эти переменные называются одинаково, но тем не менее это две разных 
+                                    переменных, каждая из которых доступна только в рамках своей функции. Также в функции say_hi() определена переменная surname, которая также является локальной, 
+                                    поэтому в функции say_bye() мы ее использовать не сможем.
+                                </Paragraph>
+
+
+
+                                <!--написание СКРЫТИЕ ПЕРЕМЕННЫХ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            __________________
+                                        </Span>
+                                        ЛОКАЛЬНЫЙ КОНТЕКСТ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Есть еще один вариант определения переменной, когда локальная переменная скрывают глобальную с тем же именем.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] name = "Tom"
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] def say_hi():
+                                            <LineBreak/>
+                                            [4] name = "Bob" <Span Foreground="#272537">____</Span> # скрываем значение глобальной переменной
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> print("Hello", name)
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] def say_bye():
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> print("Good bye", name)
+                                            <LineBreak/>
+                                            [9] 
+                                            <LineBreak/>
+                                            [10] say_hi() <Span Foreground="#272537">____</Span> # Hello Bob
+                                            <LineBreak/>
+                                            [11] say_bye() <Span Foreground="#272537">____</Span> # Good bye Tom
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь определена глобальная переменная name. Однако в функции say_hi определена локальная переменная с тем же именем name. И если функция say_bye использует 
+                                    глобальную переменную, то функция say_hi использует локальную переменную, которая скрывает глобальную.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Если же мы хотим изменить в локальной функции глобальную переменную, а не определить локальную, то необходимо использовать ключевое слово <Span FontWeight="Bold">global.</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] name = "Tom"
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] def say_hi():
+                                            <LineBreak/>
+                                            [4] global  name
+                                            <LineBreak/>
+                                            [5] name = "Bob" <Span Foreground="#272537">____</Span> # изменяем значение глобальной переменной
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> print("Hello", name)
+                                            <LineBreak/>
+                                            [7] 
+                                            <LineBreak/>
+                                            [8] def say_bye():
+                                            <LineBreak/>
+                                            [9] <Span Foreground="#272537">____</Span> print("Good bye", name)
+                                            <LineBreak/>
+                                            [10] 
+                                            <LineBreak/>
+                                            [11] say_hi() <Span Foreground="#272537">____</Span> # Hello Bob
+                                            <LineBreak/>
+                                            [12] say_bye() <Span Foreground="#272537">____</Span> # Good bye Bob
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+
+
+
+
+                                <!--написание NONLOCAL-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________________________
+                                        </Span>
+                                        NONLOCAL
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Выражение
+                                    <Span FontWeight="Bold">nonlocal</Span> прикрепляет идентификатор к переменной из ближайщего окружающего контекста (за исключением глобального контекста). Обычно
+                                    <Span FontWeight="Bold">nonlocal</Span>
+                                    применяется во вложенных функциях, когда надо прикрепить идентификатор за переменной или параметром окружающей внешней функции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def outer(): <Span Foreground="#272537">____</Span>  # внешняя функция
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> n = 5
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> def inner(): <Span Foreground="#272537">____</Span> # вложенная функция
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> print(n)
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> inner() <Span Foreground="#272537">____</Span> # 5
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> print(n)
+                                            <LineBreak/>
+                                            [9]  
+                                            <LineBreak/>
+                                            [10] 
+                                            <LineBreak/>
+                                            [11] outer() <Span Foreground="#272537">____</Span> # 5
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь вложенная локальная функция inner() выводит на консоль значение переменной n, которая определена во внешней функции outer(). Затем в функции outer() вызывается внутренняя функция inner().
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    При вызове функции outer() здесь мы ожидаемо увидим на консоли два раза число 5. Однако в данном случае вложенная функция inner()
+                                    просто получает значение. Теперь возьмем другую ситуацию, когда вложенная функция присваивает значение переменной.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def outer(): <Span Foreground="#272537">____</Span>  # внешняя функция
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> n = 5
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> def inner(): <Span Foreground="#272537">____</Span> # вложенная функция
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> n = 25
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> print(n)
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> inner() <Span Foreground="#272537">____</Span> # 25
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> print(n)
+                                            <LineBreak/>
+                                            [9]  
+                                            <LineBreak/>
+                                            [10] 
+                                            <LineBreak/>
+                                            [11] outer() <Span Foreground="#272537">____</Span> 
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            # 25 <Span Foreground="#272537">____</Span>  - inner
+                                            <LineBreak/>
+                                            # 5 <Span Foreground="#272537">____</Span>  - outer
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    При присвоении значения во вложенной функции: n = 25 будет создаваться новая переменная n, которая скроет переменную n из окружающей внешней функции outer. В итоге мы получим при выводе два разных числа.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Чтобы во вложенной функции указать, что идентификатор во вложенной функции будет представлять переменную из окружающей функции, применяется выражение nonlocal.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def outer(): <Span Foreground="#272537">____</Span>  # внешняя функция
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> n = 5
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> def inner(): <Span Foreground="#272537">____</Span> # вложенная функция
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> nonlocal n <Span Foreground="#272537">____</Span> # указываем, что n - это переменная из окружающей функции
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> n = 25
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> print(n)
+                                            <LineBreak/>
+                                            [7] 
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> inner() <Span Foreground="#272537">____</Span> # 25
+                                            <LineBreak/>
+                                            [9]  <Span Foreground="#272537">____</Span> print(n)
+                                            <LineBreak/>
+                                            [10] 
+                                            <LineBreak/>
+                                            [11] 
+                                            <LineBreak/>
+                                            [12] outer() <Span Foreground="#272537">____</Span> 
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            # 25 <Span Foreground="#272537">____</Span>  - inner
+                                            <LineBreak/>
+                                            # 25 <Span Foreground="#272537">____</Span>  - outer
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
