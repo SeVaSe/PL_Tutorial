@@ -152,7 +152,7 @@
                           FontWeight="Bold"
                           Margin="26,10,25,343"/>
 
-                    <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                    <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"  VirtualizingPanel.ScrollUnit="Pixel" ItemsSource="{Binding}"
          ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_Osn" Background="Transparent" BorderThickness="0"  Margin="0,54,0,10" Grid.Column="1" >
                         <ListBox.ItemContainerStyle >
                             <Style TargetType="{x:Type ListBoxItem}">
@@ -173,7 +173,7 @@
                                 </Setter>
                             </Style>
                         </ListBox.ItemContainerStyle>
-                        
+
                         <ListBoxItem>
                             <Button x:Name="Btn_Sintax" Style="{StaticResource ButtonModernBlue}" Content="Синтакс языка Python" Click="Btn_Sintax_Click"/>
                         </ListBoxItem>
@@ -198,8 +198,6 @@
                         <ListBoxItem>
                             <Button x:Name="Btn_IfConstruction" Style="{StaticResource ButtonModernBlue}" Content="IF-конструкция" Click="Btn_IfConstr_Click"/>
                         </ListBoxItem>
-
-
                         <ListBoxItem>
                             <Button x:Name="Btn_while" Style="{StaticResource ButtonModernBlue}" Content="Цикл WHILE" Click="Btn_While_Click"/>
                         </ListBoxItem>
