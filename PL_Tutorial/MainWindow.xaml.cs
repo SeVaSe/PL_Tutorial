@@ -41,16 +41,15 @@ namespace PL_Tutorial
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
-            version_blok();
         }
 
-        string vers_curs = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        /*string vers_curs = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         
         public void version_blok()
         {
             TxtBl_vers.Text = vers_curs;
         }
-        
+        */
 
 
 
