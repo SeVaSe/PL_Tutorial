@@ -8159,7 +8159,237 @@
 
 
 
+    <!--ФУНКЦИЯ ЗАМЫКАНИЕ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="ZamikRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ЗАМЫКАНИЕ-->
+                                <Paragraph>
+                                    <Span FontWeight="Bold">Замыкание</Span> представляет функцию, которая запоминает свое лексическое
+                                    окружение даже в том случае, когда она выполняется вне своей области видимости.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Технически замыкание включает три компонента:
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● внешняя функция, которая определяет некоторую область видимости и 
+                                    в которой определены некоторые
+                                    <Span Foreground="#272537">____</Span> переменные и параметры - лексическое окружение
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● переменные и параметры (лексическое окружение), которые определены во внешней функции
+                                    <LineBreak/>
+                                    <Span Foreground="#272537">____</Span> ● вложенная функция, которая использует переменные и параметры внешней функции
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Для определения замыканий в Python применяются локальные функции
 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def outer(): <Span Foreground="#272537">____</Span>  # внешняя функция
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> n = 5
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> def inner(): <Span Foreground="#272537">____</Span> # вложенная функция
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> nonlocal n <Span Foreground="#272537">____</Span> # указываем, что n - это переменная из окружающей функции
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> n += 1 <Span Foreground="#272537">____</Span> # операции с лексическим окружением
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> print(n)
+                                            <LineBreak/>
+                                            [7] 
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> return inner
+                                            <LineBreak/>
+                                            [9]  
+                                            <LineBreak/>
+                                            [10] 
+                                            <LineBreak/>
+                                            [11] fn = outer() <Span Foreground="#272537">____</Span> # fn = inner, так как функция outer возвращает функцию inner
+                                            <LineBreak/>
+                                            [12] # вызываем внутреннюю функцию inner
+                                            <LineBreak/>
+                                            [13] fn()    # 6
+                                            <LineBreak/>
+                                            [14] fn()    # 7
+                                            <LineBreak/>
+                                            [15] fn()    # 8
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь функция outer определяет локальную переменную n - это и есть лексическое окружение для внутренней функции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Внутри функции outer определена внутренняя функция - локальная функция inner, которая обращается к своему лексическому окружению
+                                    - переменной n - увеличивает ее значение на единицу и выводит на консоль:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="550" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def inner(): <Span Foreground="#272537">____</Span> # локальная функция
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> nonlocal n
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> n += 1 <Span Foreground="#272537">____</Span> # операции с лексическим окружением
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> print(n)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Эта локальная функция возвращается функцией outer:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="150" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] return inner
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В программе вызываем функцию outer и получаем в переменную fn локальную функцию inner:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="150" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] fn = outer()
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Переменная fn и представляет собой замыкание, то есть объединяет две вещи: функцию и окружение, в котором функция была создана. 
+                                    И несмотря на то, что мы получили локальную функцию и можем ее вызывать вне ее окружающей 
+                                    функции, в которой она определена, тем не менее она запомнила свое лексическое окружение и может к нему обращаться и изменять, что мы увидим по консольному выводу.
+                                </Paragraph>
+
+
+                                <!--написание ПРИМЕНЕНИЕ ПАРАМЕТРОВ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        ПРИМЕНЕНИЕ ПАРАМЕТРОВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Кроме внешних переменных к лексическому окружению также относятся параметры окружающей функции. Рассмотрим использование параметров.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def multiply(n):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> def inner(m): return n * m
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> return inner
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] fn = multiply(5)
+                                            <LineBreak/>
+                                            [8] print(fn(5)) <Span Foreground="#272537">____</Span> # 25
+                                            <LineBreak/>
+                                            [9] print(fn(6)) <Span Foreground="#272537">____</Span> # 30
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь внешняя функция - multiply возвращает функцию, которая принимает число и возвращает число.
+                                    <LineBreak/>
+                                    Вызов функции multiply() возвращает локальную функцию inner.
+                                    <LineBreak/>
+                                    Эта функция запоминает окружение, в котором она была создана, в частности, значение параметра n. Кроме того, сама принимает параметр и возвращает произведение параметров n и m.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В итоге при вызове функции multiply определяется переменная fn, которая получает локальную функцию inner и ее лексическое окружение - значение параметра n:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="150" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] fn = multiply(5)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае параметр n равен 5.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    При вызове локальной функции, например, в случае:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="150" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] print(fn(6)) <Span Foreground="#272537">____</Span> # 30
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Число 6 передается для параметра m локальной функции, которая возвращает произведение n и m, то есть 5 * 6 = 30.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Но можно этот код уменьшить в разы, используя лямбду.
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def multiply(n): return lambda m: n * m
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] fn = multiply(5)
+                                            <LineBreak/>
+                                            [5] print(fn(5)) <Span Foreground="#272537">____</Span> # 25
+                                            <LineBreak/>
+                                            [6] print(fn(6)) <Span Foreground="#272537">____</Span> # 30
+                                            <LineBreak/>
+                                            [7] print(fn(7)) <Span Foreground="#272537">____</Span> # 35
+                                        </TextBlock>
+                                    </Border>
+
+
+
+
+
+
+
+                                </Paragraph>
+                                
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
