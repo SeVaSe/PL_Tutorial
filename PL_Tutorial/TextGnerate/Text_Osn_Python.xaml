@@ -6652,8 +6652,345 @@
                                 <Paragraph>
                                     Функция может принимать параметры. Через параметры в функцию можно передавать данные. Банальный пример - 
                                     функция print(), которая с помощью параметра принимает значение, выводимое на консоль.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello(name):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Hello, {name}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] say_hello("Tom")
+                                            <LineBreak/>
+                                            [5] say_hello("Bob")
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Hello, Tom
+                                            <LineBreak/>
+                                            Hello, Bob
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Функция <Span FontWeight="Bold">say_hello</Span>  имеет параметр name, и при вызове функции мы можем передать этому параметру какой-либо значение. Внутри 
+                                    функции мы можем использовать параметр как обычную переменную, например, вывести значение этого параметра на консоль
+                                    функцией print. Так, в выражении - <Span FontWeight="Bold">say_hello("Tom")</Span>, строка "Tom" будет передаваться параметру name. В итоге при выполнении программы мы получаем такой консольный вывод.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    При вызове функции значения передаются параметрам по позиции. Например, определим и вызовем функцию
+                                    с несколькими параметрами.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, age):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}")
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print(f"Age: {age}")
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] print_person("Tom", 37)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Name: Tom
+                                            <LineBreak/>
+                                            Age: 37
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+
+
+
+
+                                <!--написание ЗНАЧЕНИЯ ПО УМОЛЧАНИЮ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________________
+                                        </Span>
+                                        ЗНАЧЕНИЯ ПО УМОЛЧАНИЮ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Некоторые параметры функции мы можем сделать необязательными, указав для них значения по умолчанию при определении функции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello(name="Tom"):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Hello, {name}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] say_hello() <Span Foreground="#272537">____</Span> # здесь параметр name будет иметь значение "Tom"
+                                            <LineBreak/>
+                                            [5] say_hello("Bob") <Span Foreground="#272537">____</Span> # здесь name = "Bob"
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Hello, Tom
+                                            <LineBreak/>
+                                            Hello, Bob
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь параметр name является необязательным. И если мы не передаем при вызове функции для него значение,
+                                    то применяется значение по умолчанию, то есть строка "Tom".
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    
+                                    Если функция имеет несколько параметров, то необязательные параметры должны идти после обязательных.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, age = 18):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] print_person("Bob")
+                                            <LineBreak/>
+                                            [5] print_person("Tom", 37)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь параметр age является необязательным и по умолчанию имеет значение 18. Перед ним расположен обязательный параметр name. Поэтому при 
+                                    вызове функции мы можем не передавать значение параметру age, но параметру name передать значение необходимо.
+                                    <LineBreak/>
+                                    При необходимости мы можем сделать все параметры необязательными.
+                                </Paragraph>
+
+
+
+
+                                <!--написание ФУНКЦИИ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ________
+                                        </Span>
+                                        Передача значений параметрам по имени.
+                                        
+                                        <Span Foreground="#272537">
+                                            _________________
+                                        </Span>
+                                        Именованные параметры
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
                                     
                                     
+                                    В примерах выше при вызове функции значения передаются параметрами функции по позиции. Но также можно передавать значения параметрам по имени.
+                                    Для этого при вызове функции указывается имя параметра и ему присваивается значение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, age):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] print_person(age = 22, name = "Tom")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае значения параметрам age и name передаются по имени. И несмотря на то, что параметр name идет первым в определении функции, мы можем при вызове
+                                    функции написать print_person(age = 22, name = "Tom") и таким образом передать число 22 параметру age, а строку "Tom" параметру name.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Символ * позволяет установить, какие параметры будут именнованными - то есть такие параметры, которым можно передать значения только по имени. 
+                                    Все параметры, которые располагаются справа от символа *, получают значения <Span FontWeight="Bold">только по имени.</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, *,  age, company):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}  Company: {company}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] print_person("Bob", age = 41, company ="Microsoft") <Span Foreground="#272537">____</Span> # Name: Bob  Age: 41  company: Microsoft
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае параметры age и company являются именнованными. Так же можно сделать все параметры именнованными, поставив перед списком параметров символ *.
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если наоборот надо определить параметры, которым можно передавать значения только
+                                    по позиции, то есть позиционные параметры, то можно использовать символ /: все 
+                                    параметры, которые идут до символа / , являются позиционными и могут получать значения только по позиции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, /, age, company="Microsoft"):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}  Company: {company}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] print_person("Tom", company="JetBrains", age = 24) <Span Foreground="#272537">____</Span> # Name: Tom  Age: 24  company: JetBrains
+                                            <LineBreak/>
+                                            [5] print_person("Bob", 41) <Span Foreground="#272537">____</Span> # Name: Bob  Age: 41  company: Microsoft
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае параметр name является позиционным.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Для одной функции можно определять одновременно позиционные и именнованные параметры.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def print_person(name, /,  age = 18, *, company):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}  Company: {company}")
+                                            <LineBreak/>
+                                            [3] 
+                                            <LineBreak/>
+                                            [4] print_person("Sam", company ="Google") <Span Foreground="#272537">____</Span> # Name: Sam  Age: 18  company: Google
+                                            <LineBreak/>
+                                            [5] print_person("Tom", 37, company ="JetBrains") <Span Foreground="#272537">____</Span> # Name: Tom  Age: 37  company: JetBrains
+                                            <LineBreak/>
+                                            [6] print_person("Bob", company ="Microsoft", age = 42) <Span Foreground="#272537">____</Span> # Name: Bob  Age: 42  company: Microsoft
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае параметр name располагается слева от символа /, поэтому является
+                                    позиционным и обязательным - ему можно можно передать значение только по позиции.
+                                    <LineBreak/>
+                                    Параметр company является именнованным, так как располагается справа от символа *. Параметр age 
+                                    может получать значение по имени и по позиции.
+                                </Paragraph>
+
+
+
+
+                                <!--написание НЕОПРЕДЕЛЕННОЕ КОЛИЧЕСТВО ПАРАМЕТРОВ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ____
+                                        </Span>
+                                        НЕОПРЕДЕЛЕННОЕ КОЛИЧЕСТВО ПАРАМЕТРОВ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    С помощью символа звездочки можно определить параметр, через который можно 
+                                    передавать неопределенное количество значений. Это может быть полезно, когда мы 
+                                    хотим, чтобы функция получала несколько значений, но мы точно не знаем, сколько 
+                                    именно. Определим функцию подсчета суммы чисел.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def sum(*numbers):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> result = 0
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> for n in numbers:
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> result += n
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> print(f"sum = {result}")
+                                            <LineBreak/>
+                                            [6] 
+                                            <LineBreak/>
+                                            [7] sum(1, 2, 3, 4, 5) <Span Foreground="#272537">____</Span> # sum = 15
+                                            <LineBreak/>
+                                            [8] sum(3, 4, 5, 6) <Span Foreground="#272537">____</Span> # sum = 18
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае функция sum принимает один параметр - *numbers, но звездочка 
+                                    перед названием параметра указывает, что фактически на место этого параметра мы 
+                                    можем передать неопределенное количество значений или набор значений. В самой
+                                    функции с помощью цикла for можно пройтись по этому набору, получить каждое 
+                                    значение из этого набора в переменную n и произвести с ним какие-нибудь действия. 
+                                    Например, в данном случае вычисляется сумма переданных чисел.
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -6662,4 +6999,86 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </ResourceDictionary>
