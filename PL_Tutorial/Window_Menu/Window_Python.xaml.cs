@@ -258,7 +258,7 @@ namespace PL_Tutorial.Window_Menu
 
         private void Btn_ResultReturn_Click(object sender, RoutedEventArgs e)
         {
-            Osn_Button_Class.ReturnFuncClick();
+            Osn_Button_Class.FuncAsResultClick();
             this.Close();
         }
 

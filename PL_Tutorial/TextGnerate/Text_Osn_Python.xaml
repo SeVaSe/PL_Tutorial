@@ -7224,6 +7224,13 @@
 
 
                                 </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
@@ -7232,6 +7239,115 @@
 
 
 
+    <!--ФУНКЦИЯ КАК ТИП-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FuncAsTypeRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИЯ КАК ТИП-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _____________________
+                                        </Span>
+                                        ФУНКЦИЯ КАК ТИП
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    В Python функция фактически представляет отдельный тип. Так мы можем присвоить переменной 
+                                    какую-нибудь функцию и затем, используя переменную, вызывать данную функцию.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="850" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def say_hello(): print("Hello")
+                                            <LineBreak/>
+                                            [2] def say_goodbye(): print("Good Bye")
+                                            <LineBreak/>
+                                            [3]
+                                            <LineBreak/>
+                                            [4] message = say_hello
+                                            <LineBreak/>
+                                            [5] message() <Span Foreground="#272537">____</Span> # Hello
+                                            <LineBreak/>
+                                            [6] message = say_goodbye
+                                            <LineBreak/>
+                                            [7] message() <Span Foreground="#272537">____</Span> # Good Bye
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае переменной message присваивается одна из функций. Сначала ей передается функция say_hello().
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] message = say_hello
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    После этого переменная message будет указывать на данную функцию, то есть фактически представлять функцию say_hello.
+                                    А это значит, что мы можем вызывать переменную message как обычную функцию
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] message() <Span Foreground="#272537">____</Span> # Hello
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Фактически это приведет к выполнению функции say_hello, и на консоль будет выведена строка "Hello". 
+                                    Затем подобным образом мы можем передать переменной message другую функцию и вызвать ее.
+
+                                    
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Подобным образом можно через переменную вызывать функцию с параметрами и возвращать ее 
+                                    результат.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def sum(a, b): return a + b
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] operation = sum
+                                            <LineBreak/>
+                                            [4] result = operation(5, 6)
+                                            <LineBreak/>
+                                            [5] print(result) <Span Foreground="#272537">____</Span> # 11
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
@@ -7240,15 +7356,91 @@
 
 
 
+    <!--ФУНКЦИЯ КАК ПАРАМЕТР ФУНКЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FuncAsParamRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИЯ КАК ПАРАМЕТР ФУНКЦИИ-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                           __________
+                                        </Span>
+                                        ФУНКЦИЯ КАК ПАРАМЕТР ФУНКЦИИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
 
+                                    Поскольку функция в Python может представлять такое же значение как строка или число,
+                                    соответственно мы можем передать ее в качестве параметра в другую функцию. Например, 
+                                    определим функцию, которая выводит на консоль результат некоторой операции.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
 
-
-
-
-
-
-
-
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="750" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def do_operation(a, b, operation):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> result = operation(a, b)
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print(f"result = {result}")
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] def sum(a, b): return a + b
+                                            <LineBreak/>
+                                            [6] def multiply(a, b): return a * b
+                                            <LineBreak/>
+                                            [7]
+                                            <LineBreak/>
+                                            [8] do_operation(5, 4, sum) <Span Foreground="#272537">____</Span> # result = 9
+                                            <LineBreak/>
+                                            [9] do_operation(5, 4, multiply) <Span Foreground="#272537">____</Span> # result = 20
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае функция do_operation имеет три параметра, причем третий параметр, как предполагается, 
+                                    будет представлять функцию, которая принимает два параметра и возвращает некоторый результат.
+                                    Иными словами третий параметр - operation представляет некоторую операцию, но на момент определения функции
+                                    do_operation мы точно не знаем, что это будет за операция. Мы только знаем, что она принимает два параметр и
+                                    возвращает какой-то результат, который потом выводится на консоль.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    При вызове функции do_operation мы сможем передать в качестве третьего
+                                    параметра другую функцию, например, функцию sum.
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="250" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] do_operation(5, 4, sum)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    То есть в данном случае параметр operation фактически будет представлять функцию sum и будет возвращать сумму дву чисел.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Затем аналогичным образов в вызов функции do_operation можно передать третьему параметру другую функцию - multiply, которая выполнит умножение чисел.
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] do_operation(5, 4, multiply)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Таким образом, более гибкие по функциональности функции, которые через параметры принимают другие функции.
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>
@@ -7268,25 +7460,114 @@
 
 
 
+    <!--ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FuncResRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+                                <Paragraph>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________
+                                        </Span>
+                                        ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Также одна функция в Python может возвращать другую функцию. Определим функцию,
+                                    которая в зависимости от значения параметра возвращает ту или иную операцию.
 
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def sum(a, b): return a + b
+                                            <LineBreak/>
+                                            [2] def subtract(a, b): return a - b
+                                            <LineBreak/>
+                                            [3] def multiply(a, b): return a * b
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] 
+                                            <LineBreak/>
+                                            [6] def select_operation(choice):
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> if choice == 1:
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">________</Span> return sum
+                                            <LineBreak/>
+                                            [9] <Span Foreground="#272537">____</Span> elif choice == 2:
+                                            <LineBreak/>
+                                            [10] <Span Foreground="#272537">________</Span> return subtract
+                                            <LineBreak/>
+                                            [11] <Span Foreground="#272537">____</Span> else:
+                                            <LineBreak/>
+                                            [12] <Span Foreground="#272537">________</Span> return multiply
+                                            <LineBreak/>
+                                            [13] 
+                                            <LineBreak/>
+                                            [14] 
+                                            <LineBreak/>
+                                            [15] operation = select_operation(1) <Span Foreground="#272537">____</Span> # operation = sum
+                                            <LineBreak/>
+                                            [16] print(operation(10, 6)) <Span Foreground="#272537">____</Span> # 16
+                                            <LineBreak/>
+                                            [17]
+                                            <LineBreak/>
+                                            [18] operation = select_operation(2) <Span Foreground="#272537">____</Span> # operation = subtract
+                                            <LineBreak/>
+                                            [19] print(operation(10, 6)) <Span Foreground="#272537">____</Span> # 4
+                                            <LineBreak/>
+                                            [20]
+                                            <LineBreak/>
+                                            [21] operation = select_operation(3) <Span Foreground="#272537">____</Span> # operation = multiply
+                                            <LineBreak/>
+                                            [22] print(operation(10, 6)) <Span Foreground="#272537">____</Span> # 60
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае функция select_operation в зависимости от значения параметра choice возвращает одну из трех функций - sum, subtract и multiply.
+                                    Затем мы мы можем получить результат функции select_operation в переменную operation.
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] operation = select_operation(1)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Так, в данном случае в функцию select_operation передается число 1, соответственно она будет возвращать функцию sum. Поэтому переменная operation фактически будет указывать на функцию 
+                                    sum, которая выполняет сложение двух чисел.
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="600" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] print(operation(10, 6)) <Span Foreground="#272537">____</Span> # 16 - фактически равно sum(10, 6)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Аналогичным образом можно получить и выполнить другие функции.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 

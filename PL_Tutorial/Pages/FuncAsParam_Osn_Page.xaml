@@ -102,7 +102,7 @@
             </Border>
 
             <Grid Margin="0,10,0,6" Grid.Row="1" Grid.RowSpan="1">
-                <RichTextBox x:Name="TxtRichBox_Py" Style="{StaticResource ReturnRichTextBox}" Margin="10,0,10,0" />
+                <RichTextBox x:Name="TxtRichBox_Py" Style="{StaticResource FuncAsParamRichTextBox}" Margin="10,0,10,0" />
             </Grid>
 
         </Grid>
