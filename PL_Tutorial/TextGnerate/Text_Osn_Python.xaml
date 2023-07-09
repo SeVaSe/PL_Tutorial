@@ -7576,7 +7576,205 @@
 
 
 
+    <!--ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="LambdaRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ФУНКЦИЯ КАК РЕЗУЛЬТАТ ФУНКЦИИ-->
+                                <Paragraph>
+                                    Лямбда-выражения в языке Python представляют небольшие анонимные функции, которые определяются с помощью оператора lambda.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис Лямбда-Выражения:</Bold>
+                                    </Span>
 
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] lambda [параметры] : инструкция
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    Определим простейшее лямбда-выражение.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] message = lambda: print("hello")
+                                            <LineBreak/>
+                                            [2] message() <Span Foreground="#272537">____</Span> # hello
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь лямбда-выражение присваивается переменной message. Это лямбда-выражение не имеет параметров, ничего не возвращает и просто выводит строку "hello" на консоль.
+                                    И через переменную message мы можем вызвать это лямбда-выражение как обычную функцию.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если лямбда-выражение имеет параметры, то они определяются после ключевого слова lambda. Если лямбда-выражение возвращает какой-то результат, 
+                                    то он указывается после двоеточия. Определим лямбда-выражение, которое возвращает квадрат числа.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] square = lambda n: n * n
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] print(square(4)) <Span Foreground="#272537">____</Span> # 16
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае лямбда-выражение принимает один параметр - n. Справа от двоеточия идет возвращаемое значение - n* n. 
+                                    Это лямбда-выражение аналогично следующей функции:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def square2(n): return n * n
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Аналогичным образом можно создавать лямбда-выражения, которые принимают несколько параметров.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] sum = lambda a, b: a + b
+                                            <LineBreak/>
+                                            [2] 
+                                            <LineBreak/>
+                                            [3] print(sum(4, 5)) <Span Foreground="#272537">____</Span> # 9
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Хотя лямбда-выражения позволяют немного сократить определения функций, тем не менее они ограничены тем, что они могут выполнять только одно выражение. 
+                                    Однако они могут быть довольно удобны в тех случаях, когда необходимо использовать функцию для передачи в качестве параметра или возвращения в другой функции.
+                                    Например, передача лямбда-выражения в качестве параметра.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def do_operation(a, b, operation):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> result = operation(a, b)
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print(f"result = {result}")
+                                            <LineBreak/>
+                                            [4] 
+                                            <LineBreak/>
+                                            [5] do_operation(5, 4, lambda a, b: a + b) <Span Foreground="#272537">____</Span> # result = 9
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    В данном случае нам нет необходимости определять функции, чтобы передать их в качестве параметра.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    
+                                    То же самое касается и возвращение лямбда-выражений из функций.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="650" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def select_operation(choice):
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> if choice == 1:
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">________</Span> return lambda a, b: a + b
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">____</Span> elif choice == 2:
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> return lambda a, b: a - b
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> else:
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">________</Span> return lambda a, b: a * b
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9]
+                                            <LineBreak/>
+                                            [10] operation = select_operation(1) <Span Foreground="#272537">________</Span> # operation = sum
+                                            <LineBreak/>
+                                            [11] print(operation(10, 6)) <Span Foreground="#272537">________</Span> # 16
+                                            <LineBreak/>
+                                            [12] 
+                                            <LineBreak/>
+                                            [13] operation = select_operation(2) <Span Foreground="#272537">________</Span> # operation = subtract
+                                            <LineBreak/>
+                                            [14] print(operation(10, 6)) <Span Foreground="#272537">________</Span> # 4
+                                            <LineBreak/>
+                                            [15] 
+                                            <LineBreak/>
+                                            [16] operation = select_operation(3) <Span Foreground="#272537">________</Span> # operation = multiply
+                                            <LineBreak/>
+                                            [17] print(operation(10, 6)) <Span Foreground="#272537">________</Span> # 60
+                                        </TextBlock>
+                                    </Border>
+
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
