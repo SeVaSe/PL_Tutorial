@@ -10,12 +10,26 @@
 
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="107*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="66*"/>
-                <RowDefinition Height="459*"/>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="190*"/>
+                <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1"
+
+            <!--нижняя строка-->
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <!--верхняя строка-->
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="5"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove">
                 <Grid>
@@ -91,20 +105,74 @@
                         BorderThickness="0" Click="Btn_Back_Out_Click" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
-
-
                 </Grid>
             </Border>
 
-            <TextBlock  
-                FontSize="40" 
-                FontWeight="Bold"
-                HorizontalAlignment="Center" 
-                Margin="0,187,0,0" 
-                TextWrapping="Wrap" 
-                VerticalAlignment="Top" Height="65" Width="356" Grid.Row="1"
-                Style="{StaticResource ModernTextBlock}" 
-                Text="В разработке..."/>
+
+            <!--кв с названием - НОВОСТИ-->
+            <Border Grid.Column="1" Margin="30,5,20,5" Grid.Row="2"
+                    CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#272537" Offset="0"/>
+                        <GradientStop Color="#FF4081" Offset="0"/>
+                        <GradientStop Color="#28C7FE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <TextBlock HorizontalAlignment="Left" 
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Style="{StaticResource ModernTextBlock}"
+                           TextWrapping="Wrap" 
+                           VerticalAlignment="Top" 
+                           Height="58" Width="146" RenderTransformOrigin="0.5,0.603" Margin="28,-15,0,0">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="#FFFFFF" ShadowDepth="0" BlurRadius="20"/>
+                    </TextBlock.Effect><Run Text=" "/><LineBreak/><Run Text="   НОВОСТИ"/></TextBlock>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
+                </Border.Effect>
+            </Border>
+
+            <!--кв со списком НОВОСТЕЙ-->
+            <Border Grid.Column="1" Margin="10,5,0,10" Grid.Row="3"
+                    CornerRadius="10" >
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#272537" Offset="0"/>
+                        <GradientStop Color="#FF4081" Offset="0"/>
+                        <GradientStop Color="#28C7FE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
+                </Border.Effect>
+
+            </Border>
+
+
+
+            <!--кв с описанием НОВОСТИ-->
+            <Border Grid.Column="3" Margin="0,4,5,10" Grid.Row="2" Grid.RowSpan="2" 
+                    CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#272537" Offset="0"/>
+                        <GradientStop Color="#3B3151" Offset="0.5"/>
+                        <GradientStop Color="#564B6C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
+                </Border.Effect>
+
+            </Border>
+
 
 
         </Grid>
