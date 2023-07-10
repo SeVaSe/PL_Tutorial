@@ -152,6 +152,50 @@
                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
                 </Border.Effect>
 
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="70*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+
+                    <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"  VirtualizingPanel.ScrollUnit="Pixel"
+         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_Osn" Background="Transparent" BorderThickness="0"  Margin="0,54,0,10" Grid.Column="1" >
+                        <ListBox.ItemContainerStyle >
+                            <Style TargetType="{x:Type ListBoxItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Button Content="{TemplateBinding Content}" Style="{StaticResource ButtonModernBlue}"  Background="Transparent" BorderThickness="0" Margin="5"
+                                    />
+                                                <TextBlock Text="{Binding}" Grid.Column="1" Margin="5"/>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        
+                        <ListBoxItem Height="27" Width="210">
+                            <Button Style="{StaticResource ButtonModernBlue}" Content="ТЕСТ"/>
+                        </ListBoxItem>
+                    </ListBox>
+
+
+
+                </Grid>
+
             </Border>
 
 
