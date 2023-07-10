@@ -8395,7 +8395,31 @@
 
 
 
-
+    <!--ДЕКОРАТОРЫ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="LambdaRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                     Foreground="AliceBlue"
+                                     Background="Transparent"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <!--написание ДЕКОРАТОР-->
+                                <Paragraph>
+                                    
+                                    
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
