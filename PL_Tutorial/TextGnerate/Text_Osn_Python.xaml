@@ -8349,7 +8349,7 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     Но можно этот код уменьшить в разы, используя лямбду.
-                                    
+
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Span FontSize="20">
@@ -8374,15 +8374,7 @@
                                             [7] print(fn(7)) <Span Foreground="#272537">____</Span> # 35
                                         </TextBlock>
                                     </Border>
-
-
-
-
-
-
-
                                 </Paragraph>
-                                
                             </Section>
                         </FlowDocument>
                     </RichTextBox>
@@ -8396,7 +8388,7 @@
 
 
     <!--ДЕКОРАТОРЫ-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="LambdaRichTextBox">
+    <Style TargetType="{x:Type RichTextBox}" x:Key="DecorRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">
@@ -8410,8 +8402,103 @@
                             <Section>
                                 <!--написание ДЕКОРАТОР-->
                                 <Paragraph>
-                                    
-                                    
+                                    <Span FontWeight="Bold">Декораторы</Span> в Python представляют функцию, которая в качестве параметра получает функцию и в качестве результата также возвращает 
+                                    функцию. Декораторы позволяют модифицировать выполняемую функцию, значения ее параметров и ее результат 
+                                    без изменения исходного кода этой функции.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] # определение функции декоратора
+                                            <LineBreak/>
+                                            [2] def select(input_func):  
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> def output_func(): <Span Foreground="#272537">____</Span> # определяем функцию, которая будет выполняться вместо оригинальной
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> print("*****************") <Span Foreground="#272537">____</Span> # перед выводом оригинальной функции выводим всякую звездочки
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> input_func() <Span Foreground="#272537">____</Span> # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> print("*****************") <Span Foreground="#272537">____</Span> # после вывода оригинальной функции выводим всякую звездочки
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> return output_func <Span Foreground="#272537">____</Span> # возвращаем новую функцию
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9] # определение оригинальной функции
+                                            <LineBreak/>
+                                            [10] @select <Span Foreground="#272537">____</Span> # применение декоратора select
+                                            <LineBreak/>
+                                            [11] def hello():
+                                            <LineBreak/>
+                                            [12] <Span Foreground="#272537">____</Span> print("Hello")
+                                            <LineBreak/>
+                                            [13]
+                                            <LineBreak/>
+                                            [14] # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [15] hello()
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            *****************
+                                            <LineBreak/>
+                                            Hello
+                                            <LineBreak/>
+                                            *****************
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Вначале определяется собственно функция декоратора, которая в данном случае называется select(). В качестве параметра декоратор получает
+                                    функцию (в данном случае параметр input_func), к которой этот декоратор будет применяться:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def select(input_func):  
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> def output_func(): <Span Foreground="#272537">____</Span> # определяем функцию, которая будет выполняться вместо оригинальной
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">________</Span> print("*****************") <Span Foreground="#272537">____</Span> # перед выводом оригинальной функции выводим всякую звездочки
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> input_func() <Span Foreground="#272537">____</Span> # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> print("*****************") <Span Foreground="#272537">____</Span> # после вывода оригинальной функции выводим всякую звездочки
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">____</Span> return output_func <Span Foreground="#272537">____</Span> # возвращаем новую функцию
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Результатом декоратора в данном случае является локальная функция output_func, в которой вызывается входная функция input_func. 
+                                    Для простоты здесь перед и после вызыва input_func для красоты просто выводим набор символов "*".
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Далее определяется стандартная функция, к которой применяется декоратор - в данном случае это функция hello, которая просто выводит на консоль некоторую строку:
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] @select <Span Foreground="#272537">____</Span> # применение декоратора select
+                                            <LineBreak/>
+                                            [2] def hello():
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> print("Hello")
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Для применения декоратора перед определением функции указывается символ @, после которого 
+                                    идет имя декоратора. То есть в данном случае к функции hello() применяется декоратор select().
+                                    <LineBreak/>
+                                    Далее вызываем обычную функцию hello()
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Поскольку к этой функции применяется декоратор select, то в результате функциия hello передается в декоратор select() в качестве параметра input_func.
+                                    И поскольку декоратор возвращает новую функцию - output_func, то фактически в данном случае будет выполняться именно эта функция output_func(). В итоге мы получаем такой консольный вывод.
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
