@@ -185,6 +185,14 @@ namespace PL_Tutorial
             this.Close();
         }
 
+        //настройки
+        private void Options_Click(object sender, RoutedEventArgs e)
+        {
+            Window wind = new Window_Menu.Window_Options();
+            wind.Show();
+            this.Close();
+        }
+
         //тех поддержка
         private void MenuItem_TehSupport_Click(object sender, RoutedEventArgs e)
         {

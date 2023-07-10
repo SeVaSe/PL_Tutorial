@@ -238,6 +238,9 @@
     <Compile Include="Window_Menu\Window_Menu.xaml.cs">
       <DependentUpon>Window_Menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window_Menu\Window_Options.xaml.cs">
+      <DependentUpon>Window_Options.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window_Menu\Window_Python.xaml.cs">
       <DependentUpon>Window_Python.xaml</DependentUpon>
     </Compile>
@@ -433,6 +436,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window_Menu\Window_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_Menu\Window_Options.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
