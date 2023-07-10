@@ -8500,6 +8500,223 @@
                                     Поскольку к этой функции применяется декоратор select, то в результате функциия hello передается в декоратор select() в качестве параметра input_func.
                                     И поскольку декоратор возвращает новую функцию - output_func, то фактически в данном случае будет выполняться именно эта функция output_func(). В итоге мы получаем такой консольный вывод.
                                 </Paragraph>
+
+
+
+                                <!--написание ПОЛУЧЕНИЕ ПАРАМЕТРОВ ФУНКЦИИ В ДЕКОРАТОРЕ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            _
+                                        </Span>
+                                        ПОЛУЧЕНИЕ ПАРАМЕТРОВ ФУНКЦИИ В ДЕКОРАТОРЕ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Декоратор может перехватывать передаваемые в функцию аргументы.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] # определение функции декоратора
+                                            <LineBreak/>
+                                            [2] def check(input_func): 
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> def output_func(*args): <Span Foreground="#272537">____</Span> # через *args получаем значения параметров оригинальной функции
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> input_func(*args) <Span Foreground="#272537">____</Span> # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">____</Span> return output_func <Span Foreground="#272537">____</Span> # возвращаем новую функцию
+                                            <LineBreak/>
+                                            [6]
+                                            <LineBreak/>
+                                            [7] # определение оригинальной функции
+                                            <LineBreak/>
+                                            [8] @check
+                                            <LineBreak/>
+                                            [9] def print_person(name, age):
+                                            <LineBreak/>
+                                            [10] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}")
+                                            <LineBreak/>
+                                            [11] 
+                                            <LineBreak/>
+                                            [12] # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [13] print_person("Tom", 38)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Name: Tom  Age: 38
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь функция print_person() принимает два параметра: name (имя) и age (возраст). К этой функции применяется декоратор check()
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В декораторе check возвращается локальная функция output_func(), которая принимает некоторый набор значений в 
+                                    виде параметра *args - это те значения, которые передаются в оригинальную функцию, к которой применяется декоратор.
+                                    То есть в данном случае *args будет содержать значения параметров name и age.
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="450" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def check(input_func):   
+                                            <LineBreak/>
+                                            [2] <Span Foreground="#272537">____</Span> def output_func(*args): <Span Foreground="#272537">____</Span> # через *args получаем значения параметров функции input_func
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь просто передаем эти значения в оригинальную функцию - input_func(*args).
+                                    <LineBreak/>
+                                    В итоге в данном получим такой консольный вывод
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    Но что, если в функцию print_person будет передано какое-то недопустимое значение, например, отрицательный возраст? Одним из 
+                                    преимуществ декораторов как раз является то, что мы можем проверить и при необходимости модифицировать 
+                                    значения параметров.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] # определение функции декоратора
+                                            <LineBreak/>
+                                            [2] def check(input_func): 
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> def output_func(*args):
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> name = args[0]
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> age = args[1] <Span Foreground="#272537">____</Span> # получаем значение второго параметра
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> if age &lt; 0: age = 1 <Span Foreground="#272537">____</Span> # если возраст отрицательный, изменяем его значение на 1
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">________</Span> input_func(name, age) <Span Foreground="#272537">____</Span> # передаем функции значения для параметров
+                                            <LineBreak/>
+                                            [8] <Span Foreground="#272537">____</Span> return output_func
+                                            <LineBreak/>
+                                            [9] 
+                                            <LineBreak/>
+                                            [10] # определение оригинальной функции
+                                            <LineBreak/>
+                                            [11] @check
+                                            <LineBreak/>
+                                            [12] def print_person(name, age):
+                                            <LineBreak/>
+                                            [13] <Span Foreground="#272537">____</Span> print(f"Name: {name}  Age: {age}")
+                                            <LineBreak/>
+                                            [14] 
+                                            <LineBreak/>
+                                            [15] # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [16] print_person("Tom", 38)
+                                            <LineBreak/>
+                                            [17] print_person("Bob", -5)
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Name: Tom  Age: 38
+                                            <LineBreak/>
+                                            Name: Bob  Age: 1
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    args фактически представляет набор значений, и, используя индексы, мы можем получить значения параметров по позиции и что-то с ними сделать. 
+                                    Так, здесь, если значение возраста меньше 0, то устанавливаем 1. Затем передаем эти значения в вызов функции.
+                                </Paragraph>
+
+
+
+                                <!--написание ПОЛУЧЕНИЕ РЕЗУЛЬТАТА ФУНКЦИИ-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="#272537">
+                                            ___________
+                                        </Span>
+                                        ПОЛУЧЕНИЕ РЕЗУЛЬТАТА ФУНКЦИИ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Подобным образом можно получить результат функции и при необходимости изменить его.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="950" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] # определение функции декоратора
+                                            <LineBreak/>
+                                            [2] def check(input_func): 
+                                            <LineBreak/>
+                                            [3] <Span Foreground="#272537">____</Span> def output_func(*args):
+                                            <LineBreak/>
+                                            [4] <Span Foreground="#272537">________</Span> result = input_func(*args) <Span Foreground="#272537">____</Span> # передаем функции значения для параметров
+                                            <LineBreak/>
+                                            [5] <Span Foreground="#272537">________</Span> if result &lt; 0: result = 0 <Span Foreground="#272537">____</Span> # если результат функции меньше нуля, то возвращаем 0
+                                            <LineBreak/>
+                                            [6] <Span Foreground="#272537">________</Span> return result
+                                            <LineBreak/>
+                                            [7] <Span Foreground="#272537">____</Span> return output_func
+                                            <LineBreak/>
+                                            [8] 
+                                            <LineBreak/>
+                                            [9] # определение оригинальной функции
+                                            <LineBreak/>
+                                            [10] @check
+                                            <LineBreak/>
+                                            [11] def sum(a, b):
+                                            <LineBreak/>
+                                            [12] <Span Foreground="#272537">____</Span> return a + b
+                                            <LineBreak/>
+                                            [13] 
+                                            <LineBreak/>
+                                            [14] # вызов оригинальной функции
+                                            <LineBreak/>
+                                            [15] result1 = sum(10, 20)
+                                            <LineBreak/>
+                                            [16] print(result1) <Span Foreground="#272537">____</Span> # 30
+                                            <LineBreak/>
+                                            [17] 
+                                            <LineBreak/>
+                                            [18] result2 = sum(10, -20)
+                                            <LineBreak/>
+                                            [19] print(result2) <Span Foreground="#272537">____</Span> # 0
+                                            <LineBreak/>
+                                            <LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            30
+                                            <LineBreak/>
+                                            0
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    Здесь определена функция sum(), которая возвращает сумму чисел. В декораторе check проверяем результат функции и для простоты, если он меньше нуля, то возвращаем 0.
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>
