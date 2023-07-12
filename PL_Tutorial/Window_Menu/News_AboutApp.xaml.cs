@@ -69,5 +69,7 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
             wind.Show();
         }
+
+        
     }
 }
