@@ -258,7 +258,7 @@
                         <ListBoxItem>
                             <Button x:Name="Btn_Decorator" Style="{StaticResource ButtonModernBlue}" Content="Декораторы" Click="Btn_Decorator_Click"/>
                         </ListBoxItem>
-                        <Grid Height="100" Width="100"/>
+                        
                     </ListBox>
                 </Grid>
             </Border>
