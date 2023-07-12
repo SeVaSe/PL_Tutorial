@@ -160,7 +160,8 @@
                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
                 </Border.Effect>
 
-                <Grid>
+                <!--Margin="0,0,0,-1782"-->
+                <Grid >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="219*"/>
@@ -197,8 +198,9 @@
                             </Style>
                         </ListBox.ItemContainerStyle>
 
-                       
 
+
+                        <!--4-->
                         <ListBoxItem Height="148" Width="215">
                             <Border  Height="125" Width="206" Margin="-10"
                                     CornerRadius="5">
@@ -221,16 +223,20 @@
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="ОБНОВЛЕНИЕ"/><Run Text="! "/><LineBreak/><Run FontSize="15" Text=" Вышла новая версия,"/><LineBreak/><Run FontSize="15" Text=" много нового уже "/><LineBreak/><Run FontSize="15" Text=" доступно прямо сейчас"/></TextBlock>
+                                    <!--версия и дата-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.4.25.45"/><LineBreak/><Run Text="Дата: 13.07.2023"/></TextBlock>
+
+                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
+                                    
                                 </Grid>
                             </Border>
                         </ListBoxItem>
 
 
 
-
+                        <!--3-->
                         <ListBoxItem Height="148" Width="215">
                             <Border  Height="125" Width="206" Margin="-10"
                                     CornerRadius="5">
@@ -253,8 +259,11 @@
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена третья"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <!--версия и дата-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: "/><Run Text="1"/><Run Text="."/><Run Text="1"/><Run Text="."/><Run Text="2"/><Run Text="."/><Run Language="ru-ru" Text="29"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
+
+                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
                                 </Grid>
                             </Border>
@@ -262,7 +271,7 @@
 
 
 
-
+                        <!--2-->
                         <ListBoxItem Height="148" Width="215">
                             <Border  Height="125" Width="206" Margin="-10"
                                     CornerRadius="5">
@@ -285,16 +294,20 @@
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена вторая"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <!--версия и дата-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: 0."/><Run Language="ru-ru" Text="18"/><Run Text=".2."/><Run Language="ru-ru" Text="3"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
+
+                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
+                                    
                                 </Grid>
                             </Border>
                         </ListBoxItem>
 
+                        
 
-
-
+                        <!--1-->
                         <ListBoxItem Height="148" Width="215">
                             <Border  Height="125" Width="206" Margin="-10"
                                     CornerRadius="5">
@@ -317,9 +330,13 @@
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена первая"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <!--версия и дата-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: 0.3.2.12"/><LineBreak/><Run Language="ru-ru" Text="Дата: 10.07.2023"/></TextBlock>
+
+                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
+                                    
                                 </Grid>
                             </Border>
                         </ListBoxItem>
@@ -327,98 +344,12 @@
 
 
 
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
-
-                                <Border.Effect>
-                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
-                                </Border.Effect>
-
-                                <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
-                                    </LinearGradientBrush>
-                                </Border.Background>
-
-                                <Grid>
-                                    <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
-                                    <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                </Grid>
-                            </Border>
-                        </ListBoxItem>
 
 
 
 
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
-
-                                <Border.Effect>
-                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
-                                </Border.Effect>
-
-                                <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
-                                    </LinearGradientBrush>
-                                </Border.Background>
-
-                                <Grid>
-                                    <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
-                                    <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                </Grid>
-                            </Border>
-                        </ListBoxItem>
 
 
-
-
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
-
-                                <Border.Effect>
-                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
-                                </Border.Effect>
-
-                                <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
-                                    </LinearGradientBrush>
-                                </Border.Background>
-
-                                <Grid>
-                                    <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"/>
-                                    <!--Бордер кнопки-->
-                                    <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                </Grid>
-                            </Border>
-                        </ListBoxItem>
 
 
 

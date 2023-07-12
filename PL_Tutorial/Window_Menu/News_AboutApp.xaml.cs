@@ -70,6 +70,6 @@ namespace PL_Tutorial.Window_Menu
             wind.Show();
         }
 
-        
+
     }
 }
