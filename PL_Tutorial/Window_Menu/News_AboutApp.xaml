@@ -165,8 +165,10 @@
                     </Grid.RowDefinitions>
 
 
+                    <!--ListBox-->
+
                     <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"  VirtualizingPanel.ScrollUnit="Pixel"
-         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_Osn" Background="Transparent" BorderThickness="0"  Margin="0,54,0,10" Grid.Column="1" >
+         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_News" Background="Transparent" BorderThickness="0" Grid.Column="1" Margin="0,-3,0,0" Grid.RowSpan="2" >
                         <ListBox.ItemContainerStyle >
                             <Style TargetType="{x:Type ListBoxItem}">
                                 <Setter Property="Template">
@@ -177,25 +179,30 @@
                                                     <ColumnDefinition Width="Auto"/>
                                                     <ColumnDefinition Width="*"/>
                                                 </Grid.ColumnDefinitions>
-                                                <Button Content="{TemplateBinding Content}" Style="{StaticResource ButtonModernBlue}"  Background="Transparent" BorderThickness="0" Margin="5"
-                                    />
-                                                <TextBlock Text="{Binding}" Grid.Column="1" Margin="5"/>
+                                                <Button Content="{TemplateBinding Content}" Style="{StaticResource ButtonModernBlue}"  Background="Transparent" BorderThickness="0" Margin="5"/>
+                                                
                                             </Grid>
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
                             </Style>
                         </ListBox.ItemContainerStyle>
-                        
-                        <ListBoxItem Height="27" Width="210">
-                            <Button Style="{StaticResource ButtonModernBlue}" Content="ТЕСТ"/>
+
+                        <ListBoxItem Height="148" Width="215">
+                            <Border Background="Red" Height="125" Width="206" Margin="-12"
+                                    CornerRadius="5">
+                                <Grid>
+                                    <TextBlock Text="Обновление 1" Style="{StaticResource ModernTextBlock}" Margin="5,0,0,5"/>
+                                    <Button  Content="Подробнее" Height="18" FontSize="10" Margin="122,102,5,5" Cursor="Hand"/>
+                                </Grid>
+                            </Border>
                         </ListBoxItem>
+
+
+                        
+
                     </ListBox>
-
-
-
                 </Grid>
-
             </Border>
 
 
