@@ -12,11 +12,15 @@
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="66*"/>
-                <RowDefinition Height="459*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="595*"/>
+                <RowDefinition Height="26*"/>
             </Grid.RowDefinitions>
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1"
+            <!--нижняя строка-->
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <!--верхняя строка-->
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="1"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove"    >
                 <Grid>
@@ -51,7 +55,7 @@
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
                         VerticalAlignment="Top" Margin="227,16,0,0" RenderTransformOrigin="0.494,0.547">
-                        
+
                     </Button>
 
                     <Button Content="⟲"
@@ -66,7 +70,7 @@
                         BorderThickness="0" Click="Perezapusk_Click" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Margin="143,8,0,0" Width="31"/>
-                    
+
                     <Button Content="━"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="40" 
@@ -92,23 +96,152 @@
                         BorderThickness="0" Click="Btn_Back_Out_Click" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
-
-
                 </Grid>
             </Border>
 
-            <TextBlock  
-                FontSize="40" 
-                FontWeight="Bold"
-                HorizontalAlignment="Center" 
-                Margin="0,187,0,0" 
-                TextWrapping="Wrap" 
-                VerticalAlignment="Top" Height="65" Width="356" Grid.Row="1"
-                Style="{StaticResource ModernTextBlock}" 
-                Text="В разработке..."/>
+
+
+            <Grid Margin="1,10,1,5" Grid.Row="1">
+                <!-- ListBox -->
+                <ListBox ScrollViewer.CanContentScroll="True"
+             ScrollViewer.HorizontalScrollBarVisibility="Auto"
+             ScrollViewer.VerticalScrollBarVisibility="Hidden"
+             FontSize="15"
+             x:Name="Lst_Box_News"
+             Background="Transparent"
+             BorderThickness="0"
+             Margin="1,0,1,0"
+             Grid.ColumnSpan="3"
+             Grid.Row="1">
+                    <!-- ListBox.ItemContainerStyle -->
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Border />
+                                            <Button Content="{TemplateBinding Content}"
+                                        Style="{StaticResource ButtonModernNews}"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Margin="0,5,0,5"
+                                        RenderTransformOrigin="0.5,0.5"
+                                        Width="120">
+                                                <Button.RenderTransform>
+                                                    <TransformGroup>
+                                                        <ScaleTransform ScaleX="-1" />
+                                                        <SkewTransform />
+                                                        <RotateTransform />
+                                                        <TranslateTransform />
+                                                    </TransformGroup>
+                                                </Button.RenderTransform>
+                                            </Button>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <!-- ListBox Items -->
+                    <ListBoxItem Height="351">
+                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
+                            </Border.Effect>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#28C7FE" Offset="1" />
+                                    <GradientStop Color="#8A2BE2" Offset="0" />
+                                    <GradientStop Color="#0000FF" Offset="3" />
+                                    <GradientStop Color="#00CED1" Offset="1" />
+                                    <GradientStop Color="#FF1493" Offset="0" />
+                                    <GradientStop Color="#800080" Offset="3" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ListBoxItem>
+
+                    <!-- ListBox Items -->
+                    <ListBoxItem Height="351">
+                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
+                            </Border.Effect>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#28C7FE" Offset="1" />
+                                    <GradientStop Color="#8A2BE2" Offset="0" />
+                                    <GradientStop Color="#0000FF" Offset="3" />
+                                    <GradientStop Color="#00CED1" Offset="1" />
+                                    <GradientStop Color="#FF1493" Offset="0" />
+                                    <GradientStop Color="#800080" Offset="3" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ListBoxItem>
+
+
+
+                    <!-- ListBox Items -->
+                    <ListBoxItem Height="351">
+                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
+                            </Border.Effect>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#28C7FE" Offset="1" />
+                                    <GradientStop Color="#8A2BE2" Offset="0" />
+                                    <GradientStop Color="#0000FF" Offset="3" />
+                                    <GradientStop Color="#00CED1" Offset="1" />
+                                    <GradientStop Color="#FF1493" Offset="0" />
+                                    <GradientStop Color="#800080" Offset="3" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ListBoxItem>
+
+
+
+                    <!-- ListBox Items -->
+                    <ListBoxItem Height="351">
+                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
+                            </Border.Effect>
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                    <GradientStop Color="#28C7FE" Offset="1" />
+                                    <GradientStop Color="#8A2BE2" Offset="0" />
+                                    <GradientStop Color="#0000FF" Offset="3" />
+                                    <GradientStop Color="#00CED1" Offset="1" />
+                                    <GradientStop Color="#FF1493" Offset="0" />
+                                    <GradientStop Color="#800080" Offset="3" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ListBoxItem>
+
+
+                    <!-- Другие элементы ListBoxItem или привязка данных -->
+                </ListBox>
+                
+                
+            </Grid>
+
+
+
+
 
 
         </Grid>
     </Border>
+
 
 </Window>
