@@ -102,12 +102,102 @@
 
             <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Grid.Row="1" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                 <StackPanel Orientation="Horizontal">
-                    <Border Background="AliceBlue" Margin="5,5,15,5" CornerRadius="10" Width="370" />
-                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
-                    <Border Background="AliceBlue" Margin="15,5,15,5" CornerRadius="10" Width="370" />
-                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
-                    <Border Background="AliceBlue" Margin="15,5,15,5" CornerRadius="10" Width="370" />
-                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
+                    <!--Описание-->
+                    <Border  Margin="5,5,15,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#0000FF" Offset="1"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        
+                    </Border>
+                    
+                    <!--Функциональность-->
+                    <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#0000FF" Offset="0.9"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="1"/>
+                                
+
+
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    
+                    <!--Интерфейс-->
+                    <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#0000FF" Offset="0.8"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    
+                    <!--Платформы-->
+                    <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#0000FF" Offset="0.7"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="3"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    
+                    <!--Разработчики-->
+                    <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#0000FF" Offset="0.6"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="3"/>
+                                
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    
+                    <!--Лицензия-->
+                    <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#8A2BE2" Offset="0"/>
+                                <GradientStop Color="#293eff" Offset="0.5"/>
+
+                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#FF1493" Offset="0"/>
+                                <GradientStop Color="#800080" Offset="3"/>
+                                
+                                
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
                 </StackPanel>
             </ScrollViewer>
 
