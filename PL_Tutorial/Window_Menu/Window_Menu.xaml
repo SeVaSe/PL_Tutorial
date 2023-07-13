@@ -100,140 +100,27 @@
             </Border>
 
 
-
-            <Grid Margin="1,10,1,5" Grid.Row="1">
-                <!-- ListBox -->
-                <ListBox ScrollViewer.CanContentScroll="True"
-             ScrollViewer.HorizontalScrollBarVisibility="Auto"
-             ScrollViewer.VerticalScrollBarVisibility="Hidden"
-             FontSize="15"
-             x:Name="Lst_Box_News"
-             Background="Transparent"
-             BorderThickness="0"
-             Margin="1,0,1,0"
-             Grid.ColumnSpan="3"
-             Grid.Row="1">
-                    <!-- ListBox.ItemContainerStyle -->
-                    <ListBox.ItemContainerStyle>
-                        <Style TargetType="{x:Type ListBoxItem}">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                                        <Grid>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="Auto" />
-                                                <ColumnDefinition Width="*" />
-                                            </Grid.ColumnDefinitions>
-                                            <Border />
-                                            <Button Content="{TemplateBinding Content}"
-                                        Style="{StaticResource ButtonModernNews}"
-                                        Background="Transparent"
-                                        BorderThickness="0"
-                                        Margin="0,5,0,5"
-                                        RenderTransformOrigin="0.5,0.5"
-                                        Width="120">
-                                                <Button.RenderTransform>
-                                                    <TransformGroup>
-                                                        <ScaleTransform ScaleX="-1" />
-                                                        <SkewTransform />
-                                                        <RotateTransform />
-                                                        <TranslateTransform />
-                                                    </TransformGroup>
-                                                </Button.RenderTransform>
-                                            </Button>
-                                        </Grid>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </ListBox.ItemContainerStyle>
-
-                    <!-- ListBox Items -->
-                    <ListBoxItem Height="351">
-                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
-                            <Border.Effect>
-                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#28C7FE" Offset="1" />
-                                    <GradientStop Color="#8A2BE2" Offset="0" />
-                                    <GradientStop Color="#0000FF" Offset="3" />
-                                    <GradientStop Color="#00CED1" Offset="1" />
-                                    <GradientStop Color="#FF1493" Offset="0" />
-                                    <GradientStop Color="#800080" Offset="3" />
-                                </LinearGradientBrush>
-                            </Border.Background>
-                        </Border>
-                    </ListBoxItem>
-
-                    <!-- ListBox Items -->
-                    <ListBoxItem Height="351">
-                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
-                            <Border.Effect>
-                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#28C7FE" Offset="1" />
-                                    <GradientStop Color="#8A2BE2" Offset="0" />
-                                    <GradientStop Color="#0000FF" Offset="3" />
-                                    <GradientStop Color="#00CED1" Offset="1" />
-                                    <GradientStop Color="#FF1493" Offset="0" />
-                                    <GradientStop Color="#800080" Offset="3" />
-                                </LinearGradientBrush>
-                            </Border.Background>
-                        </Border>
-                    </ListBoxItem>
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Grid.Row="1" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <StackPanel Orientation="Horizontal">
+                    <Border Background="AliceBlue" Margin="5,5,15,5" CornerRadius="10" Width="370" />
+                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
+                    <Border Background="AliceBlue" Margin="15,5,15,5" CornerRadius="10" Width="370" />
+                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
+                    <Border Background="AliceBlue" Margin="15,5,15,5" CornerRadius="10" Width="370" />
+                    <Border Background="AliceBlue" Margin="1,5,1,5" CornerRadius="10" Width="370"/>
+                </StackPanel>
+            </ScrollViewer>
 
 
 
-                    <!-- ListBox Items -->
-                    <ListBoxItem Height="351">
-                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
-                            <Border.Effect>
-                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#28C7FE" Offset="1" />
-                                    <GradientStop Color="#8A2BE2" Offset="0" />
-                                    <GradientStop Color="#0000FF" Offset="3" />
-                                    <GradientStop Color="#00CED1" Offset="1" />
-                                    <GradientStop Color="#FF1493" Offset="0" />
-                                    <GradientStop Color="#800080" Offset="3" />
-                                </LinearGradientBrush>
-                            </Border.Background>
-                        </Border>
-                    </ListBoxItem>
 
 
 
-                    <!-- ListBox Items -->
-                    <ListBoxItem Height="351">
-                        <Border Height="125" Width="206" Margin="-10" CornerRadius="5">
-                            <Border.Effect>
-                                <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9" />
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#28C7FE" Offset="1" />
-                                    <GradientStop Color="#8A2BE2" Offset="0" />
-                                    <GradientStop Color="#0000FF" Offset="3" />
-                                    <GradientStop Color="#00CED1" Offset="1" />
-                                    <GradientStop Color="#FF1493" Offset="0" />
-                                    <GradientStop Color="#800080" Offset="3" />
-                                </LinearGradientBrush>
-                            </Border.Background>
-                        </Border>
-                    </ListBoxItem>
 
 
-                    <!-- Другие элементы ListBoxItem или привязка данных -->
-                </ListBox>
-                
-                
-            </Grid>
+
+
+
 
 
 

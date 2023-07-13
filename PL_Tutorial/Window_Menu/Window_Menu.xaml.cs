@@ -68,5 +68,24 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
             wind.Show();
         }
+
+
+        //прокрутка вьювера
+        private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scrollView = (ScrollViewer)sender;
+            double amountSpeed = 40;
+            if (e.Delta < 0)
+            {
+                scrollView.ScrollToHorizontalOffset(scrollView.HorizontalOffset + amountSpeed);
+            }
+            else
+            {
+                scrollView.ScrollToHorizontalOffset(scrollView.HorizontalOffset - amountSpeed);
+            }
+
+            e.Handled = true;
+        }
+
     }
 }
