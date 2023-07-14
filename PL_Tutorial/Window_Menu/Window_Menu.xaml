@@ -115,9 +115,25 @@
                                 <GradientStop Color="#800080" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.Background>
-                        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" />
+
+                        </Grid>
+
                     </Border>
-                    
+
                     <!--Функциональность-->
                     <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
                         <Border.Background>
@@ -129,13 +145,13 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="1"/>
-                                
+
 
 
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>
-                    
+
                     <!--Интерфейс-->
                     <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
                         <Border.Background>
@@ -150,7 +166,7 @@
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>
-                    
+
                     <!--Платформы-->
                     <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
                         <Border.Background>
@@ -165,7 +181,7 @@
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>
-                    
+
                     <!--Разработчики-->
                     <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
                         <Border.Background>
@@ -177,11 +193,11 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="3"/>
-                                
+
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>
-                    
+
                     <!--Лицензия-->
                     <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
                         <Border.Background>
@@ -193,8 +209,8 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="3"/>
-                                
-                                
+
+
                             </LinearGradientBrush>
                         </Border.Background>
                     </Border>

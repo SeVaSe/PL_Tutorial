@@ -379,6 +379,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TextGnerate\Text_Menu_Generate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TextGnerate\Text_Osn_Python.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
