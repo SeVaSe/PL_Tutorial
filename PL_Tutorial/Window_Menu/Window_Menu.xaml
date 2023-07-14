@@ -128,7 +128,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" />
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
 
                         </Grid>
 
@@ -145,11 +145,10 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="1"/>
-
-
-
                             </LinearGradientBrush>
                         </Border.Background>
+
+                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
                     </Border>
 
                     <!--Интерфейс-->
@@ -165,6 +164,8 @@
                                 <GradientStop Color="#800080" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.Background>
+
+                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
                     </Border>
 
                     <!--Платформы-->
@@ -180,6 +181,8 @@
                                 <GradientStop Color="#800080" Offset="3"/>
                             </LinearGradientBrush>
                         </Border.Background>
+
+                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
                     </Border>
 
                     <!--Разработчики-->
@@ -193,9 +196,10 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="3"/>
-
                             </LinearGradientBrush>
                         </Border.Background>
+
+                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
                     </Border>
 
                     <!--Лицензия-->
@@ -209,29 +213,13 @@
                                 <GradientStop Color="#00CED1" Offset="1"/>
                                 <GradientStop Color="#FF1493" Offset="0"/>
                                 <GradientStop Color="#800080" Offset="3"/>
-
-
                             </LinearGradientBrush>
                         </Border.Background>
+
+                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
                     </Border>
                 </StackPanel>
             </ScrollViewer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </Grid>
     </Border>

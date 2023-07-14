@@ -18,7 +18,9 @@
                         <FlowDocument>
                             <!--написание прог-->
                             <Section>
-                                
+                                <Paragraph>
+                                    TestAboutApp
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>

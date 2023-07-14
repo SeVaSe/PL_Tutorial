@@ -12,11 +12,16 @@
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="66*"/>
-                <RowDefinition Height="459*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="595*"/>
+                <RowDefinition Height="26*"/>
             </Grid.RowDefinitions>
 
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" Grid.ColumnSpan="1"
+
+            <!--нижняя строка-->
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <!--верхняя строка-->
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="1"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove">
                 <Grid>
@@ -51,7 +56,7 @@
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
                         VerticalAlignment="Top" Margin="228,16,0,0" RenderTransformOrigin="0.494,0.547">
-                        
+
                     </Button>
 
                     <Button Content="━"
@@ -95,7 +100,7 @@
                 </Grid>
             </Border>
 
-            
+
 
 
         </Grid>
