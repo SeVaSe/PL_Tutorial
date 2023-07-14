@@ -11,6 +11,11 @@
         Title="Window_Spravka">
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="307*"/>
+                <ColumnDefinition Width="173*"/>
+                <ColumnDefinition Width="320*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="63*"/>
                 <RowDefinition Height="595*"/>
@@ -19,9 +24,9 @@
 
 
             <!--нижняя строка-->
-            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="2" Grid.ColumnSpan="3"/>
             <!--верхняя строка-->
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="1"
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="3"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseMove="Window_MouseMove">
                 <Grid>
@@ -99,6 +104,7 @@
                         VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
                 </Grid>
             </Border>
+
 
 
 
