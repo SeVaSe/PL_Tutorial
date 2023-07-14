@@ -100,7 +100,8 @@
             </Border>
 
 
-            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Grid.Row="1" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Margin="10,10,10,10" Grid.Row="1" 
+                          PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                 <StackPanel Orientation="Horizontal">
                     <!--Описание-->
                     <Border  Margin="5,5,15,5" CornerRadius="10" Width="370">

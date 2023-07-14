@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -22,6 +23,7 @@ namespace PL_Tutorial.Window_Menu
         public Window_Spravka()
         {
             InitializeComponent();
+
         }
 
         //назад
@@ -64,6 +66,42 @@ namespace PL_Tutorial.Window_Menu
             Window wind = new Window_Spravka();
             this.Close();
             wind.Show();
+        }
+
+
+        // ВЬЮВЕРЫ 1 и 2
+        //1
+        private void ScrollViewer_PreviewMouseWheel1(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scroll = (ScrollViewer)sender;
+            double amountSpeed = 30;
+
+            if (e.Delta > 0)
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset + amountSpeed);
+            }
+            else
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset - amountSpeed);
+            }
+            e.Handled = true;
+        }
+        
+        //2
+        private void ScrollViewer_PreviewMouseWheel2(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scroll = (ScrollViewer)sender;
+            double amountSpeed = 30;
+
+            if (e.Delta > 0)
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset + amountSpeed);
+            }
+            else
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset - amountSpeed);
+            }
+            e.Handled = true;
         }
     }
 }

@@ -74,7 +74,7 @@ namespace PL_Tutorial.Window_Menu
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
             ScrollViewer scrollView = (ScrollViewer)sender;
-            double amountSpeed = 40;
+            double amountSpeed = 30;
             if (e.Delta < 0)
             {
                 scrollView.ScrollToHorizontalOffset(scrollView.HorizontalOffset + amountSpeed);
