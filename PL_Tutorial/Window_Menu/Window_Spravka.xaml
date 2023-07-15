@@ -124,21 +124,39 @@
                 <!--LEFT-->
                 <ScrollViewer Grid.Row="1" 
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel1"  Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,38,0">
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel1"  Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,38,0" Grid.RowSpan="2">
                     <StackPanel Orientation="Vertical">
                         <!--1-->
-                        <Border Background="AliceBlue" Height="415" Margin="0,0,0,15" CornerRadius="15">
-
+                        <Border Height="415" Margin="0,0,0,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#FDDCC1" Offset="0"/>
+                                    <GradientStop Color="#F9A8B0" Offset="0.5"/>
+                                    <GradientStop Color="#F09CA6" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
                         </Border>
 
                         <!--2-->
-                        <Border Background="AliceBlue" Height="415" Margin="0,0,0,15" CornerRadius="15">
-
+                        <Border Height="415" Margin="0,0,0,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#F09CA6" Offset="0"/>
+                                    <GradientStop Color="#BFA8F9" Offset="0.5"/>
+                                    <GradientStop Color="#FFACFC" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
                         </Border>
 
                         <!--3-->
-                        <Border Background="AliceBlue" Height="415" Margin="0,0,0,0" CornerRadius="15">
-
+                        <Border Height="415" Margin="0,0,0,10" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#FFACFC" Offset="0"/>
+                                    <GradientStop Color="#E6B3C9" Offset="0.5"/>
+                                    <GradientStop Color="#C48B9F" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
                         </Border>
 
                     </StackPanel>
@@ -146,12 +164,17 @@
 
 
 
-                <TextBlock Text="FAQ" Style="{StaticResource ModernTextBlock}"
-                           Grid.Column="3" Grid.Row="1" Margin="152,16,152,365"
-                           FontSize="30" FontWeight="Bold"/>
+                <TextBlock Text=" FAQ" Style="{StaticResource ModernTextBlock}"
+                           Grid.Column="3" Grid.Row="1" Margin="141,16,152,365"
+                           FontSize="30" FontWeight="Bold" >
+
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="10"/>
+                    </TextBlock.Effect>
+                </TextBlock>
 
                 <!--RIGHT-->
-                <ScrollViewer Grid.Column="2" Grid.Row="1" 
+                <ScrollViewer Grid.Column="2" Grid.Row="1"  
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
                               PreviewMouseWheel="ScrollViewer_PreviewMouseWheel2"  Grid.ColumnSpan="2" Margin="38,57,0,0" Grid.RowSpan="2">
                     <StackPanel Orientation="Vertical">
