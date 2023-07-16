@@ -254,7 +254,7 @@
                         </Border>
 
                         <!--5-->
-                        <Border  Height="170" Margin="5,5,5,15" CornerRadius="15">
+                        <Border  Height="170" Margin="5,5,5,8" CornerRadius="15">
                             <Border.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                     <GradientStop Color="#180000" Offset="0"/>

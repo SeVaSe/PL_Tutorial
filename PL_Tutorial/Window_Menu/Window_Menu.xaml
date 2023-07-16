@@ -107,9 +107,12 @@
                     <Border  Margin="5,5,15,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#28C7FE" Offset="0"/>
-                                <GradientStop Color="#8A2BE2" Offset="1"/>
+                                <GradientStop Color="#050D20" Offset="0"/>
+                                <GradientStop Color="#1C2A4A" Offset="1"/>
                             </LinearGradientBrush>
+
+
+
 
                         </Border.Background>
 
@@ -140,9 +143,11 @@
                     <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#8A2BE2" Offset="0"/>
-                                <GradientStop Color="#0000FF" Offset="1"/>
+                                <GradientStop Color="#1C2A4A" Offset="0"/>
+                                <GradientStop Color="#2D345C" Offset="1"/>
                             </LinearGradientBrush>
+
+
 
                         </Border.Background>
 
@@ -157,9 +162,11 @@
                     <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#0000FF" Offset="0"/>
-                                <GradientStop Color="#00CED1" Offset="1"/>
+                                <GradientStop Color="#2D345C" Offset="0"/>
+                                <GradientStop Color="#0E3460" Offset="1"/>
                             </LinearGradientBrush>
+
+
 
                         </Border.Background>
 
@@ -174,9 +181,11 @@
                     <Border  Margin="1,5,1,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#00CED1" Offset="0"/>
-                                <GradientStop Color="#FF1493" Offset="1"/>
+                                <GradientStop Color="#0E3460" Offset="0"/>
+                                <GradientStop Color="#060F27" Offset="1"/>
                             </LinearGradientBrush>
+
+
 
                         </Border.Background>
 
@@ -191,9 +200,11 @@
                     <Border  Margin="15,5,15,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#FF1493" Offset="0"/>
-                                <GradientStop Color="#800080" Offset="1"/>
+                                <GradientStop Color="#060F27" Offset="0"/>
+                                <GradientStop Color="#050B1A" Offset="1"/>
                             </LinearGradientBrush>
+
+
 
                         </Border.Background>
 
@@ -208,9 +219,11 @@
                     <Border  Margin="1,5,5,5" CornerRadius="10" Width="370">
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                <GradientStop Color="#800080" Offset="0"/>
-                                <GradientStop Color="#28C7FE" Offset="1"/>
+                                <GradientStop Color="#050B1A" Offset="0"/>
+                                <GradientStop Color="#050D20" Offset="1"/>
                             </LinearGradientBrush>
+
+
 
                         </Border.Background>
 

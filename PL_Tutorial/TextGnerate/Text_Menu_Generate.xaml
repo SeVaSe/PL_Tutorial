@@ -2,9 +2,37 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
 
+    <!--ОКНО НОВОСТИ-->
+    <!--ТЕКСТ новости-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="NewsRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    ОПИСАНИЕ НОВОСТИ
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
-    <!--ТЕКСТ О приложении-->
+
+
+    <!--ОКНО О ПРИЛОЖЕНИИ-->
+    <!--ТЕКСТ описание-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="AbautAppRichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -17,6 +45,35 @@
                                  IsReadOnly="True">
                         <FlowDocument>
                             <!--написание прог-->
+                            <Section>
+                                <Paragraph>
+                                    TestAboutApp
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!--ОКНО СПРАВКА-->
+    <!--ТЕКСТ FAQ1-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
                             <Section>
                                 <Paragraph>
                                     TestAboutApp
