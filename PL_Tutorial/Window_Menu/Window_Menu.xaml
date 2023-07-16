@@ -155,7 +155,22 @@
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
-                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+
+                        </Grid>
                     </Border>
 
                     <!--Интерфейс-->
@@ -174,7 +189,22 @@
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
-                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+
+                        </Grid>
                     </Border>
 
                     <!--Платформы-->
@@ -193,7 +223,22 @@
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
-                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+
+                        </Grid>
                     </Border>
 
                     <!--Разработчики-->
@@ -212,7 +257,22 @@
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
-                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+
+                        </Grid>
                     </Border>
 
                     <!--Лицензия-->
@@ -231,7 +291,22 @@
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
-                        <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="130*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="72*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+
+                        </Grid>
                     </Border>
                 </StackPanel>
             </ScrollViewer>
