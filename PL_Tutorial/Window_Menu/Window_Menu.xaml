@@ -8,7 +8,8 @@
         Style="{StaticResource ModernWindowStyle}"
         
         WindowStartupLocation="CenterScreen"
-        Title="Window_Menu">
+        Title="Window_Menu"
+        PreviewKeyDown="Window_PreviewKeyDown">
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
             <Grid.RowDefinitions>
@@ -104,16 +105,12 @@
                           PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                 <StackPanel Orientation="Horizontal">
                     <!--Описание-->
-                    <Border  Margin="5,5,15,5" CornerRadius="10" Width="370">
+                    <Border  Margin="5,5,15,5" CornerRadius="10" Width="370" >
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                                 <GradientStop Color="#050D20" Offset="0"/>
                                 <GradientStop Color="#1C2A4A" Offset="1"/>
                             </LinearGradientBrush>
-
-
-
-
                         </Border.Background>
 
                         <Border.Effect>
@@ -133,7 +130,8 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Name="RichTextBoxAbout" Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"
+                                          />
 
                         </Grid>
 

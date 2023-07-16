@@ -87,5 +87,27 @@ namespace PL_Tutorial.Window_Menu
             e.Handled = true;
         }
 
+
+        //прокрутка сожержимого в рич-боксах
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (Keyboard.FocusedElement is RichTextBox richTextBox)
+            {
+                if (e.Key == Key.Up)
+                {
+                    richTextBox.LineUp();
+                    e.Handled = true;
+                }
+                else if (e.Key == Key.Down)
+                {
+                    richTextBox.LineDown();
+                    e.Handled = true;
+                }
+            }
+        }
+
+
+
+
     }
 }
