@@ -115,8 +115,8 @@
                     <ColumnDefinition Width="10"/>
                     <ColumnDefinition Width="215*"/>
                     <ColumnDefinition Width="22*"/>
-                    <ColumnDefinition Width="210*"/>
-                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="215*"/>
+                    <ColumnDefinition Width="10"/>
                 </Grid.ColumnDefinitions>
 
 
@@ -125,7 +125,7 @@
                 <ScrollViewer Grid.Row="1" 
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
                               PreviewMouseWheel="ScrollViewer_PreviewMouseWheel1"  Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,38,0" Grid.RowSpan="2">
-                    <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Vertical" >
                         <!--1-->
                         <Border Height="415" Margin="5,5,5,15" CornerRadius="15">
                             <Border.Background>
@@ -189,33 +189,82 @@
                 </TextBlock>
 
                 <!--RIGHT-->
-                <ScrollViewer Grid.Column="2" Grid.Row="1"  
+                <ScrollViewer Grid.Column="3" Grid.Row="1"  
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel2"  Grid.ColumnSpan="2" Margin="38,57,0,0" Grid.RowSpan="2">
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel2" Margin="0,57,0,0" Grid.RowSpan="2">
                     <StackPanel Orientation="Vertical">
                         <!--1-->
-                        <Border Background="AliceBlue" Height="170" Margin="0,0,0,15" CornerRadius="15">
+                        <Border  Height="170" Margin="5,5,5,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#0A1B2A" Offset="0"/>
+                                    <GradientStop Color="#002E5A" Offset="1"/>
+                                </LinearGradientBrush>
+
+
+
+                            </Border.Background>
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
 
                         </Border>
 
                         <!--2-->
-                        <Border Background="AliceBlue" Height="170" Margin="0,0,0,15" CornerRadius="15">
+                        <Border  Height="170" Margin="5,5,5,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#002E5A" Offset="0"/>
+                                    <GradientStop Color="#001F3A" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
 
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
 
                         <!--3-->
-                        <Border Background="AliceBlue" Height="170" Margin="0,0,0,15" CornerRadius="15">
+                        <Border Height="170" Margin="5,5,5,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#001F3A" Offset="0"/>
+                                    <GradientStop Color="#00141E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
 
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
 
                         <!--4-->
-                        <Border Background="AliceBlue" Height="170" Margin="0,0,0,15" CornerRadius="15">
+                        <Border  Height="170" Margin="5,5,5,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#00141E" Offset="0"/>
+                                    <GradientStop Color="#180000" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
 
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
 
                         <!--5-->
-                        <Border Background="AliceBlue" Height="170" Margin="0,0,0,15" CornerRadius="15">
+                        <Border  Height="170" Margin="5,5,5,15" CornerRadius="15">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="#180000" Offset="0"/>
+                                    <GradientStop Color="#0A0000" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
 
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
 
 
