@@ -113,14 +113,10 @@
             <Border Grid.Column="1" Margin="30,5,20,5" Grid.Row="2"
                     CornerRadius="10">
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#272537" Offset="0"/>
-                        <GradientStop Color="#FF4081" Offset="0"/>
-                        <GradientStop Color="#28C7FE" Offset="1"/>
-
-
-                        <GradientStop Color="#8A2BE2" Offset="0.5"/>
-                        <GradientStop Color="#0000FF" Offset="4"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#9C27B0" Offset="1"/>
+                        <GradientStop Color="#4527A0" Offset="0.4"/>
+                        
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -145,16 +141,14 @@
                     CornerRadius="10" >
 
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#272537" Offset="0"/>
-                        <GradientStop Color="#FF4081" Offset="0"/>
-                        <GradientStop Color="#28C7FE" Offset="1"/>
-
-                        <GradientStop Color="#FF6347" Offset="0.1"/>
-                        <GradientStop Color="#8A2BE2" Offset="0.5"/>
-                        <GradientStop Color="#0000FF" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#9C27B0" Offset="0"/>
+                        <GradientStop Color="#4527A0" Offset="0.5"/>
+                        <GradientStop Color="#1A1C2C" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+
 
                 <Border.Effect>
                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
@@ -177,7 +171,7 @@
                     <!--ListBox-->
 
                     <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"  VirtualizingPanel.ScrollUnit="Pixel"
-         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_News" Background="Transparent" BorderThickness="0" Margin="1,0,1,0" Grid.ColumnSpan="3" Grid.Row="1" >
+         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_News" Background="Transparent" BorderThickness="0" Margin="1,0,0,0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" >
                         <ListBox.ItemContainerStyle >
                             <Style TargetType="{x:Type ListBoxItem}">
                                 <Setter Property="Template">
@@ -210,26 +204,25 @@
                                 </Border.Effect>
 
                                 <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#B39DDB" Offset="0"/>
+                                        <GradientStop Color="#7E57C2" Offset="0.3"/>
+                                        <GradientStop Color="#5C6BC0" Offset="0.5"/>
+                                        <GradientStop Color="#3949AB" Offset="0.7"/>
+                                        <GradientStop Color="#303F9F" Offset="0.9"/>
+                                        <GradientStop Color="#1A237E" Offset="1"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="ОБНОВЛЕНИЕ"/><Run Text="! "/><LineBreak/><Run FontSize="15" Text=" Вышла новая версия,"/><LineBreak/><Run FontSize="15" Text=" много нового уже "/><LineBreak/><Run FontSize="15" Text=" доступно прямо сейчас"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Text="ПЕРВЫЙ РЕЛИЗ."/><LineBreak/><Run Text="БЕТА-ВЕРСИЯ!"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.4.25.45"/><LineBreak/><Run Text="Дата: 13.07.2023"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.4.25.45"/><LineBreak/><Run Text="Дата: 13.07.2023"/></TextBlock>
 
-                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
-                                    <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                    
+                                    <!--Бордер кнопки  Margin="5,5,5,33"-->
+                                    <Button Background="Transparent" BorderThickness="0"  Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
+
                                 </Grid>
                             </Border>
                         </ListBoxItem>
@@ -246,24 +239,22 @@
                                 </Border.Effect>
 
                                 <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#B39DDB" Offset="0"/>
+                                        <GradientStop Color="#7E57C2" Offset="0.3"/>
+                                        <GradientStop Color="#5C6BC0" Offset="0.5"/>
+                                        <GradientStop Color="#3949AB" Offset="0.7"/>
+                                        <GradientStop Color="#303F9F" Offset="0.9"/>
+                                        <GradientStop Color="#1A237E" Offset="1"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена третья"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Language="ru-ru" Text="ОПУБЛИКОВАНА"/><LineBreak/><Run Language="ru-ru" Text="АЛЬФА-3 ВЕРСИЯ В"/><LineBreak/><Run Text="GIT"/><Run Language="ru-ru" Text=" ПРОЕКТА"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: "/><Run Text="1"/><Run Text="."/><Run Text="1"/><Run Text="."/><Run Text="2"/><Run Text="."/><Run Language="ru-ru" Text="29"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
-
-                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.1.2.29"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
+                                    <!--Бордер кнопки  Margin="5,5,5,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
                                 </Grid>
                             </Border>
@@ -281,31 +272,29 @@
                                 </Border.Effect>
 
                                 <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#B39DDB" Offset="0"/>
+                                        <GradientStop Color="#7E57C2" Offset="0.3"/>
+                                        <GradientStop Color="#5C6BC0" Offset="0.5"/>
+                                        <GradientStop Color="#3949AB" Offset="0.7"/>
+                                        <GradientStop Color="#303F9F" Offset="0.9"/>
+                                        <GradientStop Color="#1A237E" Offset="1"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена вторая"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Language="ru-ru" Text="ОПУБЛИКОВАНА"/><LineBreak/><Run Language="ru-ru" Text="АЛЬФА-2 ВЕРСИЯ В"/><LineBreak/><Run Text="GIT"/><Run Language="ru-ru" Text=" ПРОЕКТА"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: 0."/><Run Language="ru-ru" Text="18"/><Run Text=".2."/><Run Language="ru-ru" Text="3"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
-
-                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="0.18.2.3"/><LineBreak/><Run Text="Дата: 9.07.2023"/></TextBlock>
+                                    <!--Бордер кнопки  Margin="5,5,5,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                    
+
                                 </Grid>
                             </Border>
                         </ListBoxItem>
 
-                        
+
 
                         <!--1-->
                         <ListBoxItem Height="148" Width="215">
@@ -317,26 +306,25 @@
                                 </Border.Effect>
 
                                 <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                        <GradientStop Color="#28C7FE" Offset="1"/>
-                                        <GradientStop Color="#8A2BE2" Offset="0"/>
-                                        <GradientStop Color="#0000FF" Offset="3"/>
-
-                                        <GradientStop Color="#00CED1" Offset="1"/>
-                                        <GradientStop Color="#FF1493" Offset="0"/>
-                                        <GradientStop Color="#800080" Offset="3"/>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#B39DDB" Offset="0"/>
+                                        <GradientStop Color="#7E57C2" Offset="0.3"/>
+                                        <GradientStop Color="#5C6BC0" Offset="0.5"/>
+                                        <GradientStop Color="#3949AB" Offset="0.7"/>
+                                        <GradientStop Color="#303F9F" Offset="0.9"/>
+                                        <GradientStop Color="#1A237E" Offset="1"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
                                 <Grid>
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="3,2,3,33" FontWeight="Bold" FontSize="20"><Run Text="Добавлена первая"/><LineBreak/><Run Text="версия PL_Tutorial, "/><Run Text="в"/><LineBreak/><Run Text="Git "/><Run Text="данного проекта"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Language="ru-ru" Text="ОПУБЛИКОВАНА"/><LineBreak/><Run Language="ru-ru" Text="АЛЬФА-1 ВЕРСИЯ В"/><LineBreak/><Run Text="GIT"/><Run Language="ru-ru" Text=" ПРОЕКТА"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="10" TextWrapping="Wrap" Margin="3,99,123,3" ><Run Text="Версия: 0.3.2.12"/><LineBreak/><Run Language="ru-ru" Text="Дата: 10.07.2023"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="0.3.2.12"/><LineBreak/><Run Text="Дата: 7.07.2023"/></TextBlock>
 
-                                    <!--Бордер кнопки  Margin="3,2,3,33"-->
+                                    <!--Бордер кнопки  Margin="5,5,5,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
-                                    
+
                                 </Grid>
                             </Border>
                         </ListBoxItem>
