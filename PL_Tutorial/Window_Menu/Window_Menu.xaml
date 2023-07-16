@@ -114,8 +114,9 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
+                        
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="3*"/>
@@ -146,7 +147,7 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
                         <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
@@ -163,7 +164,7 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
                         <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
@@ -180,7 +181,7 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
                         <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
@@ -197,7 +198,7 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
                         <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
@@ -214,7 +215,7 @@
                         </Border.Background>
 
                         <Border.Effect>
-                            <DropShadowEffect Color="#222033" ShadowDepth="0" BlurRadius="10"/>
+                            <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
 
                         <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>

@@ -107,13 +107,13 @@
 
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="5*"/>
                     <RowDefinition Height="426*"/>
                     <RowDefinition Height="10*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="15"/>
-                    <ColumnDefinition Width="210*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="215*"/>
                     <ColumnDefinition Width="22*"/>
                     <ColumnDefinition Width="210*"/>
                     <ColumnDefinition Width="15"/>
@@ -127,37 +127,52 @@
                               PreviewMouseWheel="ScrollViewer_PreviewMouseWheel1"  Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,38,0" Grid.RowSpan="2">
                     <StackPanel Orientation="Vertical">
                         <!--1-->
-                        <Border Height="415" Margin="0,0,0,15" CornerRadius="15">
+                        <Border Height="415" Margin="5,5,5,15" CornerRadius="15">
                             <Border.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                    <GradientStop Color="#FDDCC1" Offset="0"/>
-                                    <GradientStop Color="#F9A8B0" Offset="0.5"/>
-                                    <GradientStop Color="#F09CA6" Offset="1"/>
+                                    <GradientStop Color="#17132F" Offset="0"/>
+                                    <GradientStop Color="#2A1836" Offset="0.5"/>
+                                    <GradientStop Color="#4F1C3D" Offset="1"/>
                                 </LinearGradientBrush>
                             </Border.Background>
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
+
 
                         <!--2-->
-                        <Border Height="415" Margin="0,0,0,15" CornerRadius="15">
+                        <Border Height="415" Margin="5,5,5,15" CornerRadius="15">
                             <Border.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                    <GradientStop Color="#F09CA6" Offset="0"/>
-                                    <GradientStop Color="#BFA8F9" Offset="0.5"/>
-                                    <GradientStop Color="#FFACFC" Offset="1"/>
+                                    <GradientStop Color="#4F1C3D" Offset="0"/>
+                                    <GradientStop Color="#1F0B29" Offset="0.5"/>
+                                    <GradientStop Color="#0D0C1B" Offset="1"/>
                                 </LinearGradientBrush>
                             </Border.Background>
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
 
+
                         <!--3-->
-                        <Border Height="415" Margin="0,0,0,10" CornerRadius="15">
+                        <Border Height="415" Margin="5,5,5,10" CornerRadius="15">
                             <Border.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                    <GradientStop Color="#FFACFC" Offset="0"/>
-                                    <GradientStop Color="#E6B3C9" Offset="0.5"/>
-                                    <GradientStop Color="#C48B9F" Offset="1"/>
+                                    <GradientStop Color="#0D0C1B" Offset="0"/>
+                                    <GradientStop Color="#04011f" Offset="0.5"/>
+                                    <GradientStop Color="#000000" Offset="1"/>
                                 </LinearGradientBrush>
                             </Border.Background>
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
+                            </Border.Effect>
                         </Border>
+
 
                     </StackPanel>
                 </ScrollViewer>
