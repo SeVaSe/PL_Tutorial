@@ -38,7 +38,7 @@
                           FontWeight="Bold"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Center" Margin="10,0,0,0">
-
+                        
                         <TextBlock.Effect>
                             <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
                         </TextBlock.Effect>
@@ -130,7 +130,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Name="RichTextBoxAbout" Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"
+                            <RichTextBox Name="RichTextBoxAbout" Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp1RichTextBox}"
                                           />
 
                         </Grid>
@@ -166,7 +166,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp2RichTextBox}"/>
 
                         </Grid>
                     </Border>
@@ -200,7 +200,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp3RichTextBox}"/>
 
                         </Grid>
                     </Border>
@@ -234,7 +234,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp4RichTextBox}"/>
 
                         </Grid>
                     </Border>
@@ -268,7 +268,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp5RichTextBox}"/>
 
                         </Grid>
                     </Border>
@@ -302,7 +302,7 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautAppRichTextBox}"/>
+                            <RichTextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource AbautApp6RichTextBox}"/>
 
                         </Grid>
                     </Border>

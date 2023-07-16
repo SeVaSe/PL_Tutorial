@@ -33,7 +33,7 @@
 
     <!--ОКНО О ПРИЛОЖЕНИИ-->
     <!--ТЕКСТ описание-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautAppRichTextBox">
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp1RichTextBox">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">
@@ -58,38 +58,38 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    
-                                    Цели и назначение приложения:
+
+                                    <Span FontWeight="Bold">Цели и назначение приложения:</Span>
                                     <LineBreak/>
                                     <LineBreak/>
 
-                                    1. Обучение языкам программирования: Главной целью нашего приложения является помощь пользователям в 
+                                    <Span FontWeight="UltraBold">1.</Span> Обучение языкам программирования: Главной целью данного приложения является помощь пользователям в 
                                     изучении различных языков программирования. Мы предоставляем структурированные и понятные материалы,
                                     которые помогут начинающим программистам овладеть основами и принципами программирования, а опытным 
-                                    разработчикам расширить свои знания и навыки.
+                                    разработчикам освежить свои знания и навыки.
                                     <LineBreak/>
                                     <LineBreak/>
-                                    2. Предоставление обширных ресурсов: Наше приложение содержит обширную библиотеку уроков и материалов 
-                                    по различным языкам программирования, включая популярные языки, такие как Python, Java, C++, JavaScript и
-                                    другие. Мы стремимся охватить как основные, так и более специализированные темы, чтобы наши пользователи 
+                                    <Span FontWeight="UltraBold">2.</Span> Предоставление обширных ресурсов: Приложение содержит обширную библиотеку уроков и материалов 
+                                    по различным языкам программирования, включая популярные языки, такие как Python, С#, а со временем будут появляться и другие
+                                    языки. Приложение стремится охватить как основные, так и более специализированные темы, чтобы пользователи 
                                     могли найти информацию, соответствующую их интересам и потребностям.
                                     <LineBreak/>
                                     <LineBreak/>
-                                    3. Практические примеры и руководства: Мы предоставляем множество практических примеров кода, которые 
+                                    <Span FontWeight="UltraBold">3.</Span> Практические примеры и руководства: В приложении предоставленно множество практических примеров кода, которые 
                                     помогут пользователям применить полученные знания на практике. Это включает задачи, упражнения и проекты,
                                     которые помогут развить навыки программирования и решать реальные проблемы.
                                     <LineBreak/>
                                     <LineBreak/>
-                                    4. Удобство использования: Мы придаем большое значение удобству использования нашего приложения. 
-                                    Наш интерфейс дружественный и интуитивно понятный, что делает процесс изучения языков программирования 
-                                    более эффективным и приятным. Мы также предоставляем функции поиска, организации закладок, возможность 
+                                    <Span FontWeight="UltraBold">4.</Span> Удобство использования: Я придаю большое значение удобству использования приложения. 
+                                    Интерфейс приложения дружественный и интуитивно понятный, что делает процесс изучения языков программирования 
+                                    более эффективным и приятным. Также предоставляем функции поиска, а в будщем будут созданы - организации закладок, возможность 
                                     создания собственных заметок и другие инструменты, которые помогут пользователям организовать свою учебу и
                                     быстро находить нужную информацию.
                                     <LineBreak/>
                                     <LineBreak/>
-                                    5. Поддержка различных уровней навыков: Наше приложение предназначено для пользователей с разным уровнем 
-                                    опыта в программировании. Мы предлагаем как базовые материалы для начинающих, так и более продвинутые 
-                                    ресурсы для опытных разработчиков. Пользователи могут выбрать соответствующий уровень сложности и 
+                                    <Span FontWeight="UltraBold">5.</Span> Поддержка различных уровней навыков: Приложение предназначено для пользователей с разным уровнем 
+                                    опыта в программировании. Приложение предлагает как базовые материалы для начинающих, так и более продвинутые 
+                                    ресурсы для опытных разработчиков. Пользователи могут выбирать соответствующие темы, разных уровней сложности и 
                                     прогрессировать по мере своего развития.
                                     <LineBreak/>
                                     <LineBreak/>
@@ -107,8 +107,204 @@
         </Setter>
     </Style>
 
+    <!--ТЕКСТ функциональность-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp2RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    функциональность
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
-    
+    <!--ТЕКСТ интерфейс-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp3RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    интерфейс
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ платформы-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp4RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        ПЛАТФОРМЫ
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    ● PL-Tutorial - отличное приложение, которое работает как на операционных системах Windows, так и на Linux. 
+                                    Пользователи обеих платформ могут наслаждаться его безупречной производительностью и удобством использования.
+                                    <LineBreak/>
+                                    ● Это кросс-платформенное решение обеспечивает широкую доступность и удобство для всех пользователей, 
+                                    независимо от выбора ОС.
+                                    <LineBreak/>
+                                    ● Оптимизированная работа приложения на разных конфигурациях системы гарантирует 
+                                    стабильность и плавность работы. Благодаря поддержке обеих платформ, PL-Tutorial становится идеальным 
+                                    выбором для всех желающих изучать языки программирования и повышать свои навыки в программировании 
+                                    независимо от используемой ОС.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ разработчики-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp5RichTextBox">
+        <Setter Property="IsDocumentEnabled" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        РАЗРАБОТКА
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">1. РАЗРАБОТЧИКИ:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">__</Span> ● Часть по разработке FullStack:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_____</Span> Ссылки на разработчика:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_______</Span> -Telegram: <Hyperlink NavigateUri="https://t.me/sevasek">https://t.me/sevasek</Hyperlink>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_______</Span> -GitHub: <Hyperlink NavigateUri="https://github.com/SeVaSe">https://github.com/SeVaSe</Hyperlink>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_______</Span> -Gmail: <Hyperlink NavigateUri="mailto:sevasek.inter@gmail.com">sevasek.inter@gmail.com</Hyperlink>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span Foreground="Transparent">__</Span> ● Часть по звуковой разработке:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_____</Span> Ссылки на разработчика:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">_______</Span> СКОРО ПОЯВИТСЯ ;)
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">2. ПРИМЕНЯЕМЫЕ ТЕХНОЛОГИИ:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В процессе создания приложения использовались следующие технологии:
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● WPF (Windows Presentation Foundation): Была выбрана технологию WPF для создания приложения, так как она обеспечивает высокую степень контроля над пользовательским интерфейсом и позволяет создавать интерактивные и красиво оформленные элементы учебника.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● C#: Для разработки логики и функциональности приложения использовался язык программирования C#. Этот язык предоставляет широкий спектр инструментов и библиотек для реализации различных функций.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● XAML (eXtensible Application Markup Language): В приложении использовали XAML для разметки пользовательского интерфейса. Это позволяет нам создавать гибкий и масштабируемый интерфейс, а также отделять его от логики приложения.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● .NET Framework: Приложение построено на платформе .NET Framework, что дало доступ к множеству функциональных возможностей и библиотек для разработки.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Visual Studio: Для разработки приложения использовалась интегрированная среда разработки Visual Studio. Это обеспечивает удобную среду для написания кода, отладки и создания пользовательского интерфейса.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● GIT: В процессе разработки была применена функция контроля версий GIT.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Библиотеки и сторонние ресурсы: В процессе разработки также использовались сторонние библиотеки и ресурсы, чтобы расширить функциональность приложения и обеспечить лучший пользовательский опыт.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● FL Studio: Для разработки звукового сопровождения, были задействованы дополнительные технологии и навыки создания музыки + эффектов, в ПО FL Studio.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    <Span FontWeight="UltraBold">3. ВЕРСИЯ:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    ● Версия PL-Tutorial: 1.4.25.45
+                                    <LineBreak/>
+                                    ● Дата последнего обновления: 13.07.23
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ лицензия-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="AbautApp6RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <Section>
+                                <Paragraph>
+                                    лицензия
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
 
 
     <!--ОКНО СПРАВКА-->
