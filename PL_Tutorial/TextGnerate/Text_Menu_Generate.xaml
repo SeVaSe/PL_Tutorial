@@ -15,7 +15,7 @@
                                  BorderThickness="0"
                                  IsReadOnly="True">
                         <FlowDocument>
-                            <!--написание описание новости-->
+                            <!--написание Описание новости-->
                             <Section>
                                 <Paragraph>
                                     ОПИСАНИЕ НОВОСТИ
