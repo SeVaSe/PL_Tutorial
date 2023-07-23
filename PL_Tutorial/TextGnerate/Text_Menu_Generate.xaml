@@ -121,7 +121,13 @@
                         <FlowDocument>
                             <Section>
                                 <Paragraph>
-                                    функциональность
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        ФУНКЦИОНАЛЬНОСТЬ 
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    текст - ФУНКЦИОНАЛЬНОСТЬ
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -145,7 +151,13 @@
                         <FlowDocument>
                             <Section>
                                 <Paragraph>
-                                    интерфейс
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        ИНТЕРФЕЙС
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    текст - ИНТЕРФЕЙС
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
