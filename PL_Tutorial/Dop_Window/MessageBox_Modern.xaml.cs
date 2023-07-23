@@ -19,9 +19,13 @@ namespace PL_Tutorial.Dop_Window
     /// </summary>
     public partial class MessageBox_Modern : Window
     {
-        public MessageBox_Modern()
+        public MessageBox_Modern(string title, string message)
         {
             InitializeComponent();
+            TxtBl_NameWarn.Text = title;
+            TextBl_MesWarn.Text = message;
+
+
         }
 
         //закрыть
@@ -29,5 +33,25 @@ namespace PL_Tutorial.Dop_Window
         {
             Close();
         }
+
+
+        public void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+            
+        }
+
+        public void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+
     }
 }

@@ -38,7 +38,7 @@
                           FontWeight="Bold"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Center" Margin="10,0,0,0">
-                        
+
                         <TextBlock.Effect>
                             <DropShadowEffect Color="#caa6f5" ShadowDepth="0" BlurRadius="20"/>
                         </TextBlock.Effect>
@@ -56,7 +56,24 @@
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
                         VerticalAlignment="Top" Margin="227,16,0,0" RenderTransformOrigin="0.494,0.547">
+                    </Button>
 
+
+                    <Button Content="?"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="#fcfce8" 
+                        FontWeight="Bold"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Help_U_Click"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="102,7,0,0" Width="31">
+
+                        <Button.Effect>
+                            <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="20"/>
+                        </Button.Effect>
                     </Button>
 
                     <Button Content="⟲"
@@ -116,7 +133,7 @@
                         <Border.Effect>
                             <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                         </Border.Effect>
-                        
+
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="3*"/>

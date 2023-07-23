@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PL_Tutorial.Dop_Window;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PL_Tutorial.Dop_Window;
 
 namespace PL_Tutorial.Window_Menu
 {
@@ -107,8 +109,11 @@ namespace PL_Tutorial.Window_Menu
             }
         }
 
-
-        
-
+        // вызов помощи
+        private void Help_U_Click(object sender, RoutedEventArgs e)
+        {
+            var MesBoxHelps = new MessageBox_Modern("Помощь", "В данном окне расположена информация в смысловых ячейках. Каждая ячейка несет в себе информацию об определенной теме.\n\n- Чтобы прокручивать ячейки, используйте колесико мыши.\n\n- Чтобы просмотреть всю информацию внутри ячейки, выполните следующие шаги:\n   1. Наведитесь на нужную ячейку.\n   2. Нажмите на ее содержимое.\n   3. Используйте стрелку вниз для прокрутки информации вниз.\n   4. Используйте стрелку вверх для прокрутки информации вверх.");
+            MesBoxHelps.ShowDialog();
+        }
     }
 }
