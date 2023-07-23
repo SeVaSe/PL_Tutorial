@@ -512,5 +512,8 @@
   <ItemGroup>
     <Resource Include="prog_ico_plTutor.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\Document\license.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
