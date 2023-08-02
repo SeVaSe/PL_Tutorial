@@ -126,8 +126,106 @@
                                     </Span>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    
-                                    текст - ФУНКЦИОНАЛЬНОСТЬ
+                                    Приложение "PL-tutorial" предоставляет обширный набор функций и возможностей для эффективного изучения языков программирования, с акцентом на C# и Python. Вот основные функции и возможности, предоставляемые приложением:
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">1. Учебный материал по языкам C# и Python (и другим языкам):</Span>
+                                    <LineBreak/> 
+                                    Приложение предоставляет качественный учебный материал, охватывающий основы программирования, объектно-ориентированное программирование, дополнительные функции языка, библиотеки и фреймворки. Для каждого языка предоставлены структурированные разделы, которые обеспечивают последовательное изучение и понимание.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">2. Меню с различными разделами:</Span>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">___</Span> ● Новости об обновлениях:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> Пользователи могут быть в курсе
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> последних обновлений приложения,
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> новых языков и материалов.
+                                    <LineBreak/>
+
+                                    <Span Foreground="Transparent">___</Span> ● О приложении: В этом разделе
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> предоставлена информация о целях,
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> назначении и особенностях
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> приложения,
+                                     а также контактные
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> данные разработчиков.
+                                    <LineBreak/>
+
+                                    <Span Foreground="Transparent">___</Span> ● Справка: Подробные инструкции о
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> том, как использовать приложение, а
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> также ответы на часто задаваемые
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> вопросы. Включает также
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> информацию о подсказках и советах
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> при работе с различными
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> функциональными окнами.
+                                    <LineBreak/>
+
+                                    <Span Foreground="Transparent">___</Span> ● Настройки: Пользователи могут
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> настроить интерфейс приложения в
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> соответствии с личными
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> предпочтениями, выбрать язык
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> интерфейса, настроить оповещения и
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> многое другое.
+                                    <LineBreak/>
+
+                                    <Span Foreground="Transparent">___</Span> - Техническая поддержка: Для
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> пользователей доступен раздел с
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> контактными данными службы
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> поддержки, где можно получить
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> помощь и решение проблем.<LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">3. Подсказки для окон с большим выбором функционала:</Span>
+                                    <LineBreak/>
+                                    Для облегчения навигации и работы с функциональными окнами приложения предусмотрены информативные подсказки, которые помогают пользователям быстро разобраться в доступных функциях.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">4. Поисковая строка по темам учебников:</Span>
+                                    <LineBreak/>
+                                    Приложение облегчает поиск конкретной информации, предоставляя поисковую строку, которая позволяет пользователям быстро находить нужные темы и материалы в учебниках.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">5. Поддержка различных языков программирования:</Span>
+                                    <LineBreak/>
+                                    Помимо C# и Python, приложение будет расширять свой функционал, добавляя учебные материалы и для других популярных языков программирования, обеспечивая обширное покрытие.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">6. Задачки и практические упражнения:</Span>
+                                    <LineBreak/>
+                                    В учебниках представлены задачки и практические упражнения, которые позволяют пользователям применить полученные знания на практике.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="UltraBold">7. Дружественный интерфейс и современный дизайн:</Span>
+                                    <LineBreak/>
+                                    Пользовательский интерфейс приложения разработан с учетом легкости использования и современных тенденций дизайна, что обеспечивает комфортное и приятное визуальное восприятие.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Приложение "PL-tutorial" станет незаменимым инструментом для всех, кто стремится освоить программирование на различных языках, получить практические навыки и расширить свой кругозор в сфере разработки программного обеспечения.
+
+
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
