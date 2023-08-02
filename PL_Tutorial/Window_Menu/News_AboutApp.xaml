@@ -187,10 +187,10 @@
                     </Grid.RowDefinitions>
 
 
-                    <!--ListBox-->
+                    <!--Viewer-->
                     <ScrollViewer 
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="5,0,5,0" Grid.Row="1" Grid.ColumnSpan="2">
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="5,5,5,0" Grid.Column="1" Grid.RowSpan="2">
                         <StackPanel Orientation="Vertical">
                             <!--4-->
                             <Border  Height="125" Width="206" Margin="0,5,0,20"
