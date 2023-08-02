@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PL_Tutorial.Dop_Window;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -70,9 +71,10 @@ namespace PL_Tutorial.Window_Menu
             wind.Show();
         }
 
-
-        
-
-
+        private void Help_U_Click(object sender, RoutedEventArgs e)
+        {
+            var mesBoxHelp = new MessageBox_Modern("Помощь", "В данном окне, представлена лента с информацией о каждом обновлении.\n\n1. Прокручивайте ленту обновлений с помщью колесика мыши. \n2. Если вас что то заинтересовало, нажмите на ячейку и в правой части окна появится вся информация об обновлении. \n3. Чтобы ее прокрутить использкйте колесико мыши.");
+            mesBoxHelp.ShowDialog();
+        }
     }
 }

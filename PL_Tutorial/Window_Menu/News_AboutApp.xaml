@@ -52,6 +52,23 @@
                         </TextBlock.Effect>
                     </TextBlock>
 
+                    <Button Content="?"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="#fcfce8" 
+                        FontWeight="Bold"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Help_U_Click"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="102,7,0,0" Width="31">
+
+                        <Button.Effect>
+                            <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="20"/>
+                        </Button.Effect>
+                    </Button>
+
                     <Button Content="❌"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="17" 
