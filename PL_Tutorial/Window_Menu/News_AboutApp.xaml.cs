@@ -76,5 +76,24 @@ namespace PL_Tutorial.Window_Menu
             var mesBoxHelp = new MessageBox_Modern("Помощь", "В данном окне, представлена лента с информацией о каждом обновлении.\n\n1. Прокручивайте ленту обновлений с помщью колесика мыши. \n2. Если вас что то заинтересовало, нажмите на ячейку и в правой части окна появится вся информация об обновлении. \n3. Чтобы ее прокрутить используйте колесико мыши.");
             mesBoxHelp.ShowDialog();
         }
+
+
+
+        // вьювер новостей
+        private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scroll = (ScrollViewer)sender;
+            double amount = 20;
+
+            if (e.Delta > 0)
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset + amount);
+            }
+            else
+            {
+                scroll.ScrollToVerticalOffset(scroll.VerticalOffset - amount);
+            }
+            e.Handled = true;
+        }
     }
 }

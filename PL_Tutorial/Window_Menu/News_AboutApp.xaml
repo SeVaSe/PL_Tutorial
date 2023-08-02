@@ -188,35 +188,13 @@
 
 
                     <!--ListBox-->
-
-                    <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"  VirtualizingPanel.ScrollUnit="Pixel"
-         ScrollViewer.VerticalScrollBarVisibility="Hidden" FontSize="15"  x:Name="Lst_Box_News" Background="Transparent" BorderThickness="0" Margin="1,0,0,0" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" >
-                        <ListBox.ItemContainerStyle >
-                            <Style TargetType="{x:Type ListBoxItem}">
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto"/>
-                                                    <ColumnDefinition Width="*"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Border/>
-                                                <Button Content="{TemplateBinding Content}" Style="{StaticResource ButtonModernNews}"  Background="Transparent" BorderThickness="0" Margin="5"/>
-
-                                            </Grid>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </ListBox.ItemContainerStyle>
-
-
-
-                        <!--4-->
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
+                    <ScrollViewer 
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="5,0,5,0" Grid.Row="1" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Vertical">
+                            <!--4-->
+                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                                CornerRadius="5">
 
                                 <Border.Effect>
                                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
@@ -241,14 +219,12 @@
 
                                 </Grid>
                             </Border>
-                        </ListBoxItem>
 
 
 
-                        <!--3-->
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
+                            <!--3-->
+                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                                CornerRadius="5">
 
                                 <Border.Effect>
                                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
@@ -271,14 +247,12 @@
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  Cursor="Hand" Margin="-1,0,0,0"/>
                                 </Grid>
                             </Border>
-                        </ListBoxItem>
 
 
 
-                        <!--2-->
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
+                            <!--2-->
+                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                                CornerRadius="5">
 
                                 <Border.Effect>
                                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
@@ -302,14 +276,12 @@
 
                                 </Grid>
                             </Border>
-                        </ListBoxItem>
 
 
 
-                        <!--1-->
-                        <ListBoxItem Height="148" Width="215">
-                            <Border  Height="125" Width="206" Margin="-10"
-                                    CornerRadius="5">
+                            <!--1-->
+                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                                CornerRadius="5">
 
                                 <Border.Effect>
                                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="9"/>
@@ -334,11 +306,11 @@
 
                                 </Grid>
                             </Border>
-                        </ListBoxItem>
+                        </StackPanel>
+                    </ScrollViewer>
 
 
 
-                    </ListBox>
                 </Grid>
             </Border>
 
@@ -358,7 +330,7 @@
                 <Border.Effect>
                     <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
                 </Border.Effect>
-                
+
                 <RichTextBox Margin="10,10,10,10" Style="{StaticResource NewsRichTextBox}"/>
 
             </Border>
