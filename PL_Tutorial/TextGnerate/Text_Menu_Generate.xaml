@@ -186,7 +186,7 @@
                                     <Span Foreground="Transparent">____</Span> многое другое.
                                     <LineBreak/>
 
-                                    <Span Foreground="Transparent">___</Span> - Техническая поддержка: Для
+                                    <Span Foreground="Transparent">___</Span> ● Техническая поддержка: Для
                                     <LineBreak/>
                                     <Span Foreground="Transparent">____</Span> пользователей доступен раздел с
                                     <LineBreak/>
@@ -224,8 +224,6 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                     Приложение "PL-tutorial" станет незаменимым инструментом для всех, кто стремится освоить программирование на различных языках, получить практические навыки и расширить свой кругозор в сфере разработки программного обеспечения.
-
-
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -254,8 +252,111 @@
                                     </Span>
                                     <LineBreak/>
                                     <LineBreak/>
+                                    Пользовательский интерфейс приложения "PL-tutorial" создан с учетом удобства и эффективности использования. Он предоставляет пользователю интуитивно понятные элементы управления и современный дизайн для оптимального взаимодействия с приложением.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
 
-                                    текст - ИНТЕРФЕЙС
+                                    <Span FontWeight="UltraBold">1. Верхняя панель управления:</Span>
+                                    <LineBreak/> Во всех окнах приложения присутствует верхняя панель управления, где доступны следующие функции:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Свернуть окно: Позволяет свернуть
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> окно приложения.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Закрыть окно: Позволяет закрыть
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> окно приложения.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Перезапустить окно: Позволяет
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> перезапустить текущее окно для
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> начала работы с ним заново.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Стрелка назад: Позволяет
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> вернуться к предыдущему экрану или
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> окну.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Помощь (знак вопроса):
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> Обеспечивает доступ к справке и
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> объяснениям по текущему окну.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">2. Главное окно:</Span>
+                                    <LineBreak/> Главное окно приложения приветствует пользователя приветствующим текстом и предлагает доступ к основному функционалу, включая окно с ГПТ и меню навигации.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">3. Меню навигации:</Span>
+                                    <LineBreak/> В верхней панели главного окна расположено меню навигации, предоставляющее следующие разделы:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Новости: Пользователи могут быть
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> в курсе последних обновлений и
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> новостей приложения.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● О приложении: Здесь
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> предоставлена информация о
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> приложении, его целях и
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> назначении, а также контактные
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> данные разработчиков.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Справка: Доступ к подробным
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> инструкциям и объяснениям о
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> работе с приложением, включая
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> советы и подсказки по
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> функциональным окнам.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Настройки: Пользователи могут
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> настроить интерфейс приложения по
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> своему усмотрению, включая выбор
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> языка интерфейса и управление
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> звуковым сопровождением.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Техническая поддержка: Позволяет
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> обратиться за помощью и решением
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> проблем к службе поддержки.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">4. Разделы по языкам:</Span>
+                                    <LineBreak/> Приложение обеспечивает доступ к разделам по каждому изучаемому языку программирования (например, Python и C#). В этих разделах пользователи найдут поисковую строку для быстрого доступа к нужным темам, а также удобный интерфейс для выбора различных уровней сложности и тематик, от основ до продвинутых уровней.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">5. Использование цветовой палитры:</Span>
+                                    <LineBreak/> Интерфейс приложения оформлен в темных фиолетовых тонах, создавая атмосферу комфорта и спокойствия. Элементы, требующие внимания (например, списки тем), выделяются яркими цветами, что облегчает навигацию и понимание.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="UltraBold">6. Интерактивность и звуковое сопровождение:</Span>
+                                    <LineBreak/> Приложение предоставляет интерактивность через звуковое сопровождение: каждое нажатие или взаимодействие с элементами интерфейса сопровождается звуковыми эффектами. Пользователи могут настроить и изменить звуковое сопровождение в настройках приложения.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    Эти особенности пользовательского интерфейса делают приложение "PL-tutorial" удобным и привлекательным для использования, а также способствуют более эффективному изучению языков программирования.
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
