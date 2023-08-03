@@ -515,5 +515,12 @@
   <ItemGroup>
     <Resource Include="Source\Document\license.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="versions_PL\vers_0_18_2_3\PythonTutorial_second.exe" />
+    <Content Include="versions_PL\vers_0_3_2_12\PythonTutorial_first.exe" />
+    <Content Include="versions_PL\vers_1_1_2_29\PL_Tutorial_third.exe" />
+    <Resource Include="versions_PL\vers_1_4_25_45\license.txt" />
+    <Content Include="versions_PL\vers_1_4_25_45\PLtutorial_Installer.exe" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
