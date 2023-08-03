@@ -65,7 +65,7 @@ namespace PL_Tutorial.Window_Menu
         //перезагрузка
         private void Perezapusk_Click(object sender, RoutedEventArgs e)
         {
-            Window wind = new Window_Menu();
+            Window wind = new Window_Options();
             this.Close();
             wind.Show();
         }

@@ -101,9 +101,9 @@
                 HorizontalAlignment="Center" 
                 Margin="0,187,0,0" 
                 TextWrapping="Wrap" 
-                VerticalAlignment="Top" Height="65" Width="356" Grid.Row="1"
+                VerticalAlignment="Top" Height="180" Width="422" Grid.Row="1"
                 Style="{StaticResource ModernTextBlock}" 
-                Text="В разработке..."/>
+                Text="В разработке... Будет интересненько :)"/>
 
 
         </Grid>

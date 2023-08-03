@@ -67,14 +67,14 @@ namespace PL_Tutorial.Window_Menu
         //перезагрузка
         private void Perezapusk_Click(object sender, RoutedEventArgs e)
         {
-            Window wind = new Window_Menu();
+            Window wind = new News_AboutApp();
             this.Close();
             wind.Show();
         }
 
         private void Help_U_Click(object sender, RoutedEventArgs e)
         {
-            var mesBoxHelp = new MessageBox_Modern("Помощь", "В данном окне, представлена лента с информацией о каждом обновлении.\n\n1. Прокручивайте ленту обновлений с помщью колесика мыши. \n2. Если вас что то заинтересовало, нажмите на ячейку и в правой части окна появится вся информация об обновлении. \n3. Чтобы ее прокрутить используйте колесико мыши.");
+            var mesBoxHelp = new MessageBox_Modern("Помощь", "В данном окне, представлена лента с информацией о каждом обновлении.\n\n1. Прокручивайте ленту обновлений с помщью колесика мыши. \n2. Если вас что то заинтересовало, нажмите на ячейку и в правой части окна появится вся информация об обновлении. \n3. Чтобы ее прокрутить используйте колесико мыши или нажмите на область где вывелась информация о обновлении, и используйте стролочки ВВЕРХ и ВНИЗ.");
             mesBoxHelp.ShowDialog();
         }
 
@@ -111,6 +111,25 @@ namespace PL_Tutorial.Window_Menu
                 if (newStyle != null)
                 {
                     myRichBox.Style = newStyle;
+                }
+            }
+        }
+
+
+        // прокрутка кнопками рича
+        private void MoveRichTextBox(object sender, KeyEventArgs e)
+        {
+            if (Keyboard.FocusedElement is RichTextBox richTextBox)
+            {
+                if (e.Key == Key.Up)
+                {
+                    richTextBox.LineUp();
+                    e.Handled = true;
+                }
+                else
+                {
+                    richTextBox.LineDown();
+                    e.Handled = true;
                 }
             }
         }

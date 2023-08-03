@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:PL_Tutorial.Window_Menu"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Style="{StaticResource ModernWindowStyle}">
+        Style="{StaticResource ModernWindowStyle}"
+        PreviewKeyDown="MoveRichTextBox">
 
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
