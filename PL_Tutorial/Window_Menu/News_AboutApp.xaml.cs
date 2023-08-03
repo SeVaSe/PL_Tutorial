@@ -102,7 +102,7 @@ namespace PL_Tutorial.Window_Menu
         // !!!!!!!!!!!!!!!!! ТЕКСТ НОВОСТЕЙ !!!!!!!!!!!!!!!!!
 
         //Alfa1
-        private void Button_Click_Alfa1(object sender, RoutedEventArgs e)
+        private void Button_Click_Info_Change(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is string styleKey)
             {
@@ -115,45 +115,6 @@ namespace PL_Tutorial.Window_Menu
             }
         }
 
-        //Alfa2
-        private void Button_Click_Alfa2(object sender, RoutedEventArgs e)
-        {
-            if (sender is Button button && button.Tag is string styleKey)
-            {
-                Style newStyle = FindResource(styleKey) as Style;
-                if (newStyle != null)
-                {
-                    myRichBox.Style = newStyle;
-                }
-            }
-        }
-
-        //Alfa3
-        private void Button_Click_Alfa3(object sender, RoutedEventArgs e)
-        {
-            if (sender is Button button && button.Tag is string styleKey)
-            {
-                Style newStyle = FindResource(styleKey) as Style;
-
-                if (newStyle != null)
-                {
-                    myRichBox.Style = newStyle;
-                }
-            }
-        }
-
-        //First Beta 1_4_25
-        private void Button_Click_Beta_1_4_25_(object sender, RoutedEventArgs e)
-        {
-            if (sender is Button button && button.Tag is string styleKey)
-            {
-                Style newStyle = FindResource(styleKey) as Style;
-
-                if (newStyle != null)
-                {
-                    myRichBox.Style = newStyle;
-                }
-            }
-        }
+        
     }
 }
