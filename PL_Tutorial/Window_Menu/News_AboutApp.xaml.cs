@@ -101,7 +101,7 @@ namespace PL_Tutorial.Window_Menu
 
         // !!!!!!!!!!!!!!!!! ТЕКСТ НОВОСТЕЙ !!!!!!!!!!!!!!!!!
 
-        //Alfa1
+        // переключение стилей в ричБоксе
         private void Button_Click_Info_Change(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is string styleKey)
