@@ -212,7 +212,7 @@
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
                                     <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Text="ПЕРВЫЙ РЕЛИЗ."/><LineBreak/><Run Text="БЕТА-ВЕРСИЯ!"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.4.25.45"/><LineBreak/><Run Text="Дата: 13.07.2023"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.4.25.45"/><LineBreak/><Run Text="Дата: 27.07.2023"/></TextBlock>
 
                                     <!--Бордер кнопки  Margin="5,5,5,33"-->
                                     <Button Background="Transparent" BorderThickness="0"  Style="{StaticResource ButtonClearTheme}"  
