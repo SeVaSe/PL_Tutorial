@@ -128,13 +128,13 @@
 
 
             <!--кв с названием - НОВОСТИ-->
-            <Border Grid.Column="1" Margin="30,5,20,5" Grid.Row="2"
+            <Border Grid.Column="3" Margin="31,25,321,315" Grid.Row="3"
                     CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#061126" Offset="0"/>
-                        <GradientStop Color="#1c3555" Offset="0.4"/>
-                        <GradientStop Color="#061126" Offset="0.8"/>
+                        <GradientStop Color="#701fe0" Offset="0"/>
+                        <GradientStop Color="#320175" Offset="0.4"/>
+                        <GradientStop Color="#701fe0" Offset="0.8"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
@@ -155,19 +155,8 @@
             </Border>
 
             <!--кв со списком НОВОСТЕЙ-->
-            <Border Grid.Column="1" Margin="8,5,2,10" Grid.Row="3"
-                    CornerRadius="10" >
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#0c1d32" Offset="0"/>
-                        <GradientStop Color="#244260" Offset="0.4"/>
-                        <GradientStop Color="#0c1d32" Offset="0.8"/>
-                    </LinearGradientBrush>
-
-
-                </Border.Background>
-
+            <Border Margin="5,0,5,2" Grid.Row="3"
+                    CornerRadius="10" Grid.ColumnSpan="3" >
 
 
                 <Border.Effect>
@@ -175,7 +164,7 @@
                 </Border.Effect>
 
                 <!--Margin="0,0,0,-1782"-->
-                <Grid >
+                <Grid Margin="0,-57,0,0" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="219*"/>
@@ -191,10 +180,10 @@
                     <!--Viewer-->
                     <ScrollViewer 
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="5,2,5,0" Grid.Column="1" Grid.RowSpan="3">
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="1,2,1,0" Grid.RowSpan="3" Grid.ColumnSpan="3">
                         <StackPanel Orientation="Vertical">
                             <!--4-->
-                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                            <Border  Height="125" Width="226" Margin="0,3,0,5"
                                 CornerRadius="5">
 
                                 <Border.Effect>
@@ -203,9 +192,9 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#061126" Offset="0"/>
-                                        <GradientStop Color="#1c3555" Offset="0.4"/>
-                                        <GradientStop Color="#061126" Offset="0.8"/>
+                                        <GradientStop Color="#701fe0" Offset="0"/>
+                                        <GradientStop Color="#320175" Offset="0.4"/>
+                                        <GradientStop Color="#701fe0" Offset="0.8"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -225,7 +214,7 @@
 
 
                             <!--3-->
-                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                            <Border  Height="125" Width="226" Margin="0,5,0,5"
                                 CornerRadius="5">
 
                                 <Border.Effect>
@@ -234,9 +223,9 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#061126" Offset="0"/>
-                                        <GradientStop Color="#1c3555" Offset="0.4"/>
-                                        <GradientStop Color="#061126" Offset="0.8"/>
+                                        <GradientStop Color="#701fe0" Offset="0"/>
+                                        <GradientStop Color="#320175" Offset="0.4"/>
+                                        <GradientStop Color="#701fe0" Offset="0.8"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -254,7 +243,7 @@
 
 
                             <!--2-->
-                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                            <Border  Height="125" Width="226" Margin="0,5,0,5"
                                 CornerRadius="5">
 
                                 <Border.Effect>
@@ -263,9 +252,9 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#061126" Offset="0"/>
-                                        <GradientStop Color="#1c3555" Offset="0.4"/>
-                                        <GradientStop Color="#061126" Offset="0.8"/>
+                                        <GradientStop Color="#701fe0" Offset="0"/>
+                                        <GradientStop Color="#320175" Offset="0.4"/>
+                                        <GradientStop Color="#701fe0" Offset="0.8"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -284,7 +273,7 @@
 
 
                             <!--1-->
-                            <Border  Height="125" Width="206" Margin="0,5,0,20"
+                            <Border  Height="125" Width="226" Margin="0,5,0,5"
                                 CornerRadius="5">
 
                                 <Border.Effect>
@@ -293,9 +282,9 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#061126" Offset="0"/>
-                                        <GradientStop Color="#1c3555" Offset="0.4"/>
-                                        <GradientStop Color="#061126" Offset="0.8"/>
+                                        <GradientStop Color="#701fe0" Offset="0"/>
+                                        <GradientStop Color="#320175" Offset="0.4"/>
+                                        <GradientStop Color="#701fe0" Offset="0.8"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
