@@ -243,7 +243,7 @@
                                     <TextBlock Text="→" Style="{StaticResource ModernTextBlock}" Margin="150,71,-15,4" FontWeight="Bold" FontSize="60"/>
                                     <TextBlock Style="{StaticResource ModernTextBlock}" Margin="5,5,5,33" FontWeight="Bold" FontSize="20"><Run Language="ru-ru" Text="ОПУБЛИКОВАНА"/><LineBreak/><Run Language="ru-ru" Text="АЛЬФА-3 ВЕРСИЯ В"/><LineBreak/><Run Text="GIT"/><Run Language="ru-ru" Text=" ПРОЕКТА"/></TextBlock>
                                     <!--версия и дата-->
-                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.1.2.29"/><LineBreak/><Run Text="Дата: 11.07.2023"/></TextBlock>
+                                    <TextBlock Style="{StaticResource ModernTextBlock}" FontSize="11" TextWrapping="Wrap" Margin="3,95,104,3" ><Run Text="Версия: "/><Run Language="ru-ru" Text="1.1.2.29"/><LineBreak/><Run Text="Дата: 14.07.2023"/></TextBlock>
                                     <!--Бордер кнопки  Margin="5,5,5,33"-->
                                     <Button Background="Transparent" BorderThickness="0" Style="{StaticResource ButtonClearTheme}"  
                                             Tag="Alfa_3_RichTextBox" Cursor="Hand" Margin="-1,0,0,0" Click="Button_Click_Info_Change"/>
