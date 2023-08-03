@@ -3,8 +3,8 @@
 
 
     <!--ОКНО НОВОСТИ-->
-    <!--ТЕКСТ новости-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="NewsRichTextBox">
+    <!--ТЕКСТ первый релиз БЕТА 1/4/25-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Beta_1_4_25_RichTextBox">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">
@@ -18,7 +18,7 @@
                             <!--написание Описание новости-->
                             <Section>
                                 <Paragraph>
-                                    ОПИСАНИЕ НОВОСТИ
+                                    ОПИСАНИЕ НОВОСТИ 4
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
@@ -27,6 +27,111 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <!--ТЕКСТ альфа-3-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Alfa_3_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    ОПИСАНИЕ НОВОСТИ 3
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--ТЕКСТ альфа-2-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Alfa_2_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    ОПИСАНИЕ НОВОСТИ 2
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--ТЕКСТ альфа-1-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Alfa_1_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    ОПИСАНИЕ НОВОСТИ 1
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ базовое описание-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="BaseInfo_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание Описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    Информация отсутствует, выберите нужную вам новость.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
 
 
 

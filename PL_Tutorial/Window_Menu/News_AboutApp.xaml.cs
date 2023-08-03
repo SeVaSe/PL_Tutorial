@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace PL_Tutorial.Window_Menu
 {
     /// <summary>
@@ -94,6 +95,65 @@ namespace PL_Tutorial.Window_Menu
                 scroll.ScrollToVerticalOffset(scroll.VerticalOffset - amount);
             }
             e.Handled = true;
+        }
+
+
+
+        // !!!!!!!!!!!!!!!!! ТЕКСТ НОВОСТЕЙ !!!!!!!!!!!!!!!!!
+
+        //Alfa1
+        private void Button_Click_Alfa1(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is string styleKey)
+            {
+                Style newStyle = FindResource(styleKey) as Style;
+
+                if (newStyle != null)
+                {
+                    myRichBox.Style = newStyle;
+                }
+            }
+        }
+
+        //Alfa2
+        private void Button_Click_Alfa2(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is string styleKey)
+            {
+                Style newStyle = FindResource(styleKey) as Style;
+                if (newStyle != null)
+                {
+                    myRichBox.Style = newStyle;
+                }
+            }
+        }
+
+        //Alfa3
+        private void Button_Click_Alfa3(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is string styleKey)
+            {
+                Style newStyle = FindResource(styleKey) as Style;
+
+                if (newStyle != null)
+                {
+                    myRichBox.Style = newStyle;
+                }
+            }
+        }
+
+        //First Beta 1_4_25
+        private void Button_Click_Beta_1_4_25_(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is string styleKey)
+            {
+                Style newStyle = FindResource(styleKey) as Style;
+
+                if (newStyle != null)
+                {
+                    myRichBox.Style = newStyle;
+                }
+            }
         }
     }
 }
