@@ -29,7 +29,8 @@
             <!--верхняя строка-->
             <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
-                     MouseMove="Window_MouseMove" Grid.ColumnSpan="4" Margin="0,0,0,17" Grid.RowSpan="2">
+                     MouseMove="Window_MouseMove" Grid.ColumnSpan="4" Margin="0,0,0,17" Grid.RowSpan="2"
+                     Cursor="SizeAll">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>

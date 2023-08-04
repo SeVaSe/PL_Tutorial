@@ -12,11 +12,12 @@
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="47*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="107*"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="72*"/>
+                <ColumnDefinition Width="164*"/>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="538*"/>
+                <ColumnDefinition Width="5*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="22*"/>
@@ -28,11 +29,12 @@
 
 
             <!--нижняя строка-->
-            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="4" Grid.ColumnSpan="6"/>
             <!--верхняя строка-->
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="5"
+            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Grid.ColumnSpan="6"
                      MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove">
+        MouseMove="Window_MouseMove"
+                     Cursor="SizeAll">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -63,7 +65,7 @@
                         Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Help_U_Click"
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Margin="102,7,0,0" Width="31">
+                        VerticalAlignment="Top" Margin="155,7,0,0" Width="31">
 
                         <Button.Effect>
                             <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="20"/>
@@ -123,28 +125,39 @@
                         BorderThickness="0" Click="Btn_Back_Out_Click" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
+
+                    <Button HorizontalAlignment="Left" 
+                            Height="32" Margin="105,0,0,0" 
+                            VerticalAlignment="Center" Width="33"
+                            Style="{StaticResource ButtonClearTheme}"
+                            Background="Transparent"
+                            BorderThickness="0" 
+                            Cursor="ArrowCD"
+                            >
+
+                        <Image Source="\Source\Icon\version.png" Width="35" Height="35"/>
+                    </Button>
                 </Grid>
             </Border>
 
 
             <!--кв с названием - НОВОСТИ-->
-            <Border Grid.Column="1" Margin="30,10,21,0" Grid.Row="2"
-                    CornerRadius="10">
+            <Border Margin="10,18,282,310" Grid.Row="3"
+                    CornerRadius="5" Grid.Column="4">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#701fe0" Offset="0"/>
-                        <GradientStop Color="#320175" Offset="0.4"/>
-                        <GradientStop Color="#701fe0" Offset="0.8"/>
+                        <GradientStop Color="#252030" Offset="0"/>
+
                     </LinearGradientBrush>
                 </Border.Background>
 
                 <TextBlock HorizontalAlignment="Left" 
-                           FontSize="20"
+                           FontSize="25"
                            FontWeight="Bold"
                            Style="{StaticResource ModernTextBlock}"
                            TextWrapping="Wrap" 
                            VerticalAlignment="Top" 
-                           Height="58" Width="146" RenderTransformOrigin="0.5,0.603" Margin="28,-15,0,0">
+                           Height="68" Width="161" RenderTransformOrigin="0.5,0.603" Margin="-10,-19,0,0">
                     <TextBlock.Effect>
                         <DropShadowEffect Color="#FFFFFF" ShadowDepth="0" BlurRadius="20"/>
                     </TextBlock.Effect><Run Text=" "/><LineBreak/><Run Text="   НОВОСТИ"/></TextBlock>
@@ -155,8 +168,8 @@
             </Border>
 
             <!--кв со списком НОВОСТЕЙ-->
-            <Border Margin="5,0,5,2" Grid.Row="3"
-                    CornerRadius="10" Grid.ColumnSpan="3" >
+            <Border Margin="5,0,5,0" Grid.Row="1"
+                    CornerRadius="10" Grid.ColumnSpan="4" Grid.RowSpan="3" >
 
 
                 <Border.Effect>
@@ -192,9 +205,12 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#701fe0" Offset="0"/>
-                                        <GradientStop Color="#320175" Offset="0.4"/>
-                                        <GradientStop Color="#701fe0" Offset="0.8"/>
+                                        <GradientStop Offset="0" Color="#15233E" />
+                                        <!-- Deep Indigo -->
+                                        <GradientStop Offset="0.5" Color="#001F3F" />
+                                        <!-- Midnight Blue -->
+                                        <GradientStop Offset="1" Color="#0F0C1A" />
+                                        <!-- Dark Indigo -->
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -223,9 +239,12 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#701fe0" Offset="0"/>
-                                        <GradientStop Color="#320175" Offset="0.4"/>
-                                        <GradientStop Color="#701fe0" Offset="0.8"/>
+                                        <GradientStop Offset="0" Color="#15233E" />
+                                        <!-- Deep Indigo -->
+                                        <GradientStop Offset="0.5" Color="#001F3F" />
+                                        <!-- Midnight Blue -->
+                                        <GradientStop Offset="1" Color="#0F0C1A" />
+                                        <!-- Dark Indigo -->
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -252,9 +271,12 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#701fe0" Offset="0"/>
-                                        <GradientStop Color="#320175" Offset="0.4"/>
-                                        <GradientStop Color="#701fe0" Offset="0.8"/>
+                                        <GradientStop Offset="0" Color="#15233E" />
+                                        <!-- Deep Indigo -->
+                                        <GradientStop Offset="0.5" Color="#001F3F" />
+                                        <!-- Midnight Blue -->
+                                        <GradientStop Offset="1" Color="#0F0C1A" />
+                                        <!-- Dark Indigo -->
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -282,9 +304,12 @@
 
                                 <Border.Background>
                                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#701fe0" Offset="0"/>
-                                        <GradientStop Color="#320175" Offset="0.4"/>
-                                        <GradientStop Color="#701fe0" Offset="0.8"/>
+                                        <GradientStop Offset="0" Color="#15233E" />
+                                        <!-- Deep Indigo -->
+                                        <GradientStop Offset="0.5" Color="#001F3F" />
+                                        <!-- Midnight Blue -->
+                                        <GradientStop Offset="1" Color="#0F0C1A" />
+                                        <!-- Dark Indigo -->
                                     </LinearGradientBrush>
                                 </Border.Background>
 
@@ -311,7 +336,7 @@
 
 
             <!--кв с описанием НОВОСТИ-->
-            <Border Grid.Column="3" Margin="0,4,5,10" Grid.Row="2" Grid.RowSpan="2" 
+            <Border Grid.Column="4" Margin="0,4,5,10" Grid.Row="2" Grid.RowSpan="2" 
                     CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
