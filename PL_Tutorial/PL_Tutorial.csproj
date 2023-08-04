@@ -517,6 +517,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Source\Icon\version.png" />
+    <Resource Include="Source\Icon\apps.png" />
+    <Resource Include="Source\Icon\apps_kv.png" />
     <Content Include="versions_PL\vers_0_18_2_3\PythonTutorial_second.exe" />
     <Content Include="versions_PL\vers_0_3_2_12\PythonTutorial_first.exe" />
     <Content Include="versions_PL\vers_1_1_2_29\PL_Tutorial_third.exe" />

@@ -393,8 +393,43 @@
                                         <GradientStop Color="#3A3150" Offset="1.2"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
-                                
-                               
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="177*"/>
+                                        <RowDefinition Height="5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="477*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Button HorizontalAlignment="Left" 
+                                    Height="160" Margin="323,5,0,0" 
+                                    VerticalAlignment="Top" Width="160"
+                                    Style="{StaticResource ButtonClearTheme}"
+                                    Background="Transparent"
+                                    BorderThickness="0" 
+                                    Cursor="Hand"
+                                    ToolTip="Версия: 0.3.2.12"
+                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    >
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#3700ff" ShadowDepth="0" BlurRadius="20"/>
+                                        </Button.Effect>
+
+                                        <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
+                                    </Button>
+
+                                </Grid>
+
+
+
+
+
                             </Border>
 
 
@@ -405,7 +440,7 @@
                                     CornerRadius="10">
 
                                 <Border.Effect>
-                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="11"/>
+                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="11" />
                                 </Border.Effect>
 
                                 <Border.Background>
@@ -415,6 +450,38 @@
                                         <GradientStop Color="#3A3150" Offset="1.2"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="177*"/>
+                                        <RowDefinition Height="5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="477*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Button HorizontalAlignment="Left" 
+                                    Height="160" Margin="323,5,0,0" 
+                                    VerticalAlignment="Top" Width="160"
+                                    Style="{StaticResource ButtonClearTheme}"
+                                    Background="Transparent"
+                                    BorderThickness="0" 
+                                    Cursor="Hand"
+                                    ToolTip="Версия: 0.18.2.3"
+                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    >
+
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#3700ff" ShadowDepth="0" BlurRadius="20"/>
+                                        </Button.Effect>
+
+                                        <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
+                                    </Button>
+                                </Grid>
 
 
                             </Border>
@@ -427,7 +494,7 @@
                                     CornerRadius="10">
 
                                 <Border.Effect>
-                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="11"/>
+                                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="20"/>
                                 </Border.Effect>
 
                                 <Border.Background>
@@ -438,8 +505,39 @@
                                     </LinearGradientBrush>
                                 </Border.Background>
 
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="177*"/>
+                                        <RowDefinition Height="5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="477*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
 
-                                
+
+                                    <Button HorizontalAlignment="Left" 
+                                    Height="160" Margin="323,5,0,0" 
+                                    VerticalAlignment="Top" Width="160"
+                                    Style="{StaticResource ButtonClearTheme}"
+                                    Background="Transparent"
+                                    BorderThickness="0" 
+                                    Cursor="Hand"
+                                    ToolTip="Версия: 1.1.2.29"
+                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    >
+
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#3700ff" ShadowDepth="0" BlurRadius="20"/>
+                                        </Button.Effect>
+
+                                        <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
+                                    </Button>
+                                </Grid>
+
+
                             </Border>
 
                             <!--BETA-1-->
@@ -459,6 +557,39 @@
                                         <GradientStop Color="#3A3150" Offset="1.2"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="177*"/>
+                                        <RowDefinition Height="5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="477*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Button HorizontalAlignment="Left" 
+                                    Height="160" Margin="323,0,0,0" 
+                                    VerticalAlignment="Center" Width="160"
+                                    Style="{StaticResource ButtonClearTheme}"
+                                    Background="Transparent"
+                                    BorderThickness="0" 
+                                    Cursor="Hand"
+                                    ToolTip="Версия: 1.4.25.45"
+                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    >
+
+                                        <Button.Effect>
+                                            <DropShadowEffect Color="#ff1f4b" ShadowDepth="0" BlurRadius="20"/>
+                                        </Button.Effect>
+
+
+                                        <Image Source="\Source\Icon\apps.png" Width="145" Height="145"/>
+                                    </Button>
+                                </Grid>
 
 
                             </Border>
