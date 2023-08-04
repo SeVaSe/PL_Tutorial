@@ -292,7 +292,7 @@
                           FontWeight="Bold"
                           Margin="24,13,24,122"/>
 
-                        <ListBox x:Name="Lst_OOP" FontSize="10" Margin="-10,34,-50,-9" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                        <ListBox x:Name="Lst_OOP" FontSize="10" Margin="-10,34,-50,-9" VirtualizingPanel.ScrollUnit="Pixel" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
                                  ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderThickness="0">
                             <ListBox.ItemContainerStyle >
                                 <Style TargetType="{x:Type ListBoxItem}">
