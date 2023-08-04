@@ -388,6 +388,9 @@
                             <Span Foreground="Transparent">________</Span>Альфа-Версия которая была доступна 
                             <Span Foreground="Transparent">________</Span>ограниченному кругу лиц - теперь доступна 
                             <Span Foreground="Transparent">________</Span>всем для просмотра!
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Span Foreground="Transparent">________</Span> <Span Foreground="#FF5722">Просмотреть версию --></Span> <Button Background="Transparent" Content="ALFA-1" Height="29" Width="130" Style="{StaticResource ButtonClearTheme}"/>
                         </TextBlock>
                     </ScrollViewer>
                 </Grid>
