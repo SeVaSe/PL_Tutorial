@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL_Tutorial.Dop_Window"
         mc:Ignorable="d"
-        Title="MessageBox_Modern" Height="451" Width="300"
+        Title="MessageBox_Modern" Height="465" Width="400"
         Style="{StaticResource ModernWindowStyle}"
         >
 
@@ -42,22 +42,18 @@
                         FontWeight="Bold"
                             Cursor="Hand"
                         Style="{StaticResource ButtonClearTheme}"
-                        BorderThickness="0" Click="Exit_Click" 
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center" Margin="62,0,0,0" RenderTransformOrigin="0.517,0.479" Height="18" Width="20"
-                        Grid.Column="2"/>
+                        BorderThickness="0" Click="Exit_Click" Margin="0,9,18,8" RenderTransformOrigin="0.517,0.479"
+                        Grid.Column="2" HorizontalAlignment="Right" Width="20"/>
 
 
                     <!--Заголовок-->
-                    <TextBlock
-                        HorizontalAlignment="Left"  
+                    <TextBlock  
                         Name="TxtBl_NameWarn"
-                        TextWrapping="Wrap" Text="Название ошибки" 
-                        VerticalAlignment="Center"
+                        TextWrapping="Wrap" Text="Название ошибки"
                         FontWeight="Bold"
                         FontSize="20"
                         Foreground="#fcfce8"
-                        Style="{StaticResource ModernTextBlock}" Height="24" Width="185" Margin="27,0,0,0" Grid.ColumnSpan="3">
+                        Style="{StaticResource ModernTextBlock}" Margin="27,6,88,5" Grid.ColumnSpan="3">
 
                         <TextBlock.Effect>
                             <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="10"/>
@@ -67,12 +63,10 @@
             </Border>
 
 
-            <TextBlock Grid.Column="1" 
-                       HorizontalAlignment="Center" Margin="0,5,0,0" 
+            <TextBlock Grid.Column="1" Margin="0,5,0,10" 
                        Grid.Row="1" TextWrapping="Wrap" 
                        Text="Текст ошибки" Name="TextBl_MesWarn"
                        FontSize="17"
-                       VerticalAlignment="Top" Height="401" Width="292"
                        Style="{StaticResource ModernTextBlock}"/>
 
 
