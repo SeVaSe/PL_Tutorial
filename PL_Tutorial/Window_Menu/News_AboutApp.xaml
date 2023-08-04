@@ -65,7 +65,8 @@
                         Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Help_U_Click"
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Margin="155,7,0,0" Width="31">
+                        VerticalAlignment="Top" Margin="155,7,0,0" Width="31"
+                            ToolTip="Помощь">
 
                         <Button.Effect>
                             <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="20"/>
@@ -133,6 +134,8 @@
                             Background="Transparent"
                             BorderThickness="0" 
                             Cursor="ArrowCD"
+                            ToolTip="Окно версий"
+                            Click="Btn_Spisok_Versiy_Click"
                             >
 
                         <Image Source="\Source\Icon\version.png" Width="35" Height="35"/>
@@ -351,6 +354,44 @@
                 </Border.Effect>
 
                 <RichTextBox Name="myRichBox" Margin="10,10,10,10" Style="{StaticResource BaseInfo_RichTextBox}"/>
+
+            </Border>
+
+            <!--BORDER список Версий-->
+            <Border x:Name="BorderSpisokVersiy" Grid.Column="4" Margin="0,4,5,10" Grid.Row="2" Grid.RowSpan="2" 
+                    CornerRadius="10" Visibility="Visible">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#272537" Offset="0"/>
+                        <GradientStop Color="#3B3151" Offset="0.5"/>
+                        <GradientStop Color="#564B6C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Effect>
+                    <DropShadowEffect Color="#564B6C" ShadowDepth="0" BlurRadius="10"/>
+                </Border.Effect>
+
+                <Grid>
+                    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="5,5,5,5">
+                        <TextBlock TextWrapping="Wrap" Height="460" Style="{StaticResource ModernTextBlock}"
+                          FontSize="20"
+                          FontWeight="DemiBold">
+                            <Span FontWeight="UltraBold" FontSize="30"><Span Foreground="Transparent">________</Span>ВЕРСИИ PL-TUTORIAL</Span>
+                            <LineBreak/>
+                            <LineBreak/>
+                            
+                            
+                            <Span FontWeight="Bold" FontSize="24" Foreground="#FF5722">1. ALFA-1, версия: 0.3.2.12, дата: 07.07.23</Span>
+                            <Span Foreground="Transparent">_______</Span>- Самая первая версия приложения, 
+                            <Span Foreground="Transparent">________</Span>Альфа-Версия которая была доступна 
+                            <Span Foreground="Transparent">________</Span>ограниченному кругу лиц - теперь доступна 
+                            <Span Foreground="Transparent">________</Span>всем для просмотра!
+                        </TextBlock>
+                    </ScrollViewer>
+                </Grid>
+
 
             </Border>
 

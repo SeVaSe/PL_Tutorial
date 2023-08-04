@@ -66,6 +66,7 @@
                         Background="Transparent"
                         Foreground="#fcfce8" 
                         FontWeight="Bold"
+                        ToolTip="Помощь"
                         Style="{StaticResource ButtonClearTheme}" 
                         BorderThickness="0" Click="Help_U_Click"
                         HorizontalAlignment="Left"
