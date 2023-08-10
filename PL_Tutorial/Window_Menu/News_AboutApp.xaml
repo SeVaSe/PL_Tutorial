@@ -424,6 +424,10 @@
                                         <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
                                     </Button>
 
+                                    <TextBlock Margin="10,10,165,74" Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=ModernTextBlock}" 
+                                               FontSize="40" FontWeight="Bold"><Run Text="Первая Альфа"/><LineBreak/><Run Language="ru-ru" Text="версия"/></TextBlock>
+                                    <TextBlock Margin="5,162,301,5" Grid.Column="1" Grid.Row="1" Style="{StaticResource ModernTextBlock}" 
+                                               FontSize="20" Text="0.3.2.12" FontWeight="Bold"/>
                                 </Grid>
 
 
@@ -481,8 +485,15 @@
 
                                         <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
                                     </Button>
+
+                                    <TextBlock Margin="10,10,165,74" Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=ModernTextBlock}" 
+                                               FontSize="40" FontWeight="Bold"><Run Text="Вторая Альфа"/><LineBreak/><Run Language="ru-ru" Text="версия"/></TextBlock>
+                                    <TextBlock Margin="5,162,301,5" Grid.Column="1" Grid.Row="1" Style="{StaticResource ModernTextBlock}" 
+                                               FontSize="20" Text="0.18.2.3" FontWeight="Bold"/>
                                 </Grid>
 
+
+                                
 
                             </Border>
 
@@ -535,7 +546,15 @@
 
                                         <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
                                     </Button>
+
+                                    <TextBlock Margin="10,10,165,74" Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=ModernTextBlock}" 
+                                               FontSize="40" FontWeight="Bold"><Run Language="ru-ru" Text="Третья"/><Run Text=" Альфа"/><LineBreak/><Run Text="версия"/></TextBlock>
+                                    <TextBlock Margin="5,162,301,5" Grid.Column="1" Grid.Row="1" Style="{StaticResource ModernTextBlock}" 
+                                               FontSize="20" Text="1.1.2.29" FontWeight="Bold"/>
                                 </Grid>
+
+
+                               
 
 
                             </Border>
@@ -589,8 +608,15 @@
 
                                         <Image Source="\Source\Icon\apps.png" Width="145" Height="145"/>
                                     </Button>
+
+                                    <TextBlock Margin="10,10,165,74" Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=ModernTextBlock}" 
+                                               FontSize="40" FontWeight="Bold"><Run Text="Первый "/><Run Language="ru-ru" Text="Бета"/><LineBreak/><Run Language="ru-ru"/><Run Text="релиз"/><LineBreak/></TextBlock>
+                                    <TextBlock Margin="5,162,301,5" Grid.Column="1" Grid.Row="1" Style="{StaticResource ModernTextBlock}" 
+                                               FontSize="20" Text="1.4.25.45" FontWeight="Bold"/>
                                 </Grid>
 
+                                
+                                
 
                             </Border>
 
