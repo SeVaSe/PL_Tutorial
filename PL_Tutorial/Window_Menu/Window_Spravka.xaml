@@ -8,7 +8,8 @@
         Style="{StaticResource ModernWindowStyle}"
         
         WindowStartupLocation="CenterScreen"
-        Title="Window_Spravka">
+        PreviewKeyDown="Window_PreviewKeyDown">
+
     <Border Background="#272537" CornerRadius="20" >
         <Grid>
             <Grid.ColumnDefinitions>
@@ -157,8 +158,8 @@
                             <Border.Effect>
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
-                            
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+
+                            <RichTextBox Style="{StaticResource FAQRichTextBox1}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
 
@@ -176,7 +177,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox1}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
 
@@ -194,7 +195,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox1}" Margin="0,10,0,10" Width="346"/>
                         </Border>
                     </StackPanel>
                 </ScrollViewer>
@@ -232,7 +233,7 @@
                             </Border.Effect>
 
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox1}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
                         <!--2-->
@@ -248,7 +249,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox2}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
                         <!--3-->
@@ -264,7 +265,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox3}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
                         <!--4-->
@@ -280,7 +281,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox4}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
                         <!--5-->
@@ -296,7 +297,7 @@
                                 <DropShadowEffect Color="#413a4f" ShadowDepth="0" BlurRadius="9"/>
                             </Border.Effect>
 
-                            <RichTextBox Style="{StaticResource FAQRichTextBox}" Margin="0,10,0,10" Width="346"/>
+                            <RichTextBox Style="{StaticResource FAQRichTextBox5}" Margin="0,10,0,10" Width="346"/>
                         </Border>
 
 

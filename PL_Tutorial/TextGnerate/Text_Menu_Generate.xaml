@@ -839,7 +839,7 @@
 
     <!--ОКНО СПРАВКА-->
     <!--ТЕКСТ FAQ1-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox">
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox1">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">
@@ -853,7 +853,205 @@
                             <!--написание описание новости-->
                             <Section>
                                 <Paragraph>
-                                    ВОПРОС 1
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        Почему в PL-tutorial ограничился только двумя языками?
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В настоящее время PL-tutorial предоставляет обучение на двух языках: Python и C#. 
+                                    Начальный контент разработан для этих языков, однако планируется постепенно расширять 
+                                    выбор языков.
+                                    <LineBreak/>
+                                    Ожидайте добавление новых языков в будущем.
+
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ FAQ2-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox2">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        Как узнать новости о приложении?
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Чтобы узнать новые обновления или новости о приложении.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20" FontWeight="Bold">
+                                        Вам надо сделать:
+                                    </Span>
+                                    <LineBreak/>
+                                    Откройте главное окно PL-tutorial
+                                    <LineBreak/>
+                                    <Span FontSize="30">&#x2193;</Span>
+                                    <LineBreak/>
+                                    Раскройте вкладку "Menu"
+                                    <LineBreak/>
+                                    <Span FontSize="30">&#x2193;</Span>
+                                    <LineBreak/>
+                                    Найдите значок "Новости" и нажмите на него
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Вы перейдете на раздел "Новости", где всегда сможете найти свежую информацию о приложении. Кроме того, здесь вы сможете ознакомиться с архивом предыдущих версий приложения и запустить любую из них для воспоминаний или сравнения.
+
+
+
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ FAQ3-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox3">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        Как написать в Техническую поддержку?
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    Возник вопрос? Или обнаружили проблему в работе приложения? Обратитесь в Тех-Поддержку за помощью.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20" FontWeight="Bold">
+                                        Как обратиться в Техническую Поддержку:
+                                    </Span>
+                                    <LineBreak/>
+                                    Откройте главное окно PL-tutorial
+                                    <LineBreak/>
+                                    <Span FontSize="30">&#x2193;</Span>
+                                    <LineBreak/>
+                                    Раскройте вкладку "Menu"
+                                    <LineBreak/>
+                                    <Span FontSize="30">&#x2193;</Span>
+                                    <LineBreak/>
+                                    Найдите значок "Тех-Поддержка" и нажмите на него
+                                    <LineBreak/>
+                                    <Span FontSize="30">&#x2193;</Span>
+                                    <LineBreak/>
+                                    Вас перекинет на наш почтовый адрес <Span FontWeight="Bold">"tehsauppor@gmail.com"</Span>, укажите там: название обращения и распишите его.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Тех-Поддержка ответит в течении 24 часов.
+
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ FAQ4-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox4">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        Почему не все разделы заполнены информацией?
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Разработка приложения ведется одним человеком. Поэтому заполненность всех разделов, это всего лишь дело времени.
+                                    Каждый раздел учебника будет постепенно пополняться.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ТЕКСТ FAQ5-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="FAQRichTextBox5">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание описание новости-->
+                            <Section>
+                                <Paragraph>
+                                    <Span FontSize="25" FontWeight="Bold">
+                                        Как использовать GPT в PL-tutorial и как он может помочь?
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20" FontWeight="Bold">
+                                        Применение GPT
+                                    </Span>
+                                    <LineBreak/>
+                                    В PL-tutorial внедрен GPT, чтобы воспользоваться этой возможностью, перейдите на главное окно и выберите 
+                                    вкладку "GPT-ФУНКЦИЯ". При наведении на эту вкладку появится окно с описанием функции. Нажав на кнопку "Открыть GPT", вы попадете в интерфейс, где сможете написать свой запрос, на который GPT предоставит ответ.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontSize="20" FontWeight="Bold">
+                                        Преимущества использования GPT
+                                    </Span>
+                                    <LineBreak/>
+                                    С помощью этой функции вы сможете быстро получить нужную информацию без необходимости обращаться к внешним источникам. 
+                                    Также GPT может помочь вам лучше понять сложные темы, которые вы недопоняли.
+
+
                                 </Paragraph>
                             </Section>
                         </FlowDocument>

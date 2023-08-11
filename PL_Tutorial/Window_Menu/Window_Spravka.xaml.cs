@@ -105,11 +105,31 @@ namespace PL_Tutorial.Window_Menu
             e.Handled = true;
         }
 
+
         // помощь
         private void Help_U_Click(object sender, RoutedEventArgs e)
         {
             var mesBoxHelps = new MessageBox_Modern("Помощь", "", 300, 400);
             mesBoxHelps.ShowDialog();
+        }
+
+
+        // прокрутка внутри ричбоксов
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (Keyboard.FocusedElement is RichTextBox richTextBox)
+            {
+                if (e.Key == Key.Up)
+                {
+                    richTextBox.LineUp();
+                    e.Handled = true;
+                }
+                else if (e.Key == Key.Down)
+                {
+                    richTextBox.LineDown(); 
+                    e.Handled = true;
+                }
+            }
         }
     }
 }
