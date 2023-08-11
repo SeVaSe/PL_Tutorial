@@ -338,19 +338,22 @@
                                 <Button x:Name="Btn_Class_Object" Style="{StaticResource ButtonModernOrange}" Content="Классы и объекты"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Methods_Class" Style="{StaticResource ButtonModernOrange}" Content="Методы классов"/>
+                                <Button x:Name="Btn_Constructor" Style="{StaticResource ButtonModernOrange}" Content="Конструкторы"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Test1" Style="{StaticResource ButtonModernOrange}" Content="tes3"/>
+                                <Button x:Name="Btn_Destructor" Style="{StaticResource ButtonModernOrange}" Content="Деструкторы"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Test2" Style="{StaticResource ButtonModernOrange}" Content="tes4"/>
+                                <Button x:Name="Btn_Nasledovanie" Style="{StaticResource ButtonModernOrange}" Content="Наследование"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Test3" Style="{StaticResource ButtonModernOrange}" Content="tes5"/>
+                                <Button x:Name="Btn_Type_Nasledovanie" Style="{StaticResource ButtonModernOrange}" Content="Типы наследования"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Test4" Style="{StaticResource ButtonModernOrange}" Content="tes6"/>
+                                <Button x:Name="Btn_Inkapsuliaciay" Style="{StaticResource ButtonModernOrange}" Content="Инкапсуляция"/>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <Button x:Name="Btn_Polymorfizm" Style="{StaticResource ButtonModernOrange}" Content="Полиморфизм"/>
                             </ListBoxItem>
                         </ListBox>
                     </Grid>
