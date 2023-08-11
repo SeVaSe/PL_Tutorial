@@ -19,7 +19,7 @@ namespace PL_Tutorial.Dop_Window
     /// </summary>
     public partial class MessageBox_Modern : Window
     {
-        public MessageBox_Modern(string title, string message, int wid= 400, int heig= 465)
+        public MessageBox_Modern(string title, string message, int wid= 100, int heig= 165)
         {
             InitializeComponent();
             TxtBl_NameWarn.Text = title;
