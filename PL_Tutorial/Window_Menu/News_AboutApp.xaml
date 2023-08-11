@@ -359,7 +359,7 @@
 
             <!--BORDER список Версий-->
             <Border x:Name="BorderSpisokVersiy" Grid.Column="4" Margin="0,4,5,10" Grid.Row="2" Grid.RowSpan="2" 
-                    CornerRadius="10" Visibility="Visible">
+                    CornerRadius="10" Visibility="Collapsed">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#272537" Offset="0"/>
@@ -476,7 +476,7 @@
                                     BorderThickness="0" 
                                     Cursor="Hand"
                                     ToolTip="Версия: 0.18.2.3"
-                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    Click="Btn_0_3_2_12_Click" Grid.Column="1" Grid.Row="1"
                                     >
 
                                         <Button.Effect>
@@ -537,7 +537,7 @@
                                     BorderThickness="0" 
                                     Cursor="Hand"
                                     ToolTip="Версия: 1.1.2.29"
-                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    Click="Btn_0_3_2_12_Click" Grid.Column="1" Grid.Row="1"
                                     >
 
                                         <Button.Effect>
@@ -598,7 +598,7 @@
                                     BorderThickness="0" 
                                     Cursor="Hand"
                                     ToolTip="Версия: 1.4.25.45"
-                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    Click="Btn_0_3_2_12_Click" Grid.Column="1" Grid.Row="1"
                                     >
 
                                         <Button.Effect>

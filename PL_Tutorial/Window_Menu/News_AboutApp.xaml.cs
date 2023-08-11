@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.IO;
+using Microsoft.Win32;
 
 
 namespace PL_Tutorial.Window_Menu
@@ -153,7 +155,26 @@ namespace PL_Tutorial.Window_Menu
         // ЗАПУСК ВЕРСИЙ
         private void Btn_0_3_2_12_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(@"\versions_PL\vers_0_3_2_12\PythonTutorial_first.exe");
+            string path = System.IO.Path.GetDirectoryName("PythonTutorial_first_.exe");
+
+
+            /*string relativePath = @"versions_PL_\vers_0_3_2_12\PythonTutorial_first_.exe";
+            string userFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string fullPath = System.IO.Path.Combine(userFolder, relativePath);*/
+            try
+            {
+                
+
+                Process.Start(path); // Запуск файла
+            }
+            catch
+            {
+                MessageBox.Show($"Ошибка при запуске .exe файла:{path}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+
+
+
         }
 
 
