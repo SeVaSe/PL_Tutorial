@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 
 namespace PL_Tutorial.Window_Menu
@@ -147,6 +148,16 @@ namespace PL_Tutorial.Window_Menu
             }
         }
 
-        
+
+
+        // ЗАПУСК ВЕРСИЙ
+        private void Btn_0_3_2_12_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(@"\versions_PL\vers_0_3_2_12\PythonTutorial_first.exe");
+        }
+
+
+
+
     }
 }

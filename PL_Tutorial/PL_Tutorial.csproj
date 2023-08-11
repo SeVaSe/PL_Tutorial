@@ -516,6 +516,7 @@
     <Resource Include="Source\Document\license.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="versions_PL\vers_1_4_25_45\PL_Tutorial_Beta1.exe" />
     <Resource Include="Source\Icon\version.png" />
     <Resource Include="Source\Icon\apps.png" />
     <Resource Include="Source\Icon\apps_kv.png" />

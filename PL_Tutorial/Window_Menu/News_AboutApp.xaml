@@ -415,13 +415,13 @@
                                     BorderThickness="0" 
                                     Cursor="Hand"
                                     ToolTip="Версия: 0.3.2.12"
-                                    Click="Btn_Spisok_Versiy_Click" Grid.Column="1" Grid.Row="1"
+                                    Click="Btn_0_3_2_12_Click" Grid.Column="1" Grid.Row="1"
                                     >
                                         <Button.Effect>
-                                            <DropShadowEffect Color="#3700ff" ShadowDepth="0" BlurRadius="20"/>
+                                            <DropShadowEffect Color="#ff1f4b" ShadowDepth="0" BlurRadius="20"/>
                                         </Button.Effect>
 
-                                        <Image Source="\Source\Icon\apps_kv.png" Width="155" Height="155"/>
+                                        <Image Source="\Source\Icon\apps.png" Width="155" Height="155"/>
                                     </Button>
 
                                     <TextBlock Margin="10,10,165,74" Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=ModernTextBlock}" 
