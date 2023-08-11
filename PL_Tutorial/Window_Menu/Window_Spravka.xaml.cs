@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PL_Tutorial.Dop_Window;
 
 namespace PL_Tutorial.Window_Menu
 {
@@ -102,6 +103,13 @@ namespace PL_Tutorial.Window_Menu
                 scroll.ScrollToVerticalOffset(scroll.VerticalOffset - amountSpeed);
             }
             e.Handled = true;
+        }
+
+        // помощь
+        private void Help_U_Click(object sender, RoutedEventArgs e)
+        {
+            var mesBoxHelps = new MessageBox_Modern("Помощь", "", 300, 400);
+            mesBoxHelps.ShowDialog();
         }
     }
 }
