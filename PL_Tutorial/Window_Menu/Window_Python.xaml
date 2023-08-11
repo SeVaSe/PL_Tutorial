@@ -107,6 +107,24 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Margin="41,0,0,0" Width="31"/>
 
+                    <Button Content="?"
+                        FontFamily="Fonts/#Dosis" 
+                        FontSize="30"
+                        Cursor="Hand"
+                        Background="Transparent"
+                        Foreground="#fcfce8" 
+                        FontWeight="Bold"
+                        ToolTip="Помощь"
+                        Style="{StaticResource ButtonClearTheme}" 
+                        BorderThickness="0" Click="Help_U_Click"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="102,7,0,0" Width="31">
+
+                        <Button.Effect>
+                            <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="20"/>
+                        </Button.Effect>
+                    </Button>
+
 
                 </Grid>
             </Border>
@@ -258,7 +276,7 @@
                         <ListBoxItem>
                             <Button x:Name="Btn_Decorator" Style="{StaticResource ButtonModernBlue}" Content="Декораторы" Click="Btn_Decorator_Click"/>
                         </ListBoxItem>
-                        
+
                     </ListBox>
                 </Grid>
             </Border>
@@ -411,12 +429,12 @@
                 </Border.Effect>
 
 
-                <TextBlock Text="ИИ и Нейронки"
+                <TextBlock Text="Доп-Функции"
                           Style="{StaticResource ModernTextBlock}"
                           FontSize="25"
                           Grid.Column="1"
                           FontWeight="Bold"
-                          Margin="10,30,10,28"/>
+                          Margin="21,29,21,29"/>
             </Border>
 
 
@@ -438,12 +456,12 @@
                 </Border.Effect>
 
 
-                <TextBlock Text="Доп-Функции"
+                <TextBlock Text="PY-Задачи"
                           Style="{StaticResource ModernTextBlock}"
                           FontSize="25"
                           Grid.Column="1"
                           FontWeight="Bold"
-                          Margin="20,30,20,30"/>
+                          Margin="43,30,43,30"/>
             </Border>
 
         </Grid>

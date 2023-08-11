@@ -19,11 +19,12 @@ namespace PL_Tutorial.Dop_Window
     /// </summary>
     public partial class MessageBox_Modern : Window
     {
-        public MessageBox_Modern(string title, string message)
+        public MessageBox_Modern(string title, string message, int wid= 400, int heig= 465)
         {
             InitializeComponent();
             TxtBl_NameWarn.Text = title;
             TextBl_MesWarn.Text = message;
+            Width = wid; Height = heig;
 
 
         }
@@ -34,6 +35,8 @@ namespace PL_Tutorial.Dop_Window
             Close();
         }
 
+
+        
 
         public void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {

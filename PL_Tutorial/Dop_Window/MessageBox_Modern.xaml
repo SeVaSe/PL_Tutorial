@@ -5,78 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL_Tutorial.Dop_Window"
         mc:Ignorable="d"
-        Title="MessageBox_Modern" Height="465" Width="400"
-        Style="{StaticResource ModernWindowStyle}"
-        >
+        Title="MessageBox_Modern" MinWidth="400" MinHeight="465"
+        Style="{StaticResource ModernWindowStyle}" >
 
     <Border Background="#323759" CornerRadius="20">
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="6*"/>
-                <ColumnDefinition Width="487*"/>
-                <ColumnDefinition Width="6*"/>
-            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40*"/>
-                <RowDefinition Height="469*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!--Верхняя строка-->
-            <Border  Background="#252a47" BorderThickness="0" CornerRadius="20, 20, 0, 0" 
-                     Grid.ColumnSpan="3"
-                     MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove"  Cursor="SizeAll" >
+            <!-- Верхняя строка -->
+            <Border Background="#252a47" BorderThickness="0" CornerRadius="20, 20, 0, 0" 
+                    Grid.Row="0"
+                    MouseLeftButtonDown="Window_MouseLeftButtonDown"
+                    MouseMove="Window_MouseMove" Cursor="SizeAll">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="243*"/>
-                        <ColumnDefinition Width="23*"/>
-                        <ColumnDefinition Width="134*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <!--Закрыть-->
-                    <Button Content="❌"
-                        FontFamily="Fonts/#Dosis" 
-                        FontSize="16"
-                        Background="Transparent"
-                        Foreground="AliceBlue"
-                        FontWeight="Bold"
-                            Cursor="Hand"
-                        Style="{StaticResource ButtonClearTheme}"
-                        BorderThickness="0" Click="Exit_Click" Margin="0,9,18,8" RenderTransformOrigin="0.517,0.479"
-                        Grid.Column="2" HorizontalAlignment="Right" Width="20"/>
+                    
 
-
-                    <!--Заголовок-->
-                    <TextBlock  
-                        Name="TxtBl_NameWarn"
-                        TextWrapping="Wrap" Text="Название ошибки"
-                        FontWeight="Bold"
-                        FontSize="20"
-                        Foreground="#fcfce8"
-                        Style="{StaticResource ModernTextBlock}" Margin="27,6,88,5" Grid.ColumnSpan="3">
-
+                    <!-- Заголовок -->
+                    <TextBlock Name="TxtBl_NameWarn" TextWrapping="Wrap" Text="Название ошибки"
+                               FontWeight="Bold" FontSize="20" Foreground="#fcfce8"
+                               Style="{StaticResource ModernTextBlock}" Margin="25,7,10,-2">
                         <TextBlock.Effect>
                             <DropShadowEffect Color="Yellow" ShadowDepth="0" BlurRadius="10"/>
                         </TextBlock.Effect>
                     </TextBlock>
+                    
+                    <!-- Закрыть -->
+                    <Button Content="❌"
+                            FontFamily="Fonts/#Dosis" 
+                            FontSize="16"
+                            Background="Transparent"
+                            Foreground="AliceBlue"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Style="{StaticResource ButtonClearTheme}"
+                            BorderThickness="0" Click="Exit_Click" Margin="0,7,18,10"
+                            HorizontalAlignment="Right"/>
                 </Grid>
             </Border>
 
-
-            <TextBlock Grid.Column="1" Margin="0,5,0,10" 
-                       Grid.Row="1" TextWrapping="Wrap" 
-                       Text="Текст ошибки" Name="TextBl_MesWarn"
-                       FontSize="17"
-                       Style="{StaticResource ModernTextBlock}"/>
-
-
-
-
-
-
-
-
+            <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Текст ошибки" Name="TextBl_MesWarn"
+                       FontSize="17" Style="{StaticResource ModernTextBlock}" Margin="10"/>
         </Grid>
     </Border>
-
 </Window>
