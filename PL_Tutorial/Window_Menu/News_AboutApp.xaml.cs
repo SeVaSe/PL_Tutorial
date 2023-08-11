@@ -155,7 +155,6 @@ namespace PL_Tutorial.Window_Menu
         // ЗАПУСК ВЕРСИЙ
         private void Btn_0_3_2_12_Click(object sender, RoutedEventArgs e)
         {
-            string path = System.IO.Path.GetDirectoryName("PythonTutorial_first_.exe");
 
 
             /*string relativePath = @"versions_PL_\vers_0_3_2_12\PythonTutorial_first_.exe";
@@ -165,11 +164,11 @@ namespace PL_Tutorial.Window_Menu
             {
                 
 
-                Process.Start(path); // Запуск файла
+                Process.Start(""); // Запуск файла
             }
             catch
             {
-                MessageBox.Show($"Ошибка при запуске .exe файла:{path}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при запуске .exe файла:", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
 
