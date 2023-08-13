@@ -97,7 +97,7 @@
                             <Section>
                                 <Paragraph>
                                     <Span FontSize="35" FontWeight="Bold">
-                                        <Span Foreground="#272537">
+                                        <Span Foreground="Transparent">
                                             _____________________
                                         </Span> 
                                         Написание программы

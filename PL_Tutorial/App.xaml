@@ -14,6 +14,7 @@
                 <ResourceDictionary Source="Theme/ModernWinsowStylePage.xaml"/>
                 <ResourceDictionary Source="TextGnerate/Text_Osn_Python.xaml"/>
                 <ResourceDictionary Source="TextGnerate/Text_Menu_Generate.xaml"/>
+                <ResourceDictionary Source="TextGnerate/Text_OOP_Generate.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -1,0 +1,347 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!--КОНЦЕПЦИЯ ООП-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Conception_OOP_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+                                    В Python объектно-ориентированное программирование (OOP) - это парадигма программирования, которая использует объекты и классы в программировании. Она направлена на реализацию объектов реального мира, таких как наследование, полиморфизмы, инкапсуляция и т.д. В программировании. Основная концепция OOP заключается в объединении данных и функций, которые работают с ними, в единое целое, чтобы никакая другая часть кода не могла получить доступ к этим данным.
+                                </Paragraph>
+
+                                <!--написание Концепции OOP на Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            ______________
+                                        </Span>
+                                        КОНЦЕПЦИИ OOP НА PYTHON
+                                    </Span>
+                                   
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="350" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            ● Класс
+                                            <LineBreak/>
+                                            ● Объекты
+                                            <LineBreak/>
+                                            ● Полиморфизм
+                                            <LineBreak/>
+                                            ● Инкапсуляция
+                                            <LineBreak/>
+                                            ● Наследование
+                                            <LineBreak/>
+                                            ● Абстракция данных
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                </Paragraph>
+
+
+                                <!--написание Класс Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _______________________
+                                        </Span>
+                                        КЛАСС PYTHON
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Класс - это коллекция объектов. Класс содержит схемы или прототип, на основе которых создаются объекты. Это логическая сущность, которая содержит некоторые атрибуты и методы.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Чтобы понять необходимость создания класса, давайте рассмотрим пример, допустим, вы хотели отслеживать количество собак, которые могут иметь разные атрибуты, такие как порода и возраст. Если используется список, то первым элементом может быть порода собаки, а второй элемент может представлять ее возраст. Предположим, что существует 100 разных собак, тогда как бы вы узнали, какой элемент должен быть каким? Что, если бы вы захотели добавить другие свойства к этим dogs? Здесь не хватает организации, и это как раз то, что нужно для классов.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Некоторые моменты о классе Python:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Yellow" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            ● Классы создаются с помощью ключевого слова class
+                                            <LineBreak/>
+                                            ● Атрибуты - это переменные, которые принадлежат классу
+                                            <LineBreak/>
+                                            ● Атрибуты всегда являются общедоступными и к ним можно <LineBreak/>
+                                            <Span Foreground="Transparent">_</Span> получить доступ с помощью оператора Точка(.). Например: Myclass.Myattribute
+                                        </TextBlock>
+                                    </Border>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис определения класса:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class ClassName:
+                                            <LineBreak/>
+                                            [2] <Span Foreground="Transparent">____</Span>Метод-1
+                                            <LineBreak/>
+                                            [3] <Span Foreground="Transparent">____</Span>
+                                            <LineBreak/>
+                                            [4] <Span Foreground="Transparent">____</Span>Метод-2
+                                            <LineBreak/>
+                                            [5] <Span Foreground="Transparent">____</Span>
+                                            <LineBreak/>
+                                            [6] <Span Foreground="Transparent">____</Span>Метод-N
+                                        </TextBlock>
+                                    </Border>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Создание пустого класса в Python:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Dog:
+                                            <LineBreak/>
+                                            [2] <Span Foreground="Transparent">____</Span>pass
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+
+
+                                <!--написание Объекты Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _____________________
+                                        </Span>
+                                        ОБЪЕКТЫ PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Объект - это сущность, с которой связаны состояние и поведение. Это может быть любой объект реального мира, такой как мышь, клавиатура, стул, стол, ручка и т.д. Целые числа, строки, числа с плавающей запятой, даже массивы и словари - все это объекты. Более конкретно, любое целое число или любая отдельная строка является объектом. Число 12 - это объект, строка “Привет, мир” - это объект, список - это объект, который может содержать другие объекты и так далее. Вы все время использовали объекты и, возможно, даже не осознаете этого.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Объект состоит из:</Span> 
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Состояние: оно представлено атрибутами объекта. Оно также отражает свойства объекта.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Поведение: оно представлено методами объекта. Оно также отражает реакцию объекта на другие объекты.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Идентификатор: присваивает объекту уникальное имя и позволяет одному объекту взаимодействовать с
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> другими объектами.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Чтобы понять состояние, поведение и идентичность, давайте возьмем пример класса dog (объяснено выше).
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Идентификатор можно рассматривать как имя собаки.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Состояние или атрибуты могут рассматриваться как порода, возраст или окрас собаки.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Поведение можно рассматривать в зависимости от того, ест собака или спит.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание объекта:</Span>
+                                    <LineBreak/>
+                                    Это создаст объект с именем obj класса Dog, определенного выше. Прежде чем углубляться в объекты и классы, давайте разберемся с некоторыми основными ключевыми словами, которые мы будем использовать при работе с объектами и классами.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="200" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] obj = Dog()
+                                        </TextBlock>
+                                    </Border>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">self - Python:</Span>
+                                    <LineBreak/>
+                                    1. Методы класса должны иметь дополнительный первый параметр в определении метода. Мы не указываем значение для этого параметра при вызове метода, его предоставляет Python
+                                    <LineBreak/>
+                                    2. Если у нас есть метод, который не принимает аргументов, то у нас все равно должен быть один аргумент.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Когда мы вызываем метод этого объекта как myobject.method(arg1, arg2), он автоматически преобразуется Python в MyClass.method(myobject, arg1, arg2) – в этом вся особенность self.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Метод Python __init__ :</Span>
+                                    <LineBreak/>
+
+                                    Метод __init__ похож на конструкторы в C ++ и Java. Он запускается, как только создается экземпляр объекта класса. Этот метод полезен для выполнения любой инициализации, которую вы хотите выполнить с вашим объектом. Теперь давайте определим класс и создадим некоторые объекты, используя self и __init__ метод.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание класса и объекта с атрибутами класса и экземпляра:</Span>
+                                    <LineBreak/>
+
+
+                                    
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Dog:<LineBreak/>
+                                            [2] <LineBreak/>
+	                                        [3]<Span Foreground="Transparent">____</Span># атрибут класса<LineBreak/>
+	                                        [4]<Span Foreground="Transparent">____</Span>attr1 = "mammal"<LineBreak/>
+                                            [5] <LineBreak/>
+	                                        [6]<Span Foreground="Transparent">____</Span># атрибуты экземпляра<LineBreak/>
+	                                        [7]<Span Foreground="Transparent">____</Span>def __init__(self, name):<LineBreak/>
+		                                    [8]<Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+                                            [9] <LineBreak/>
+                                            [10] <LineBreak/>
+                                            [11] # инициализация объектов<LineBreak/>
+                                            [12] Rodger = Dog("Rodger")<LineBreak/>
+                                            [13] Tommy = Dog("Tommy")<LineBreak/>
+                                            [14] <LineBreak/>
+                                            [15] # Доступ к атрибутам класса<LineBreak/>
+                                            [16] print(f"Rodger is a {Rodger.__class__.attr1}")<LineBreak/>
+                                            [17] print(f"Tommy is also a {Tommy.__class__.attr1}")<LineBreak/>
+                                            [18] <LineBreak/>
+                                            [19] # Доступ к атрибутам экземпляра<LineBreak/>
+                                            [20] print(f"My name is {Rodger.name}")<LineBreak/>
+                                            [21] print(f"My name is {Tommy.name}")<LineBreak/>
+                                            
+                                            <LineBreak/><LineBreak/><LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            Rodger is a mammal<LineBreak/>
+                                            Tommy is also a mammal<LineBreak/>
+                                            My name is Rodger<LineBreak/>
+                                            My name is Tommy<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание классов и объектов с помощью методов:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="Bold">Здесь класс Dog определяется с двумя атрибутами:</Span> 
+                                    <LineBreak/>
+                                    ● attr1 - это атрибут класса, которому присвоено значение “млекопитающее”. Атрибуты класса являются общими для всех экземпляров класса.
+                                    <LineBreak/>
+                                    ● __init__ - это специальный метод (конструктор), который инициализирует экземпляр класса Dog. Он принимает два параметра: self (относящийся к создаваемому экземпляру) и name (представляющий имя собаки). Параметр name используется для присвоения атрибута name каждому экземпляру Dog.
+                                    <LineBreak/>
+                                    ● Метод speak определен в классе Dog. Этот метод выводит строку, которая включает имя экземпляра dog.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Код начинается с создания двух экземпляров класса Dog: Rodger и Tommy. Для каждого экземпляра вызывается метод __init__ для инициализации их атрибутов name указанными именами. Метод speak вызывается в обоих экземплярах (Rodger.speak() и Tommy.speak()), в результате чего каждая собака печатает инструкцию со своим именем.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Dog:<LineBreak/>
+                                            [2] <LineBreak/>
+	                                        [3]<Span Foreground="Transparent">____</Span># атрибут класса<LineBreak/>
+	                                        [4]<Span Foreground="Transparent">____</Span>attr1 = "mammal"<LineBreak/>
+                                            [5] <LineBreak/>
+	                                        [6]<Span Foreground="Transparent">____</Span># атрибуты экземпляра<LineBreak/>
+	                                        [7]<Span Foreground="Transparent">____</Span>def __init__(self, name):<LineBreak/>
+		                                    [8]<Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+                                            [9]<LineBreak/>
+                                            [10]<Span Foreground="Transparent">____</Span>def speak(self):<LineBreak/>
+                                            [11]<Span Foreground="Transparent">________</Span>print(f"My name is {self.name}")<LineBreak/>
+                                            [12] <LineBreak/>
+                                            [13] # инициализация объектов<LineBreak/>
+                                            [14] Rodger = Dog("Rodger")<LineBreak/>
+                                            [15] Tommy = Dog("Tommy")<LineBreak/>
+                                            [16] <LineBreak/>
+                                            [17] Rodger.speak()<LineBreak/>
+                                            [18] Tommy.speak()
+                                            
+                                            <LineBreak/><LineBreak/><LineBreak/>
+                                            КОД ВЫВЕДЕТ:
+                                            <LineBreak/>
+                                            My name is Rodger<LineBreak/>
+                                            My name is Tommy<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+
+
+                                <!--написание Наследование Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            __________________
+                                        </Span>
+                                        НАСЛЕДОВАНИЕ PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
