@@ -23,5 +23,7 @@ namespace PL_Tutorial.Pages
         {
             InitializeComponent();
         }
+
+       
     }
 }

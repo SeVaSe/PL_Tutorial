@@ -334,8 +334,84 @@
                                     </Span>
                                     <LineBreak/>
                                     <LineBreak/>
+
+                                    Наследование - это способность одного класса извлекать или наследовать свойства из другого класса. Класс, который получает свойства, называется производным классом или дочерним классом, а класс, из которого выводятся свойства, называется базовым классом или родительским классом. Преимущества наследования заключаются в:
+                                    <LineBreak/>
+                                    ● Он хорошо отражает отношения в реальном мире.
+                                    <LineBreak/>
+                                    ● Он обеспечивает возможность повторного использования кода. Нам не нужно писать один и тот же код снова и снова. Кроме того, он позволяет нам добавлять дополнительные функции в класс, не изменяя его.
+                                    <LineBreak/>
+                                    ● Он транзитивен по своей природе, что означает, что если класс B наследуется от другого класса A, то все подклассы B автоматически наследуются от класса A.
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="Bold">Типы наследования</Span>
+                                    <LineBreak/>
+                                    ● Одиночное наследование: одноуровневое наследование позволяет производному классу наследовать характеристики от класса с одним родителем.
+                                    <LineBreak/>
+                                    ● Многоуровневое наследование: многоуровневое наследование позволяет производному классу наследовать свойства от непосредственного родительского класса, который, в свою очередь, наследует свойства от своего родительского класса.
+                                    <LineBreak/>
+                                    ● Иерархическое наследование: наследование на иерархическом уровне позволяет нескольким производным классам наследовать свойства от родительского класса.
+                                    <LineBreak/>
+                                    ● Множественное наследование: многоуровневое наследование позволяет одному производному классу наследовать свойства более чем от одного базового класса.
+
                                     
-                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Наследование в Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В приведенной выше статье мы создали два класса, т. е. Person (родительский класс) и Employee (дочерний класс). Класс Employee наследуется от класса Person. Мы можем использовать методы класса person через класс employee, как показано в функции отображения в приведенном выше коде. Дочерний класс также может изменять поведение родительского класса, как показано с помощью метода details().
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Person(object):<LineBreak/>
+                                            [2]<Span Foreground="Transparent">____</Span><LineBreak/>
+                                            [3]<Span Foreground="Transparent">____</Span>        # конструктор<LineBreak/>
+                                            [4]<Span Foreground="Transparent">____</Span>        def __init__(self, name, idnumber):<LineBreak/>
+                                            [5]<Span Foreground="Transparent">________</Span>            self.name = name<LineBreak/>
+                                            [6]<Span Foreground="Transparent">________</Span>            self.idnumber = idnumber<LineBreak/>
+                                            [7]<LineBreak/>
+                                            [8]<Span Foreground="Transparent">____</Span>        def display(self):<LineBreak/>
+                                            [9]<Span Foreground="Transparent">________</Span>            print(self.name)<LineBreak/>
+                                            [10]<Span Foreground="Transparent">________</Span>            print(self.idnumber)<LineBreak/>
+                                            [11]<LineBreak/>
+                                            [12]<Span Foreground="Transparent">____</Span>        def details(self):<LineBreak/>
+                                            [13]<Span Foreground="Transparent">________</Span>            print(f"My name is {self.name}")<LineBreak/>
+                                            [14]<Span Foreground="Transparent">________</Span>            print(f"IdNumber: {self.idnumber}")<LineBreak/>
+                                            [15]<LineBreak/>
+                                            [16]<Span Foreground="Transparent">____</Span>    # дочерний class<LineBreak/>
+                                            [17]class Employee(Person):<LineBreak/>
+                                            [18]<Span Foreground="Transparent">____</Span>        def __init__(self, name, idnumber, salary, post):<LineBreak/>
+                                            [19]<Span Foreground="Transparent">________</Span>            self.salary = salary<LineBreak/>
+                                            [20]<Span Foreground="Transparent">________</Span>            self.post = post<LineBreak/>
+                                            [21]<LineBreak/>
+                                            [22]<Span Foreground="Transparent">________</Span>            # вызов __init__ родительского class<LineBreak/>
+                                            [23]<Span Foreground="Transparent">________</Span>            Person.__init__(self, name, idnumber)<LineBreak/>
+                                            [24]<LineBreak/>
+                                            [25]<Span Foreground="Transparent">____</Span>        def details(self):<LineBreak/>
+                                            [26]<Span Foreground="Transparent">________</Span>            print(f"My name is {self.name}")<LineBreak/>
+                                            [27]<Span Foreground="Transparent">________</Span>            print(f"IdNumber: {self.idnumber}")<LineBreak/>
+                                            [28]<Span Foreground="Transparent">________</Span>            print(f"Post: {self.post}")<LineBreak/>
+                                            [29]<LineBreak/>
+                                            [30]<LineBreak/>
+                                            [31] # создание объектной переменной или экземпляра<LineBreak/>
+                                            [32] a = Employee('Alex', 2145235, 200000, "Стажер")<LineBreak/>
+                                            [33]<LineBreak/>
+                                            [34] # вызов функции класса Person с помощью<LineBreak/>
+                                            [35] # этих решений<LineBreak/>
+                                            [36] a.display()<LineBreak/>
+                                            [37] a.details()<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
                                 </Paragraph>
                             </Section>
                         </FlowDocument>
