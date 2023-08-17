@@ -233,6 +233,13 @@ namespace PL_Tutorial
             wind.Show();
         }
 
+        //ООП класс и объект
+        public static void OOP_Class_Object()
+        {
+            Window wind = new OOP_Class_Object();
+            wind.Show();
+        }
+
 
 
     }

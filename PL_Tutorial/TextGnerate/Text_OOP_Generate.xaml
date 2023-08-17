@@ -500,7 +500,7 @@
                                     </Span>
                                     <LineBreak/>
                                     <LineBreak/>
-                                   Инкапсуляция является одной из фундаментальных концепций объектно-ориентированного программирования (ООП). Она описывает идею упаковки данных и методы, которые работают с данными в рамках одного модуля. Это накладывает ограничения на прямой доступ к переменным и методам и может предотвратить случайное изменение данных. Чтобы предотвратить случайное изменение, переменная объекта может быть изменена только методом объекта. Эти типы переменных известны как частные переменные.
+                                    Инкапсуляция является одной из фундаментальных концепций объектно-ориентированного программирования (ООП). Она описывает идею упаковки данных и методы, которые работают с данными в рамках одного модуля. Это накладывает ограничения на прямой доступ к переменным и методам и может предотвратить случайное изменение данных. Чтобы предотвратить случайное изменение, переменная объекта может быть изменена только методом объекта. Эти типы переменных известны как частные переменные.
                                     <LineBreak/>
                                     <LineBreak/>
                                     Класс является примером инкапсуляции, поскольку он инкапсулирует все данные, которые являются функциями-членами, переменными и т.д.
@@ -545,7 +545,460 @@
                                         </TextBlock>
                                     </Border>
                                 </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
+
+    <!--КЛАСС И ОБЪЕКТ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Class_Object_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+                                    Класс - это определяемая пользователем схема или прототип, на основе которого создаются объекты. Классы предоставляют средства объединения данных и функциональности воедино. Создание нового класса создает объект нового типа, позволяющий создавать новые экземпляры этого типа. К каждому экземпляру класса могут быть прикреплены атрибуты для поддержания его состояния. Экземпляры класса также могут иметь методы (определенные их классом) для изменения их состояния.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Чтобы понять необходимость создания класса и объекта в Python давайте рассмотрим пример, предположим, вы хотели отслеживать количество собак, которые могут иметь разные атрибуты, такие как порода и возраст. Если используется список, то первым элементом может быть порода собаки, а второй элемент может представлять ее возраст. Предположим, что существует 100 разных собак, тогда как бы вы узнали, какой элемент должен быть каким? Что, если бы вы захотели добавить другие свойства к этим dogs? Здесь не хватает организации, и это как раз то, что нужно для классов.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис определения класса:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="360" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class ClassName:<LineBreak/>
+                                            [2]<Span Foreground="Transparent">____</Span> # Statement
+                                        </TextBlock>
+                                    </Border>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис определения объекта:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="360" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] obj = ClassName()<LineBreak/>
+                                            [2] print(obj.atrr)
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Класс создает определяемую пользователем структуру данных, которая содержит свои собственные элементы данных и функции-члены, к которым можно получить доступ и использовать, создав экземпляр этого класса. Класс подобен схеме объекта.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold">Некоторые моменты о классе Python:</Span>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Классы создаются с помощью ключевого слова class.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Атрибуты - это переменные, которые принадлежат классу.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Атрибуты всегда являются общедоступными и к ним можно получить доступ с помощью оператора точка (.)
+                                    <Span Foreground="Transparent">______</Span> Например: Мой класс.Myattribute
+                                    
+                                </Paragraph>
+
+
+                                <!--Написание Создание класса Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            ________________
+                                        </Span>
+                                        СОЗДАНИЕ КЛАССА PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Здесь ключевое слово class указывает, что вы создаете класс, за которым следует имя класса (в данном случае Dog).
+
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="360" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Dog:<LineBreak/>
+                                            [2] <Span Foreground="Transparent">____</Span> sound = "гав"
+                                        </TextBlock>
+                                    </Border>
+                                    
+
+                                </Paragraph>
+
+                                <!--Написание объект Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _________________
+                                        </Span>
+                                        ОБЪЕКТ КЛАССА PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Объект является экземпляром класса. Класс подобен чертежу, в то время как экземпляр является копией класса с фактическими значениями. Это больше не идея, это реальная собака, как собака породы мопс, которой семь лет. У вас может быть много dogs для создания множества различных экземпляров, но без класса в качестве руководства вы бы заблудились, не зная, какая информация требуется.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    
+                                    
+                                    <Span FontWeight="Bold">
+                                        Объект состоит из:
+                                    </Span>
+                                    <LineBreak/>
+                                    <Span>
+                                        <Span Foreground="Transparent">_____</Span> ● Состояние:
+                                        Оно представлено атрибутами объекта. Оно также отражает свойства объекта.
+                                        <LineBreak/>
+                                    </Span>
+                                    <Span>
+                                        <Span Foreground="Transparent">____</Span> ● Поведение:
+                                        Оно представлено методами объекта. Оно также отражает реакцию объекта на другие объекты.
+                                        <LineBreak/>
+                                    </Span>
+                                    <Span>
+                                        <Span Foreground="Transparent">____</Span> ● Идентификатор:
+                                        Присваивает объекту уникальное имя и позволяет одному объекту взаимодействовать с
+                                        <LineBreak/>
+                                        <Span Foreground="Transparent">______</Span> другими объектами.
+                                        <LineBreak/>
+                                    </Span>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Объявление объектов Class (также называемое созданием экземпляра класса):</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Считается, что при создании объекта класса создается экземпляр класса. Все экземпляры имеют общие атрибуты и поведение класса. Но значения этих атрибутов, то есть состояния, уникальны для каждого объекта. Один класс может иметь любое количество экземпляров.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Пример класса и объекта Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Создание объекта на Python включает в себя создание экземпляра класса для создания нового экземпляра этого класса. Этот процесс также называется созданием экземпляра объекта.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1] # Программа на Python3 для<LineBreak/>
+        [2] # демонстрации создания<LineBreak/>
+        [3] # экземпляра класса<LineBreak/>
+        [4] class Dog:<LineBreak/>
+        [5]<Span Foreground="Transparent">____</Span># Простой класс<LineBreak/>
+        [6]<Span Foreground="Transparent">____</Span>attr1 = "млекопитающее"<LineBreak/>
+        [7]<Span Foreground="Transparent">____</Span>attr2 = "собака"<LineBreak/>
+        [8]<Span Foreground="Transparent">____</Span># Пример метода<LineBreak/>
+        [9]<Span Foreground="Transparent">____</Span>def fun(self):<LineBreak/>
+        [10]<Span Foreground="Transparent">________</Span>print("Я", self.attr1)<LineBreak/>
+        [11]<Span Foreground="Transparent">________</Span>print("Я", self.attr2)<LineBreak/>
+        [12]<LineBreak/>
+        [13] # Код для запуска<LineBreak/>
+        [14] # Создание объекта<LineBreak/>
+        [15] Rodger = Dog()<LineBreak/>
+        [16]<LineBreak/>
+        [17] # Доступ к атрибутам класса<LineBreak/>
+        [18] # и методу через объект<LineBreak/>
+        [19] print(Rodger.attr1)<LineBreak/>
+        [20] Rodger.fun()<LineBreak/>
+        [21]<LineBreak/>
+        [22]<LineBreak/>
+        [23]<LineBreak/>
+        [24] КОД ВЫВЕДЕТ:<LineBreak/>
+        [25] млекопитающее<LineBreak/>
+        [26] Я млекопитающее<LineBreak/>
+        [27] Я собака<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В приведенном выше примере создается объект, который в основном является собакой по имени Роджер. У этого класса есть только два атрибута класса, которые говорят нам, что Роджер - это собака и млекопитающее.
+                                    <LineBreak/>
+                                    В этом примере мы создаем класс Dog и создали две переменные класса attr1 и attr2. Мы создали метод с именем fun() который возвращает строку “I'm a, {attr1}” и I'm a, {attr2}. Мы создали объект класса Dog и печатаем по адресу attr1 объекта. Наконец, мы вызываем функцию fun().
+                                    
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Параметр Self:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Когда мы вызываем метод этого объекта как myobject.method(arg1, arg2), он автоматически преобразуется Python в MyClass.method(myobject, arg1, arg2) – это все специальные self.
+
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1] class GFG:<LineBreak/>
+        [2]<Span Foreground="Transparent">____</Span>def __init__(self, name, company):<LineBreak/>
+        [3]<Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [4]<Span Foreground="Transparent">________</Span>self.company = company<LineBreak/>
+        [5]<LineBreak/>
+        [6]<Span Foreground="Transparent">____</Span>def show(self):<LineBreak/>
+        [7]<Span Foreground="Transparent">________</Span>print("Привет, меня зовут " + self.name + " и я" +<LineBreak/>
+        [8]<Span Foreground="Transparent">____________</Span>" работаю в " + self.company + ".")<LineBreak/>
+        [9]<LineBreak/>
+        [10] obj = GFG("Джон", "Яндекс")<LineBreak/>
+        [11] obj.show()<LineBreak/>
+        [12]<LineBreak/>
+        [13]<LineBreak/>
+        [14]<LineBreak/>
+        [15] КОД ВЫВЕДЕТ:<LineBreak/>
+        [16] Привет, меня зовут Джон и я работаю в Яндекс.<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В этом примере мы создаем класс GFG и создали name и company переменные экземпляра в конструкторе. Мы создали метод с именем say_hi() который возвращает строку “Здравствуйте, меня зовут ” + {name} +” и я работаю в “+{company}+”.”.Мы создали объект класса person и передаем имя Джон и компания Яндекс переходит к переменной экземпляра. Наконец, мы вызываем show() класса.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Метод __init__():</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Метод __init__ аналогичен конструкторам в C ++ и Java. Конструкторы используются для инициализации состояния объекта. Как и методы, конструктор также содержит набор инструкций (т.Е. высказываний), которые выполняются во время создания объекта. Он запускается, как только создается экземпляр объекта класса. Метод полезен для выполнения любой инициализации, которую вы хотите выполнить с вашим объектом.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1] # Класс с примером метода init<LineBreak/>
+        [2] class Person:<LineBreak/>
+        [3]<Span Foreground="Transparent">____</Span># Метод init или конструктор<LineBreak/>
+        [4]<Span Foreground="Transparent">____</Span>def __init__(self, name):<LineBreak/>
+        [5]<Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [6]<LineBreak/>
+        [7]<Span Foreground="Transparent">____</Span># Пример метода<LineBreak/>
+        [8]<Span Foreground="Transparent">____</Span>def say_hi(self):<LineBreak/>
+        [9]<Span Foreground="Transparent">________</Span>print('Привет, меня зовут', self.name)<LineBreak/>
+        [10]<LineBreak/>
+        [11]p = Person('Николай')<LineBreak/>
+        [12]p.say_hi()<LineBreak/>
+        [13]<LineBreak/>
+        [14]<LineBreak/>
+        [15]<LineBreak/>
+        [16] КОД ВЫВЕДЕТ:<LineBreak/>
+        [17] Привет, меня зовут Николай<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В этом примере мы создаем класс Person, мы создали Name переменная экземпляра в конструкторе. Мы создали метод с именем say_hi(), который возвращает строку “Привет, меня зовут {name}”. Мы создали объект класса Person и передаем имя Николай переменной экземпляра. Наконец, мы вызываем say_hi() класса.
+
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Метод __str__():</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В языке Python существует специальный метод с именем __str__(), который используется для определения того, как объект класса должен быть представлен в виде строки. Этот метод часто используется для создания удобочитаемого текстового представления объекта, что может быть полезным для ведения журнала, отладки или отображения информации об объекте пользователям. При использовании встроенной функции str() для преобразования объекта в строку или при вызове функции print() с объектом в качестве аргумента, метод __str__() автоматически вызывается. Вы можете изменить способ, которым объекты класса представляются в строках, путем определения метода __str__().
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1] class GFG:<LineBreak/>
+        [2]<Span Foreground="Transparent">____</Span>def __init__(self, name, company):<LineBreak/>
+        [3]<Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [4]<Span Foreground="Transparent">________</Span>self.company = company<LineBreak/>
+        [5]<LineBreak/>
+        [6]<Span Foreground="Transparent">____</Span>def __str__(self):<LineBreak/>
+        [7]<Span Foreground="Transparent">________</Span>return f"Меня зовут {self.name} и я работаю в {self.company}."<LineBreak/>
+        [8]<LineBreak/>
+        [9]my_obj = GFG("Джон", "Яндекс")<LineBreak/>
+        [10]print(my_obj)<LineBreak/>
+        [11]<LineBreak/>
+        [12]<LineBreak/>
+        [13]<LineBreak/>
+        [14] КОД ВЫВЕДЕТ:<LineBreak/>
+        [15] Привет, меня зовут Джон и я работаю в Яндекс<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В данном примере мы определяем класс с названием GFG. Внутри класса создаются две переменные экземпляра: name (имя) и company (компания). В методе __str__() мы возвращаем строку, которая объединяет значение переменной экземпляра name и значение переменной экземпляра company. Затем мы создаем объект класса GFG и вызываем метод __str__() для этого объекта.
+
+                                </Paragraph>
+
+
+                                <!--написание Переменная класса и экземпляра-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            __________
+                                        </Span>
+                                        ПЕРЕМЕННЫЕ КЛАССА И ЭКЗЕМПЛЯРА
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Переменные экземпляра предназначены для данных, уникальных для каждого экземпляра, а переменные класса предназначены для атрибутов и методов, общих для всех экземпляров класса. Переменные экземпляра - это переменные, значение которых присваивается внутри конструктора или метода с помощью self, тогда как переменные класса - это переменные, значение которых присваивается в классе.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Определение переменных экземпляра с помощью конструктора:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Программа на Python3 для демонстрации,<LineBreak/>
+        [2]  # что переменные, присвоенные в объявлении класса,<LineBreak/>
+        [3]  # являются переменными класса, а переменные внутри методов<LineBreak/>
+        [4]  # и конструкторов - переменные экземпляра.<LineBreak/>
+        [5]<LineBreak/>
+        [6]  # Класс для собаки<LineBreak/>
+        [7] class Dog:<LineBreak/>
+        [8]<Span Foreground="Transparent">____</Span># Переменная класса<LineBreak/>
+        [9]<Span Foreground="Transparent">____</Span>animal = 'собака'<LineBreak/>
+        [10]<LineBreak/>
+        [11]<Span Foreground="Transparent">____</Span># Метод init или конструктор<LineBreak/>
+        [12]<Span Foreground="Transparent">____</Span>def __init__(self, breed, color):<LineBreak/>
+        [13]<Span Foreground="Transparent">________</Span># Переменные экземпляра<LineBreak/>
+        [14]<Span Foreground="Transparent">________</Span>self.breed = breed<LineBreak/>
+        [15]<Span Foreground="Transparent">________</Span>self.color = color<LineBreak/>
+        [16]<LineBreak/>
+        [17]  # Объекты класса Dog<LineBreak/>
+        [18]  Rodger = Dog("Мопс", "коричневый")<LineBreak/>
+        [19]  Buzo = Dog("Бульдог", "черный")<LineBreak/>
+        [20]<LineBreak/>
+        [21]  print('Детали Роджера:')<LineBreak/>
+        [22]  print('Роджер - это', Rodger.animal)<LineBreak/>
+        [23]  print('Порода: ', Rodger.breed)<LineBreak/>
+        [24]  print('Цвет: ', Rodger.color)<LineBreak/>
+        [25]<LineBreak/>
+        [26]  print('\nДетали Бузо:')<LineBreak/>
+        [27]  print('Бузо - это', Buzo.animal)<LineBreak/>
+        [28]  print('Порода: ', Buzo.breed)<LineBreak/>
+        [29]  print('Цвет: ', Buzo.color)<LineBreak/>
+        [30]<LineBreak/>
+        [31]  # Переменные класса можно получить, используя имя класса<LineBreak/>
+        [32]  print("\nДоступ к переменной класса, используя имя класса")<LineBreak/>
+        [33]  print(Dog.animal)<LineBreak/>
+        [34]<LineBreak/>
+        [35]<LineBreak/>
+        [36]<LineBreak/>
+        [37] КОД ВЫВЕДЕТ:<LineBreak/>
+        [38] Детали Роджера:<LineBreak/>
+        [39] Роджер - это собака<LineBreak/>
+        [40] Разводить: Мопс<LineBreak/>
+        [41] Цвет: коричневый<LineBreak/>
+        [42] Детали Buzo:<LineBreak/>
+        [43] Бузо - это собака<LineBreak/>
+        [44] Разводить: Бульдог<LineBreak/>
+        [45] Цвет: черный<LineBreak/>
+        [46] Доступ к переменной класса с использованием имени класса<LineBreak/>
+        [47] собака<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Класс с названием Dog определяется с использованием переменной класса animal, установленной в строку "dog". Переменные класса являются общими для всех объектов класса и могут быть доступны с использованием имени класса. Класс Dog имеет две переменные экземпляра: breed (порода) и color (окрас). Позже мы создадим два объекта класса Dog и выведем значения обоих объектов с использованием переменной класса animal.
+                                    <LineBreak/>
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример на Python3 для демонстрации создания переменных экземпляра внутри методов:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Программа на Python3 для демонстрации, что можно создавать<LineBreak/>
+        [2]  # переменные экземпляра внутри методов.<LineBreak/>
+        [3]<LineBreak/>
+        [4]  # Класс для собаки<LineBreak/>
+        [5]  class Dog:<LineBreak/>
+        [6]    <Span Foreground="Transparent">____</Span># Переменная класса<LineBreak/>
+        [7]    <Span Foreground="Transparent">____</Span>animal = 'собака'<LineBreak/>
+        [8]<LineBreak/>
+        [9]    <Span Foreground="Transparent">____</Span># Метод init или конструктор<LineBreak/>
+        [10]   <Span Foreground="Transparent">____</Span>def __init__(self, breed):<LineBreak/>
+        [11]       <Span Foreground="Transparent">________</Span># Переменная экземпляра<LineBreak/>
+        [12]       <Span Foreground="Transparent">________</Span>self.breed = breed<LineBreak/>
+        [13]<LineBreak/>
+        [14]   <Span Foreground="Transparent">____</Span># Добавляет переменную экземпляра<LineBreak/>
+        [15]   <Span Foreground="Transparent">____</Span>def setColor(self, color):<LineBreak/>
+        [16]       <Span Foreground="Transparent">________</Span>self.color = color<LineBreak/>
+        [17]<LineBreak/>
+        [18]   <Span Foreground="Transparent">____</Span># Извлекает переменную экземпляра<LineBreak/>
+        [19]   <Span Foreground="Transparent">____</Span>def getColor(self):<LineBreak/>
+        [20]       <Span Foreground="Transparent">________</Span>return self.color<LineBreak/>
+        [21]<LineBreak/>
+        [22]  # Код драйвера<LineBreak/>
+        [23]  Rodger = Dog("мопс")<LineBreak/>
+        [24]  Rodger.setColor("коричневый")<LineBreak/>
+        [25]  print(Rodger.getColor())<LineBreak/>
+        [26]<LineBreak/>
+        [27]<LineBreak/>
+        [28]<LineBreak/>
+        [29] КОД ВЫВЕДЕТ:<LineBreak/>
+        [30] brown<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В данном примере мы определили класс с именем Dog, а также создали переменную класса animal. В конструкторе класса мы создали переменную экземпляра breed. Класс Dog включает два метода: setColor и getColor, которые используются для установки и получения значения переменной экземпляра соответственно. Мы создали объект класса Dog и присвоили переменной экземпляра значение "brown", затем выводим это значение в терминале.
+
+                                </Paragraph>
+                                
                             </Section>
                         </FlowDocument>
                     </RichTextBox>

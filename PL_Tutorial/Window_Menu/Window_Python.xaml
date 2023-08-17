@@ -335,7 +335,7 @@
                                 <Button x:Name="Btn_Concept_OOP" Style="{StaticResource ButtonModernOrange}" Content="Концепция ООП" Click="Btn_Concept_OOP_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Class_Object" Style="{StaticResource ButtonModernOrange}" Content="Классы и объекты"/>
+                                <Button x:Name="Btn_Class_Object" Style="{StaticResource ButtonModernOrange}" Content="Классы и объекты" Click="Btn_Class_Object_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <Button x:Name="Btn_Constructor" Style="{StaticResource ButtonModernOrange}" Content="Конструкторы"/>

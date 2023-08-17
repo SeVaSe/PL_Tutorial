@@ -183,6 +183,9 @@
     <Compile Include="Pages\OblastVidim_Osn_Page.xaml.cs">
       <DependentUpon>OblastVidim_Osn_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OOP_Class_Object.xaml.cs">
+      <DependentUpon>OOP_Class_Object.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OOP_Conception.xaml.cs">
       <DependentUpon>OOP_Conception.xaml</DependentUpon>
     </Compile>
@@ -339,6 +342,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OblastVidim_Osn_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OOP_Class_Object.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
