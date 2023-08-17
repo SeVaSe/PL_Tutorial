@@ -53,7 +53,6 @@
                                             ● Абстракция данных
                                         </TextBlock>
                                     </Border>
-                                    <LineBreak/>
                                 </Paragraph>
 
 
@@ -413,6 +412,140 @@
                                         </TextBlock>
                                     </Border>
                                 </Paragraph>
+
+
+                                <!--написание Полиморфизм Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _________________
+                                        </Span>
+                                        ПОЛИМОРФИЗМ PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Полиморфизм просто означает наличие множества форм. Например, нам нужно определить, летают ли данные виды птиц или нет, используя полиморфизм, мы можем сделать это с помощью одной функции.
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Полиморфизм в Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Этот код демонстрирует концепцию наследования и переопределения методов в классах Python. Он показывает, как подклассы могут переопределять методы, определенные в их родительском классе, для обеспечения определенного поведения, все еще наследуя другие методы от родительского класса.
+                                    
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] class Person(object):<LineBreak/>
+                                            [2]<Span Foreground="Transparent">____</Span>def intro(self):<LineBreak/>
+                                            [3]<Span Foreground="Transparent">________</Span>print("There are many types of birds.")<LineBreak/>
+                                            [4]<Span Foreground="Transparent">____</Span>def flight(self):<LineBreak/>
+                                            [5]<Span Foreground="Transparent">________</Span>print("Most of the birds can fly but some cannot.")<LineBreak/>
+                                            [6]<LineBreak/>
+                                            [7] class sparrow(Bird):<LineBreak/>
+                                            [8]<Span Foreground="Transparent">____</Span>def flight(self):<LineBreak/>
+                                            [9]<LineBreak/>
+                                            [10] class ostrich(Bird):<LineBreak/>
+                                            [11]<Span Foreground="Transparent">____</Span>def flight(self):<LineBreak/>
+                                            [12]<Span Foreground="Transparent">________</Span>print("Ostriches cannot fly.")<LineBreak/>
+                                            [13]<LineBreak/>
+                                            [14]<LineBreak/>
+                                            [15] obj_bird = Bird()<LineBreak/>
+                                            [16] obj_spr = sparrow()<LineBreak/>
+                                            [17] obj_ost = ostrich()<LineBreak/>
+                                            [18]<LineBreak/>
+                                            [19] obj_bird.intro()<LineBreak/>
+                                            [20] obj_bird.flight()<LineBreak/>
+                                            [21]<LineBreak/>
+                                            [22] obj_spr.intro()<LineBreak/>
+                                            [23] obj_spr.flight()<LineBreak/>
+                                            [24]<LineBreak/>
+                                            [25] obj_ost.intro()<LineBreak/>
+                                            [26] obj_ost.flight()<LineBreak/>
+                                            [27]<LineBreak/>
+                                            [28]<LineBreak/>
+                                            [29] КОД ВЫВЕДЕТ:<LineBreak/>
+                                            [30] There are many types of birds.<LineBreak/>
+                                            [31] Most of the birds can fly but some cannot.<LineBreak/>
+                                            [32] There are many types of birds.<LineBreak/>
+                                            [33] Sparrows can fly.<LineBreak/>
+                                            [34] There are many types of birds.<LineBreak/>
+                                            [35] Ostriches cannot fly.<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+
+
+
+                                <!--написание Инкапсуляция Python-->
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _________________
+                                        </Span>
+                                        ИНКАПСУЛЯЦИЯ PYTHON
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                   Инкапсуляция является одной из фундаментальных концепций объектно-ориентированного программирования (ООП). Она описывает идею упаковки данных и методы, которые работают с данными в рамках одного модуля. Это накладывает ограничения на прямой доступ к переменным и методам и может предотвратить случайное изменение данных. Чтобы предотвратить случайное изменение, переменная объекта может быть изменена только методом объекта. Эти типы переменных известны как частные переменные.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Класс является примером инкапсуляции, поскольку он инкапсулирует все данные, которые являются функциями-членами, переменными и т.д.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Инкапсуляция в Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В приведенном выше примере мы создали переменную "c" в качестве частного атрибута. Мы даже не можем получить прямой доступ к этому атрибуту и даже изменить его значение.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] # Создание базового класса<LineBreak/>
+                                            [2] class Base:<LineBreak/>
+                                            [3]<Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+                                            [4]<Span Foreground="Transparent">________</Span>self.a = "Tree":<LineBreak/>
+                                            [5]<Span Foreground="Transparent">________</Span>self.__c = "Car"<LineBreak/>
+                                            [6] # Создание производного класса<LineBreak/>
+                                            [7] class Derived(Base):<LineBreak/>
+                                            [8]<Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+                                            [9]<Span Foreground="Transparent">________</Span># Вызывающий конструктор базового класса <LineBreak/>
+                                            [10]<Span Foreground="Transparent">________</Span>super().__init__(self)<LineBreak/>
+                                            [11]<Span Foreground="Transparent">________</Span>print("Calling private member of base class: ")<LineBreak/>
+                                            [12]<Span Foreground="Transparent">________</Span>print(self.__c)<LineBreak/>
+                                            [13]<LineBreak/>
+                                            [14]<LineBreak/>
+                                            [15] obj1 = Base()<LineBreak/>
+                                            [16] print(obj1.a)<LineBreak/>
+                                            [17] <LineBreak/>
+                                            [18] <LineBreak/>
+                                            [19] КОД ВЫВЕДЕТ:<LineBreak/>
+                                            [20] Tree<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                </Paragraph>
+
                             </Section>
                         </FlowDocument>
                     </RichTextBox>

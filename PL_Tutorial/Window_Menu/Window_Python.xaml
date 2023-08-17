@@ -332,7 +332,7 @@
                                 </Style>
                             </ListBox.ItemContainerStyle>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Concept_OOP" Style="{StaticResource ButtonModernOrange}" Content="Концепция ООП"/>
+                                <Button x:Name="Btn_Concept_OOP" Style="{StaticResource ButtonModernOrange}" Content="Концепция ООП" Click="Btn_Concept_OOP_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <Button x:Name="Btn_Class_Object" Style="{StaticResource ButtonModernOrange}" Content="Классы и объекты"/>

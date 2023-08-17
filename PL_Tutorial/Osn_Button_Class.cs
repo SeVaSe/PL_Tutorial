@@ -226,6 +226,13 @@ namespace PL_Tutorial
             wind.Show();
         }
 
+        //ООП концепция
+        public static void OOP_ConceptionsClick()
+        {
+            Window wind = new OOP_Conception();
+            wind.Show();
+        }
+
 
 
     }
