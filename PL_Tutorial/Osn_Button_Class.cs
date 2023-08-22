@@ -240,6 +240,20 @@ namespace PL_Tutorial
             wind.Show();
         }
 
+        //условные операции
+        public static void OOP_Constructor_Click()
+        {
+            Window wind = new OOP_Constructor();
+            wind.Show();
+        }
+
+        //деструктор операции
+        public static void OOP_Destructor_Click()
+        {
+            Window wind = new OOP_Destructor();
+            wind.Show();
+        }
+
 
 
     }

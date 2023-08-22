@@ -1006,4 +1006,256 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+
+
+    <!--КОНСТРУКТОРЫ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Constructor_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                 Foreground="AliceBlue"
+                                 Background="Transparent"
+                                 FontSize="18"
+                                 BorderThickness="0"
+                                 IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+                                    Конструкторы обычно используются для создания экземпляра объекта. Задачей конструкторов является инициализация (присвоение значений) элементам данных класса при создании объекта класса. В Python метод __init__() называется конструктором и всегда вызывается при создании объекта.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис объявления конструктора:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="360" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1] def __init__(self):<LineBreak/>
+                                            [2] <Span Foreground="Transparent">____</Span># тело констурктора.<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontWeight="Bold">Типы конструкторов:</Span>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● конструктор по умолчанию: Конструктор по умолчанию - это простой конструктор, который не принимает
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> никаких аргументов. Его определение имеет только один аргумент, который является ссылкой на
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> создаваемый экземпляр.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● параметризованный конструктор: конструктор с параметрами известен как
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> параметризованный конструктор. Параметризованный конструктор принимает свой первый аргумент в
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> качестве ссылки на создаваемый экземпляр, известный как self, а остальные аргументы предоставляются
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> программистом.
+                                    <LineBreak/>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример конструктора по умолчанию:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Пример на Python3 с использованием конструктора и метода экземпляра:<LineBreak/>
+        [2]<LineBreak/>
+        [3]  # Класс Cat<LineBreak/>
+        [4]  class Cat:<LineBreak/>
+        [5]<Span Foreground="Transparent">____</Span># Конструктор по умолчанию<LineBreak/>
+        [6]<Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [7]<Span Foreground="Transparent">________</Span>self.color= "red"<LineBreak/>
+        [8]<LineBreak/>
+        [9]<Span Foreground="Transparent">____</Span># Метод для печати данных класса<LineBreak/>
+        [10]<Span Foreground="Transparent">____</Span>def print_Color(self):<LineBreak/>
+        [11]<Span Foreground="Transparent">________</Span>print(self.color)<LineBreak/>
+        [12]<LineBreak/>
+        [13] # Создание объекта класса<LineBreak/>
+        [14] obj = Cat()<LineBreak/>
+        [15]<LineBreak/>
+        [16] # Вызов метода экземпляра, используя объект obj<LineBreak/>
+        [17] obj.print_Color()<LineBreak/>
+        [18]<LineBreak/>
+        [19]<LineBreak/>
+        [20]<LineBreak/>
+        [21] КОД ВЫВЕДЕТ:<LineBreak/>
+        [22] red<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример параметризованного конструктора:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="900" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]   # Пример на Python3 с классом Addition, параметризованным конструктором и методами:<LineBreak/>
+        [2]<LineBreak/>
+        [3]   # Класс Addition<LineBreak/>
+        [4]   class Addition:<LineBreak/>
+        [5]       <Span Foreground="Transparent">____</Span>first = 0<LineBreak/>
+        [6]       <Span Foreground="Transparent">____</Span>second = 0<LineBreak/>
+        [7]       <Span Foreground="Transparent">____</Span>answer = 0<LineBreak/>
+        [8]<LineBreak/>
+        [9]       <Span Foreground="Transparent">____</Span># Параметризованный конструктор<LineBreak/>
+        [10]      <Span Foreground="Transparent">____</Span>def __init__(self, f, s):<LineBreak/>
+        [11]          <Span Foreground="Transparent">________</Span>self.first = f<LineBreak/>
+        [12]          <Span Foreground="Transparent">________</Span>self.second = s<LineBreak/>
+        [13]<LineBreak/>
+        [14]      <Span Foreground="Transparent">____</Span># Метод для отображения данных<LineBreak/>
+        [15]      <Span Foreground="Transparent">____</Span>def display(self):<LineBreak/>
+        [16]          <Span Foreground="Transparent">________</Span>print("Первое число = " + str(self.first))<LineBreak/>
+        [17]          <Span Foreground="Transparent">________</Span>print("Второе число = " + str(self.second))<LineBreak/>
+        [18]          <Span Foreground="Transparent">________</Span>print("Сумма двух чисел = " + str(self.answer))<LineBreak/>
+        [19]<LineBreak/>
+        [20]      <Span Foreground="Transparent">____</Span># Метод для вычисления суммы<LineBreak/>
+        [21]      <Span Foreground="Transparent">____</Span>def calculate(self):<LineBreak/>
+        [22]          <Span Foreground="Transparent">________</Span>self.answer = self.first + self.second<LineBreak/>
+        [23]<LineBreak/>
+        [24]  # Создание объекта класса<LineBreak/>
+        [25]  # это вызовет параметризованный конструктор<LineBreak/>
+        [26]  obj1 = Addition(1000, 2000)<LineBreak/>
+        [27]<LineBreak/>
+        [28]  # Создание второго объекта того же класса<LineBreak/>
+        [29]  obj2 = Addition(10, 20)<LineBreak/>
+        [30]<LineBreak/>
+        [31]  # Выполнение вычисления для obj1<LineBreak/>
+        [32]  obj1.calculate()<LineBreak/>
+        [33]<LineBreak/>
+        [34]  # Выполнение вычисления для obj2<LineBreak/>
+        [35]  obj2.calculate()<LineBreak/>
+        [36]<LineBreak/>
+        [37]  # Отображение результатов для obj1<LineBreak/>
+        [38]  obj1.display()<LineBreak/>
+        [39]<LineBreak/>
+        [40]  # Отображение результатов для obj2<LineBreak/>
+        [41]  obj2.display()<LineBreak/>
+        [42]<LineBreak/>
+        [43]<LineBreak/>
+        [44]<LineBreak/>
+        [45] КОД ВЫВЕДЕТ:<LineBreak/>
+        [46] Первое число = 1000<LineBreak/>
+        [47] Второе число = 2000<LineBreak/>
+        [48] Сумма двух чисел = 3000<LineBreak/>
+        [49] Первое число = 10<LineBreak/>
+        [50] Второе число = 20<LineBreak/>
+        [51] Сумма двух чисел = 30<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="900" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1]   # Пример на Python3 с классом MyClass, конструкторами и методами:<LineBreak/>
+                                            [2]<LineBreak/>
+                                            [3]   # Класс MyClass<LineBreak/>
+                                            [4]   class MyClass:<LineBreak/>
+                                            [5]       <Span Foreground="Transparent">____</Span># Конструктор init<LineBreak/>
+                                            [6]       <Span Foreground="Transparent">____</Span>def __init__(self, name=None):<LineBreak/>
+                                            [7]           <Span Foreground="Transparent">________</Span>if name is None:<LineBreak/>
+                                            [8]               <Span Foreground="Transparent">____________</Span>print("Вызван конструктор по умолчанию")<LineBreak/>
+                                            [9]           <Span Foreground="Transparent">________</Span>else:<LineBreak/>
+                                            [10]              <Span Foreground="Transparent">____________</Span>self.name = name<LineBreak/>
+                                            [11]              <Span Foreground="Transparent">____________</Span>print("Вызван параметризованный конструктор с именем", self.name)<LineBreak/>
+                                            [12]<LineBreak/>
+                                            [13]      <Span Foreground="Transparent">____</Span># Метод<LineBreak/>
+                                            [14]      <Span Foreground="Transparent">____</Span>def method(self):<LineBreak/>
+                                            [15]          <Span Foreground="Transparent">________</Span>if hasattr(self, 'name'):<LineBreak/>
+                                            [16]              <Span Foreground="Transparent">____________</Span>print("Метод вызван с именем", self.name)<LineBreak/>
+                                            [17]          <Span Foreground="Transparent">________</Span>else:<LineBreak/>
+                                            [18]              <Span Foreground="Transparent">____________</Span>print("Метод вызван без имени")<LineBreak/>
+                                            [19]<LineBreak/>
+                                            [20]  # Создание объекта класса с использованием конструктора по умолчанию<LineBreak/>
+                                            [21]  obj1 = MyClass()<LineBreak/>
+                                            [22]<LineBreak/>
+                                            [23]  # Вызов метода класса<LineBreak/>
+                                            [24]  obj1.method()<LineBreak/>
+                                            [25]<LineBreak/>
+                                            [26]  # Создание объекта класса с использованием параметризованного конструктора<LineBreak/>
+                                            [27]  obj2 = MyClass("John")<LineBreak/>
+                                            [28]<LineBreak/>
+                                            [29]  # Вызов метода класса<LineBreak/>
+                                            [30]  obj2.method()<LineBreak/>                     
+                                            [31]<LineBreak/>
+                                            [32]<LineBreak/>
+                                            [33]<LineBreak/>
+                                            [34] КОД ВЫВЕДЕТ:<LineBreak/>
+                                            [35] Вызван конструктор по умолчанию<LineBreak/>
+                                            [36] Метод вызван без имени<LineBreak/>
+                                            [37] Вызван параметризованный конструктор с именем John<LineBreak/>
+                                            [38] Метод вызван с именем John<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold">Объяснение:</Span>
+                                    <LineBreak/>
+                                    В этом примере мы определяем класс MyClass как с конструктором по умолчанию, так и с параметризованным конструктором. Конструктор по умолчанию проверяет, был ли передан параметр или нет, и выводит соответствующее сообщение на консоль. Параметризованный конструктор принимает единственное имя параметра и присваивает атрибуту name объекта значение этого параметра.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Мы также определяем метод method(), который проверяет, имеет ли объект атрибут name или нет, и выводит соответствующее сообщение на консоль.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Мы создаем два объекта класса MyClass, используя оба типа конструкторов. Сначала мы создаем объект, используя конструктор по умолчанию, который выводит на консоль сообщение “Конструктор по умолчанию вызван”. Затем мы вызываем метод method() для этого объекта, который выводит сообщение “Метод, вызываемый без имени” на консоль.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Далее мы создаем объект с помощью параметризованного конструктора, передавая имя “John”. Конструктор вызывается автоматически, и на консоль выводится сообщение “Параметризованный конструктор, вызываемый с именем John”. Затем мы вызываем метод method() для этого объекта, который выводит сообщение “Метод, вызываемый с именем John” на консоль.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В целом, этот пример показывает, как оба типа конструкторов могут быть реализованы в одном классе на Python.
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--ДЕСТРУКТОРЫ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Destructor_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                             Foreground="AliceBlue"
+                             Background="Transparent"
+                             FontSize="18"
+                             BorderThickness="0"
+                             IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>
+    
+    
+    
+    
+    

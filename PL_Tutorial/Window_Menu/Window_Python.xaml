@@ -338,10 +338,10 @@
                                 <Button x:Name="Btn_Class_Object" Style="{StaticResource ButtonModernOrange}" Content="Классы и объекты" Click="Btn_Class_Object_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Constructor" Style="{StaticResource ButtonModernOrange}" Content="Конструкторы"/>
+                                <Button x:Name="Btn_Constructor" Style="{StaticResource ButtonModernOrange}" Content="Конструкторы" Click="Btn_Constructor_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
-                                <Button x:Name="Btn_Destructor" Style="{StaticResource ButtonModernOrange}" Content="Деструкторы"/>
+                                <Button x:Name="Btn_Destructor" Style="{StaticResource ButtonModernOrange}" Content="Деструкторы" Click="Btn_Destructor_Click"/>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <Button x:Name="Btn_Nasledovanie" Style="{StaticResource ButtonModernOrange}" Content="Наследование"/>
