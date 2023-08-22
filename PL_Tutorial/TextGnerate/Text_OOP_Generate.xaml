@@ -1232,7 +1232,7 @@
 
 
     <!--ДЕСТРУКТОРЫ-->
-    <Style TargetType="{x:Type RichTextBox}" x:Key="Destructor_RichTextBox">
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Nasled_RichTextBox">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RichTextBox">

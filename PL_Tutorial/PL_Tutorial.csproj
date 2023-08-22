@@ -195,6 +195,9 @@
     <Compile Include="Pages\OOP_Destructor.xaml.cs">
       <DependentUpon>OOP_Destructor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OOP_Nasled.xaml.cs">
+      <DependentUpon>OOP_Nasled.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ParametrFunc_Osn_Page.xaml.cs">
       <DependentUpon>ParametrFunc_Osn_Page.xaml</DependentUpon>
     </Compile>
@@ -364,6 +367,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OOP_Destructor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OOP_Nasled.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -316,6 +316,12 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
+        private void Btn_Nasled_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.OpenWindow<OOP_Nasled>();
+            this.Close();
+        }
+
         //------------------------------------------------------------------
 
 
