@@ -1245,7 +1245,249 @@
                         <FlowDocument>
                             <!--написание -->
                             <Section>
-                                
+                                <Paragraph>
+                                    Одной из ключевых концепций в языках объектно-ориентированного программирования (ООП) является наследование. Это механизм, который позволяет вам создавать иерархию классов, которые совместно используют набор свойств и методов, производя класс из другого класса. Наследование - это способность одного класса выводить или наследовать свойства из другого класса.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold">Преимущества наследования заключаются в:</Span>
+                                    <LineBreak/>
+                                    Наследование позволяет наследовать свойства класса, т.е. базового класса, другому, т.Е. производному классу. Преимущества наследования в Python заключаются в следующем:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Оно хорошо отражает отношения в реальном мире.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Оно обеспечивает повторное использование кода. Нам не нужно писать один и тот же код снова и снова.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> Кроме того, это позволяет нам добавлять дополнительные функции в класс, не изменяя его.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Оно транзитивно по своей природе, что означает, что если класс B наследуется от другого класса A, то все
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> подклассы B автоматически наследуются от класса A.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Наследование предлагает простую, понятную структуру модели.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Меньшие затраты на разработку и обслуживание являются результатом наследования.
+                                </Paragraph>
+
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="35" FontWeight="Bold">
+                                        <Span Foreground="Transparent">
+                                            _____________
+                                        </Span>
+                                        Синтаксис наследования Python
+                                    </Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    <Span FontSize="20">
+                                        <Bold>Синтаксис наследования в Python:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Green" BorderThickness="2" Padding="5" Width="300" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1] Class BaseClass:<LineBreak/>
+        [2] <Span Foreground="Transparent">____</Span> {Body}<LineBreak/>
+        [3] Class DerivedClass(BaseClass):<LineBreak/>
+        [4] <Span Foreground="Transparent">____</Span> {Body}<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание родительского класса:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Родительский класс - это класс, свойства которого наследуются дочерним классом. Давайте создадим родительский класс с именем Person , который имеет метод Display для отображения информации о пользователе.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="660" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Пример на Python3 с использованием наследования в классе Person:<LineBreak/>
+        [2]<LineBreak/>
+        [3]  # Класс Person<LineBreak/>
+        [4]  class Person:<LineBreak/>
+        [5]      <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+        [6]      <Span Foreground="Transparent">____</Span>def __init__(self, name, id):<LineBreak/>
+        [7]          <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [8]          <Span Foreground="Transparent">________</Span>self.id = id<LineBreak/>
+        [9]<LineBreak/>
+        [10]  <Span Foreground="Transparent">____</Span># Проверка, является ли данное лицо сотрудником<LineBreak/>
+        [11]  <Span Foreground="Transparent">____</Span>def Display(self):<LineBreak/>
+        [12]      <Span Foreground="Transparent">________</Span>print(self.name, self.id)<LineBreak/>
+        [13]<LineBreak/>
+        [14] # Создание объекта класса Person<LineBreak/>
+        [15] emp = Person("Satyam", 102)  # Объект класса Person<LineBreak/>
+        [16] emp.Display()<LineBreak/>
+        [17]<LineBreak/>
+        [18]<LineBreak/>   
+        [19]<LineBreak/>
+        [20] КОД ВЫВЕДЕТ:<LineBreak/>
+        [21] Satyam 102<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание дочернего класса:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Дочерний класс - это класс, который управляет свойствами из своего родительского класса. Здесь Emp - это другой класс, который будет наследовать свойства класса Person (базовый класс).
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="660" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1]  # Пример на Python3 с использованием наследования в классе Emp:<LineBreak/>
+                                            [2]<LineBreak/>
+                                            [3]  # Класс Emp, наследующий от класса Person<LineBreak/>
+                                            [4]  class Emp(Person):<LineBreak/>
+                                            [5]      <Span Foreground="Transparent">____</Span># Метод Print в классе Emp<LineBreak/>
+                                            [6]      <Span Foreground="Transparent">____</Span>def Print(self):<LineBreak/>
+                                            [7]          <Span Foreground="Transparent">________</Span>print("Вызван класс Emp")<LineBreak/>
+                                            [8]<LineBreak/>
+                                            [9]  # Создание объекта класса Emp<LineBreak/>
+                                            [10] Emp_details = Emp("Mayank", 103)<LineBreak/>
+                                            [11]<LineBreak/>
+                                            [12] # Вызов функции родительского класса<LineBreak/>
+                                            [13] Emp_details.Display()<LineBreak/>
+                                            [14]<LineBreak/>
+                                            [15] # Вызов функции дочернего класса<LineBreak/>
+                                            [16] Emp_details.Print()<LineBreak/>
+                                            [17]<LineBreak/>
+                                            [18]<LineBreak/>   
+                                            [19]<LineBreak/>
+                                            [20] КОД ВЫВЕДЕТ:<LineBreak/>
+                                            [21] Mayank 103<LineBreak/>
+                                            [22] Вызван класс Emp<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Пример наследования в Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Пример на Python3 демонстрирующий наследование:<LineBreak/>
+        [2]<LineBreak/>
+        [3]  # Базовый класс или суперкласс<LineBreak/>
+        [4]  # Обратите внимание на object в скобках.<LineBreak/>
+        [5]  # (В общем случае, object делается предком всех классов)<LineBreak/>
+        [6]  # В Python 3.x "class Person" эквивалентно "class Person(object)"<LineBreak/>
+        [7]  class Person(object):<LineBreak/>
+        [8]      <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+        [9]      <Span Foreground="Transparent">____</Span>def __init__(self, name):<LineBreak/>
+        [10]          <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [11]<LineBreak/>
+        [12]     <Span Foreground="Transparent">____</Span># Получить имя<LineBreak/>
+        [13]     <Span Foreground="Transparent">____</Span>def getName(self):<LineBreak/>
+        [14]          <Span Foreground="Transparent">________</Span>return self.name<LineBreak/>
+        [15]<LineBreak/>
+        [16]     <Span Foreground="Transparent">____</Span># Проверить, является ли данное лицо сотрудником<LineBreak/>
+        [17]     <Span Foreground="Transparent">____</Span>def isEmployee(self):<LineBreak/>
+        [18]          <Span Foreground="Transparent">________</Span>return False<LineBreak/>
+        [19]<LineBreak/>
+        [20]  # Класс наследник (заметьте Person в скобках)<LineBreak/>
+        [21]  class Employee(Person):<LineBreak/>
+        [22]     <Span Foreground="Transparent">____</Span># Здесь мы возвращаем True<LineBreak/>
+        [23]     <Span Foreground="Transparent">____</Span>def isEmployee(self):<LineBreak/>
+        [24]          <Span Foreground="Transparent">________</Span>return True<LineBreak/>
+        [25]<LineBreak/>
+        [26]  # Создание объекта класса Person<LineBreak/>
+        [27]  emp = Person("Geek1")  # Объект класса Person<LineBreak/>
+        [28]  print(emp.getName(), emp.isEmployee())<LineBreak/>
+        [29]<LineBreak/>
+        [30]  # Создание объекта класса Employee<LineBreak/>
+        [31]  emp = Employee("Geek2")  # Объект класса Employee<LineBreak/>
+        [32]  print(emp.getName(), emp.isEmployee())<LineBreak/>
+        [17]<LineBreak/>
+        [18]<LineBreak/>   
+        [19]<LineBreak/>
+        [20] КОД ВЫВЕДЕТ:<LineBreak/>
+        [21] Geek1 False<LineBreak/>
+        [22] Geek1 True<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Создание подклассов (вызывающий конструктор родительского класса):</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Дочерний класс должен определить, какой класс является его родительским классом. Это можно сделать, упомянув имя родительского класса в определении дочернего класса.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В этом примере ‘a’ - это экземпляр, созданный для класса Person . Он вызывает __init__() указанного класса. Вы можете увидеть ‘object’, написанный в объявлении класса Person . В Python каждый класс наследуется от встроенного базового класса под названием ‘object’. Конструктор, то есть функция класса ‘__init__’, вызывается, когда мы создаем объектную переменную или экземпляр класса.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Переменные, определенные в __init__(), называются переменными экземпляра или объектами. Следовательно, ‘name’ и ‘idnumber’ являются объектами класса Person . Аналогично, ‘salary’ и ‘post’ являются объектами класса Employee. Поскольку класс Employee наследует от класса Person, ‘name’ и ‘idnumber’ также являются объектами класса Employee.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Python код, демонстрирующий как вызываются конструкторы родительских классов:<LineBreak/>
+        [2]<LineBreak/>
+        [3]  # Родительский класс<LineBreak/>
+        [4]  class Person(object):<LineBreak/>
+        [5]     <Span Foreground="Transparent">____</Span># __init__ известен как конструктор<LineBreak/>
+        [6]     <Span Foreground="Transparent">____</Span>def __init__(self, name, idnumber):<LineBreak/>
+        [7]         <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [8]         <Span Foreground="Transparent">________</Span>self.idnumber = idnumber<LineBreak/>
+        [9]<LineBreak/>
+        [10]     <Span Foreground="Transparent">____</Span># Вывести информацию<LineBreak/>
+        [11]     <Span Foreground="Transparent">____</Span>def display(self):<LineBreak/>
+        [12]         <Span Foreground="Transparent">________</Span>print(self.name)<LineBreak/>
+        [13]         <Span Foreground="Transparent">________</Span>print(self.idnumber)<LineBreak/>
+        [14]<LineBreak/>
+        [15] # Дочерний класс<LineBreak/>
+        [16] class Employee(Person):<LineBreak/>
+        [17]     <Span Foreground="Transparent">____</Span># Конструктор дочернего класса<LineBreak/>
+        [18]     <Span Foreground="Transparent">____</Span>def __init__(self, name, idnumber, salary, post):<LineBreak/>
+        [19]         <Span Foreground="Transparent">________</Span>self.salary = salary<LineBreak/>
+        [20]         <Span Foreground="Transparent">________</Span>self.post = post<LineBreak/>
+        [21]<LineBreak/>
+        [22]         <Span Foreground="Transparent">________</Span># Вызов __init__ родительского класса<LineBreak/>
+        [23]         <Span Foreground="Transparent">________</Span>Person.__init__(self, name, idnumber)<LineBreak/>
+        [24]<LineBreak/>
+        [25] # Создание объекта<LineBreak/>
+        [26] a = Employee('Rahul', 886012, 200000, "Intern")<LineBreak/>
+        [27]<LineBreak/>
+        [28] # Вызов функции класса Person с использованием экземпляра<LineBreak/>
+        [29] a.display()<LineBreak/>
+        [30]<LineBreak/>
+        [31]<LineBreak/>   
+        [32]<LineBreak/>
+        [33] КОД ВЫВЕДЕТ:<LineBreak/>
+        [34] Rahul<LineBreak/>
+        [35] 886012<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Если вы забудете вызвать __init__() родительского класса, то переменные его экземпляра будут недоступны дочернему классу и произойдет ошибка.
+
+
+                                </Paragraph>
                             </Section>
                         </FlowDocument>
                     </RichTextBox>
