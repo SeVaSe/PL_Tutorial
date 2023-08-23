@@ -41,7 +41,7 @@ namespace PL_Tutorial.Pages
         //перезапуск
         private void Perezapusk_Click(object sender, RoutedEventArgs e)
         {
-            Window wind = new OblastVidim_Osn_Page();
+            Window wind = new OOP_Conception();
             this.Close();
             wind.Show();
         }

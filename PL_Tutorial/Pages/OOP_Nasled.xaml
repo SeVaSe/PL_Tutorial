@@ -101,8 +101,8 @@ MouseMove="Window_MouseMove">
                 </Grid>
             </Border>
 
-            <Grid Margin="0,10,0,-1291" Grid.Row="1" Grid.RowSpan="2">
-                <RichTextBox x:Name="TxtRichBox_Py" Style="{StaticResource Nasled_RichTextBox}" Margin="10,0,10,-2320"/>
+            <Grid Margin="0,10,0,6" Grid.Row="1">
+                <RichTextBox x:Name="TxtRichBox_Py" Style="{StaticResource Nasled_RichTextBox}" Margin="10,0,10,0"/>
             </Grid>
 
         </Grid>

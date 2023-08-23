@@ -1487,6 +1487,309 @@
                                     Если вы забудете вызвать __init__() родительского класса, то переменные его экземпляра будут недоступны дочернему классу и произойдет ошибка.
 
 
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Функция super():</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Функция super() - это встроенная функция, которая возвращает объекты, представляющие родительский класс. Она позволяет получить доступ к методам и атрибутам родительского класса в дочернем классе.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Пример: функция super() с простым наследованием в Python
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В этом примере мы создали объект ‘obj’ дочернего класса. Когда мы вызвали конструктор дочернего класса ‘Student’, он инициализировал элементы данных значениями, переданными во время создания объекта. Затем, используя функцию super(), мы вызвали конструктор родительского класса.
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+                                            [1]  # Python код с родительским и дочерним классами:<LineBreak/>
+                                            [2]<LineBreak/>
+                                            [3]  # Родительский класс<LineBreak/>
+                                            [4]  class Person():<LineBreak/>
+                                            [5]     <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+                                            [6]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age):<LineBreak/>
+                                            [7]         <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+                                            [8]         <Span Foreground="Transparent">________</Span>self.age = age<LineBreak/>
+                                            [9]<LineBreak/>
+                                            [10]     <Span Foreground="Transparent">____</Span># Вывести информацию<LineBreak/>
+                                            [11]     <Span Foreground="Transparent">____</Span>def display(self):<LineBreak/>
+                                            [12]         <Span Foreground="Transparent">________</Span>print(self.name, self.age)<LineBreak/>
+                                            [13]<LineBreak/>
+                                            [14] # Дочерний класс<LineBreak/>
+                                            [15] class Student(Person):<LineBreak/>
+                                            [16]     <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+                                            [17]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age):<LineBreak/>
+                                            [18]         <Span Foreground="Transparent">________</Span>self.sName = name<LineBreak/>
+                                            [19]         <Span Foreground="Transparent">________</Span>self.sAge = age<LineBreak/>
+                                            [20]         <Span Foreground="Transparent">________</Span># Наследование свойств родительского класса<LineBreak/>
+                                            [21]         <Span Foreground="Transparent">________</Span>super().__init__("Rahul", age)<LineBreak/>
+                                            [22]<LineBreak/>
+                                            [23]     <Span Foreground="Transparent">____</Span># Вывести информацию<LineBreak/>
+                                            [24]     <Span Foreground="Transparent">____</Span>def displayInfo(self):<LineBreak/>
+                                            [25]         <Span Foreground="Transparent">________</Span>print(self.sName, self.sAge)<LineBreak/>
+                                            [26]<LineBreak/>
+                                            [27] obj = Student("Mayank", 23)<LineBreak/>
+                                            [28] obj.display()<LineBreak/>
+                                            [29] obj.displayInfo()<LineBreak/>  
+                                            [30]<LineBreak/>
+                                            [31]<LineBreak/>
+                                            [32] КОД ВЫВЕДЕТ:<LineBreak/>
+                                            [33] Rahul 23<LineBreak/>
+                                            [34] Mayank 23 <LineBreak/>
+
+                                        </TextBlock>
+                                    </Border>
+                                    
+                                    
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Добавление свойств:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Одной из функций, которые предоставляет наследование, является наследование свойств родительского класса, а также добавление наших собственных новых свойств к дочернему классу.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+         [1]  # Python код с родительским и дочерним классами:<LineBreak/>
+        [2]<LineBreak/>
+        [3]  # Родительский класс<LineBreak/>
+        [4]  class Person():<LineBreak/>
+        [5]     <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+        [6]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age):<LineBreak/>
+        [7]         <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [8]         <Span Foreground="Transparent">________</Span>self.age = age<LineBreak/>
+        [9]<LineBreak/>
+        [10]     <Span Foreground="Transparent">____</Span># Вывести информацию<LineBreak/>
+        [11]     <Span Foreground="Transparent">____</Span>def display(self):<LineBreak/>
+        [12]         <Span Foreground="Transparent">________</Span>print(self.name, self.age)<LineBreak/>
+        [13]<LineBreak/>
+        [14] # Дочерний класс<LineBreak/>
+        [15] class Student(Person):<LineBreak/>
+        [16]     <Span Foreground="Transparent">____</Span># Конструктор<LineBreak/>
+        [17]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age, dob):<LineBreak/>
+        [18]         <Span Foreground="Transparent">________</Span>self.sName = name<LineBreak/>
+        [19]         <Span Foreground="Transparent">________</Span>self.sAge = age<LineBreak/>
+        [20]         <Span Foreground="Transparent">________</Span>self.dob = dob<LineBreak/>
+        [21]         <Span Foreground="Transparent">________</Span># Наследование свойств родительского класса<LineBreak/>
+        [22]         <Span Foreground="Transparent">________</Span>super().__init__("Rahul", age)<LineBreak/>
+        [23]<LineBreak/>
+        [24]     <Span Foreground="Transparent">____</Span># Вывести информацию<LineBreak/>
+        [25]     <Span Foreground="Transparent">____</Span>def displayInfo(self):<LineBreak/>
+        [26]         <Span Foreground="Transparent">________</Span>print(self.sName, self.sAge, self.dob)<LineBreak/>
+        [27]<LineBreak/>
+        [28] obj = Student("Mayank", 23, "16-03-2000")<LineBreak/>
+        [29] obj.display()<LineBreak/>
+        [30] obj.displayInfo()<LineBreak/>
+        [31] <LineBreak/>   
+        [32] <LineBreak/>                                    
+        [33] КОД ВЫВЕДЕТ:<LineBreak/>
+        [34] Rahul 23<LineBreak/>
+        [35] Mayank 23 16-03-2000 <LineBreak/>
+
+                                        </TextBlock>
+                                    </Border>
+
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Различные типы наследования в Python:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В Python существует 5 различных типов наследования. Они следующие:
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Одиночное наследование: когда дочерний класс наследует только от одного родительского класса, это
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> называется одиночным наследованием. Мы видели пример выше.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Множественное наследование: когда дочерний класс наследует от нескольких родительских классов, это
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> называется множественным наследованием.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Python код с примером множественного наследования:<LineBreak/>
+        [2]<LineBreak/>
+        [3] class Base1(object):<LineBreak/>
+        [4]     <Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [5]         <Span Foreground="Transparent">________</Span>self.str1 = "S1"<LineBreak/>
+        [6]         <Span Foreground="Transparent">________</Span>print("Base1")<LineBreak/>
+        [7]<LineBreak/>
+        [8] class Base2(object):<LineBreak/>
+        [9]     <Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [10]        <Span Foreground="Transparent">________</Span>self.str2 = "S2"<LineBreak/>
+        [11]        <Span Foreground="Transparent">________</Span>print("Base2")<LineBreak/>
+        [12]<LineBreak/>
+        [13] class Derived(Base1, Base2):<LineBreak/>
+        [14]     <Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [15]         <Span Foreground="Transparent">________</Span># Вызов конструкторов классов Base1 и Base2<LineBreak/>
+        [16]         <Span Foreground="Transparent">________</Span>Base1.__init__(self)<LineBreak/>
+        [17]         <Span Foreground="Transparent">________</Span>Base2.__init__(self)<LineBreak/>
+        [18]         <Span Foreground="Transparent">________</Span>print("Derived")<LineBreak/>
+        [19]<LineBreak/>
+        [20]     <Span Foreground="Transparent">____</Span>def printStrs(self):<LineBreak/>
+        [21]         <Span Foreground="Transparent">________</Span>print(self.str1, self.str2)<LineBreak/>
+        [22]<LineBreak/>
+        [23] ob = Derived()<LineBreak/>
+        [24] ob.printStrs()
+        [25] <LineBreak/>
+        [26] <LineBreak/>   
+        [27] <LineBreak/>                                    
+        [28] КОД ВЫВЕДЕТ:<LineBreak/>
+        [29] Base1<LineBreak/>
+        [30] Base2 <LineBreak/>  
+        [31] S1<LineBreak/>
+        [32] S2 <LineBreak/>
+
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Многоуровневое наследование: когда у нас есть дочерние отношения с внуком. Это означает, что дочерний
+                                    <Span Foreground="Transparent">______</Span> класс наследует от своего родительского класса, который, в свою очередь, наследует от своего
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> родительского
+                                    класса.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+[1]  # Пример Python с наследованием:<LineBreak/>
+        [2]<LineBreak/>
+        [3] # Base or Super class. Note object in bracket.<LineBreak/>
+        [4] # (Generally, object is made ancestor of all classes)<LineBreak/>
+        [5] # In Python 3.x "class Person" is<LineBreak/>
+        [6] # equivalent to "class Person(object)"<LineBreak/>
+        [7]<LineBreak/>
+        [8] class Base(object):<LineBreak/>
+        [9]<LineBreak/>
+        [10]     <Span Foreground="Transparent">____</Span># Constructor<LineBreak/>
+        [11]     <Span Foreground="Transparent">____</Span>def __init__(self, name):<LineBreak/>
+        [12]         <Span Foreground="Transparent">________</Span>self.name = name<LineBreak/>
+        [13]<LineBreak/>
+        [14]     <Span Foreground="Transparent">____</Span># To get name<LineBreak/>
+        [15]     <Span Foreground="Transparent">____</Span>def getName(self):<LineBreak/>
+        [16]         <Span Foreground="Transparent">________</Span>return self.name<LineBreak/>
+        [17]<LineBreak/>
+        [18]<LineBreak/>
+        [19] # Inherited or Sub class (Note Person in bracket)<LineBreak/>
+        [20] class Child(Base):<LineBreak/>
+        [21]<LineBreak/>
+        [22]     <Span Foreground="Transparent">____</Span># Constructor<LineBreak/>
+        [23]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age):<LineBreak/>
+        [24]         <Span Foreground="Transparent">________</Span>Base.__init__(self, name)<LineBreak/>
+        [25]         <Span Foreground="Transparent">________</Span>self.age = age<LineBreak/>
+        [26]<LineBreak/>
+        [27]     <Span Foreground="Transparent">____</Span># To get name<LineBreak/>
+        [28]     <Span Foreground="Transparent">____</Span>def getAge(self):<LineBreak/>
+        [29]         <Span Foreground="Transparent">________</Span>return self.age<LineBreak/>
+        [30]<LineBreak/>
+        [31]<LineBreak/>
+        [32] # Inherited or Sub class (Note Person in bracket)<LineBreak/>
+        [33]<LineBreak/>
+        [34] class GrandChild(Child):<LineBreak/>
+        [35]<LineBreak/>
+        [36]     <Span Foreground="Transparent">____</Span># Constructor<LineBreak/>
+        [37]     <Span Foreground="Transparent">____</Span>def __init__(self, name, age, address):<LineBreak/>
+        [38]         <Span Foreground="Transparent">________</Span>Child.__init__(self, name, age)<LineBreak/>
+        [39]         <Span Foreground="Transparent">________</Span>self.address = address<LineBreak/>
+        [40]<LineBreak/>
+        [41]     <Span Foreground="Transparent">____</Span># To get address<LineBreak/>
+        [42]     <Span Foreground="Transparent">____</Span>def getAddress(self):<LineBreak/>
+        [43]         <Span Foreground="Transparent">________</Span>return self.address<LineBreak/>
+        [44]<LineBreak/>
+        [45]<LineBreak/>
+        [46] # Driver code<LineBreak/>
+        [47] g = GrandChild("G1", 23, "Noida")<LineBreak/>
+        [48] print(g.getName(), g.getAge(), g.getAddress())<LineBreak/>
+[49] <LineBreak/>
+[50] <LineBreak/>   
+[51] <LineBreak/>                                    
+[52] КОД ВЫВЕДЕТ:<LineBreak/>
+[53] G1 23 Noida<LineBreak/>
+
+
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● наследование Из одной базы может быть создано более одного производного класса.
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">____</Span> ● Гибридное наследование: эта форма сочетает в себе более одной формы наследования. По сути, это
+                                    <LineBreak/>
+                                    <Span Foreground="Transparent">______</Span> сочетание более чем одного типа наследования.
+
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontWeight="Bold" FontSize="25">Частные члены родительского класса:</Span>
+                                    <LineBreak/>
+                                    <LineBreak/>
+
+                                    Мы не всегда хотим, чтобы переменные экземпляра родительского класса наследовались дочерним классом, т. Е. мы можем сделать некоторые переменные экземпляра родительского класса закрытыми, которые не будут доступны дочернему классу.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    В наследовании Python мы можем сделать переменную экземпляра закрытой, добавив двойные символы подчеркивания перед ее именем.
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Span FontSize="20">
+                                        <Bold>Пример:</Bold>
+                                    </Span>
+                                    <LineBreak/>
+                                    <Border BorderBrush="Red" BorderThickness="2" Padding="5" Width="560" HorizontalAlignment="Left" CornerRadius="10" Margin="5">
+                                        <TextBlock>
+        [1]  # Пример Python с закрытыми (приватными) членами:<LineBreak/>
+        [2]<LineBreak/>
+        [3] class C(object):<LineBreak/>
+        [4]     <Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [5]         <Span Foreground="Transparent">________</Span>self.c = 21<LineBreak/>
+        [6]<LineBreak/>
+        [7]         <Span Foreground="Transparent">________</Span># d is private instance variable<LineBreak/>
+        [8]         <Span Foreground="Transparent">________</Span>self.__d = 42<LineBreak/>
+        [9]<LineBreak/>
+        [10]<LineBreak/>
+        [11] class D(C):<LineBreak/>
+        [12]     <Span Foreground="Transparent">____</Span>def __init__(self):<LineBreak/>
+        [13]         <Span Foreground="Transparent">________</Span>self.e = 84<LineBreak/>
+        [14]         <Span Foreground="Transparent">________</Span>C.__init__(self)<LineBreak/>
+        [15]<LineBreak/>
+        [16] object1 = D()<LineBreak/>
+        [17]<LineBreak/>
+        [18] # produces an error as d is private instance variable<LineBreak/>
+        [19] print(object1.c)<LineBreak/>
+        [20] print(object1.__d)<LineBreak/>
+                                        </TextBlock>
+                                    </Border>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Здесь мы можем видеть, что когда мы пытались напечатать переменную ‘c’, ее значение 21 выводилось на консоль. Тогда как когда мы пытались напечатать ‘d’, это выдавало ошибку. Это происходит потому, что переменная ‘d’ становится закрытой с помощью символов подчеркивания. Она недоступна дочернему классу ‘D’ и, следовательно, возникает ошибка.
+
+
                                 </Paragraph>
                             </Section>
                         </FlowDocument>

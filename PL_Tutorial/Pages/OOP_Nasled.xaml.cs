@@ -40,7 +40,7 @@ namespace PL_Tutorial.Pages
         //перезапуск
         private void Perezapusk_Click(object sender, RoutedEventArgs e)
         {
-            Window wind = new ParametrFunc_Osn_Page();
+            Window wind = new OOP_Nasled();
             this.Close();
             wind.Show();
         }
@@ -66,5 +66,7 @@ namespace PL_Tutorial.Pages
                 this.DragMove();
 
         }
+
+       
     }
 }
