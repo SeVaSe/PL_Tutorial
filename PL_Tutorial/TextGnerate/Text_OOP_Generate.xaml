@@ -1231,7 +1231,7 @@
 
 
 
-    <!--ДЕСТРУКТОРЫ-->
+    <!--НАСЛЕДОВАНИЕ-->
     <Style TargetType="{x:Type RichTextBox}" x:Key="Nasled_RichTextBox">
         <Setter Property="Template">
             <Setter.Value>
@@ -1798,6 +1798,164 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+
+    <!--ТИПЫ НАСЛКДОВАНИЯ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Type_Nasled_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                             Foreground="AliceBlue"
+                             Background="Transparent"
+                             FontSize="18"
+                             BorderThickness="0"
+                             IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+                                  
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ИНКАПСУЛЯЦИЯ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Incapsul_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                         Foreground="AliceBlue"
+                         Background="Transparent"
+                         FontSize="18"
+                         BorderThickness="0"
+                         IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ПОЛИМОРФИЗМ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Polymorf_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                     Foreground="AliceBlue"
+                     Background="Transparent"
+                     FontSize="18"
+                     BorderThickness="0"
+                     IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--ДЕСТРУКТОРЫ-->
+    <Style TargetType="{x:Type RichTextBox}" x:Key="Destructor_RichTextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                     Foreground="AliceBlue"
+                     Background="Transparent"
+                     FontSize="18"
+                     BorderThickness="0"
+                     IsReadOnly="True">
+                        <FlowDocument>
+                            <!--написание -->
+                            <Section>
+                                <Paragraph>
+
+
+                                </Paragraph>
+                            </Section>
+                        </FlowDocument>
+                    </RichTextBox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ResourceDictionary>
     
     

@@ -44,6 +44,7 @@
                     </TextBlock>
 
                     <Button Content="❌"
+                        Name="btn_close"
                         FontFamily="Fonts/#Dosis" 
                         FontSize="18" 
                         Cursor="Hand"

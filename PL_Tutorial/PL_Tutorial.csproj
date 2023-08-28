@@ -122,6 +122,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Control_Class.cs" />
     <Compile Include="Dop_Window\MessageBoxWarn_Modern.xaml.cs">
       <DependentUpon>MessageBoxWarn_Modern.xaml</DependentUpon>
     </Compile>
@@ -195,8 +196,17 @@
     <Compile Include="Pages\OOP_Destructor.xaml.cs">
       <DependentUpon>OOP_Destructor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OOP_Inkapsuliaciay.xaml.cs">
+      <DependentUpon>OOP_Inkapsuliaciay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OOP_Nasled.xaml.cs">
       <DependentUpon>OOP_Nasled.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OOP_Polymorf.xaml.cs">
+      <DependentUpon>OOP_Polymorf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OOP_Type_Nasled.xaml.cs">
+      <DependentUpon>OOP_Type_Nasled.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ParametrFunc_Osn_Page.xaml.cs">
       <DependentUpon>ParametrFunc_Osn_Page.xaml</DependentUpon>
@@ -370,7 +380,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\OOP_Inkapsuliaciay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\OOP_Nasled.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OOP_Polymorf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OOP_Type_Nasled.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -322,6 +322,24 @@ namespace PL_Tutorial.Window_Menu
             this.Close();
         }
 
+        private void Btn_TypeNasled_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.OpenWindow<OOP_Type_Nasled>();
+            this.Close();
+        }
+
+        private void Btn_Inkapsuliaciay_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.OpenWindow<OOP_Inkapsuliaciay>();
+            this.Close();
+        }
+
+        private void Btn_Polymorf_Click(object sender, RoutedEventArgs e)
+        {
+            Osn_Button_Class.OpenWindow<OOP_Polymorf>();
+            this.Close();
+        }
+
         //------------------------------------------------------------------
 
 
