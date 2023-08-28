@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,50 +24,29 @@ namespace PL_Tutorial.Pages
         public OOP_Conception()
         {
             InitializeComponent();
-        }
+            Control_Class wind = new Control_Class(this);
+
+            btn_close.Click += wind.close_cl;
+            btn_svernut.Click += wind.minimazed_cl;
+            btn_perezapusk.Click += (sender, e) => wind.perezapusk_cl(new OOP_Conception());
+            btn_back.Click += wind.back_out_cl;
+            br_up.MouseLeftButtonDown += wind.Window_MouseLeftButtonDown;
+            br_up.MouseMove += wind.Window_MouseMove;
 
 
-        //закрыть
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
 
-        //свернуть
-        private void Svernut_Click(object sender, RoutedEventArgs e)
-        {
-            WindowState = WindowState.Minimized;
-        }
 
-        //перезапуск
-        private void Perezapusk_Click(object sender, RoutedEventArgs e)
-        {
-            Window wind = new OOP_Conception();
-            this.Close();
-            wind.Show();
-        }
-
-        //назад
-        private void Btn_Back_Out_Click(object sender, RoutedEventArgs e)
-        {
-            Window wind = new Window_Python();
-            wind.Show();
-            this.Close();
-        }
-
-        //передвижение окна
-        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-                this.DragMove();
-        }
-
-        private void Window_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-                this.DragMove();
 
         }
+
+
+
+        
+
+        
+
+        
+        
 
 
     }

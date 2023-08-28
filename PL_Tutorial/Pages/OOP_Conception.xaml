@@ -19,8 +19,8 @@
             <!--нижняя строка-->
             <Border  Background="#222030" BorderThickness="0" CornerRadius="0, 0, 20, 20" Grid.Row="2" Grid.RowSpan="2"/>
             <!--верхняя строка-->
-            <Border  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseMove="Window_MouseMove">
+            <Border x:Name="br_up"  Background="#1b192b" BorderThickness="0" CornerRadius="20, 20, 0, 0" Margin="0,0,0,19" 
+        >
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100*"/>
@@ -52,7 +52,7 @@
                         Background="Transparent"
                         Foreground="AliceBlue"
                             Style="{StaticResource ButtonClearTheme}"
-                        BorderThickness="0" Click="Exit_Click"
+                        BorderThickness="0" 
                         HorizontalAlignment="Left"
                         FontWeight="Bold"
                         VerticalAlignment="Top" Margin="154,13,0,0" RenderTransformOrigin="0.5,0.5" Height="24" Width="28">
@@ -63,12 +63,13 @@
                         FontFamily="Fonts/#Dosis" 
                         FontSize="40" 
                         Grid.Column="4"
+                        Name="btn_svernut"
                         Cursor="Hand"
                         Background="Transparent"
                         Foreground="AliceBlue"
                         FontWeight="Bold"
                             Style="{StaticResource ButtonClearTheme}" 
-                        BorderThickness="0" Click="Svernut_Click" 
+                        BorderThickness="0" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Margin="112,0,0,0" Width="31" Height="47"/>
 
@@ -77,11 +78,12 @@
                         FontSize="80" 
                         Grid.Column="0"
                         Cursor="Hand"
+                            Name="btn_back"
                         Background="Transparent"
                         Foreground="AliceBlue"
                         FontWeight="Bold"
                             Style="{StaticResource ButtonClearTheme}"
-                        BorderThickness="0" Click="Btn_Back_Out_Click" 
+                        BorderThickness="0" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Margin="25,-26,0,0" Width="64" Height="68"/>
 
@@ -90,11 +92,12 @@
                         FontSize="30" 
                         Grid.Column="4"
                         Cursor="Hand"
+                        Name="btn_perezapusk"
                         Background="Transparent"
                         Foreground="AliceBlue"
                         FontWeight="Bold"
                         Style="{StaticResource ButtonClearTheme}" 
-                        BorderThickness="0" Click="Perezapusk_Click" 
+                        BorderThickness="0" 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Margin="73,0,0,0" Width="31" Height="36"/>
 
